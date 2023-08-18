@@ -16,13 +16,12 @@
 		9B27E7162A12A8D000E8036E /* FeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B27E7152A12A8D000E8036E /* FeeModel.swift */; };
 		9B2BC8E22A12C54700735A8D /* BlockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BC8E12A12C54700735A8D /* BlockModel.swift */; };
 		9B2BC8E52A12D1B500735A8D /* FeeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BC8E42A12D1B500735A8D /* FeeData.swift */; };
-		9B2BC8E72A13B1CF00735A8D /* BlockHomeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BC8E62A13B1CF00735A8D /* BlockHomeData.swift */; };
+		9B2BC8E72A13B1CF00735A8D /* BlockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BC8E62A13B1CF00735A8D /* BlockData.swift */; };
 		9B2BC8EE2A13F70600735A8D /* EveryTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BC8ED2A13F70600735A8D /* EveryTransactions.swift */; };
 		9B2BC8F02A13F72A00735A8D /* EveryBlocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BC8EF2A13F72A00735A8D /* EveryBlocks.swift */; };
 		9B2BC8F22A13FE5900735A8D /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BC8F12A13FE5900735A8D /* Home.swift */; };
 		9B2BC8F42A15487900735A8D /* TransactionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BC8F32A15487900735A8D /* TransactionData.swift */; };
 		9B2BC8F62A1548F900735A8D /* EveryTransactionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BC8F52A1548F900735A8D /* EveryTransactionsModel.swift */; };
-		9B2BC8F82A1555BC00735A8D /* BlockDataEveryBlocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BC8F72A1555BC00735A8D /* BlockDataEveryBlocks.swift */; };
 		9B2BC8FD2A155C1F00735A8D /* EachBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BC8FC2A155C1F00735A8D /* EachBlock.swift */; };
 		9B43726D2A1CDFAA00DFE211 /* EachAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B43726C2A1CDFAA00DFE211 /* EachAddress.swift */; };
 		9B43726F2A1CE66000DFE211 /* AddressDataHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B43726E2A1CE66000DFE211 /* AddressDataHeader.swift */; };
@@ -30,6 +29,7 @@
 		9B4372742A1CFD7600DFE211 /* ValidateSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4372732A1CFD7600DFE211 /* ValidateSearch.swift */; };
 		9B4372762A1D2C1800DFE211 /* AddressDataTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4372752A1D2C1800DFE211 /* AddressDataTransactions.swift */; };
 		9B4BE3642A17BBA000050C33 /* EachTransactionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4BE3632A17BBA000050C33 /* EachTransactionData.swift */; };
+		9BAC71232A5465370031C509 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC71222A5465370031C509 /* NavigationBar.swift */; };
 		9BC226122A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC226112A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift */; };
 		9BC226142A0C68CA0069FDEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC226132A0C68CA0069FDEB /* ContentView.swift */; };
 		9BC226162A0C68CB0069FDEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BC226152A0C68CB0069FDEB /* Assets.xcassets */; };
@@ -46,13 +46,12 @@
 		9B27E7152A12A8D000E8036E /* FeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeeModel.swift; sourceTree = "<group>"; };
 		9B2BC8E12A12C54700735A8D /* BlockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockModel.swift; sourceTree = "<group>"; };
 		9B2BC8E42A12D1B500735A8D /* FeeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeeData.swift; sourceTree = "<group>"; };
-		9B2BC8E62A13B1CF00735A8D /* BlockHomeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockHomeData.swift; sourceTree = "<group>"; };
+		9B2BC8E62A13B1CF00735A8D /* BlockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockData.swift; sourceTree = "<group>"; };
 		9B2BC8ED2A13F70600735A8D /* EveryTransactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveryTransactions.swift; sourceTree = "<group>"; };
 		9B2BC8EF2A13F72A00735A8D /* EveryBlocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveryBlocks.swift; sourceTree = "<group>"; };
 		9B2BC8F12A13FE5900735A8D /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		9B2BC8F32A15487900735A8D /* TransactionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionData.swift; sourceTree = "<group>"; };
 		9B2BC8F52A1548F900735A8D /* EveryTransactionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveryTransactionsModel.swift; sourceTree = "<group>"; };
-		9B2BC8F72A1555BC00735A8D /* BlockDataEveryBlocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockDataEveryBlocks.swift; sourceTree = "<group>"; };
 		9B2BC8FC2A155C1F00735A8D /* EachBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachBlock.swift; sourceTree = "<group>"; };
 		9B43726C2A1CDFAA00DFE211 /* EachAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachAddress.swift; sourceTree = "<group>"; };
 		9B43726E2A1CE66000DFE211 /* AddressDataHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDataHeader.swift; sourceTree = "<group>"; };
@@ -60,6 +59,7 @@
 		9B4372732A1CFD7600DFE211 /* ValidateSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateSearch.swift; sourceTree = "<group>"; };
 		9B4372752A1D2C1800DFE211 /* AddressDataTransactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDataTransactions.swift; sourceTree = "<group>"; };
 		9B4BE3632A17BBA000050C33 /* EachTransactionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachTransactionData.swift; sourceTree = "<group>"; };
+		9BAC71222A5465370031C509 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		9BC2260E2A0C68CA0069FDEB /* BitcoinBlockExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinBlockExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC226112A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinBlockExplorerApp.swift; sourceTree = "<group>"; };
 		9BC226132A0C68CA0069FDEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,9 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				9B2BC8E42A12D1B500735A8D /* FeeData.swift */,
-				9B2BC8E62A13B1CF00735A8D /* BlockHomeData.swift */,
+				9B2BC8E62A13B1CF00735A8D /* BlockData.swift */,
 				9B2BC8F32A15487900735A8D /* TransactionData.swift */,
-				9B2BC8F72A1555BC00735A8D /* BlockDataEveryBlocks.swift */,
 				9B12438C2A16C11C00B9A4AF /* BlockTransactionData.swift */,
 				9B4BE3632A17BBA000050C33 /* EachTransactionData.swift */,
 				9B43726E2A1CE66000DFE211 /* AddressDataHeader.swift */,
@@ -111,6 +110,7 @@
 			children = (
 				9B1243822A16579700B9A4AF /* BoxBlocks.swift */,
 				9B1243842A165BF700B9A4AF /* BoxTransactions.swift */,
+				9BAC71222A5465370031C509 /* NavigationBar.swift */,
 			);
 			path = ViewComponents;
 			sourceTree = "<group>";
@@ -255,11 +255,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B23E5DF2A51E6F9007045A6 /* LastBlockHeightData.swift in Sources */,
-				9B2BC8F82A1555BC00735A8D /* BlockDataEveryBlocks.swift in Sources */,
 				9B2BC8F62A1548F900735A8D /* EveryTransactionsModel.swift in Sources */,
 				9B1243852A165BF700B9A4AF /* BoxTransactions.swift in Sources */,
 				9B2BC8F42A15487900735A8D /* TransactionData.swift in Sources */,
 				9B1243832A16579700B9A4AF /* BoxBlocks.swift in Sources */,
+				9BAC71232A5465370031C509 /* NavigationBar.swift in Sources */,
 				9B4372712A1CE88900DFE211 /* AddressHeaderModel.swift in Sources */,
 				9B2BC8FD2A155C1F00735A8D /* EachBlock.swift in Sources */,
 				9B12438D2A16C11C00B9A4AF /* BlockTransactionData.swift in Sources */,
@@ -275,7 +275,7 @@
 				9B4372762A1D2C1800DFE211 /* AddressDataTransactions.swift in Sources */,
 				9B43726D2A1CDFAA00DFE211 /* EachAddress.swift in Sources */,
 				9B2BC8E22A12C54700735A8D /* BlockModel.swift in Sources */,
-				9B2BC8E72A13B1CF00735A8D /* BlockHomeData.swift in Sources */,
+				9B2BC8E72A13B1CF00735A8D /* BlockData.swift in Sources */,
 				9B43726F2A1CE66000DFE211 /* AddressDataHeader.swift in Sources */,
 				9B2BC8EE2A13F70600735A8D /* EveryTransactions.swift in Sources */,
 				9B2BC8E52A12D1B500735A8D /* FeeData.swift in Sources */,
@@ -420,7 +420,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = VictorHugoPachecoAraujo.BitcoinBlockExplorer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -453,7 +453,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = VictorHugoPachecoAraujo.BitcoinBlockExplorer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

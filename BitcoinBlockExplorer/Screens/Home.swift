@@ -18,9 +18,14 @@ struct Home: View {
   @State var searchText = ""
   
   var body: some View {
-    NavigationView{
+    NavigationStack{
+      
       VStack{
+        
+        //NavigationBar()
+        
         ScrollView{
+          
           VStack{
             VStack{
               Text("Taxas de transação").foregroundColor(Color("cinza")).bold()
@@ -67,24 +72,25 @@ struct Home: View {
           BoxTransactions()
           
         }.scrollIndicators(.hidden)
+        
       }
       .onAppear {
-        feeData.fetch()
-      }
-      .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Blocos, endereços ou transações") {
+        feeData.getFees()
       }
       
+      .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Blocos, transações ou endereços") {
+      }
       .onSubmit(of: .search) {
-        
+
         if validateAddresses.isValidAddress(searchText){
           addressSearch = searchText
           abrirModalAddress.toggle()
-          
+
         } else {
           idTransacaoSearch = searchText
           abrirModalTransaction.toggle()
         }
-        
+
       }
       .sheet(isPresented: $abrirModalAddress ) {
         EachAddress(addressSearch: $addressSearch, abrirModalAddress: $abrirModalAddress).presentationDetents([.height(650), .fraction(0.90)])
@@ -105,6 +111,7 @@ struct Home: View {
         }
       }
       .toolbarBackground(Color("azul"), for: .navigationBar)
+      
       .background(Color("azul"))
     }
     

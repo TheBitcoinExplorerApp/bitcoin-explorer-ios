@@ -28,7 +28,7 @@ struct EveryTransactions: View {
           
         }.scrollIndicators(.hidden)
       }
-      .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Blocos, endereços ou transações") {
+      .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Blocos, transações ou endereços") {
       }
       
       .onSubmit(of: .search) {

@@ -12,6 +12,7 @@ class BlockTransactionsData: ObservableObject {
   @Published var blockTransactionsData: [Transactions] = []
   var hashBlock: String = ""
   @Published var loading = false
+  private let maxTransactions: Int = 50
   
   func getEachBlocksInfo(_ hashBlock: String) {
     
@@ -27,7 +28,13 @@ class BlockTransactionsData: ObservableObject {
       do {
         let blockTransaction = try JSONDecoder().decode([Transactions].self, from: data)
         DispatchQueue.main.async {
-          self.blockTransactionsData = blockTransaction
+          
+          if(blockTransaction.count > self.maxTransactions){
+            self.blockTransactionsData = Array(blockTransaction.prefix(upTo: self.maxTransactions))
+          } else {
+            self.blockTransactionsData = blockTransaction
+          }
+          
         }
         
       }

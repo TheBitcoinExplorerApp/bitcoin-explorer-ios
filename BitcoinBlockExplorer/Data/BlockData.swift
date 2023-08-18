@@ -7,15 +7,14 @@
 
 import SwiftUI
 
-class BlockDataHome: ObservableObject {
+class BlockData: ObservableObject {
   @Published var blockDatas: [Blocks] = []
-  @Published var blockHash: String = ""
+  @Published var loading = false
   var maxBlockCount: Int = 0
-  @Published var carregando = false
   
-  func fetch(_ maxBlockCount: Int) {
+  func getBlockDatas(_ maxBlockCount: Int) {
     
-    self.carregando = true
+    self.loading = true
     
     guard let url = URL(string: "https://mempool.space/api/v1/blocks/") else { return }
     
@@ -25,6 +24,7 @@ class BlockDataHome: ObservableObject {
       do {
         let blockHome = try JSONDecoder().decode([Blocks].self, from: data)
         DispatchQueue.main.async {
+          
           if(blockHome.count > maxBlockCount){
             self.blockDatas = Array(blockHome.prefix(upTo: maxBlockCount))
           } else {
@@ -37,7 +37,7 @@ class BlockDataHome: ObservableObject {
       }
       
       DispatchQueue.main.async {
-          self.carregando = false
+          self.loading = false
       }
       
     }.resume()

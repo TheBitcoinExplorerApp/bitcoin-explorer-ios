@@ -11,7 +11,7 @@ class TransactionData: ObservableObject {
   @Published var transactionDatas: [EveryTransactionsModel] = []
   @Published var carregando = false
   
-  func fetch() {
+  func getTransactionData() {
     
     self.carregando = true
     guard let url = URL(string: "https://mempool.space/api/mempool/recent") else { return }

@@ -16,7 +16,7 @@ struct BoxBlocks: View {
   @State var blockSize: Double = 0
   @State var heightBlock: Int = 0
   @State var hashBlock: String = ""
-  @StateObject var blockData = BlockDataHome()
+  @StateObject var blockData = BlockData()
   @State var abrirModal: Bool = false
   let colunas = [GridItem(spacing: 20), GridItem()]
   
@@ -28,7 +28,7 @@ struct BoxBlocks: View {
         Spacer()
       }
       
-      if blockData.carregando {
+      if blockData.loading {
         ProgressView()
       } else {
         
@@ -75,7 +75,7 @@ struct BoxBlocks: View {
         .presentationBackground(Color("azul"))
     }
     .onAppear() {
-      blockData.fetch(4)
+      blockData.getBlockDatas(4)
     }
     
   }

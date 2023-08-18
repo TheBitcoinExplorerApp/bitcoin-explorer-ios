@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EveryBlocks: View {
   
-  @StateObject var blockData = BlockDataEveryBlocks()
+  @StateObject var blockData = BlockData()
   @StateObject var validateAddresses = Validate()
   
   @State var timestamp: String = ""
@@ -28,6 +28,9 @@ struct EveryBlocks: View {
   @State var abrirModal: Bool = false
   @State var idTransacaoButton: String = ""
   @State var searchText = ""
+  
+  // this number is only to put in the parameter of the fetch()
+  let numberOfBlocks: Int = 100
   
   let colunas = [GridItem(spacing: 20), GridItem()]
   
@@ -90,7 +93,7 @@ struct EveryBlocks: View {
         }
       
       // using the searchable and calling the .sheet EachTransaction here to make possible use the search too in this view
-        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Blocos, endereços ou transações") {
+        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Blocos, transações ou endereços") {
         }
         .onSubmit(of: .search) {
           
@@ -114,7 +117,7 @@ struct EveryBlocks: View {
         }
       
         .onAppear {
-          blockData.fetch()
+          blockData.getBlockDatas(numberOfBlocks)
         }
       
         .navigationBarTitleDisplayMode(.inline)

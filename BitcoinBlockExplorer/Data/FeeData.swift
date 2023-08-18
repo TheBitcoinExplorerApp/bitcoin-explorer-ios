@@ -10,7 +10,7 @@ import SwiftUI
 class FeeData: ObservableObject {
   @Published var fees: [Fee] = []
 
-  func fetch() {
+  func getFees() {
     guard let url = URL(string: "https://mempool.space/api/v1/fees/recommended") else {
       return
     }

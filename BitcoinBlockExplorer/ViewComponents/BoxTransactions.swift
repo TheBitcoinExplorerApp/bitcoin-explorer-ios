@@ -81,7 +81,7 @@ struct BoxTransactions: View {
           .presentationBackground(Color("azul"))
       }
       .onAppear {
-        transactionData.fetch()
+        transactionData.getTransactionData()
       }
     
   }
