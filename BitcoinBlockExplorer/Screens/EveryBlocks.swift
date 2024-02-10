@@ -45,7 +45,7 @@ struct EveryBlocks: View {
           }
           
           if blockData.loading {
-            ProgressView()
+              ProgressView()
           } else {
             
             LazyVGrid(columns: colunas, spacing: 15) {
@@ -116,9 +116,13 @@ struct EveryBlocks: View {
             .presentationBackground(Color("azul"))
         }
       
-        .onAppear {
+        .task {
           blockData.getBlockDatas(numberOfBlocks)
         }
+        
+        .refreshable(action: {
+            blockData.getBlockDatas(numberOfBlocks)
+        })
       
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {

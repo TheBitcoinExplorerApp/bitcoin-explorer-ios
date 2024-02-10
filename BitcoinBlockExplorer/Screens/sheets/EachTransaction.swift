@@ -5,7 +5,6 @@
 //  Created by Victor Hugo Pacheco Araujo on 18/05/23.
 //
 
-//TODO: tornar essa tela totalmente responsiva
 import SwiftUI
 
 struct EachTransaction: View {
