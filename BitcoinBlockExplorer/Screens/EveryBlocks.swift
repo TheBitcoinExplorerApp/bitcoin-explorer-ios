@@ -88,7 +88,7 @@ struct EveryBlocks: View {
       
       // sheet of eachBlock
         .sheet(isPresented: $abrirModal) {
-          EachBlock(timestamp: $timestamp,numberTransactions: $numberTransactions, blockMiner: $blockMiner, medianFee: $medianFee, blockSize: $blockSize, hashBlock: $hashBlock, heightBlock: $heightBlock, abrirModal: $abrirModal).presentationDetents([.height(650), .fraction(0.90)])
+          EachBlock(timestamp: $timestamp,numberTransactions: $numberTransactions, blockMiner: $blockMiner, medianFee: $medianFee, blockSize: $blockSize, hashBlock: $hashBlock, heightBlock: $heightBlock, abrirModal: $abrirModal)
             .presentationBackground(Color("azul"))
         }
       
@@ -108,12 +108,10 @@ struct EveryBlocks: View {
           
         }
         .sheet(isPresented: $abrirModalAddress ) {
-          EachAddress(addressSearch: $addressSearch, abrirModalAddress: $abrirModalAddress).presentationDetents([.height(650), .fraction(0.90)])
-            .presentationBackground(Color("azul"))
+          EachAddress(addressSearch: $addressSearch, abrirModalAddress: $abrirModalAddress)
         }
         .sheet(isPresented: $abrirModalTransaction) {
-          EachTransaction(idTransacaoButton: $idTransacaoButton, idTransacaoSearch: $idTransacaoSearch, abrirModalTransaction: $abrirModalTransaction).presentationDetents([.height(650), .fraction(0.90)])
-            .presentationBackground(Color("azul"))
+          EachTransaction(idTransacaoButton: $idTransacaoButton, idTransacaoSearch: $idTransacaoSearch, abrirModalTransaction: $abrirModalTransaction)
         }
       
         .task {

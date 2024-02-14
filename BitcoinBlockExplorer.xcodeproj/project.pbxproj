@@ -23,14 +23,16 @@
 		9B2BC8F42A15487900735A8D /* TransactionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BC8F32A15487900735A8D /* TransactionData.swift */; };
 		9B2BC8F62A1548F900735A8D /* EveryTransactionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BC8F52A1548F900735A8D /* EveryTransactionsModel.swift */; };
 		9B2BC8FD2A155C1F00735A8D /* EachBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BC8FC2A155C1F00735A8D /* EachBlock.swift */; };
+		9B3852D42B7C2A6000E2D576 /* HomeTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3852D32B7C2A6000E2D576 /* HomeTexts.swift */; };
+		9B3852D62B7C2B2300E2D576 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9B3852D52B7C2B2300E2D576 /* Localizable.xcstrings */; };
+		9B3852D82B7C33C400E2D576 /* ToolbarTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3852D72B7C33C400E2D576 /* ToolbarTexts.swift */; };
+		9B3852DA2B7C39C300E2D576 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3852D92B7C39C300E2D576 /* Extensions.swift */; };
 		9B43726D2A1CDFAA00DFE211 /* EachAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B43726C2A1CDFAA00DFE211 /* EachAddress.swift */; };
 		9B43726F2A1CE66000DFE211 /* AddressDataHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B43726E2A1CE66000DFE211 /* AddressDataHeader.swift */; };
 		9B4372712A1CE88900DFE211 /* AddressHeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4372702A1CE88900DFE211 /* AddressHeaderModel.swift */; };
 		9B4372742A1CFD7600DFE211 /* ValidateSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4372732A1CFD7600DFE211 /* ValidateSearch.swift */; };
 		9B4372762A1D2C1800DFE211 /* AddressDataTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4372752A1D2C1800DFE211 /* AddressDataTransactions.swift */; };
 		9B4BE3642A17BBA000050C33 /* EachTransactionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4BE3632A17BBA000050C33 /* EachTransactionData.swift */; };
-		9B5798662B3F435500906D7F /* ErrorCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5798652B3F435500906D7F /* ErrorCases.swift */; };
-		9BAC71232A5465370031C509 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC71222A5465370031C509 /* NavigationBar.swift */; };
 		9BC226122A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC226112A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift */; };
 		9BC226142A0C68CA0069FDEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC226132A0C68CA0069FDEB /* ContentView.swift */; };
 		9BC226162A0C68CB0069FDEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BC226152A0C68CB0069FDEB /* Assets.xcassets */; };
@@ -54,14 +56,16 @@
 		9B2BC8F32A15487900735A8D /* TransactionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionData.swift; sourceTree = "<group>"; };
 		9B2BC8F52A1548F900735A8D /* EveryTransactionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveryTransactionsModel.swift; sourceTree = "<group>"; };
 		9B2BC8FC2A155C1F00735A8D /* EachBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachBlock.swift; sourceTree = "<group>"; };
+		9B3852D32B7C2A6000E2D576 /* HomeTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTexts.swift; sourceTree = "<group>"; };
+		9B3852D52B7C2B2300E2D576 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		9B3852D72B7C33C400E2D576 /* ToolbarTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarTexts.swift; sourceTree = "<group>"; };
+		9B3852D92B7C39C300E2D576 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		9B43726C2A1CDFAA00DFE211 /* EachAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachAddress.swift; sourceTree = "<group>"; };
 		9B43726E2A1CE66000DFE211 /* AddressDataHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDataHeader.swift; sourceTree = "<group>"; };
 		9B4372702A1CE88900DFE211 /* AddressHeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressHeaderModel.swift; sourceTree = "<group>"; };
 		9B4372732A1CFD7600DFE211 /* ValidateSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateSearch.swift; sourceTree = "<group>"; };
 		9B4372752A1D2C1800DFE211 /* AddressDataTransactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDataTransactions.swift; sourceTree = "<group>"; };
 		9B4BE3632A17BBA000050C33 /* EachTransactionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachTransactionData.swift; sourceTree = "<group>"; };
-		9B5798652B3F435500906D7F /* ErrorCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCases.swift; sourceTree = "<group>"; };
-		9BAC71222A5465370031C509 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		9BC2260E2A0C68CA0069FDEB /* BitcoinBlockExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinBlockExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC226112A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinBlockExplorerApp.swift; sourceTree = "<group>"; };
 		9BC226132A0C68CA0069FDEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -112,7 +116,6 @@
 			children = (
 				9B1243822A16579700B9A4AF /* BoxBlocks.swift */,
 				9B1243842A165BF700B9A4AF /* BoxTransactions.swift */,
-				9BAC71222A5465370031C509 /* NavigationBar.swift */,
 			);
 			path = ViewComponents;
 			sourceTree = "<group>";
@@ -138,20 +141,23 @@
 			path = sheets;
 			sourceTree = "<group>";
 		};
+		9B3852D22B7C2A3700E2D576 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9B3852D32B7C2A6000E2D576 /* HomeTexts.swift */,
+				9B3852D52B7C2B2300E2D576 /* Localizable.xcstrings */,
+				9B3852D72B7C33C400E2D576 /* ToolbarTexts.swift */,
+				9B3852D92B7C39C300E2D576 /* Extensions.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		9B4372722A1CFD5B00DFE211 /* FunctionsValidators */ = {
 			isa = PBXGroup;
 			children = (
 				9B4372732A1CFD7600DFE211 /* ValidateSearch.swift */,
 			);
 			path = FunctionsValidators;
-			sourceTree = "<group>";
-		};
-		9B5798642B3F434800906D7F /* Errors */ = {
-			isa = PBXGroup;
-			children = (
-				9B5798652B3F435500906D7F /* ErrorCases.swift */,
-			);
-			path = Errors;
 			sourceTree = "<group>";
 		};
 		9BC226052A0C68CA0069FDEB = {
@@ -173,7 +179,7 @@
 		9BC226102A0C68CA0069FDEB /* BitcoinBlockExplorer */ = {
 			isa = PBXGroup;
 			children = (
-				9B5798642B3F434800906D7F /* Errors */,
+				9B3852D22B7C2A3700E2D576 /* Components */,
 				9B4372722A1CFD5B00DFE211 /* FunctionsValidators */,
 				9B2BC8EC2A13F6D000735A8D /* Screens */,
 				9B2BC8E82A13F07D00735A8D /* ViewComponents */,
@@ -235,8 +241,8 @@
 			developmentRegion = "pt-BR";
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				pt_BR,
 				"pt-BR",
+				en,
 			);
 			mainGroup = 9BC226052A0C68CA0069FDEB;
 			productRefGroup = 9BC2260F2A0C68CA0069FDEB /* Products */;
@@ -255,6 +261,7 @@
 			files = (
 				9BC226192A0C68CB0069FDEB /* Preview Assets.xcassets in Resources */,
 				9BC226162A0C68CB0069FDEB /* Assets.xcassets in Resources */,
+				9B3852D62B7C2B2300E2D576 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,14 +273,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B23E5DF2A51E6F9007045A6 /* LastBlockHeightData.swift in Sources */,
+				9B3852DA2B7C39C300E2D576 /* Extensions.swift in Sources */,
 				9B2BC8F62A1548F900735A8D /* EveryTransactionsModel.swift in Sources */,
 				9B1243852A165BF700B9A4AF /* BoxTransactions.swift in Sources */,
 				9B2BC8F42A15487900735A8D /* TransactionData.swift in Sources */,
 				9B1243832A16579700B9A4AF /* BoxBlocks.swift in Sources */,
-				9BAC71232A5465370031C509 /* NavigationBar.swift in Sources */,
 				9B4372712A1CE88900DFE211 /* AddressHeaderModel.swift in Sources */,
 				9B2BC8FD2A155C1F00735A8D /* EachBlock.swift in Sources */,
 				9B12438D2A16C11C00B9A4AF /* BlockTransactionData.swift in Sources */,
+				9B3852D82B7C33C400E2D576 /* ToolbarTexts.swift in Sources */,
+				9B3852D42B7C2A6000E2D576 /* HomeTexts.swift in Sources */,
 				9BC226142A0C68CA0069FDEB /* ContentView.swift in Sources */,
 				9B4372742A1CFD7600DFE211 /* ValidateSearch.swift in Sources */,
 				9B1243872A166AC000B9A4AF /* EachTransaction.swift in Sources */,
@@ -287,7 +296,6 @@
 				9B43726D2A1CDFAA00DFE211 /* EachAddress.swift in Sources */,
 				9B2BC8E22A12C54700735A8D /* BlockModel.swift in Sources */,
 				9B2BC8E72A13B1CF00735A8D /* BlockData.swift in Sources */,
-				9B5798662B3F435500906D7F /* ErrorCases.swift in Sources */,
 				9B43726F2A1CE66000DFE211 /* AddressDataHeader.swift in Sources */,
 				9B2BC8EE2A13F70600735A8D /* EveryTransactions.swift in Sources */,
 				9B2BC8E52A12D1B500735A8D /* FeeData.swift in Sources */,
@@ -437,6 +445,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -469,6 +478,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

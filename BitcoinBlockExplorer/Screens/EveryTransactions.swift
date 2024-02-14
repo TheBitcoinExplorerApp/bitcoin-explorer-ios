@@ -43,12 +43,10 @@ struct EveryTransactions: View {
       }
       
       .sheet(isPresented: $abrirModalAddress ) {
-        EachAddress(addressSearch: $addressSearch, abrirModalAddress: $abrirModalAddress).presentationDetents([.height(650), .fraction(0.90)])
-          .presentationBackground(Color("azul"))
+        EachAddress(addressSearch: $addressSearch, abrirModalAddress: $abrirModalAddress)
       }
       .sheet(isPresented: $abrirModalTransaction) {
-        EachTransaction(idTransacaoButton: $idTransacaoButton, idTransacaoSearch: $idTransacaoSearch, abrirModalTransaction: $abrirModalTransaction).presentationDetents([.height(650), .fraction(0.90)])
-          .presentationBackground(Color("azul"))
+        EachTransaction(idTransacaoButton: $idTransacaoButton, idTransacaoSearch: $idTransacaoSearch, abrirModalTransaction: $abrirModalTransaction)
       }
       .navigationBarTitleDisplayMode(.inline)
       .toolbar {

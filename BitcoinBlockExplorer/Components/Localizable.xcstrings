@@ -1,0 +1,212 @@
+{
+  "sourceLanguage" : "pt-BR",
+  "strings" : {
+    "%@" : {
+
+    },
+    "%@ %@" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ %2$@"
+          }
+        }
+      }
+    },
+    "%@ MB" : {
+
+    },
+    "%@..." : {
+
+    },
+    "%d B" : {
+
+    },
+    "%lf BTC" : {
+
+    },
+    "%lld" : {
+
+    },
+    "%lld sat" : {
+
+    },
+    "%lld sat/vB" : {
+
+    },
+    "%lld transações" : {
+
+    },
+    "~%lld sat/vB" : {
+
+    },
+    "Aguardando confirmação" : {
+
+    },
+    "altaPrioridade" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "High Priority"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alta Prioridade"
+          }
+        }
+      }
+    },
+    "baixaPrioridade" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Low Priority"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Baixa Prioridade"
+          }
+        }
+      }
+    },
+    "Bitcoin Block Explorer" : {
+
+    },
+    "Bloco" : {
+
+    },
+    "Blocos" : {
+
+    },
+    "Blocos, transações ou endereços" : {
+
+    },
+    "Coinbase" : {
+
+    },
+    "Data/Hora" : {
+
+    },
+    "Endereço" : {
+
+    },
+    "Entradas e Saídas" : {
+
+    },
+    "Hash" : {
+
+    },
+    "Home" : {
+
+    },
+    "ID transação" : {
+
+    },
+    "mediaPrioridade" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Medium Priority"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Média Prioridade"
+          }
+        }
+      }
+    },
+    "Minerador" : {
+
+    },
+    "Não confirmada" : {
+
+    },
+    "Não encontrado" : {
+
+    },
+    "OP_RETURN" : {
+
+    },
+    "Saldo " : {
+
+    },
+    "searchPlaceholder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blocks, transactions or address"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blocos, transações ou endereços"
+          }
+        }
+      }
+    },
+    "Tamanho" : {
+
+    },
+    "Taxa" : {
+
+    },
+    "Taxa " : {
+
+    },
+    "Taxa mediana" : {
+
+    },
+    "taxasDeTransacao" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transaction Fees"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taxas de transação"
+          }
+        }
+      }
+    },
+    "Total Enviado" : {
+
+    },
+    "Total Recebido" : {
+
+    },
+    "Transação" : {
+
+    },
+    "Transações" : {
+
+    },
+    "Valor" : {
+
+    },
+    "X" : {
+
+    }
+  },
+  "version" : "1.0"
+}

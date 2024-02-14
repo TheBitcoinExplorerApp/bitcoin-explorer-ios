@@ -77,7 +77,7 @@ struct BoxTransactions: View {
       }
     }.padding()
       .sheet(isPresented: $abrirModalTransaction) {
-        EachTransaction(idTransacaoButton: $idTransacaoButton, idTransacaoSearch: $idTransacaoSearch, abrirModalTransaction: $abrirModalTransaction).presentationDetents([.height(650), .fraction(0.90)])
+        EachTransaction(idTransacaoButton: $idTransacaoButton, idTransacaoSearch: $idTransacaoSearch, abrirModalTransaction: $abrirModalTransaction)
           .presentationBackground(Color("azul"))
       }
       .onAppear {

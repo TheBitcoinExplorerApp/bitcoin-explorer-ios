@@ -11,9 +11,6 @@ struct ContentView: View {
     
     private static let topId = "topIdHere"
 
-       /*
-         Use only for toggling, binding for external access or @State for internal access
-       */
     @State var scrollToTopVar = false
     
     var body: some View {

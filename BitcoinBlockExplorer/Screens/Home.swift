@@ -18,68 +18,71 @@ struct Home: View {
     @State var searchText = ""
     
     var body: some View {
+        
         NavigationStack{
             
             VStack{
-                
-                //NavigationBar()
                 
                 ScrollView{
                 
                     VStack{
                         VStack{
-                            Text("Taxas de transação").foregroundColor(Color("cinza")).bold()
-                                .font(.system(size: 17))
+                            Text(HomeTexts.taxasDeTransacao).foregroundColor(Color.cinza)
+                                .bold()
+                                .font(.headline)
                             
                             HStack{
-                                Text("Baixa Prioridade").foregroundColor(Color("cinza")).font(.system(size: 13))
-                                Text("Media Prioridade").foregroundColor(Color("cinza")).font(.system(size: 13))
-                                Text("Alta Prioridade").foregroundColor(Color("cinza")).font(.system(size: 13))
+                                Text(HomeTexts.baixaPrioridade).foregroundColor(Color.cinza).font(.footnote)
+                                Text(HomeTexts.mediaPrioridade).foregroundColor(Color.cinza).font(.footnote)
+                                Text(HomeTexts.altaPrioridade).foregroundColor(Color.cinza).font(.footnote)
                             }
                             .padding()
                             .frame(maxWidth: .infinity)
-                            .background(Color("caixas"))
+                            .background(Color.caixas)
                             .cornerRadius(7)
                         }.padding(.horizontal)
                         
-                        VStack(alignment: .center){
+                        VStack(alignment: .center) {
                             ForEach(feeData.fees, id: \.self) { fee in
                                 
-                                HStack(spacing: 17){
+                                HStack(spacing: 17) {
                                     
-                                    HStack{
-                                        Text("\(fee.hourFee) sat/vB").foregroundColor(Color("cinza")).font(.system(size: 13))
+                                    VStack{
+                                        Text("\(fee.hourFee) sat/vB").foregroundColor(Color.cinza).font(.footnote)
                                     }.padding()
-                                        .background(Color("caixas")).cornerRadius(7)
+                                        .background(Color.caixas).cornerRadius(7)
                                     
-                                    HStack{
-                                        Text("\(fee.halfHourFee) sat/vB").foregroundColor(Color("cinza")).font(.system(size: 13))
+                                    VStack{
+                                        Text("\(fee.halfHourFee) sat/vB").foregroundColor(Color.cinza).font(.footnote)
                                     }.padding()
-                                        .background(Color("caixas")).cornerRadius(7)
+                                        .background(Color.caixas).cornerRadius(7)
                                     
-                                    HStack{
-                                        Text("\(fee.fastestFee) sat/vB").foregroundColor(Color("cinza")).font(.system(size: 13))
+                                    VStack{
+                                        Text("\(fee.fastestFee) sat/vB").foregroundColor(Color.cinza).font(.footnote)
                                     }.padding()
-                                        .background(Color("caixas")).cornerRadius(7)
+                                        .background(Color.caixas).cornerRadius(7)
                                 }
                                 
                             }
                         }
                         
                     }.padding(.vertical)
+                    
                     BoxBlocks()
                     
                     BoxTransactions()
                     
-                }.scrollIndicators(.hidden)
+                }
                 
             }
+            
             .task {
                 feeData.getFees()
             }
             
-            .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Blocos, transações ou endereços") {
+            .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: ToolbarTexts.searchPlaceholder) {
             }
+            
             .onSubmit(of: .search) {
                 
                 if validateAddresses.isValidAddress(searchText){
@@ -92,27 +95,32 @@ struct Home: View {
                 }
                 
             }
+            
             .sheet(isPresented: $abrirModalAddress ) {
-                EachAddress(addressSearch: $addressSearch, abrirModalAddress: $abrirModalAddress).presentationDetents([.height(650), .fraction(0.9)])
-                    .presentationBackground(Color("azul"))
+                EachAddress(addressSearch: $addressSearch, abrirModalAddress: $abrirModalAddress)
             }
+            
             .sheet(isPresented: $abrirModalTransaction) {
-                EachTransaction(idTransacaoButton: $idTransacaoButton, idTransacaoSearch: $idTransacaoSearch, abrirModalTransaction: $abrirModalTransaction).presentationDetents([.fraction(0.9)])
-                    .presentationBackground(Color("azul"))
+                EachTransaction(idTransacaoButton: $idTransacaoButton, idTransacaoSearch: $idTransacaoSearch, abrirModalTransaction: $abrirModalTransaction)
             }
             
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Image("bitcoinIcone").resizable().frame(width: 40, height: 40)
+                    Image(ToolbarTexts.bitcoinIcone)
+                        .resizable()
+                        .frame(width: 40, height: 40)
                 }
                 ToolbarItem(placement: .principal) {
-                    Text("Bitcoin Block Explorer").foregroundColor(Color("laranja")).bold().font(.system(size: 20))
+                    Text(ToolbarTexts.titleOfTheApp)
+                        .foregroundColor(Color.laranja)
+                        .bold()
+                        .font(.title3)
                 }
             }
-            .toolbarBackground(Color("azul"), for: .navigationBar)
+            .toolbarBackground(Color.azul, for: .navigationBar)
             
-            .background(Color("azul"))
+            .background(Color.azul)
         }
         
     }
