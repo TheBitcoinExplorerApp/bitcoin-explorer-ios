@@ -8,47 +8,47 @@
 import SwiftUI
 
 class EachTransactionData: ObservableObject {
-  @Published var eachTransactionDatas: [Transactions] = []
-  var txidTransaction: String = ""
-  @Published var loading = false
-  @Published var erro: Error? = nil
-  
-  func getEachTransactionInfo(_ txidTransaction: String) {
+    @Published var eachTransactionDatas: [Transactions] = []
+    var txidTransaction: String = ""
+    @Published var loading = false
+    @Published var erro: Error? = nil
     
-    self.loading = true
-    
-    guard let url = URL(string: "https://mempool.space/api/tx/\(txidTransaction)") else { return }
-    
-    let task = URLSession.shared.dataTask(with: url) {data, _, error in
-      guard let data = data, error == nil else {
-        return
-      }
-      
-      do {
-        let eachTransaction = try JSONDecoder().decode(Transactions.self, from: data)
-        DispatchQueue.main.async {
-          self.eachTransactionDatas = [eachTransaction]
-        }
+    func getEachTransactionInfo(_ txidTransaction: String) {
         
-      }
-      catch {
-        DispatchQueue.main.async {
-          self.erro = error
-          print(error)
+        self.loading = true
+        
+        guard let url = URL(string: "https://mempool.space/api/tx/\(txidTransaction)") else { return }
+        
+        let task = URLSession.shared.dataTask(with: url) {data, _, error in
+            guard let data = data, error == nil else {
+                return
+            }
+            
+            do {
+                let eachTransaction = try JSONDecoder().decode(Transactions.self, from: data)
+                DispatchQueue.main.async {
+                    self.eachTransactionDatas = [eachTransaction]
+                }
+                
+            }
+            catch {
+                DispatchQueue.main.async {
+                    self.erro = error
+                    print(error)
+                }
+            }
+            
+            DispatchQueue.main.async {
+                self.loading = false
+            }
+            
         }
-      }
-      
-      DispatchQueue.main.async {
-        self.loading = false
-      }
-      
+        task.resume()
+        
     }
-    task.resume()
     
-  }
-  
-  func getErro() -> Error? {
-    return self.erro
-  }
-  
+    func getErro() -> Error? {
+        return self.erro
+    }
+    
 }

@@ -16,5 +16,5 @@ struct HomeTexts {
     static let mediaPrioridade: String = String(localized: "mediaPrioridade")
     
     static let altaPrioridade: String = String(localized: "altaPrioridade")
-
+    
 }

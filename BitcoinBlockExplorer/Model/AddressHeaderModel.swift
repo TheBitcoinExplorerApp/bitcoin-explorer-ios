@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct AddressHeaderModel: Hashable, Codable {
-  let chain_stats: ChainStats
+    let chain_stats: ChainStats
 }
 
 struct ChainStats: Hashable, Codable {
-  // total received
-  let funded_txo_sum: Double
-  // total sent
-  let spent_txo_sum: Double
+    // total received
+    let funded_txo_sum: Double
+    // total sent
+    let spent_txo_sum: Double
 }

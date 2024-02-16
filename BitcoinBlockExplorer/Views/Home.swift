@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-//TODO: De alguma forma fazer o refreshable funcionar
-
 struct Home: View {
     @StateObject var validateAddresses = Validate()
     @StateObject var feeData = FeeData()
@@ -81,7 +79,7 @@ struct Home: View {
             .task {
                 feeData.getFees()
             }
-
+            
             .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: ToolbarTexts.searchPlaceholder) {
             }
             

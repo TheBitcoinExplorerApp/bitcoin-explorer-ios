@@ -46,9 +46,6 @@
         }
       }
     },
-    "Aguardando confirmação" : {
-
-    },
     "aguardandoConfirmacao" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -100,9 +97,6 @@
         }
       }
     },
-    "Bloco" : {
-
-    },
     "blocoMaiusculo" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -137,9 +131,6 @@
         }
       }
     },
-    "Blocos" : {
-
-    },
     "coinbase" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -156,9 +147,6 @@
           }
         }
       }
-    },
-    "Coinbase" : {
-
     },
     "confirmacao" : {
       "extractionState" : "manual",
@@ -217,14 +205,22 @@
         }
       }
     },
-    "Data/Hora" : {
-
-    },
-    "Endereço" : {
-
-    },
-    "Entradas e Saídas" : {
-
+    "enderecoMaiusculo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Address"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Endereço"
+          }
+        }
+      }
     },
     "entradasESaidas" : {
       "extractionState" : "manual",
@@ -260,8 +256,21 @@
         }
       }
     },
-    "Home" : {
-
+    "home" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home"
+          }
+        }
+      }
     },
     "idTransacao" : {
       "extractionState" : "manual",
@@ -279,6 +288,9 @@
           }
         }
       }
+    },
+    "Key" : {
+      "extractionState" : "manual"
     },
     "mediaPrioridade" : {
       "extractionState" : "manual",
@@ -314,12 +326,6 @@
         }
       }
     },
-    "Não confirmada" : {
-
-    },
-    "Não encontrado" : {
-
-    },
     "naoConfirmada" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -354,8 +360,22 @@
         }
       }
     },
-    "Saldo " : {
-
+    "saldo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Balance"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saldo"
+          }
+        }
+      }
     },
     "sat" : {
       "extractionState" : "manual",
@@ -408,9 +428,6 @@
         }
       }
     },
-    "Tamanho" : {
-
-    },
     "tamanhoMaiusculo" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -427,9 +444,6 @@
           }
         }
       }
-    },
-    "Taxa " : {
-
     },
     "taxaMaiusculo" : {
       "extractionState" : "manual",
@@ -482,14 +496,39 @@
         }
       }
     },
-    "Total Enviado" : {
-
+    "totalEnviado" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Total Sent"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Total Enviado"
+          }
+        }
+      }
     },
-    "Total Recebido" : {
-
-    },
-    "Transação" : {
-
+    "totalRecebido" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Total Received"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Total Recebido"
+          }
+        }
+      }
     },
     "transacaoMaiusculo" : {
       "extractionState" : "manual",
@@ -541,9 +580,6 @@
           }
         }
       }
-    },
-    "Transações" : {
-
     },
     "valorMaiusculo" : {
       "extractionState" : "manual",

@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-struct EachBlock: View{
+struct EachBlock: View {
+    @StateObject var blockTransactionData = BlockTransactionsData()
+    
     @Binding var timestamp: String
     @Binding var numberTransactions: Int64
     @Binding var blockMiner: String
@@ -16,7 +18,6 @@ struct EachBlock: View{
     @Binding var hashBlock: String
     @Binding var heightBlock: Int
     @Binding var abrirModal: Bool
-    @StateObject var blockTransactionData = BlockTransactionsData()
     
     var largura = UIScreen.main.bounds.size.width
     
@@ -155,7 +156,8 @@ struct EachBlock: View{
                                                 .font(.footnote)
                                         }
                                     }.padding()
-                                        .background(Color.caixas).cornerRadius(7)
+                                        .background(Color.caixas)
+                                        .cornerRadius(7)
                                 }.padding(.horizontal)
                                 
                             }
@@ -204,7 +206,8 @@ struct EachBlock: View{
                                     }
                                     
                                 }.padding()
-                                    .background(Color.caixas).cornerRadius(7)
+                                    .background(Color.caixas)
+                                    .cornerRadius(7)
                             }.padding(.horizontal)
                             
                             HStack {

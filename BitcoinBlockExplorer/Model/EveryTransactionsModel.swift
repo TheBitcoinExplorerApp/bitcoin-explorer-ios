@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct EveryTransactionsModel: Hashable, Codable {
-  let txid: String
-  let fee: Double
-  let value: Double
+    let txid: String
+    let fee: Double
+    let value: Double
 }

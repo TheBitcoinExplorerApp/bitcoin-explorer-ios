@@ -15,7 +15,7 @@ struct BoxTransactions: View {
     
     var body: some View {
         ScrollView(.vertical){
-        
+            
             HStack {
                 Text(TransactionsTexts.transacoesMaiusculo).foregroundColor(Color.cinza)
                     .bold()
@@ -88,22 +88,22 @@ struct BoxTransactions: View {
                 }
                 
             }
-        
-    }
-        .padding()
-            .sheet(isPresented: $abrirModalTransaction) {
-                EachTransaction(idTransacaoButton: $idTransacaoButton, idTransacaoSearch: $idTransacaoSearch, abrirModalTransaction: $abrirModalTransaction)
-                    .presentationBackground(Color.azul)
-            }
-        
-            .task {
-                transactionData.getTransactionData()
-            }
-        
-            .refreshable {
-                transactionData.getTransactionData()
-            }
             
+        }
+        .padding()
+        .sheet(isPresented: $abrirModalTransaction) {
+            EachTransaction(idTransacaoButton: $idTransacaoButton, idTransacaoSearch: $idTransacaoSearch, abrirModalTransaction: $abrirModalTransaction)
+                .presentationBackground(Color.azul)
+        }
+        
+        .task {
+            transactionData.getTransactionData()
+        }
+        
+        .refreshable {
+            transactionData.getTransactionData()
+        }
+        
     }
     
 }

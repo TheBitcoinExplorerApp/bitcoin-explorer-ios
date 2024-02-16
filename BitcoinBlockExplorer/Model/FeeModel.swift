@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct Fee: Hashable, Codable {
-  // high priority
-  let fastestFee: Int
-  // medium priority
-  let halfHourFee: Int
-  // low priority
-  let hourFee: Int
-  
+    // high priority
+    let fastestFee: Int
+    // medium priority
+    let halfHourFee: Int
+    // low priority
+    let hourFee: Int
+    
 }

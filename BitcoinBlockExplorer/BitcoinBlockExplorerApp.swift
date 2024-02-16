@@ -11,7 +11,7 @@ import SwiftUI
 struct BitcoinBlockExplorerApp: App {
     var body: some Scene {
         WindowGroup {
-          ContentView().preferredColorScheme(.dark)
+            ContentView().preferredColorScheme(.dark)
         }
     }
 }

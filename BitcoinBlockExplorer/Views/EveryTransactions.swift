@@ -71,6 +71,8 @@ struct EveryTransactions: View {
     
 }
 
-#Preview {
-    EveryTransactions()
+struct EveryTransactions_Previews: PreviewProvider {
+    static var previews: some View {
+        EveryTransactions()
+    }
 }

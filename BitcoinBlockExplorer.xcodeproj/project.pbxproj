@@ -40,6 +40,8 @@
 		9BC226142A0C68CA0069FDEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC226132A0C68CA0069FDEB /* ContentView.swift */; };
 		9BC226162A0C68CB0069FDEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BC226152A0C68CB0069FDEB /* Assets.xcassets */; };
 		9BC226192A0C68CB0069FDEB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BC226182A0C68CB0069FDEB /* Preview Assets.xcassets */; };
+		9BD1541D2B7F9DB200C736DB /* AddressTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD1541C2B7F9DB200C736DB /* AddressTexts.swift */; };
+		9BD1541F2B7FA3E300C736DB /* ContentViewTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD1541E2B7FA3E300C736DB /* ContentViewTexts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +79,8 @@
 		9BC226132A0C68CA0069FDEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9BC226152A0C68CB0069FDEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BC226182A0C68CB0069FDEB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9BD1541C2B7F9DB200C736DB /* AddressTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressTexts.swift; sourceTree = "<group>"; };
+		9BD1541E2B7FA3E300C736DB /* ContentViewTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewTexts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,15 +130,16 @@
 			path = ViewComponents;
 			sourceTree = "<group>";
 		};
-		9B2BC8EC2A13F6D000735A8D /* Screens */ = {
+		9B2BC8EC2A13F6D000735A8D /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				9B2BC8FB2A155BFE00735A8D /* sheets */,
+				9BC226132A0C68CA0069FDEB /* ContentView.swift */,
 				9B2BC8ED2A13F70600735A8D /* EveryTransactions.swift */,
 				9B2BC8EF2A13F72A00735A8D /* EveryBlocks.swift */,
 				9B2BC8F12A13FE5900735A8D /* Home.swift */,
 			);
-			path = Screens;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		9B2BC8FB2A155BFE00735A8D /* sheets */ = {
@@ -157,6 +162,8 @@
 				9B5689EC2B7CEFF10009A751 /* Texts.swift */,
 				9B5689EE2B7D106A0009A751 /* BlocksTexts.swift */,
 				9B5689F02B7D178E0009A751 /* TransactionsTexts.swift */,
+				9BD1541C2B7F9DB200C736DB /* AddressTexts.swift */,
+				9BD1541E2B7FA3E300C736DB /* ContentViewTexts.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -190,12 +197,11 @@
 			children = (
 				9B3852D22B7C2A3700E2D576 /* Components */,
 				9B4372722A1CFD5B00DFE211 /* FunctionsValidators */,
-				9B2BC8EC2A13F6D000735A8D /* Screens */,
+				9B2BC8EC2A13F6D000735A8D /* Views */,
 				9B2BC8E82A13F07D00735A8D /* ViewComponents */,
 				9B2BC8E32A12D19800735A8D /* Data */,
 				9B27E7142A12A8B400E8036E /* Model */,
 				9BC226112A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift */,
-				9BC226132A0C68CA0069FDEB /* ContentView.swift */,
 				9BC226152A0C68CB0069FDEB /* Assets.xcassets */,
 				9BC226172A0C68CB0069FDEB /* Preview Content */,
 			);
@@ -303,6 +309,7 @@
 				9BC226122A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift in Sources */,
 				9B5689F12B7D178E0009A751 /* TransactionsTexts.swift in Sources */,
 				9B12438B2A16BD6C00B9A4AF /* TransactionsModel.swift in Sources */,
+				9BD1541D2B7F9DB200C736DB /* AddressTexts.swift in Sources */,
 				9B4BE3642A17BBA000050C33 /* EachTransactionData.swift in Sources */,
 				9B4372762A1D2C1800DFE211 /* AddressDataTransactions.swift in Sources */,
 				9B43726D2A1CDFAA00DFE211 /* EachAddress.swift in Sources */,
@@ -312,6 +319,7 @@
 				9B43726F2A1CE66000DFE211 /* AddressDataHeader.swift in Sources */,
 				9B2BC8EE2A13F70600735A8D /* EveryTransactions.swift in Sources */,
 				9B2BC8E52A12D1B500735A8D /* FeeData.swift in Sources */,
+				9BD1541F2B7FA3E300C736DB /* ContentViewTexts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

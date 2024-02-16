@@ -39,5 +39,5 @@ struct TransactionsTexts {
     static let aguardandoConfirmacao: String = String(localized: "aguardandoConfirmacao")
     
     static let entradasESaidas: String = String(localized: "entradasESaidas")
- 
+    
 }

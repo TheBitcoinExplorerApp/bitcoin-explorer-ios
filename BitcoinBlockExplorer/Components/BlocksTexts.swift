@@ -8,7 +8,7 @@
 import Foundation
 
 struct BlocksTexts {
-
+    
     static let blocos: String = String(localized: "blocos")
     
     static let blocoMaiusculo: String = String(localized: "blocoMaiusculo")

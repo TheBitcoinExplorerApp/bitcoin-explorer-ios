@@ -14,8 +14,8 @@
             filePath = "BitcoinBlockExplorer/Screens/sheets/EachAddress.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
+            startingLineNumber = "193"
+            endingLineNumber = "193"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -237,102 +237,6 @@
                   startingLineNumber = "34"
                   endingLineNumber = "34"
                   offsetFromSymbolStart = "2708">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "26FDB071-9821-417D-94A1-ED899BCAAF47"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BitcoinBlockExplorer/Data/LastBlockHeightData.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "getLastBlock()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "26FDB071-9821-417D-94A1-ED899BCAAF47 - 496e29272dcdf690"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BitcoinBlockExplorer.LastBlockData.getLastBlock() -&gt; ()"
-                  moduleName = "BitcoinBlockExplorer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vhparaujo/Documents/Developer-Academy/BitcoinBlockExplorer/BitcoinBlockExplorer/Data/LastBlockHeightData.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "1096">
-               </Location>
-               <Location
-                  uuid = "26FDB071-9821-417D-94A1-ED899BCAAF47 - 496e29272dcdf690"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BitcoinBlockExplorer.LastBlockData.getLastBlock() -&gt; ()"
-                  moduleName = "BitcoinBlockExplorer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vhparaujo/Documents/Developer-Academy/BitcoinBlockExplorer/BitcoinBlockExplorer/Data/LastBlockHeightData.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "1336">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A74686BA-CA3B-4C90-AB51-336F9B62BBE7"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BitcoinBlockExplorer/Data/LastBlockHeightData.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "getLastBlock()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A74686BA-CA3B-4C90-AB51-336F9B62BBE7 - 496e29272dcdf73d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BitcoinBlockExplorer.LastBlockData.getLastBlock() -&gt; ()"
-                  moduleName = "BitcoinBlockExplorer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vhparaujo/Documents/Developer-Academy/BitcoinBlockExplorer/BitcoinBlockExplorer/Data/LastBlockHeightData.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "516">
-               </Location>
-               <Location
-                  uuid = "A74686BA-CA3B-4C90-AB51-336F9B62BBE7 - 496e29272dcdf77b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BitcoinBlockExplorer.LastBlockData.getLastBlock() -&gt; ()"
-                  moduleName = "BitcoinBlockExplorer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vhparaujo/Documents/Developer-Academy/BitcoinBlockExplorer/BitcoinBlockExplorer/Data/LastBlockHeightData.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "528">
                </Location>
             </Locations>
          </BreakpointContent>
