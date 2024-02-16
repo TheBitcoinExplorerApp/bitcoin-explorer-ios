@@ -38,8 +38,9 @@ struct Status: Hashable, Codable {
   
   func formatTime(_ block_time: TimeInterval) -> String? {
           let dateFormatter = DateFormatter()
-          //dateFormatter.locale = Locale(identifier: "pt_BR")
-          dateFormatter.dateFormat = "dd/MM/yyyy  HH:mm"
+      dateFormatter.locale = .current
+      dateFormatter.dateStyle = .short
+      dateFormatter.timeStyle = .short
           
           let date = Date(timeIntervalSince1970: block_time)
           return dateFormatter.string(from: date)

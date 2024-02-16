@@ -58,7 +58,9 @@ struct EachAddress: View {
             
           }
         } else {
-          Text("Não encontrado").font(.system(size: 28)).foregroundColor(Color("cinza"))
+            Text(TransactionsTexts.naoEncontrado)
+                .font(.title)
+                .foregroundColor(Color.cinza)
         }
         
         ForEach(address.addressDatasHeader, id: \.self) { address in
@@ -104,7 +106,7 @@ struct EachAddress: View {
         }
         
         if addressTransactions.loading{
-          ProgressView()
+            ProgressView().scaleEffect(1.2)
         } else {
           
           ForEach(addressTransactions.addressDataTransactions, id: \.self) { addressTransaction in

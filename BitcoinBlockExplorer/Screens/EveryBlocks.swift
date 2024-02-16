@@ -40,12 +40,15 @@ struct EveryBlocks: View {
         VStack{
           
           HStack {
-            Text("Blocos").foregroundColor(Color("cinza")).bold().font(.system(size: 17))
+              Text(BlocksTexts.blocos)
+                  .foregroundColor(Color.cinza)
+                  .bold()
+                  .font(.headline)
             Spacer()
           }
           
           if blockData.loading {
-              ProgressView()
+              ProgressView().scaleEffect(1.2)
           } else {
             
             LazyVGrid(columns: colunas, spacing: 15) {
@@ -56,15 +59,25 @@ struct EveryBlocks: View {
                 } label: {
                   
                   VStack{
-                    let tamanho = String(format: "%.2f", (blocks.size / 1000000))
-                    Text("\(blocks.height)").foregroundColor(Color("laranja")).font(.system(size: 15))
-                    Text("~\(Int(blocks.extras.medianFee)) sat/vB").foregroundColor(Color("cinza")).font(.system(size: 12))
-                    Text("\(tamanho) MB").foregroundColor(Color("cinza")).font(.system(size: 12))
-                    Text("\(blocks.tx_count) transações").foregroundColor(Color("cinza")).font(.system(size: 12))
-                    Text("\(blocks.formatTimestamp(blocks.timestamp))").foregroundColor(Color("cinza")).font(.system(size: 12))
+                      let tamanho = String(format: "%.2f", (blocks.size / 1000000))
+                      
+                      Text("\(blocks.height)")
+                          .foregroundColor(Color.laranja)
+                          .font(.callout)
+                      Text("~\(Int(blocks.extras.medianFee)) \(Texts.satVb)")
+                          .foregroundColor(Color.cinza)
+                          .font(.footnote)
+                      Text("\(tamanho) \(BlocksTexts.MB)")
+                          .foregroundColor(Color.cinza)
+                          .font(.footnote)
+                      Text("\(blocks.tx_count) \(TransactionsTexts.transacoes)").foregroundColor(Color.cinza)
+                          .font(.footnote)
+                      Text("\(blocks.formatTimestamp(blocks.timestamp))")
+                          .foregroundColor(Color.cinza)
+                          .font(.footnote)
                   }.padding(.vertical)
                     .frame(maxWidth: .infinity, maxHeight: 109)
-                    .background(Color("caixas"))
+                    .background(Color.caixas)
                     .cornerRadius(7)
                   
                     .onTapGesture {
@@ -84,16 +97,24 @@ struct EveryBlocks: View {
           }
           
         }.padding()
-      }.scrollIndicators(.hidden)
+      }
+        
+      .task {
+        blockData.getBlockDatas(numberOfBlocks)
+      }
+        
+      .refreshable {
+          blockData.getBlockDatas(numberOfBlocks)
+      }
       
       // sheet of eachBlock
         .sheet(isPresented: $abrirModal) {
           EachBlock(timestamp: $timestamp,numberTransactions: $numberTransactions, blockMiner: $blockMiner, medianFee: $medianFee, blockSize: $blockSize, hashBlock: $hashBlock, heightBlock: $heightBlock, abrirModal: $abrirModal)
-            .presentationBackground(Color("azul"))
+                .presentationBackground(Color.azul)
         }
       
       // using the searchable and calling the .sheet EachTransaction here to make possible use the search too in this view
-        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Blocos, transações ou endereços") {
+        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: ToolbarTexts.searchPlaceholder) {
         }
         .onSubmit(of: .search) {
           
@@ -109,30 +130,29 @@ struct EveryBlocks: View {
         }
         .sheet(isPresented: $abrirModalAddress ) {
           EachAddress(addressSearch: $addressSearch, abrirModalAddress: $abrirModalAddress)
+                .presentationBackground(Color.azul)
         }
         .sheet(isPresented: $abrirModalTransaction) {
           EachTransaction(idTransacaoButton: $idTransacaoButton, idTransacaoSearch: $idTransacaoSearch, abrirModalTransaction: $abrirModalTransaction)
+                .presentationBackground(Color.azul)
         }
-      
-        .task {
-          blockData.getBlockDatas(numberOfBlocks)
-        }
-        
-        .refreshable(action: {
-            blockData.getBlockDatas(numberOfBlocks)
-        })
       
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
           ToolbarItem(placement: .navigationBarLeading) {
-            Image("bitcoinIcone").resizable().frame(width: 40, height: 40)
+              Image(ToolbarTexts.bitcoinIcone)
+                  .resizable()
+                  .frame(width: 40, height: 40)
           }
           ToolbarItem(placement: .principal) {
-            Text("Bitcoin Block Explorer").foregroundColor(Color("laranja")).bold().font(.system(size: 20))
+              Text(ToolbarTexts.titleOfTheApp)
+                  .foregroundColor(Color.laranja)
+                  .bold()
+                  .font(.title3)
           }
         }
-        .toolbarBackground(Color("azul"), for: .navigationBar)
-        .background(Color("azul"))
+        .toolbarBackground(Color.azul, for: .navigationBar)
+        .background(Color.azul)
     }
     
   }

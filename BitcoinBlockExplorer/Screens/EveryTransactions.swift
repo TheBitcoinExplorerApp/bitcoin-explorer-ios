@@ -8,66 +8,69 @@
 import SwiftUI
 
 struct EveryTransactions: View {
-  @StateObject var transactionData = TransactionData()
-  @StateObject var validateAddresses = Validate()
-  // using the search
-  @State var addressSearch: String = ""
-  @State var idTransacaoSearch: String = ""
-  @State var abrirModalTransaction: Bool = false
-  @State var abrirModalAddress: Bool = false
-  @State var idTransacaoButton: String = ""
-  @State var searchText: String = ""
-  
-  var body: some View {
+    @StateObject var transactionData = TransactionData()
+    @StateObject var validateAddresses = Validate()
+    // using the search
+    @State var addressSearch: String = ""
+    @State var idTransacaoSearch: String = ""
+    @State var abrirModalTransaction: Bool = false
+    @State var abrirModalAddress: Bool = false
+    @State var idTransacaoButton: String = ""
+    @State var searchText: String = ""
     
-    NavigationStack{
-      VStack{
-        ScrollView{
-          
-          BoxTransactions()
-          
-        }.scrollIndicators(.hidden)
-      }
-      .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Blocos, transações ou endereços") {
-      }
-      
-      .onSubmit(of: .search) {
-        if validateAddresses.isValidAddress(searchText){
-          addressSearch = searchText
-          abrirModalAddress.toggle()
-          
-        } else {
-          idTransacaoSearch = searchText
-          abrirModalTransaction.toggle()
+    var body: some View {
+        
+        NavigationStack{
+            
+            VStack {
+                BoxTransactions()
+            }
+            
+            .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: ToolbarTexts.searchPlaceholder) {
+            }
+            
+            .onSubmit(of: .search) {
+                if validateAddresses.isValidAddress(searchText){
+                    addressSearch = searchText
+                    abrirModalAddress.toggle()
+                    
+                } else {
+                    idTransacaoSearch = searchText
+                    abrirModalTransaction.toggle()
+                }
+            }
+            
+            .sheet(isPresented: $abrirModalAddress ) {
+                EachAddress(addressSearch: $addressSearch, abrirModalAddress: $abrirModalAddress)
+                    .presentationBackground(Color.azul)
+            }
+            .sheet(isPresented: $abrirModalTransaction) {
+                EachTransaction(idTransacaoButton: $idTransacaoButton, idTransacaoSearch: $idTransacaoSearch, abrirModalTransaction: $abrirModalTransaction)
+                    .presentationBackground(Color.azul)
+            }
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Image(ToolbarTexts.bitcoinIcone)
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                }
+                ToolbarItem(placement: .principal) {
+                    Text(ToolbarTexts.titleOfTheApp)
+                        .foregroundColor(Color.laranja)
+                        .bold()
+                        .font(.title3)
+                }
+            }
+            .toolbarBackground(Color.azul, for: .navigationBar)
+            .background(Color.azul)
+            
         }
-      }
-      
-      .sheet(isPresented: $abrirModalAddress ) {
-        EachAddress(addressSearch: $addressSearch, abrirModalAddress: $abrirModalAddress)
-      }
-      .sheet(isPresented: $abrirModalTransaction) {
-        EachTransaction(idTransacaoButton: $idTransacaoButton, idTransacaoSearch: $idTransacaoSearch, abrirModalTransaction: $abrirModalTransaction)
-      }
-      .navigationBarTitleDisplayMode(.inline)
-      .toolbar {
-        ToolbarItem(placement: .navigationBarLeading) {
-          Image("bitcoinIcone").resizable().frame(width: 40, height: 40)
-        }
-        ToolbarItem(placement: .principal) {
-          Text("Bitcoin Block Explorer").foregroundColor(Color("laranja")).bold().font(.system(size: 20))
-        }
-      }
-      .toolbarBackground(Color("azul"), for: .navigationBar)
-      .background(Color("azul"))
-
+        
     }
     
-  }
-  
 }
 
-struct EveryTransactions_Previews: PreviewProvider {
-  static var previews: some View {
+#Preview {
     EveryTransactions()
-  }
 }

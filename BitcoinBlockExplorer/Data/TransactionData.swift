@@ -28,7 +28,7 @@ class TransactionData: ObservableObject {
         }
       }
       catch let error {
-        print(error)
+          print(error.localizedDescription)
       }
       DispatchQueue.main.async {
           self.carregando = false
