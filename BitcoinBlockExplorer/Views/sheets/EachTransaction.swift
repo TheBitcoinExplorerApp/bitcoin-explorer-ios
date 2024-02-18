@@ -170,6 +170,7 @@ struct EachTransaction: View {
                                             if let prevoutDesembrulhado: Prevout = vin.prevout {
                                                 Text("\(String(prevoutDesembrulhado.scriptpubkey_address.prefix(15)))...")
                                                     .foregroundColor(Color.laranja)
+                                                    .lineLimit(1)
                                                     .font(.footnote)
                                                 Text("\(prevoutDesembrulhado.value / 100000000) BTC")
                                                     .foregroundColor(Color.cinza)
@@ -192,6 +193,7 @@ struct EachTransaction: View {
                                             if let scriptpubkey_address = transactions.vout[index].scriptpubkey_address {
                                                 Text("\(String(scriptpubkey_address.prefix(15)))...")
                                                     .foregroundColor(Color.laranja)
+                                                    .lineLimit(1)
                                                     .font(.footnote)
                                             } else {
                                                 Text(TransactionsTexts.coinbase)

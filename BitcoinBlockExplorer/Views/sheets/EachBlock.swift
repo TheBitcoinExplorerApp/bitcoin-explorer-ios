@@ -59,6 +59,7 @@ struct EachBlock: View {
                                 Text("\(String(hashBlock.prefix(25)))...")
                                     .foregroundColor(Color.laranja)
                                     .font(.callout)
+                                    .lineLimit(1)
                             }.padding()
                                 .background(Color.caixas)
                                 .cornerRadius(7)
@@ -170,6 +171,7 @@ struct EachBlock: View {
                                                 Text("\(String(prevoutDesembrulhado.scriptpubkey_address.prefix(15)))...")
                                                     .foregroundColor(Color.cinza)
                                                     .font(.footnote)
+                                                    .lineLimit(1)
                                                 Text("\(prevoutDesembrulhado.value / 100000000) BTC")
                                                     .foregroundColor(Color.cinza)
                                                     .font(.footnote)
@@ -192,6 +194,7 @@ struct EachBlock: View {
                                                 Text("\(String(scriptpubkey_address.prefix(15)))...")
                                                     .foregroundColor(Color.cinza)
                                                     .font(.footnote)
+                                                    .lineLimit(1)
                                             } else {
                                                 Text(TransactionsTexts.opReturn)
                                                     .foregroundColor(Color.cinza)

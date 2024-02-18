@@ -31,10 +31,22 @@ struct Home: View {
                                 .bold()
                                 .font(.headline)
                             
-                            HStack{
+                            HStack {
+                                
+                                Spacer()
+                                
                                 Text(HomeTexts.baixaPrioridade).foregroundColor(Color.cinza).font(.footnote)
+                                
+                                Spacer()
+                                
                                 Text(HomeTexts.mediaPrioridade).foregroundColor(Color.cinza).font(.footnote)
+                                
+                                Spacer()
+                                
                                 Text(HomeTexts.altaPrioridade).foregroundColor(Color.cinza).font(.footnote)
+                                
+                                Spacer()
+                                
                             }
                             .padding()
                             .frame(maxWidth: .infinity)

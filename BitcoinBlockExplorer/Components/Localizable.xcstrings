@@ -1,12 +1,12 @@
 {
-  "sourceLanguage" : "pt-BR",
+  "sourceLanguage" : "en",
   "strings" : {
     "%@" : {
 
     },
     "%@ %@" : {
       "localizations" : {
-        "pt-BR" : {
+        "en" : {
           "stringUnit" : {
             "state" : "new",
             "value" : "%1$@ %2$@"
@@ -28,7 +28,7 @@
     },
     "%lld %@" : {
       "localizations" : {
-        "pt-BR" : {
+        "en" : {
           "stringUnit" : {
             "state" : "new",
             "value" : "%1$lld %2$@"
@@ -38,7 +38,7 @@
     },
     "~%lld %@" : {
       "localizations" : {
-        "pt-BR" : {
+        "en" : {
           "stringUnit" : {
             "state" : "new",
             "value" : "~%1$lld %2$@"
@@ -60,6 +60,12 @@
             "state" : "translated",
             "value" : "Aguardando confirmação"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "等待确认"
+          }
         }
       }
     },
@@ -76,6 +82,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alta Prioridade"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "高优先级"
           }
         }
       }
@@ -94,6 +106,12 @@
             "state" : "translated",
             "value" : "Baixa Prioridade"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "低优先级"
+          }
         }
       }
     },
@@ -110,6 +128,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bloco"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "区块"
           }
         }
       }
@@ -128,6 +152,12 @@
             "state" : "translated",
             "value" : "Blocos"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "区块"
+          }
         }
       }
     },
@@ -141,6 +171,12 @@
           }
         },
         "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coinbase"
+          }
+        },
+        "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Coinbase"
@@ -162,6 +198,12 @@
             "state" : "translated",
             "value" : "confirmação"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "确认书"
+          }
         }
       }
     },
@@ -178,6 +220,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "confirmações"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "确认书"
           }
         }
       }
@@ -219,6 +267,12 @@
             "state" : "translated",
             "value" : "Endereço"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "地址"
+          }
         }
       }
     },
@@ -235,6 +289,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Entradas e Saídas"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "输入与输出"
           }
         }
       }
@@ -253,6 +313,12 @@
             "state" : "translated",
             "value" : "Hash"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "哈希值"
+          }
         }
       }
     },
@@ -268,6 +334,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Home"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "首页"
           }
         }
       }
@@ -286,11 +358,14 @@
             "state" : "translated",
             "value" : "ID transação"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "交易ID"
+          }
         }
       }
-    },
-    "Key" : {
-      "extractionState" : "manual"
     },
     "mediaPrioridade" : {
       "extractionState" : "manual",
@@ -305,6 +380,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Média Prioridade"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "中优先级"
           }
         }
       }
@@ -323,6 +404,12 @@
             "state" : "translated",
             "value" : "Minerador"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "矿工"
+          }
         }
       }
     },
@@ -339,6 +426,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Não confirmada"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未经证实"
           }
         }
       }
@@ -357,6 +450,12 @@
             "state" : "translated",
             "value" : "Não encontrado"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未找到"
+          }
         }
       }
     },
@@ -373,6 +472,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Saldo"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "余额"
           }
         }
       }
@@ -391,6 +496,12 @@
             "state" : "translated",
             "value" : "sat"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "聪"
+          }
         }
       }
     },
@@ -407,6 +518,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "sat/vB"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "聪/字节"
           }
         }
       }
@@ -425,6 +542,12 @@
             "state" : "translated",
             "value" : "Blocos, transações ou endereços"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "区块、交易或地址"
+          }
         }
       }
     },
@@ -441,6 +564,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tamanho"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大小"
           }
         }
       }
@@ -459,6 +588,12 @@
             "state" : "translated",
             "value" : "Taxa"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "手续费"
+          }
         }
       }
     },
@@ -475,6 +610,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Taxa mediana"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "中位矿工手续费"
           }
         }
       }
@@ -493,6 +634,12 @@
             "state" : "translated",
             "value" : "Taxas de transação"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "交易费用"
+          }
         }
       }
     },
@@ -509,6 +656,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Total Enviado"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "总发送量"
           }
         }
       }
@@ -527,6 +680,12 @@
             "state" : "translated",
             "value" : "Total Recebido"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "总接收量"
+          }
         }
       }
     },
@@ -543,6 +702,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Transação"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "交易"
           }
         }
       }
@@ -561,6 +726,12 @@
             "state" : "translated",
             "value" : "transações"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "个交易"
+          }
         }
       }
     },
@@ -578,6 +749,12 @@
             "state" : "translated",
             "value" : "Transações"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "交易"
+          }
         }
       }
     },
@@ -594,6 +771,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Valor"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "价值"
           }
         }
       }

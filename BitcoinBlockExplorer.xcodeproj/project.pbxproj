@@ -253,7 +253,7 @@
 			};
 			buildConfigurationList = 9BC226092A0C68CA0069FDEB /* Build configuration list for PBXProject "BitcoinBlockExplorer" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = "pt-BR";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				"pt-BR",

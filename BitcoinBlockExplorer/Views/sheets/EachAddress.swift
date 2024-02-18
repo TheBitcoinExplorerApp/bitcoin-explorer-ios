@@ -36,6 +36,7 @@ struct EachAddress: View {
                                     Spacer()
                                     Text("\(String(addressSearch.prefix(25)))...")
                                         .foregroundColor(Color.laranja)
+                                        .lineLimit(1)
                                         .font(.callout)
                                 }.padding()
                                     .background(Color.caixas)
@@ -119,6 +120,7 @@ struct EachAddress: View {
                                         
                                         Text("\(String(addressTransaction.txid.prefix(30)))...")
                                             .foregroundColor(Color.laranja)
+                                            .lineLimit(1)
                                             .font(.footnote)
                                         Spacer()
                                         
@@ -142,6 +144,7 @@ struct EachAddress: View {
                                             if let prevoutDesembrulhado: Prevout = vin.prevout {
                                                 Text("\(String(prevoutDesembrulhado.scriptpubkey_address.prefix(15)))...")
                                                     .foregroundColor(Color.cinza)
+                                                    .lineLimit(1)
                                                     .font(.footnote)
                                                 Text("\(prevoutDesembrulhado.value / 100000000) BTC")
                                                     .foregroundColor(Color.cinza)
@@ -164,6 +167,7 @@ struct EachAddress: View {
                                             if let scriptpubkey_address_saida = addressTransaction.vout[index].scriptpubkey_address {
                                                 Text("\(String(scriptpubkey_address_saida.prefix(15)))...")
                                                     .foregroundColor(Color.cinza)
+                                                    .lineLimit(1)
                                                     .font(.footnote)
                                             } else {
                                                 Text(TransactionsTexts.coinbase)
