@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @Binding var localCoin: Double
+    
     var body: some View {
         
         TabView{
@@ -23,6 +25,9 @@ struct ContentView: View {
             EveryTransactions().tabItem {
                 Label(TransactionsTexts.transacoesMaiusculo, systemImage: "rectangle.grid.1x2.fill")
             }.toolbarBackground(Color.azul, for: .tabBar)
+            ConfigurationsView().tabItem {
+                Label(Texts.configuracoes, systemImage: "gearshape.fill")
+            }.toolbarBackground(Color.azul, for: .tabBar)
         }
         .accentColor(Color.laranja)
         
@@ -31,6 +36,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(localCoin: .constant(0))
     }
 }

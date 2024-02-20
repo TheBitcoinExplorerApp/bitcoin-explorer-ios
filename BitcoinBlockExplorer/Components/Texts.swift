@@ -13,4 +13,6 @@ struct Texts {
     
     static let sat: String = String(localized: "sat")
     
+    static let configuracoes: String = String(localized: "configuracoes")
+    
 }

@@ -12,6 +12,12 @@
 		9B1243872A166AC000B9A4AF /* EachTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1243862A166AC000B9A4AF /* EachTransaction.swift */; };
 		9B12438B2A16BD6C00B9A4AF /* TransactionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B12438A2A16BD6C00B9A4AF /* TransactionsModel.swift */; };
 		9B12438D2A16C11C00B9A4AF /* BlockTransactionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B12438C2A16C11C00B9A4AF /* BlockTransactionData.swift */; };
+		9B2321E82B84E15A000BFBA9 /* CoinsPriceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2321E72B84E15A000BFBA9 /* CoinsPriceData.swift */; };
+		9B2321EA2B84E279000BFBA9 /* Coins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2321E92B84E279000BFBA9 /* Coins.swift */; };
+		9B2321EC2B84E3EB000BFBA9 /* CurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2321EB2B84E3EB000BFBA9 /* CurrencyView.swift */; };
+		9B2321EE2B84E967000BFBA9 /* FormatCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2321ED2B84E967000BFBA9 /* FormatCoin.swift */; };
+		9B2321F12B851181000BFBA9 /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2321F02B851181000BFBA9 /* Configurations.swift */; };
+		9B2321F32B851866000BFBA9 /* ConfigurationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2321F22B851866000BFBA9 /* ConfigurationsView.swift */; };
 		9B23E5DF2A51E6F9007045A6 /* LastBlockHeightData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B23E5DE2A51E6F9007045A6 /* LastBlockHeightData.swift */; };
 		9B27E7162A12A8D000E8036E /* FeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B27E7152A12A8D000E8036E /* FeeModel.swift */; };
 		9B2BC8E22A12C54700735A8D /* BlockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BC8E12A12C54700735A8D /* BlockModel.swift */; };
@@ -50,6 +56,12 @@
 		9B1243862A166AC000B9A4AF /* EachTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachTransaction.swift; sourceTree = "<group>"; };
 		9B12438A2A16BD6C00B9A4AF /* TransactionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsModel.swift; sourceTree = "<group>"; };
 		9B12438C2A16C11C00B9A4AF /* BlockTransactionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockTransactionData.swift; sourceTree = "<group>"; };
+		9B2321E72B84E15A000BFBA9 /* CoinsPriceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsPriceData.swift; sourceTree = "<group>"; };
+		9B2321E92B84E279000BFBA9 /* Coins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coins.swift; sourceTree = "<group>"; };
+		9B2321EB2B84E3EB000BFBA9 /* CurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyView.swift; sourceTree = "<group>"; };
+		9B2321ED2B84E967000BFBA9 /* FormatCoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatCoin.swift; sourceTree = "<group>"; };
+		9B2321F02B851181000BFBA9 /* Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
+		9B2321F22B851866000BFBA9 /* ConfigurationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationsView.swift; sourceTree = "<group>"; };
 		9B23E5DE2A51E6F9007045A6 /* LastBlockHeightData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastBlockHeightData.swift; sourceTree = "<group>"; };
 		9B27E7152A12A8D000E8036E /* FeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeeModel.swift; sourceTree = "<group>"; };
 		9B2BC8E12A12C54700735A8D /* BlockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockModel.swift; sourceTree = "<group>"; };
@@ -94,6 +106,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B2321EF2B85116D000BFBA9 /* SingletonConfigs */ = {
+			isa = PBXGroup;
+			children = (
+				9B2321F02B851181000BFBA9 /* Configurations.swift */,
+			);
+			path = SingletonConfigs;
+			sourceTree = "<group>";
+		};
 		9B27E7142A12A8B400E8036E /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +122,7 @@
 				9B2BC8F52A1548F900735A8D /* EveryTransactionsModel.swift */,
 				9B12438A2A16BD6C00B9A4AF /* TransactionsModel.swift */,
 				9B4372702A1CE88900DFE211 /* AddressHeaderModel.swift */,
+				9B2321E92B84E279000BFBA9 /* Coins.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -117,6 +138,7 @@
 				9B43726E2A1CE66000DFE211 /* AddressDataHeader.swift */,
 				9B4372752A1D2C1800DFE211 /* AddressDataTransactions.swift */,
 				9B23E5DE2A51E6F9007045A6 /* LastBlockHeightData.swift */,
+				9B2321E72B84E15A000BFBA9 /* CoinsPriceData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -138,6 +160,8 @@
 				9B2BC8ED2A13F70600735A8D /* EveryTransactions.swift */,
 				9B2BC8EF2A13F72A00735A8D /* EveryBlocks.swift */,
 				9B2BC8F12A13FE5900735A8D /* Home.swift */,
+				9B2321EB2B84E3EB000BFBA9 /* CurrencyView.swift */,
+				9B2321F22B851866000BFBA9 /* ConfigurationsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -168,12 +192,13 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		9B4372722A1CFD5B00DFE211 /* FunctionsValidators */ = {
+		9B4372722A1CFD5B00DFE211 /* Functions */ = {
 			isa = PBXGroup;
 			children = (
 				9B4372732A1CFD7600DFE211 /* ValidateSearch.swift */,
+				9B2321ED2B84E967000BFBA9 /* FormatCoin.swift */,
 			);
-			path = FunctionsValidators;
+			path = Functions;
 			sourceTree = "<group>";
 		};
 		9BC226052A0C68CA0069FDEB = {
@@ -195,8 +220,9 @@
 		9BC226102A0C68CA0069FDEB /* BitcoinBlockExplorer */ = {
 			isa = PBXGroup;
 			children = (
+				9B2321EF2B85116D000BFBA9 /* SingletonConfigs */,
 				9B3852D22B7C2A3700E2D576 /* Components */,
-				9B4372722A1CFD5B00DFE211 /* FunctionsValidators */,
+				9B4372722A1CFD5B00DFE211 /* Functions */,
 				9B2BC8EC2A13F6D000735A8D /* Views */,
 				9B2BC8E82A13F07D00735A8D /* ViewComponents */,
 				9B2BC8E32A12D19800735A8D /* Data */,
@@ -292,6 +318,8 @@
 				9B3852DA2B7C39C300E2D576 /* Extensions.swift in Sources */,
 				9B2BC8F62A1548F900735A8D /* EveryTransactionsModel.swift in Sources */,
 				9B1243852A165BF700B9A4AF /* BoxTransactions.swift in Sources */,
+				9B2321EA2B84E279000BFBA9 /* Coins.swift in Sources */,
+				9B2321EE2B84E967000BFBA9 /* FormatCoin.swift in Sources */,
 				9B2BC8F42A15487900735A8D /* TransactionData.swift in Sources */,
 				9B1243832A16579700B9A4AF /* BoxBlocks.swift in Sources */,
 				9B4372712A1CE88900DFE211 /* AddressHeaderModel.swift in Sources */,
@@ -303,11 +331,14 @@
 				9BC226142A0C68CA0069FDEB /* ContentView.swift in Sources */,
 				9B4372742A1CFD7600DFE211 /* ValidateSearch.swift in Sources */,
 				9B1243872A166AC000B9A4AF /* EachTransaction.swift in Sources */,
+				9B2321F12B851181000BFBA9 /* Configurations.swift in Sources */,
 				9B2BC8F02A13F72A00735A8D /* EveryBlocks.swift in Sources */,
 				9B2BC8F22A13FE5900735A8D /* Home.swift in Sources */,
 				9B27E7162A12A8D000E8036E /* FeeModel.swift in Sources */,
+				9B2321F32B851866000BFBA9 /* ConfigurationsView.swift in Sources */,
 				9BC226122A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift in Sources */,
 				9B5689F12B7D178E0009A751 /* TransactionsTexts.swift in Sources */,
+				9B2321EC2B84E3EB000BFBA9 /* CurrencyView.swift in Sources */,
 				9B12438B2A16BD6C00B9A4AF /* TransactionsModel.swift in Sources */,
 				9BD1541D2B7F9DB200C736DB /* AddressTexts.swift in Sources */,
 				9B4BE3642A17BBA000050C33 /* EachTransactionData.swift in Sources */,
@@ -319,6 +350,7 @@
 				9B43726F2A1CE66000DFE211 /* AddressDataHeader.swift in Sources */,
 				9B2BC8EE2A13F70600735A8D /* EveryTransactions.swift in Sources */,
 				9B2BC8E52A12D1B500735A8D /* FeeData.swift in Sources */,
+				9B2321E82B84E15A000BFBA9 /* CoinsPriceData.swift in Sources */,
 				9BD1541F2B7FA3E300C736DB /* ContentViewTexts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

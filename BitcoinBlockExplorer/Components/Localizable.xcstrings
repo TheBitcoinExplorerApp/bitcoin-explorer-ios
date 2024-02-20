@@ -20,6 +20,9 @@
     "%d B" : {
 
     },
+    "%lf" : {
+
+    },
     "%lf BTC" : {
 
     },
@@ -180,6 +183,29 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Coinbase"
+          }
+        }
+      }
+    },
+    "configuracoes" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configurações"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设置"
           }
         }
       }
