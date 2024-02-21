@@ -10,11 +10,6 @@ import SwiftUI
 struct Home: View {
     @StateObject var validateAddresses = Validate()
     @StateObject var feeData = FeeData()
-    
-    @StateObject var coins = CoinsPriceData()
-    
-    let configs = Configurations.shared
-    
     @State var addressSearch: String = ""
     @State var idTransacaoSearch: String = ""
     @State var abrirModalAddress: Bool = false
@@ -30,8 +25,12 @@ struct Home: View {
                 
                 ScrollView{
                     
-                    CurrencyView(rate: 1)
-                        .font(.title2)
+                    HStack{
+                        CurrencyViewComponent(rate: 1)
+                            .font(.headline)
+                    }.padding()
+                        .background(Color.caixas)
+                        .cornerRadius(7)
                     
                     VStack{
                         VStack{
@@ -70,7 +69,7 @@ struct Home: View {
                                     VStack{
                                         Text("\(fee.hourFee) \(Texts.satVb)").foregroundColor(Color.cinza)
                                             .font(.footnote)
-                                       
+                                        
                                     }.padding()
                                         .background(Color.caixas).cornerRadius(7)
                                     
@@ -101,7 +100,6 @@ struct Home: View {
             }
             
             .task {
-                coins.getCoinPrice(configs.currency)
                 feeData.getFees()
             }
             

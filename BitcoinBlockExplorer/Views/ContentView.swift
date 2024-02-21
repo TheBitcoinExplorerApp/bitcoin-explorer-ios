@@ -9,8 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @Binding var localCoin: Double
-    
     var body: some View {
         
         TabView{
@@ -36,6 +34,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(localCoin: .constant(0))
+        ContentView()
     }
 }

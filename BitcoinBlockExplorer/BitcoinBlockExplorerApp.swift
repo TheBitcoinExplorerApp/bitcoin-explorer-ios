@@ -11,7 +11,7 @@ import SwiftUI
 struct BitcoinBlockExplorerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(localCoin: .constant(0)).preferredColorScheme(.dark)
+            ContentView().preferredColorScheme(.dark)
         }
     }
 }

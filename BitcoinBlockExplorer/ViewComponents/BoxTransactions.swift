@@ -13,10 +13,6 @@ struct BoxTransactions: View {
     @State var idTransacaoSearch: String = ""
     @State var abrirModalTransaction: Bool = false
     
-    @StateObject var coins = CoinsPriceData()
-    
-    let configs = Configurations.shared
-    
     var body: some View {
         ScrollView(.vertical){
             
@@ -58,12 +54,15 @@ struct BoxTransactions: View {
                                         .font(.footnote)
                                         .foregroundColor(Color.cinza)
                                     Spacer()
+                                    Spacer()
                                     let value = transactions.value / 100000000
+                                    
                                     Text("\(value) BTC")
                                         .font(.footnote)
                                         .foregroundColor(Color.cinza)
-                                    CurrencyView(rate: value)
-                                        .font(.footnote)
+                                    
+//                                    CurrencyView(rate: value)
+//                                        .font(.caption)
                                     Spacer()
                                 }
                                 
@@ -103,11 +102,6 @@ struct BoxTransactions: View {
         }
         
         .task {
-            transactionData.getTransactionData()
-            coins.getCoinPrice(configs.currency)
-        }
-        
-        .refreshable {
             transactionData.getTransactionData()
         }
         

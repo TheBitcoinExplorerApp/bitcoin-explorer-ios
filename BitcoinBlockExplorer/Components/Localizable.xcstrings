@@ -20,9 +20,6 @@
     "%d B" : {
 
     },
-    "%lf" : {
-
-    },
     "%lf BTC" : {
 
     },
@@ -255,6 +252,9 @@
           }
         }
       }
+    },
+    "Currency" : {
+
     },
     "data/hora" : {
       "extractionState" : "manual",
