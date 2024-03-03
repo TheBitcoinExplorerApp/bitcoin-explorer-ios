@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct ConfigurationsView: View {
-
+    
     @State var selected = 0
     
     let configs = Configurations.shared
     
     let currencies = ["🇺🇸 USD", "🇪🇺 EUR", "🇬🇧 GBP", "🇨🇦 CAD", "🇨🇭 CHF", "🇦🇺 AUD", "🇯🇵 JPY"]
-
+    
     var body: some View {
+        
         NavigationStack {
             
             Form {
@@ -28,17 +29,20 @@ struct ConfigurationsView: View {
                         
                     }.onChange(of: selected) { newValue in
                         configs.currency1 = newValue
+                        
                         print(" teste" , configs.currency1 )
                     }
-                       
-                }
+                    
+                }.listRowBackground(Color.caixas)
             }
+            
             .navigationTitle(Texts.configuracoes)
-        
+            .background(Color.azul)
+            .scrollContentBackground(.hidden)
+            
         }
+        
     }
-    
-    
 }
 
 #Preview {

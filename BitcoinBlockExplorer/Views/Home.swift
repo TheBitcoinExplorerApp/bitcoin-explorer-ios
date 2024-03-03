@@ -17,6 +17,8 @@ struct Home: View {
     @State var idTransacaoButton: String = ""
     @State var searchText = ""
     
+    let configs = Configurations.shared
+    
     var body: some View {
         
         NavigationStack{
@@ -26,6 +28,7 @@ struct Home: View {
                 ScrollView{
                     
                     HStack{
+                        Text(configs.flag ?? "")
                         CurrencyViewComponent(rate: 1)
                             .font(.headline)
                     }.padding()

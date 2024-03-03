@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CurrencyViewComponent: View {
     
-    @State var value: Double = 40
+    @State var value: Double = 0
     
     @State var configView: ConfigurationsView?
     
@@ -20,9 +20,9 @@ struct CurrencyViewComponent: View {
     var body: some View {
         VStack{
             
-            
             let priceFinal = rate * (value)
-            let currentCoin = formatCoin(priceFinal, symbol: "$")
+            let currentCoin = formatCoin(priceFinal, symbol: configs.symbol ?? "")
+            
             Text("\(currentCoin)")
                 .foregroundStyle(Color.laranja)
             

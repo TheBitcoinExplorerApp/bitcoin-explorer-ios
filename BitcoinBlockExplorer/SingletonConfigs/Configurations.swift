@@ -12,6 +12,8 @@ class Configurations {
     static let shared = Configurations()
     
     var coins: Coins?
+    var symbol: String?
+    var flag: String?
     
     var currency1: Int = 0
     
@@ -22,9 +24,33 @@ class Configurations {
             coins = try await getCoinPrice()
             
             if currency1 == 0 {
-                return coins?.USD ?? 320
+                self.symbol = "$"
+                self.flag = "🇺🇸"
+                return coins?.USD ?? 0
             } else if currency1 == 1 {
-                return coins?.EUR ?? 56
+                self.symbol = "$"
+                self.flag = "🇪🇺"
+                return coins?.EUR ?? 0
+            } else if currency1 == 2 {
+                self.symbol = "$"
+                self.flag = "🇬🇧"
+                return coins?.GBP ?? 0
+            } else if currency1 == 3 {
+                self.symbol = "$"
+                self.flag = "🇨🇦"
+                return coins?.CAD ?? 0
+            } else if currency1 == 4 {
+                self.symbol = "$"
+                self.flag = "🇨🇭"
+                return coins?.CHF ?? 0
+            } else if currency1 == 5 { 
+                self.symbol = "$"
+                self.flag = "🇦🇺"
+                return coins?.AUD ?? 0
+            } else if currency1 == 6 {
+                self.symbol = "$"
+                self.flag = "🇯🇵"
+                return coins?.JPY ?? 0
             }
             
         } catch GHError.invalidURL {
@@ -37,7 +63,7 @@ class Configurations {
             print("Erro inesperado")
         }
         
-        return 50
+        return 0
     }
     
 }
