@@ -20,8 +20,8 @@ struct ConfigurationsView: View {
         NavigationStack {
             
             Form {
-                Section{
-                    Picker(selection: $selected, label: Text("Currency")){
+                Section(Texts.chooseCurrency) {
+                    Picker(selection: $selected, label: Text(Texts.currencyLabel)) {
                         
                         ForEach(0 ..< self.currencies.count) { index in
                             Text(self.currencies[index]).tag(index)
@@ -29,14 +29,13 @@ struct ConfigurationsView: View {
                         
                     }.onChange(of: selected) { newValue in
                         configs.currency1 = newValue
-                        
-                        print(" teste" , configs.currency1 )
                     }
                     
                 }.listRowBackground(Color.caixas)
             }
             
             .navigationTitle(Texts.configuracoes)
+            .navigationBarTitleColor(Color.laranja)
             .background(Color.azul)
             .scrollContentBackground(.hidden)
             

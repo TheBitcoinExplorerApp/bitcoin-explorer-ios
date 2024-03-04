@@ -161,6 +161,23 @@
         }
       }
     },
+    "chooseCurrency" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose the currency"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escolha a moeda"
+          }
+        }
+      }
+    },
     "coinbase" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -253,8 +270,22 @@
         }
       }
     },
-    "Currency" : {
-
+    "currencyLabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Currency"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Moeda"
+          }
+        }
+      }
     },
     "data/hora" : {
       "extractionState" : "manual",

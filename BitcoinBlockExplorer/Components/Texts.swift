@@ -15,4 +15,8 @@ struct Texts {
     
     static let configuracoes: String = String(localized: "configuracoes")
     
+    static let currencyLabel: String = String(localized: "currencyLabel")
+    
+    static let chooseCurrency: String = String(localized: "chooseCurrency")
+    
 }

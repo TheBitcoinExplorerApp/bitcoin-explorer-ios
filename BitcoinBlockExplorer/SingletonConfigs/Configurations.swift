@@ -28,11 +28,11 @@ class Configurations {
                 self.flag = "🇺🇸"
                 return coins?.USD ?? 0
             } else if currency1 == 1 {
-                self.symbol = "$"
+                self.symbol = "€"
                 self.flag = "🇪🇺"
                 return coins?.EUR ?? 0
             } else if currency1 == 2 {
-                self.symbol = "$"
+                self.symbol = "£"
                 self.flag = "🇬🇧"
                 return coins?.GBP ?? 0
             } else if currency1 == 3 {
@@ -40,7 +40,7 @@ class Configurations {
                 self.flag = "🇨🇦"
                 return coins?.CAD ?? 0
             } else if currency1 == 4 {
-                self.symbol = "$"
+                self.symbol = "CHF"
                 self.flag = "🇨🇭"
                 return coins?.CHF ?? 0
             } else if currency1 == 5 { 
@@ -48,7 +48,7 @@ class Configurations {
                 self.flag = "🇦🇺"
                 return coins?.AUD ?? 0
             } else if currency1 == 6 {
-                self.symbol = "$"
+                self.symbol = "¥"
                 self.flag = "🇯🇵"
                 return coins?.JPY ?? 0
             }
