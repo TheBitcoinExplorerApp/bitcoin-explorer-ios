@@ -175,6 +175,12 @@
             "state" : "translated",
             "value" : "Escolha a moeda"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择货币"
+          }
         }
       }
     },
@@ -283,6 +289,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Moeda"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "货币"
           }
         }
       }

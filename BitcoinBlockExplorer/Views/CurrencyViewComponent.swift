@@ -10,9 +10,7 @@ import SwiftUI
 struct CurrencyViewComponent: View {
     
     @State var value: Double = 0
-    
-    @State var configView: ConfigurationsView?
-    
+        
     var rate: Double
     
     let configs = Configurations.shared

@@ -33,11 +33,11 @@ struct Home: View {
                             .font(.headline)
                     }.padding()
                         .background(Color.caixas)
-                        .cornerRadius(7)
+                        .clipShape(RoundedRectangle(cornerRadius: 7))
                     
                     VStack{
                         VStack{
-                            Text(HomeTexts.taxasDeTransacao).foregroundColor(Color.cinza)
+                            Text(HomeTexts.taxasDeTransacao).foregroundStyle(Color.cinza)
                                 .bold()
                                 .font(.headline)
                             
@@ -45,15 +45,15 @@ struct Home: View {
                                 
                                 Spacer()
                                 
-                                Text(HomeTexts.baixaPrioridade).foregroundColor(Color.cinza).font(.footnote)
+                                Text(HomeTexts.baixaPrioridade).foregroundStyle(Color.cinza).font(.footnote)
                                 
                                 Spacer()
                                 
-                                Text(HomeTexts.mediaPrioridade).foregroundColor(Color.cinza).font(.footnote)
+                                Text(HomeTexts.mediaPrioridade).foregroundStyle(Color.cinza).font(.footnote)
                                 
                                 Spacer()
                                 
-                                Text(HomeTexts.altaPrioridade).foregroundColor(Color.cinza).font(.footnote)
+                                Text(HomeTexts.altaPrioridade).foregroundStyle(Color.cinza).font(.footnote)
                                 
                                 Spacer()
                                 
@@ -70,20 +70,20 @@ struct Home: View {
                                 HStack(spacing: 17) {
                                     
                                     VStack{
-                                        Text("\(fee.hourFee) \(Texts.satVb)").foregroundColor(Color.cinza)
+                                        Text("\(fee.hourFee) \(Texts.satVb)").foregroundStyle(Color.cinza)
                                             .font(.footnote)
                                         
                                     }.padding()
                                         .background(Color.caixas).cornerRadius(7)
                                     
                                     VStack{
-                                        Text("\(fee.halfHourFee) \(Texts.satVb)").foregroundColor(Color.cinza)
+                                        Text("\(fee.halfHourFee) \(Texts.satVb)").foregroundStyle(Color.cinza)
                                             .font(.footnote)
                                     }.padding()
                                         .background(Color.caixas).cornerRadius(7)
                                     
                                     VStack{
-                                        Text("\(fee.fastestFee) \(Texts.satVb)").foregroundColor(Color.cinza)
+                                        Text("\(fee.fastestFee) \(Texts.satVb)").foregroundStyle(Color.cinza)
                                             .font(.footnote)
                                     }.padding()
                                         .background(Color.caixas).cornerRadius(7)
@@ -141,7 +141,7 @@ struct Home: View {
                 }
                 ToolbarItem(placement: .principal) {
                     Text(ToolbarTexts.titleOfTheApp)
-                        .foregroundColor(Color.laranja)
+                        .foregroundStyle(Color.laranja)
                         .bold()
                         .font(.title3)
                 }
