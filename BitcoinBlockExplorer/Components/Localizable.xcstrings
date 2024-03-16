@@ -115,6 +115,29 @@
         }
       }
     },
+    "bitcoinPrice" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitcoin Price"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Preço do Bitcoin"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "比特币价格"
+          }
+        }
+      }
+    },
     "blocoMaiusculo" : {
       "extractionState" : "manual",
       "localizations" : {

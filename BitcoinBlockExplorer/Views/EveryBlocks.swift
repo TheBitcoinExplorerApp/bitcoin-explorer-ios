@@ -103,10 +103,6 @@ struct EveryBlocks: View {
                 blockData.getBlockDatas(numberOfBlocks)
             }
             
-            .refreshable {
-                blockData.getBlockDatas(numberOfBlocks)
-            }
-            
             // sheet of eachBlock
             .sheet(isPresented: $abrirModal) {
                 EachBlock(timestamp: $timestamp,numberTransactions: $numberTransactions, blockMiner: $blockMiner, medianFee: $medianFee, blockSize: $blockSize, hashBlock: $hashBlock, heightBlock: $heightBlock, abrirModal: $abrirModal)

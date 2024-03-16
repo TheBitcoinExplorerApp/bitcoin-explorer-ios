@@ -32,23 +32,23 @@ struct EachTransaction: View {
                             VStack{
                                 HStack{
                                     Text(TransactionsTexts.transacaoMaiusculo)
-                                        .foregroundColor(Color.cinza)
+                                        .foregroundStyle(Color.cinza)
                                         .font(.callout)
                                     Spacer()
                                     if(idTransacaoButton == "") {
                                         Text("\(String(idTransacaoSearch.prefix(25)))...")
-                                            .foregroundColor(Color.laranja)
+                                            .foregroundStyle(Color.laranja)
                                             .font(.callout)
                                             .lineLimit(1)
                                     } else {
                                         Text("\(String(idTransacaoButton.prefix(25)))...")
-                                            .foregroundColor(Color.laranja)
+                                            .foregroundStyle(Color.laranja)
                                             .font(.callout)
                                             .lineLimit(1)
                                     }
                                 }.padding()
                                     .background(Color.caixas)
-                                    .cornerRadius(7)
+                                    .clipShape(RoundedRectangle(cornerRadius: 7))
                             }.padding(.horizontal)
                             
                         }
@@ -56,7 +56,7 @@ struct EachTransaction: View {
                     } else {
                         Text(TransactionsTexts.naoEncontrado)
                             .font(.title)
-                            .foregroundColor(Color.cinza)
+                            .foregroundStyle(Color.cinza)
                     }
                     
                     if transaction.loading{
@@ -71,14 +71,14 @@ struct EachTransaction: View {
                                     VStack{
                                         HStack{
                                             Text(BlocksTexts.blocoMaiusculo)
-                                                .foregroundColor(Color.cinza)
+                                                .foregroundStyle(Color.cinza)
                                                 .font(.callout)
                                             Text("\(blockHeightDesembrulhado)")
-                                                .foregroundColor(Color.cinza)
+                                                .foregroundStyle(Color.cinza)
                                                 .font(.callout)
                                         }.padding()
                                             .background(Color.caixas)
-                                            .cornerRadius(7)
+                                            .clipShape(RoundedRectangle(cornerRadius: 7))
                                     }.padding(.horizontal)
                                     
                                 } else {
@@ -93,16 +93,16 @@ struct EachTransaction: View {
                                             let confirmacoes = lastBlock.lastBlock - transactions.status.block_height! + 1
                                             let mensagem = confirmacoes > 1 ? TransactionsTexts.confirmacoes : TransactionsTexts.confirmacao
                                             Text("\(String(confirmacoes)) \(mensagem)")
-                                                .foregroundColor(Color.cinza)
+                                                .foregroundStyle(Color.cinza)
                                                 .font(.callout)
                                         } else {
                                             Text(TransactionsTexts.naoConfirmada)
-                                                .foregroundColor(Color.cinza)
+                                                .foregroundStyle(Color.cinza)
                                                 .font(.callout)
                                         }
                                     }.padding()
                                         .background(Color.caixas)
-                                        .cornerRadius(7)
+                                        .clipShape(RoundedRectangle(cornerRadius: 7))
                                 }.padding(.horizontal)
                                 
                             }
@@ -111,16 +111,16 @@ struct EachTransaction: View {
                                 VStack{
                                     HStack{
                                         Text(BlocksTexts.dataEHora)
-                                            .foregroundColor(Color.cinza)
+                                            .foregroundStyle(Color.cinza)
                                             .font(.callout)
                                         Spacer()
                                         if let blockTimeDesembrulhado = transactions.status.block_time, let formattedTime = transactions.status.formatTime(blockTimeDesembrulhado) {
                                             Text("\(formattedTime)")
-                                                .foregroundColor(Color.laranja)
+                                                .foregroundStyle(Color.laranja)
                                                 .font(.callout)
                                         } else {
                                             Text(TransactionsTexts.aguardandoConfirmacao)
-                                                .foregroundColor(Color.laranja)
+                                                .foregroundStyle(Color.laranja)
                                                 .font(.callout)
                                         }
                                     }
@@ -129,11 +129,11 @@ struct EachTransaction: View {
                                     
                                     HStack{
                                         Text(BlocksTexts.tamanhoMaiusculo)
-                                            .foregroundColor(Color.cinza)
+                                            .foregroundStyle(Color.cinza)
                                             .font(.callout)
                                         Spacer()
                                         Text("\(transactions.size) B")
-                                            .foregroundColor(Color.laranja)
+                                            .foregroundStyle(Color.laranja)
                                             .font(.callout)
                                     }
                                     
@@ -141,22 +141,31 @@ struct EachTransaction: View {
                                     
                                     HStack{
                                         Text(TransactionsTexts.taxaMaiusculo)
-                                            .foregroundColor(Color.cinza)
+                                            .foregroundStyle(Color.cinza)
                                             .font(.callout)
                                         Spacer()
-                                        Text("\(transactions.fee / 100000000) BTC")
-                                            .foregroundColor(Color.laranja)
-                                            .font(.callout)
+                                        
+                                        let fee = transactions.fee / 100000000
+                                        
+                                        VStack{
+                                            Text("\(fee) BTC")
+                                                .foregroundStyle(Color.laranja)
+                                                .font(.callout)
+                                            
+                                            CurrencyViewComponent(rate: fee)
+                                                .font(.footnote)
+                                                .foregroundStyle(Color.cinza)
+                                        }
                                     }
                                     
                                 }.padding()
                                     .background(Color.caixas)
-                                    .cornerRadius(7)
+                                    .clipShape(RoundedRectangle(cornerRadius: 7))
                             }.padding(.horizontal)
                             
                             HStack{
                                 Text(TransactionsTexts.entradasESaidas)
-                                    .foregroundColor(Color.cinza)
+                                    .foregroundStyle(Color.cinza)
                                     .font(.callout)
                                 Spacer()
                             }.padding(.top)
@@ -169,15 +178,23 @@ struct EachTransaction: View {
                                         ForEach(transactions.vin, id: \.self) { vin in
                                             if let prevoutDesembrulhado: Prevout = vin.prevout {
                                                 Text("\(String(prevoutDesembrulhado.scriptpubkey_address.prefix(15)))...")
-                                                    .foregroundColor(Color.laranja)
+                                                    .foregroundStyle(Color.laranja)
                                                     .lineLimit(1)
                                                     .font(.footnote)
-                                                Text("\(prevoutDesembrulhado.value / 100000000) BTC")
-                                                    .foregroundColor(Color.cinza)
+                                                
+                                                let pValue = prevoutDesembrulhado.value / 100000000
+                                                
+                                                Text("\(pValue) BTC")
+                                                    .foregroundStyle(Color.cinza)
                                                     .font(.footnote)
+                                                
+                                                CurrencyViewComponent(rate: pValue)
+                                                    .font(.caption)
+                                                    .foregroundStyle(Color.laranja)
+                                                
                                             } else {
                                                 Text(TransactionsTexts.coinbase)
-                                                    .foregroundColor(Color.cinza)
+                                                    .foregroundStyle(Color.cinza)
                                                     .font(.footnote)
                                             }
                                         }
@@ -185,32 +202,38 @@ struct EachTransaction: View {
                                     
                                     Spacer()
                                     Image(TransactionsTexts.setinha)
-                                        .foregroundColor(Color.cinza)
+                                        .foregroundStyle(Color.cinza)
                                     Spacer()
                                     
                                     VStack {
                                         ForEach(transactions.vout.indices, id: \.self) { index in
                                             if let scriptpubkey_address = transactions.vout[index].scriptpubkey_address {
                                                 Text("\(String(scriptpubkey_address.prefix(15)))...")
-                                                    .foregroundColor(Color.laranja)
+                                                    .foregroundStyle(Color.laranja)
                                                     .lineLimit(1)
                                                     .font(.footnote)
                                             } else {
                                                 Text(TransactionsTexts.coinbase)
-                                                    .foregroundColor(Color.cinza)
+                                                    .foregroundStyle(Color.cinza)
                                                     .font(.footnote)
                                             }
                                             
-                                            Text("\(transactions.vout[index].value / 100000000) BTC")
-                                                .foregroundColor(Color.cinza)
+                                            let value = transactions.vout[index].value / 100000000
+                                            
+                                            Text("\(value) BTC")
+                                                .foregroundStyle(Color.cinza)
                                                 .font(.footnote)
+                                            
+                                            CurrencyViewComponent(rate: value)
+                                                .font(.caption)
+                                                .foregroundStyle(Color.laranja)
                                             
                                         }
                                     }
                                     
                                 }.padding()
                                     .background(Color.caixas)
-                                    .cornerRadius(7)
+                                    .clipShape(RoundedRectangle(cornerRadius: 7))
                             }.padding(.horizontal)
                             
                         }
@@ -237,20 +260,20 @@ struct EachTransaction: View {
                     } label: {
                         Circle()
                             .fill()
-                            .foregroundColor(Color.cinza)
+                            .foregroundStyle(Color.cinza)
                             .frame(width: 30, height: 30)
                             .overlay() {
                                 Text("X")
                                     .clipShape(Circle())
                                     .font(.system(size: 22.5))
-                                    .foregroundColor(Color.laranja)
+                                    .foregroundStyle(Color.laranja)
                             }
                     }
                 }
                 
                 ToolbarItem(placement: .principal) {
                     Text(TransactionsTexts.transacaoMaiusculo)
-                        .foregroundColor(Color.cinza)
+                        .foregroundStyle(Color.cinza)
                         .bold()
                         .font(.headline)
                 }

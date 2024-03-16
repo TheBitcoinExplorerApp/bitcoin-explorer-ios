@@ -19,6 +19,10 @@ struct Home: View {
     
     let configs = Configurations.shared
     
+    func calculateValuePerSatvB(_ value: Int) -> Double {
+        return Double(value * 140) / 100000000
+    }
+    
     var body: some View {
         
         NavigationStack{
@@ -27,10 +31,16 @@ struct Home: View {
                 
                 ScrollView{
                     
+                    Text(HomeTexts.bitcoinPrice)
+                        .foregroundStyle(Color.cinza)
+                        .font(.headline)
+                    
                     HStack{
                         Text(configs.flag ?? "")
+                        
                         CurrencyViewComponent(rate: 1)
                             .font(.headline)
+                            .foregroundStyle(Color.laranja)
                     }.padding()
                         .background(Color.caixas)
                         .clipShape(RoundedRectangle(cornerRadius: 7))
@@ -70,21 +80,44 @@ struct Home: View {
                                 HStack(spacing: 17) {
                                     
                                     VStack{
+                                        
+                                        let valueHourFee =  calculateValuePerSatvB(fee.hourFee)
+  
                                         Text("\(fee.hourFee) \(Texts.satVb)").foregroundStyle(Color.cinza)
                                             .font(.footnote)
+                                        
+                                        CurrencyViewComponent(rate: valueHourFee)
+                                            .font(.caption)
+                                            .foregroundStyle(Color.laranja)
                                         
                                     }.padding()
                                         .background(Color.caixas).cornerRadius(7)
                                     
                                     VStack{
+                                        
+                                        let halfHourFee = calculateValuePerSatvB(fee.halfHourFee)
+                                        
                                         Text("\(fee.halfHourFee) \(Texts.satVb)").foregroundStyle(Color.cinza)
                                             .font(.footnote)
+                                        
+                                        CurrencyViewComponent(rate: halfHourFee)
+                                            .font(.caption)
+                                            .foregroundStyle(Color.laranja)
+                                        
                                     }.padding()
                                         .background(Color.caixas).cornerRadius(7)
                                     
                                     VStack{
+                                        
+                                        let fastestFee = calculateValuePerSatvB(fee.fastestFee)
+                                        
                                         Text("\(fee.fastestFee) \(Texts.satVb)").foregroundStyle(Color.cinza)
                                             .font(.footnote)
+                                        
+                                        CurrencyViewComponent(rate: fastestFee)
+                                            .font(.caption)
+                                            .foregroundStyle(Color.laranja)
+                                        
                                     }.padding()
                                         .background(Color.caixas).cornerRadius(7)
                                 }

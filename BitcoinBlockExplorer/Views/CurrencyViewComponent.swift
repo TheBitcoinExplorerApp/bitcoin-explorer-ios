@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CurrencyViewComponent: View {
     
+    // Bitcoin value
     @State var value: Double = 0
         
     var rate: Double
@@ -22,7 +23,6 @@ struct CurrencyViewComponent: View {
             let currentCoin = formatCoin(priceFinal, symbol: configs.symbol ?? "")
             
             Text("\(currentCoin)")
-                .foregroundStyle(Color.laranja)
             
         }
         .task {

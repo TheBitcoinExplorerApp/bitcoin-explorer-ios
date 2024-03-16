@@ -14,7 +14,7 @@ struct BoxTransactions: View {
     @State var abrirModalTransaction: Bool = false
     
     var body: some View {
-        ScrollView(.vertical){
+        VStack {
             
             HStack {
                 Text(TransactionsTexts.transacoesMaiusculo).foregroundColor(Color.cinza)
@@ -61,8 +61,6 @@ struct BoxTransactions: View {
                                         .font(.footnote)
                                         .foregroundColor(Color.cinza)
                                     
-//                                    CurrencyView(rate: value)
-//                                        .font(.caption)
                                     Spacer()
                                 }
                                 

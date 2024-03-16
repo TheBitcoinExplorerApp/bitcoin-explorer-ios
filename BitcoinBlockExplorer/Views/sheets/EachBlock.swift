@@ -172,9 +172,17 @@ struct EachBlock: View {
                                                     .foregroundColor(Color.cinza)
                                                     .font(.footnote)
                                                     .lineLimit(1)
-                                                Text("\(prevoutDesembrulhado.value / 100000000) BTC")
+                                                
+                                                let valueDesembrulhado = prevoutDesembrulhado.value / 100000000
+                                                
+                                                Text("\(valueDesembrulhado) BTC")
                                                     .foregroundColor(Color.cinza)
                                                     .font(.footnote)
+                                                
+                                                CurrencyViewComponent(rate: valueDesembrulhado)
+                                                    .font(.caption)
+                                                    .foregroundStyle(Color.laranja)
+                                                
                                             } else {
                                                 Text(TransactionsTexts.coinbase)
                                                     .foregroundColor(Color.cinza)
@@ -201,9 +209,15 @@ struct EachBlock: View {
                                                     .font(.footnote)
                                             }
                                             
-                                            Text("\(blocksT.vout[index].value / 100000000) BTC")
+                                            let valueVout = blocksT.vout[index].value / 100000000
+                                            
+                                            Text("\(valueVout) BTC")
                                                 .foregroundColor(Color.cinza)
                                                 .font(.footnote)
+                                            
+                                            CurrencyViewComponent(rate: valueVout)
+                                                .font(.caption)
+                                                .foregroundStyle(Color.laranja)
                                             
                                         }
                                     }

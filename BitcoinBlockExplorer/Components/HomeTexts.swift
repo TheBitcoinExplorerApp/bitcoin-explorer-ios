@@ -17,4 +17,6 @@ struct HomeTexts {
     
     static let altaPrioridade: String = String(localized: "altaPrioridade")
     
+    static let bitcoinPrice: String = String(localized: "bitcoinPrice")
+    
 }

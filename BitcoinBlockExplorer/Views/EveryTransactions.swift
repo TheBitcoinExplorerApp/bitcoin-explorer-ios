@@ -21,11 +21,9 @@ struct EveryTransactions: View {
     var body: some View {
         
         NavigationStack{
-            
-            VStack {
+            ScrollView(.vertical) {
                 BoxTransactions()
             }
-            
             .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: ToolbarTexts.searchPlaceholder) {
             }
             
