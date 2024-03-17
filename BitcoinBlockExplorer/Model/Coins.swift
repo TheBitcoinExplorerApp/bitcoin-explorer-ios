@@ -6,11 +6,15 @@
 //
 
 import Foundation
- 
-//struct Coins: Hashable, Codable {
-//    let current_price: Double
-//}
 
+struct Coins2: Codable {
+    let BRL: Last
+    let CNY: Last
+}
+
+struct Last: Codable {
+    let last: Double
+}
 
 struct Coins: Codable {
     let USD: Double
@@ -21,3 +25,4 @@ struct Coins: Codable {
     let AUD: Double
     let JPY: Double
 }
+

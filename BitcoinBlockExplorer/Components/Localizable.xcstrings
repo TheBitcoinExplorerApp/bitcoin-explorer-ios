@@ -626,19 +626,19 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Blocks, transactions or address"
+            "value" : "Search for transactions or addresses"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Blocos, transações ou endereços"
+            "value" : "Pesquise por transações ou endereços"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "区块、交易或地址"
+            "value" : "搜索交易或地址"
           }
         }
       }

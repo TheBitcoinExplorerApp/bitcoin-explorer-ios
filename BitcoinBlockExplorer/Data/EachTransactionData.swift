@@ -47,8 +47,4 @@ class EachTransactionData: ObservableObject {
         
     }
     
-    func getErro() -> Error? {
-        return self.erro
-    }
-    
 }

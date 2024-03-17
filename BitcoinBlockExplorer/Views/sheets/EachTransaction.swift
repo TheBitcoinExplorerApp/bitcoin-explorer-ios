@@ -241,6 +241,7 @@ struct EachTransaction: View {
                 }
                 
             }
+            
             .task {
                 if idTransacaoButton == "" {
                     transaction.getEachTransactionInfo(idTransacaoSearch)
@@ -249,9 +250,12 @@ struct EachTransaction: View {
                 }
                 
                 lastBlock.getLastBlock()
-                
             }
             
+            .onTapGesture {
+                UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+            }
+
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
