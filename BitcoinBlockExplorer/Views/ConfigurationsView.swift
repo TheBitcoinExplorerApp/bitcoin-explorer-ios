@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ConfigurationsView: View {
     
-    @State var selected = 0
+    @AppStorage("selected") var selected = 0
     
     let configs = Configurations.shared
     

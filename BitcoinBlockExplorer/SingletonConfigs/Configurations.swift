@@ -5,7 +5,7 @@
 //  Created by Victor Hugo Pacheco Araujo on 20/02/24.
 //
 
-import Foundation
+import SwiftUI
 
 class Configurations {
     
@@ -14,59 +14,58 @@ class Configurations {
     var coins: Coins?
     var coins2: Coins2?
     var symbol: String?
-    var flag: String?
     
-    var currency1: Int = 0
+    @AppStorage("flag") var flag: String = "🇺🇸"
+    
+    @AppStorage("currency1") var currency1: Int = 0 {
+        didSet{
+            getFlags()
+        }
+    }
     
     func getCoins() async -> Double {
-        
+
         do {
             
-            if currency1 == 0 {
+            switch currency1 {
+            case 0:
                 coins = try await getCoinPrice()
                 self.symbol = "$"
-                self.flag = "🇺🇸"
                 return coins?.USD ?? 0
-            } else if currency1 == 1 {
+            case 1:
                 coins = try await getCoinPrice()
                 self.symbol = "€"
-                self.flag = "🇪🇺"
                 return coins?.EUR ?? 0
-            } else if currency1 == 2 {
+            case 2:
                 coins = try await getCoinPrice()
                 self.symbol = "£"
-                self.flag = "🇬🇧"
                 return coins?.GBP ?? 0
-            } else if currency1 == 3 {
+            case 3:
                 coins = try await getCoinPrice()
                 self.symbol = "$"
-                self.flag = "🇨🇦"
                 return coins?.CAD ?? 0
-            } else if currency1 == 4 {
+            case 4:
                 coins = try await getCoinPrice()
                 self.symbol = "CHF"
-                self.flag = "🇨🇭"
                 return coins?.CHF ?? 0
-            } else if currency1 == 5 { 
+            case 5:
                 coins = try await getCoinPrice()
                 self.symbol = "$"
-                self.flag = "🇦🇺"
                 return coins?.AUD ?? 0
-            } else if currency1 == 6 {
+            case 6:
                 coins = try await getCoinPrice()
                 self.symbol = "¥"
-                self.flag = "🇯🇵"
                 return coins?.JPY ?? 0
-            } else if currency1 == 7 {
+            case 7:
                 coins2 = try await getBrlECny()
                 self.symbol = "R$"
-                self.flag = "🇧🇷"
                 return coins2?.BRL.last ?? 0
-            } else if currency1 == 8 {
+            case 8:
                 coins2 = try await getBrlECny()
                 self.symbol = "¥"
-                self.flag = "🇨🇳"
                 return coins2?.CNY.last ?? 0
+            default:
+                return 0 // Valor padrão caso nenhum dos casos anteriores seja correspondido
             }
             
         } catch GHError.invalidURL {
@@ -80,6 +79,32 @@ class Configurations {
         }
         
         return 0
+    }
+    
+    
+    func getFlags() {
+        switch currency1 {
+        case 0:
+            self.flag = "🇺🇸"
+        case 1:
+            self.flag = "🇪🇺"
+        case 2:
+            self.flag = "🇬🇧"
+        case 3:
+            self.flag = "🇨🇦"
+        case 4:
+            self.flag = "🇨🇭"
+        case 5:
+            self.flag = "🇦🇺"
+        case 6:
+            self.flag = "🇯🇵"
+        case 7:
+            self.flag = "🇧🇷"
+        case 8:
+            self.flag = "🇨🇳"
+        default:
+            self.flag = ""
+        }
     }
     
 }
