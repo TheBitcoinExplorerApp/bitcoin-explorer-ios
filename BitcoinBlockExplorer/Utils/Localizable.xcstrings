@@ -299,6 +299,57 @@
         }
       }
     },
+    "copied" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copied to clipboard"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copiado para área de transferência"
+          }
+        }
+      }
+    },
+    "Copy address" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copy address"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copie o endereço"
+          }
+        }
+      }
+    },
+    "Copy lightning invoice" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copy lightning invoice"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copie o endereço lightning"
+          }
+        }
+      }
+    },
     "currencyLabel" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -341,6 +392,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "时间戳"
+          }
+        }
+      }
+    },
+    "donations" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Donations"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Doações"
           }
         }
       }
@@ -459,6 +526,9 @@
         }
       }
     },
+    "Key" : {
+      "extractionState" : "manual"
+    },
     "mediaPrioridade" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -551,6 +621,22 @@
         }
       }
     },
+    "reportIssues" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Report issues"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reporte issues"
+          }
+        }
+      }
+    },
     "saldo" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -620,6 +706,40 @@
         }
       }
     },
+    "Scan the Bitcoin QRCode with your bitcoin wallet to help me improving the app." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scan the Bitcoin QRCode with your bitcoin wallet to help me improving the app."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escaneie o QR code do endereço Bitcoin com sua carteira para me ajudar a continuar melhorando o app."
+          }
+        }
+      }
+    },
+    "Scan the lightning network QRCode with your lightning wallet" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scan the lightning network QR Code with your lightning wallet to help me improving the app."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Escaneie o QR Code lightning network com sua carteira lightning para me ajudar a continuar melhorando o app."
+          }
+        }
+      }
+    },
     "searchPlaceholder" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -639,6 +759,38 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "搜索交易或地址"
+          }
+        }
+      }
+    },
+    "sourceCode" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Source Code"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Código Fonte"
+          }
+        }
+      }
+    },
+    "support" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Support"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suporte"
           }
         }
       }

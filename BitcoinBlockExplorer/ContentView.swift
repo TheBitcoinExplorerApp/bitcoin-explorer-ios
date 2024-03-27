@@ -12,7 +12,7 @@ struct ContentView: View {
     var body: some View {
         
         TabView{
-            Home().tabItem {
+            HomeView().tabItem {
                 Label(ContentViewTexts.home, systemImage: "house")
             }.toolbarBackground(Color.azul, for: .tabBar)
             

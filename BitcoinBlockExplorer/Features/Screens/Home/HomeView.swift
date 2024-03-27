@@ -1,5 +1,5 @@
 //
-//  Home.swift
+//  HomeView.swift
 //  TesteAPI
 //
 //  Created by Victor Hugo Pacheco Araujo on 16/05/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Home: View {
+struct HomeView: View {
     @StateObject var validateAddresses = Validate()
     @StateObject var feeData = FeeData()
     @State var addressSearch: String = ""
@@ -194,6 +194,6 @@ struct Home: View {
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        Home()
+        HomeView()
     }
 }
