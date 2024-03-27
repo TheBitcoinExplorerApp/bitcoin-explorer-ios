@@ -1,5 +1,5 @@
 //
-//  Configurations.swift
+//  CurrencyComponentViewModel.swift
 //  BitcoinBlockExplorer
 //
 //  Created by Victor Hugo Pacheco Araujo on 20/02/24.
@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-class Configurations {
+class CurrencyComponentViewModel {
     
-    static let shared = Configurations()
+    static let shared = CurrencyComponentViewModel()
     
     var coins: Coins?
     var coins2: Coins2?

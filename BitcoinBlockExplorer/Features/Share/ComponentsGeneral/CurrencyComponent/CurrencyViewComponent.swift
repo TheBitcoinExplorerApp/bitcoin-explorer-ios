@@ -14,7 +14,7 @@ struct CurrencyViewComponent: View {
         
     var rate: Double
     
-    let configs = Configurations.shared
+    let configs = CurrencyComponentViewModel.shared
     
     var body: some View {
         VStack{

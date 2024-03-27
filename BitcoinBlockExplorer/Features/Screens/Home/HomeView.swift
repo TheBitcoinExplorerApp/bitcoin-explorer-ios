@@ -17,7 +17,7 @@ struct HomeView: View {
     @State var idTransacaoButton: String = ""
     @State var searchText = ""
     
-    let configs = Configurations.shared
+    let configs = CurrencyComponentViewModel.shared
     
     func calculateValuePerSatvB(_ value: Int) -> Double {
         return Double(value * 140) / 100000000

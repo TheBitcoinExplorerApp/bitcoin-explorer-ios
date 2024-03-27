@@ -1,5 +1,5 @@
 //
-//  DonateMainNetView.swift
+//  DonationsView.swift
 //  BitcoinBlockExplorer
 //
 //  Created by Victor Hugo Pacheco Araujo on 20/03/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DonateMainNetView: View {
+struct DonationsView: View {
     var body: some View {
         
         TabView {
@@ -167,5 +167,5 @@ struct LightningWalletView: View {
 }
 
 #Preview {
-    DonateMainNetView()
+    DonationsView()
 }

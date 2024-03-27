@@ -11,7 +11,7 @@ struct ConfigurationsView: View {
     
     @AppStorage("selected") var selected = 0
     
-    let configs = Configurations.shared
+    let configs = CurrencyComponentViewModel.shared
     
     let currencies = ["🇺🇸 USD", "🇪🇺 EUR", "🇬🇧 GBP", "🇨🇦 CAD", "🇨🇭 CHF", "🇦🇺 AUD", "🇯🇵 JPY", "🇧🇷 BRL", "🇨🇳 CNY"]
     
@@ -36,7 +36,7 @@ struct ConfigurationsView: View {
                 
                 Section(Texts.support) {
                     NavigationLink {
-                        DonateMainNetView()
+                        DonationsView()
                     } label: {
                         Label {
                             HStack {

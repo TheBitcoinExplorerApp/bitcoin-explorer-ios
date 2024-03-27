@@ -16,7 +16,7 @@
 		9B2321EA2B84E279000BFBA9 /* Coins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2321E92B84E279000BFBA9 /* Coins.swift */; };
 		9B2321EC2B84E3EB000BFBA9 /* CurrencyViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2321EB2B84E3EB000BFBA9 /* CurrencyViewComponent.swift */; };
 		9B2321EE2B84E967000BFBA9 /* FormatCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2321ED2B84E967000BFBA9 /* FormatCoin.swift */; };
-		9B2321F12B851181000BFBA9 /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2321F02B851181000BFBA9 /* Configurations.swift */; };
+		9B2321F12B851181000BFBA9 /* CurrencyComponentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2321F02B851181000BFBA9 /* CurrencyComponentViewModel.swift */; };
 		9B2321F32B851866000BFBA9 /* ConfigurationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2321F22B851866000BFBA9 /* ConfigurationsView.swift */; };
 		9B23E5DF2A51E6F9007045A6 /* LastBlockHeightData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B23E5DE2A51E6F9007045A6 /* LastBlockHeightData.swift */; };
 		9B27E7162A12A8D000E8036E /* FeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B27E7152A12A8D000E8036E /* FeeModel.swift */; };
@@ -50,7 +50,7 @@
 		9BD1541D2B7F9DB200C736DB /* AddressTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD1541C2B7F9DB200C736DB /* AddressTexts.swift */; };
 		9BD1541F2B7FA3E300C736DB /* ContentViewTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD1541E2B7FA3E300C736DB /* ContentViewTexts.swift */; };
 		9BEBDF8E2BA785B60077632C /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEBDF8D2BA785B60077632C /* Error.swift */; };
-		9BFA12452BAB104C000C0CB5 /* DonateMainNetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA12442BAB104C000C0CB5 /* DonateMainNetView.swift */; };
+		9BFA12452BAB104C000C0CB5 /* DonationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA12442BAB104C000C0CB5 /* DonationsView.swift */; };
 		9BFA12472BAB1541000C0CB5 /* LabelLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA12462BAB1541000C0CB5 /* LabelLink.swift */; };
 		9BFA124D2BAB4A4B000C0CB5 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA124C2BAB4A4B000C0CB5 /* ToastView.swift */; };
 /* End PBXBuildFile section */
@@ -65,7 +65,7 @@
 		9B2321E92B84E279000BFBA9 /* Coins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coins.swift; sourceTree = "<group>"; };
 		9B2321EB2B84E3EB000BFBA9 /* CurrencyViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewComponent.swift; sourceTree = "<group>"; };
 		9B2321ED2B84E967000BFBA9 /* FormatCoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatCoin.swift; sourceTree = "<group>"; };
-		9B2321F02B851181000BFBA9 /* Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
+		9B2321F02B851181000BFBA9 /* CurrencyComponentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyComponentViewModel.swift; sourceTree = "<group>"; };
 		9B2321F22B851866000BFBA9 /* ConfigurationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationsView.swift; sourceTree = "<group>"; };
 		9B23E5DE2A51E6F9007045A6 /* LastBlockHeightData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastBlockHeightData.swift; sourceTree = "<group>"; };
 		9B27E7152A12A8D000E8036E /* FeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeeModel.swift; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 		9BD1541C2B7F9DB200C736DB /* AddressTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressTexts.swift; sourceTree = "<group>"; };
 		9BD1541E2B7FA3E300C736DB /* ContentViewTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewTexts.swift; sourceTree = "<group>"; };
 		9BEBDF8D2BA785B60077632C /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
-		9BFA12442BAB104C000C0CB5 /* DonateMainNetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateMainNetView.swift; sourceTree = "<group>"; };
+		9BFA12442BAB104C000C0CB5 /* DonationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationsView.swift; sourceTree = "<group>"; };
 		9BFA12462BAB1541000C0CB5 /* LabelLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelLink.swift; sourceTree = "<group>"; };
 		9BFA124C2BAB4A4B000C0CB5 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,10 +119,10 @@
 		9B2321EF2B85116D000BFBA9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				9B4372722A1CFD5B00DFE211 /* Functions */,
 				9B3C00102BAC7F07000B55B9 /* Extensions */,
 				9B3C000F2BAC7EC6000B55B9 /* TextsStrings */,
 				9B3852D52B7C2B2300E2D576 /* Localizable.xcstrings */,
-				9B2321F02B851181000BFBA9 /* Configurations.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -140,7 +140,7 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		9B2BC8E32A12D19800735A8D /* Data */ = {
+		9B2BC8E32A12D19800735A8D /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				9BEBDF8C2BA785AD0077632C /* Error */,
@@ -154,27 +154,7 @@
 				9B23E5DE2A51E6F9007045A6 /* LastBlockHeightData.swift */,
 				9B2321E72B84E15A000BFBA9 /* CoinsPriceData.swift */,
 			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		9B2BC8EC2A13F6D000735A8D /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				9B2BC8FB2A155BFE00735A8D /* sheets */,
-				9B2BC8ED2A13F70600735A8D /* EveryTransactions.swift */,
-				9BFA12442BAB104C000C0CB5 /* DonateMainNetView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		9B2BC8FB2A155BFE00735A8D /* sheets */ = {
-			isa = PBXGroup;
-			children = (
-				9B2BC8FC2A155C1F00735A8D /* EachBlock.swift */,
-				9B1243862A166AC000B9A4AF /* EachTransaction.swift */,
-				9B43726C2A1CDFAA00DFE211 /* EachAddress.swift */,
-			);
-			path = sheets;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		9B3C00082BAC75D3000B55B9 /* Features */ = {
@@ -200,6 +180,11 @@
 		9B3C000A2BAC75E4000B55B9 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				9B3F05982BB3BD58003C746C /* EachAddress */,
+				9B3F05972BB3BD3A003C746C /* EachTransaction */,
+				9B3F05962BB3BD2E003C746C /* EachBlock */,
+				9B3F05952BB3BD15003C746C /* DonationsView */,
+				9B3F05942BB3BCBD003C746C /* EveryTransactions */,
 				9B3C000D2BAC7890000B55B9 /* Configurations */,
 				9B3C000C2BAC7642000B55B9 /* EveryBlocks */,
 				9B3C000B2BAC75F6000B55B9 /* Home */,
@@ -281,10 +266,59 @@
 		9B3C00132BAC7F7C000B55B9 /* ComponentsGeneral */ = {
 			isa = PBXGroup;
 			children = (
-				9B2321EB2B84E3EB000BFBA9 /* CurrencyViewComponent.swift */,
+				9B3F05932BB3BC1B003C746C /* CurrencyComponent */,
 				9BFA124C2BAB4A4B000C0CB5 /* ToastView.swift */,
 			);
 			path = ComponentsGeneral;
+			sourceTree = "<group>";
+		};
+		9B3F05932BB3BC1B003C746C /* CurrencyComponent */ = {
+			isa = PBXGroup;
+			children = (
+				9B2321F02B851181000BFBA9 /* CurrencyComponentViewModel.swift */,
+				9B2321EB2B84E3EB000BFBA9 /* CurrencyViewComponent.swift */,
+			);
+			path = CurrencyComponent;
+			sourceTree = "<group>";
+		};
+		9B3F05942BB3BCBD003C746C /* EveryTransactions */ = {
+			isa = PBXGroup;
+			children = (
+				9B2BC8ED2A13F70600735A8D /* EveryTransactions.swift */,
+			);
+			path = EveryTransactions;
+			sourceTree = "<group>";
+		};
+		9B3F05952BB3BD15003C746C /* DonationsView */ = {
+			isa = PBXGroup;
+			children = (
+				9BFA12442BAB104C000C0CB5 /* DonationsView.swift */,
+			);
+			path = DonationsView;
+			sourceTree = "<group>";
+		};
+		9B3F05962BB3BD2E003C746C /* EachBlock */ = {
+			isa = PBXGroup;
+			children = (
+				9B2BC8FC2A155C1F00735A8D /* EachBlock.swift */,
+			);
+			path = EachBlock;
+			sourceTree = "<group>";
+		};
+		9B3F05972BB3BD3A003C746C /* EachTransaction */ = {
+			isa = PBXGroup;
+			children = (
+				9B1243862A166AC000B9A4AF /* EachTransaction.swift */,
+			);
+			path = EachTransaction;
+			sourceTree = "<group>";
+		};
+		9B3F05982BB3BD58003C746C /* EachAddress */ = {
+			isa = PBXGroup;
+			children = (
+				9B43726C2A1CDFAA00DFE211 /* EachAddress.swift */,
+			);
+			path = EachAddress;
 			sourceTree = "<group>";
 		};
 		9B4372722A1CFD5B00DFE211 /* Functions */ = {
@@ -318,9 +352,7 @@
 				9BC226112A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift */,
 				9BC226132A0C68CA0069FDEB /* ContentView.swift */,
 				9B3C00082BAC75D3000B55B9 /* Features */,
-				9B4372722A1CFD5B00DFE211 /* Functions */,
-				9B2BC8EC2A13F6D000735A8D /* Views */,
-				9B2BC8E32A12D19800735A8D /* Data */,
+				9B2BC8E32A12D19800735A8D /* Services */,
 				9B27E7142A12A8B400E8036E /* Model */,
 				9B2321EF2B85116D000BFBA9 /* Utils */,
 				9BC226152A0C68CB0069FDEB /* Assets.xcassets */,
@@ -418,7 +450,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BFA12452BAB104C000C0CB5 /* DonateMainNetView.swift in Sources */,
+				9BFA12452BAB104C000C0CB5 /* DonationsView.swift in Sources */,
 				9B23E5DF2A51E6F9007045A6 /* LastBlockHeightData.swift in Sources */,
 				9B3852DA2B7C39C300E2D576 /* ExtensionColor.swift in Sources */,
 				9B2BC8F62A1548F900735A8D /* EveryTransactionsModel.swift in Sources */,
@@ -439,7 +471,7 @@
 				9BC226142A0C68CA0069FDEB /* ContentView.swift in Sources */,
 				9B4372742A1CFD7600DFE211 /* ValidateSearch.swift in Sources */,
 				9B1243872A166AC000B9A4AF /* EachTransaction.swift in Sources */,
-				9B2321F12B851181000BFBA9 /* Configurations.swift in Sources */,
+				9B2321F12B851181000BFBA9 /* CurrencyComponentViewModel.swift in Sources */,
 				9B2BC8F02A13F72A00735A8D /* EveryBlocks.swift in Sources */,
 				9B2BC8F22A13FE5900735A8D /* HomeView.swift in Sources */,
 				9B27E7162A12A8D000E8036E /* FeeModel.swift in Sources */,
