@@ -158,8 +158,6 @@ struct EveryBlocks: View {
     }
 }
 
-struct EveryBlocks_Previews: PreviewProvider {
-    static var previews: some View {
-        EveryBlocks()
-    }
+#Preview {
+    EveryBlocks()
 }

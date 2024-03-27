@@ -36,7 +36,7 @@ struct HomeView: View {
                         .font(.headline)
                     
                     HStack{
-                        Text(configs.flag ?? "")
+                        Text(configs.flag)
                         
                         CurrencyViewComponent(rate: 1)
                             .font(.headline)
@@ -192,8 +192,6 @@ struct HomeView: View {
     
 }
 
-struct Home_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-    }
+#Preview {
+    HomeView()
 }

@@ -27,16 +27,16 @@ struct Texts {
     
     static let copied: String = String(localized: "copied")
     
-    static let scanText1 = "Scan the Bitcoin QR Code with your bitcoin wallet to help me improving the app."
+    static let scanText1 = String(localized: "Scan the Bitcoin QR Code with your bitcoin wallet to help me improving the app.")
     
-    static let copy = "Copy address"
+    static let copy = String(localized: "Copy address")
     
-    static let scanText2 = "Scan the lightning network QR Code with your lightning wallet to help me improving the app."
+    static let scanText2 = String(localized: "Scan the lightning network QR Code with your lightning wallet to help me improving the app.")
     
-    static let copyInvoice = "Copy lightning invoice"
+    static let copyInvoice = String(localized: "Copy lightning invoice")
     
-    static let bitcoinAddressTitle = "Bitcoin mainnet address"
+    static let bitcoinAddressTitle = String(localized: "Bitcoin mainnet address")
     
-    static let lightningTitle = "Lightning network address"
+    static let lightningTitle = String(localized: "Lightning network address")
     
 }

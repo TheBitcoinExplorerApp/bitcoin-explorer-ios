@@ -115,6 +115,28 @@
         }
       }
     },
+    "Bitcoin mainnet address" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitcoin mainnet address"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Endereço bitcoin mainnet"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "比特币主网地址"
+          }
+        }
+      }
+    },
     "bitcoinPrice" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -313,11 +335,16 @@
             "state" : "translated",
             "value" : "Copiado para área de transferência"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "复制到剪贴板"
+          }
         }
       }
     },
     "Copy address" : {
-      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -330,11 +357,16 @@
             "state" : "translated",
             "value" : "Copie o endereço"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "复制地址"
+          }
         }
       }
     },
     "Copy lightning invoice" : {
-      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -346,6 +378,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Copie o endereço lightning"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "复制闪电发票"
           }
         }
       }
@@ -408,6 +446,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Doações"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "捐款"
           }
         }
       }
@@ -526,8 +570,27 @@
         }
       }
     },
-    "Key" : {
-      "extractionState" : "manual"
+    "Lightning network address" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lightning network address"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Endereço lightning network"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "闪电网络地址"
+          }
+        }
+      }
     },
     "mediaPrioridade" : {
       "extractionState" : "manual",
@@ -634,6 +697,12 @@
             "state" : "translated",
             "value" : "Reporte issues"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "报告问题"
+          }
         }
       }
     },
@@ -706,13 +775,12 @@
         }
       }
     },
-    "Scan the Bitcoin QRCode with your bitcoin wallet to help me improving the app." : {
-      "extractionState" : "stale",
+    "Scan the Bitcoin QR Code with your bitcoin wallet to help me improving the app." : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Scan the Bitcoin QRCode with your bitcoin wallet to help me improving the app."
+            "value" : "Scan the Bitcoin QR Code with your bitcoin wallet to help me improving the app."
           }
         },
         "pt-BR" : {
@@ -720,11 +788,27 @@
             "state" : "translated",
             "value" : "Escaneie o QR code do endereço Bitcoin com sua carteira para me ajudar a continuar melhorando o app."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用您的比特币钱包扫描比特币二维码，以帮助我改进应用程序"
+          }
         }
       }
     },
-    "Scan the lightning network QRCode with your lightning wallet" : {
+    "Scan the Bitcoin QRCode with your bitcoin wallet to help me improving the app." : {
       "extractionState" : "stale",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Escaneie o QR code do endereço Bitcoin com sua carteira para me ajudar a continuar melhorando o app."
+          }
+        }
+      }
+    },
+    "Scan the lightning network QR Code with your lightning wallet to help me improving the app." : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -732,6 +816,23 @@
             "value" : "Scan the lightning network QR Code with your lightning wallet to help me improving the app."
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escaneie o QR Code lightning network com sua carteira lightning para me ajudar a continuar melhorando o app."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "扫描闪电网络的QR码，用你的闪电钱包来帮助我改进这个应用程序"
+          }
+        }
+      }
+    },
+    "Scan the lightning network QRCode with your lightning wallet" : {
+      "extractionState" : "stale",
+      "localizations" : {
         "pt-BR" : {
           "stringUnit" : {
             "state" : "needs_review",
@@ -776,6 +877,12 @@
             "state" : "translated",
             "value" : "Código Fonte"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "源代码"
+          }
         }
       }
     },
@@ -791,6 +898,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Suporte"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "支持"
           }
         }
       }

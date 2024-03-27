@@ -18,51 +18,46 @@ struct ConfigurationsView: View {
     var body: some View {
         
         NavigationStack {
-            VStack {
-                HStack {
-                    Text(Texts.configuracoes)
-                        .font(.largeTitle)
-                        .foregroundStyle(Color.laranja)
-                        .bold()
-                    Spacer()
-                }.padding(.horizontal)
-                List {
-                    Section {
-                        Picker(selection: $selected, label: Text(Texts.currencyLabel)
-                            .foregroundStyle(.white)) {
-                                
-                                ForEach(0 ..< self.currencies.count) { index in
-                                    Text(self.currencies[index]).tag(index)
-                                }
-                                
-                            }.onChange(of: selected) { newValue in
-                                configs.currency1 = newValue
+            
+            List {
+                Section {
+                    Picker(selection: $selected, label: Text(Texts.currencyLabel)
+                        .foregroundStyle(.white)) {
+                            
+                            ForEach(0 ..< self.currencies.count, id: \.self) { index in
+                                Text(self.currencies[index]).tag(index)
                             }
-                        
-                    }.listRowBackground(Color.caixas)
-                    
-                    Section(Texts.support) {
-                        NavigationLink {
-                            DonateMainNetView()
-                        } label: {
-                            Label {
-                                HStack {
-                                    Text(Texts.donations)
-                                        .foregroundStyle(.white)
-                                }
-                            } icon: {
-                                Image(systemName: "bitcoinsign")
-                            }
+                            
+                        }.onChange(of: selected) { newValue in
+                            configs.currency1 = newValue
                         }
-                        
-                        LabelLink(Texts.sourceCode, url: "https://github.com/TheBitcoinExplorerApp/bitcoin-explorer-ios", systemImage: "chevron.left.forwardslash.chevron.right")
-                        
-                        LabelLink(Texts.reportIssues, url: "https://github.com/TheBitcoinExplorerApp/bitcoin-explorer-ios/issues", systemImage: "ladybug.fill")
-                        
-                    }.listRowBackground(Color.caixas)
                     
-                }
+                }.listRowBackground(Color.caixas)
+                
+                Section(Texts.support) {
+                    NavigationLink {
+                        DonateMainNetView()
+                    } label: {
+                        Label {
+                            HStack {
+                                Text(Texts.donations)
+                                    .foregroundStyle(.white)
+                            }
+                        } icon: {
+                            Image(systemName: "bitcoinsign")
+                        }
+                    }
+                    
+                    LabelLink(Texts.sourceCode, url: "https://github.com/TheBitcoinExplorerApp/bitcoin-explorer-ios", systemImage: "chevron.left.forwardslash.chevron.right")
+                    
+                    LabelLink(Texts.reportIssues, url: "https://github.com/TheBitcoinExplorerApp/bitcoin-explorer-ios/issues", systemImage: "ladybug.fill")
+                    
+                }.listRowBackground(Color.caixas)
+                
             }
+            
+            .navigationTitle(Texts.configuracoes)
+            .navigationBarTitleColor(Color.laranja)
             .background(Color.azul)
             .scrollContentBackground(.hidden)
             
