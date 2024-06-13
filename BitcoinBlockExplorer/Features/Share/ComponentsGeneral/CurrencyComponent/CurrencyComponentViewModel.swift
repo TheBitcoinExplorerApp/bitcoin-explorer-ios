@@ -7,10 +7,8 @@
 
 import SwiftUI
 
-class CurrencyComponentViewModel {
-    
-    static let shared = CurrencyComponentViewModel()
-    
+class CurrencyComponentViewModel: ObservableObject {
+        
     var coins: Coins?
     var coins2: Coins2?
     var symbol: String?

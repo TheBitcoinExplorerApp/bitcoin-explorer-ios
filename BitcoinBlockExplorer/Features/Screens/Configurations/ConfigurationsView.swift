@@ -11,7 +11,7 @@ struct ConfigurationsView: View {
     
     @AppStorage("selected") var selected = 0
     
-    let configs = CurrencyComponentViewModel.shared
+    @EnvironmentObject var currencyViewModel:  CurrencyComponentViewModel
     
     let currencies = ["🇺🇸 USD", "🇪🇺 EUR", "🇬🇧 GBP", "🇨🇦 CAD", "🇨🇭 CHF", "🇦🇺 AUD", "🇯🇵 JPY", "🇧🇷 BRL", "🇨🇳 CNY"]
     
@@ -29,7 +29,7 @@ struct ConfigurationsView: View {
                             }
                             
                         }.onChange(of: selected) { newValue in
-                            configs.currency1 = newValue
+                            currencyViewModel.currency1 = newValue
                         }
                     
                 }.listRowBackground(Color.caixas)

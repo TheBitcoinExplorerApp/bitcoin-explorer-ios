@@ -13,25 +13,27 @@ struct CurrencyViewComponent: View {
     @State var value: Double = 0
         
     var rate: Double
-    
-    let configs = CurrencyComponentViewModel.shared
+
+    @EnvironmentObject var currencyViewModel:  CurrencyComponentViewModel
     
     var body: some View {
         VStack{
             
             let priceFinal = rate * (value)
-            let currentCoin = formatCoin(priceFinal, symbol: configs.symbol ?? "")
+            let currentCoin = formatCoin(priceFinal, symbol: currencyViewModel.symbol ?? "")
             
             Text("\(currentCoin)")
             
         }
         .task {
-            value = await configs.getCoins()
+            value = await currencyViewModel.getCoins()
         }
         
     }
 }
 
 #Preview {
-    CurrencyViewComponent(rate: 1)
+    let vm = CurrencyComponentViewModel()
+    return CurrencyViewComponent(rate: 1)
+        .environmentObject(vm)
 }

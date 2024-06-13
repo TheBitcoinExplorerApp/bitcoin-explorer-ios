@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @StateObject var currencyViewModel = CurrencyComponentViewModel()
+    
     var body: some View {
         
         TabView{
@@ -28,6 +30,8 @@ struct ContentView: View {
             }.toolbarBackground(Color.azul, for: .tabBar)
         }
         .accentColor(Color.laranja)
+        
+        .environmentObject(currencyViewModel)
         
     }
 }

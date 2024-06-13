@@ -145,9 +145,15 @@ struct EachBlock: View {
                                     HStack{
                                         // Id da transacao
                                         Text("\(blocksT.txid)")
-                                            .foregroundColor(Color.laranja)
+                                            .foregroundStyle(Color.laranja)
                                             .font(.footnote)
                                             .lineLimit(1)
+                     
+                                        Image(systemName: "clipboard.fill")
+                                            .resizable()
+                                            .frame(width: 10, height: 15)
+                                            .foregroundStyle(Color.laranja)
+                            
                                         Spacer()
                                         // data transacao
                                         if let blockTimeDesembrulhado = blocksT.status.block_time, let formattedTime = blocksT.status.formatTime(blockTimeDesembrulhado) {
@@ -269,9 +275,14 @@ struct EachBlock: View {
                         .bold()
                         .font(.headline)
                 }
-            }.toolbarBackground(Color.azul, for: .navigationBar)
+            }
+            .toolbarBackground(Color.azul, for: .navigationBar)
             
         }
         
     }
+}
+
+#Preview {
+    EachBlock(timestamp: .constant("teere"), numberTransactions: .constant(1234), blockMiner: .constant("sssdsd"), medianFee: .constant(2.32332), blockSize: .constant(2.32332), hashBlock: .constant("ssmdismd"), heightBlock: .constant(1223), abrirModal: .constant(false))
 }

@@ -47,6 +47,8 @@
 		9BC226142A0C68CA0069FDEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC226132A0C68CA0069FDEB /* ContentView.swift */; };
 		9BC226162A0C68CB0069FDEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BC226152A0C68CB0069FDEB /* Assets.xcassets */; };
 		9BC226192A0C68CB0069FDEB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BC226182A0C68CB0069FDEB /* Preview Assets.xcassets */; };
+		9BC487A62C1B8C89007E975A /* BitcoinWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC487A52C1B8C89007E975A /* BitcoinWalletView.swift */; };
+		9BC487A82C1B8CC0007E975A /* LightningWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC487A72C1B8CC0007E975A /* LightningWalletView.swift */; };
 		9BD1541D2B7F9DB200C736DB /* AddressTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD1541C2B7F9DB200C736DB /* AddressTexts.swift */; };
 		9BD1541F2B7FA3E300C736DB /* ContentViewTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD1541E2B7FA3E300C736DB /* ContentViewTexts.swift */; };
 		9BEBDF8E2BA785B60077632C /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEBDF8D2BA785B60077632C /* Error.swift */; };
@@ -97,6 +99,8 @@
 		9BC226132A0C68CA0069FDEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9BC226152A0C68CB0069FDEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BC226182A0C68CB0069FDEB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9BC487A52C1B8C89007E975A /* BitcoinWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinWalletView.swift; sourceTree = "<group>"; };
+		9BC487A72C1B8CC0007E975A /* LightningWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningWalletView.swift; sourceTree = "<group>"; };
 		9BD1541C2B7F9DB200C736DB /* AddressTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressTexts.swift; sourceTree = "<group>"; };
 		9BD1541E2B7FA3E300C736DB /* ContentViewTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewTexts.swift; sourceTree = "<group>"; };
 		9BEBDF8D2BA785B60077632C /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
@@ -293,6 +297,8 @@
 			isa = PBXGroup;
 			children = (
 				9BFA12442BAB104C000C0CB5 /* DonationsView.swift */,
+				9BC487A52C1B8C89007E975A /* BitcoinWalletView.swift */,
+				9BC487A72C1B8CC0007E975A /* LightningWalletView.swift */,
 			);
 			path = DonationsView;
 			sourceTree = "<group>";
@@ -452,6 +458,7 @@
 			files = (
 				9BFA12452BAB104C000C0CB5 /* DonationsView.swift in Sources */,
 				9B23E5DF2A51E6F9007045A6 /* LastBlockHeightData.swift in Sources */,
+				9BC487A62C1B8C89007E975A /* BitcoinWalletView.swift in Sources */,
 				9B3852DA2B7C39C300E2D576 /* ExtensionColor.swift in Sources */,
 				9B2BC8F62A1548F900735A8D /* EveryTransactionsModel.swift in Sources */,
 				9B1243852A165BF700B9A4AF /* BoxTransactions.swift in Sources */,
@@ -471,6 +478,7 @@
 				9BC226142A0C68CA0069FDEB /* ContentView.swift in Sources */,
 				9B4372742A1CFD7600DFE211 /* ValidateSearch.swift in Sources */,
 				9B1243872A166AC000B9A4AF /* EachTransaction.swift in Sources */,
+				9BC487A82C1B8CC0007E975A /* LightningWalletView.swift in Sources */,
 				9B2321F12B851181000BFBA9 /* CurrencyComponentViewModel.swift in Sources */,
 				9B2BC8F02A13F72A00735A8D /* EveryBlocks.swift in Sources */,
 				9B2BC8F22A13FE5900735A8D /* HomeView.swift in Sources */,

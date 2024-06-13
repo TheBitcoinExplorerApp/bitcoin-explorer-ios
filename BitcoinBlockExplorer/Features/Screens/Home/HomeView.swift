@@ -17,7 +17,7 @@ struct HomeView: View {
     @State var idTransacaoButton: String = ""
     @State var searchText = ""
     
-    let configs = CurrencyComponentViewModel.shared
+    @EnvironmentObject var currencyViewModel:  CurrencyComponentViewModel
     
     func calculateValuePerSatvB(_ value: Int) -> Double {
         return Double(value * 140) / 100000000
@@ -36,7 +36,7 @@ struct HomeView: View {
                         .font(.headline)
                     
                     HStack{
-                        Text(configs.flag)
+                        Text(currencyViewModel.flag)
                         
                         CurrencyViewComponent(rate: 1)
                             .font(.headline)
@@ -193,5 +193,7 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView()
+    let vm = CurrencyComponentViewModel()
+    return HomeView()
+        .environmentObject(vm)
 }
