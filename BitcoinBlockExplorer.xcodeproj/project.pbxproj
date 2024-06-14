@@ -427,6 +427,8 @@
 				en,
 				"zh-Hans",
 				Base,
+				de,
+				ru,
 			);
 			mainGroup = 9BC226052A0C68CA0069FDEB;
 			productRefGroup = 9BC2260F2A0C68CA0069FDEB /* Products */;

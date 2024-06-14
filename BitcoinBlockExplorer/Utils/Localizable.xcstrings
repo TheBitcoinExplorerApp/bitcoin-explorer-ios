@@ -49,6 +49,12 @@
     "aguardandoConfirmacao" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Warte auf Bestätigung"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -59,6 +65,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aguardando confirmação"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ожидающее подтверждения"
           }
         },
         "zh-Hans" : {
@@ -72,6 +84,12 @@
     "altaPrioridade" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hohe Priorität"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -82,6 +100,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alta Prioridade"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Высокий приоритет"
           }
         },
         "zh-Hans" : {
@@ -95,6 +119,12 @@
     "baixaPrioridade" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niedrige Priorität"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -107,6 +137,12 @@
             "value" : "Baixa Prioridade"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Низкий приоритет"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -117,6 +153,12 @@
     },
     "Bitcoin mainnet address" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitcoin Adresse"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -127,6 +169,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Endereço bitcoin mainnet"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Биткойн-адрес"
           }
         },
         "zh-Hans" : {
@@ -140,6 +188,12 @@
     "bitcoinPrice" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitcoin Preis"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -150,6 +204,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Preço do Bitcoin"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Цена Биткоина"
           }
         },
         "zh-Hans" : {
@@ -163,6 +223,12 @@
     "blocoMaiusculo" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Block"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -173,6 +239,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bloco"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Блок"
           }
         },
         "zh-Hans" : {
@@ -186,6 +258,12 @@
     "blocos" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blöcke"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -196,6 +274,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Blocos"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Блоки"
           }
         },
         "zh-Hans" : {
@@ -209,6 +293,12 @@
     "chooseCurrency" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wählen Sie die Währung"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -219,6 +309,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Escolha a moeda"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выберите валюту"
           }
         },
         "zh-Hans" : {
@@ -232,6 +328,12 @@
     "coinbase" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coinbase"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -239,6 +341,12 @@
           }
         },
         "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coinbase"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Coinbase"
@@ -255,6 +363,12 @@
     "configuracoes" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einstellungen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -265,6 +379,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Configurações"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Настройки"
           }
         },
         "zh-Hans" : {
@@ -278,6 +398,12 @@
     "confirmacao" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "bestätigung"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -288,6 +414,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "confirmação"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "подтверждение"
           }
         },
         "zh-Hans" : {
@@ -301,6 +433,12 @@
     "confirmacoes" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "bestätigungen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -311,6 +449,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "confirmações"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "подтверждения"
           }
         },
         "zh-Hans" : {
@@ -324,6 +468,12 @@
     "copied" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In die Zwischenablage kopiert"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -336,6 +486,12 @@
             "value" : "Copiado para área de transferência"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скопировано в буфер обмена"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -346,6 +502,12 @@
     },
     "Copy address" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adresse kopieren"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -358,6 +520,12 @@
             "value" : "Copie o endereço"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скопировать адрес"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -368,6 +536,12 @@
     },
     "Copy lightning invoice" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lightning adresse kopieren"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -378,6 +552,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Copie o endereço lightning"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скопировать молниеносный счет-фактуру"
           }
         },
         "zh-Hans" : {
@@ -391,6 +571,12 @@
     "currencyLabel" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Währung"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -401,6 +587,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Moeda"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Валюта"
           }
         },
         "zh-Hans" : {
@@ -414,6 +606,12 @@
     "data/hora" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeitstempel"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -426,6 +624,12 @@
             "value" : "Data/Hora"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отметка времени"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -436,6 +640,12 @@
     },
     "donations" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spenden"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -446,6 +656,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Doações"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пожертвования"
           }
         },
         "zh-Hans" : {
@@ -459,6 +675,12 @@
     "enderecoMaiusculo" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adresse"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -469,6 +691,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Endereço"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Адрес"
           }
         },
         "zh-Hans" : {
@@ -482,6 +710,12 @@
     "entradasESaidas" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eingänge und Ausgänge"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -492,6 +726,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Entradas e Saídas"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Входы и выходы"
           }
         },
         "zh-Hans" : {
@@ -505,6 +745,12 @@
     "hash" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hash"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -515,6 +761,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hash"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Хаш"
           }
         },
         "zh-Hans" : {
@@ -527,6 +779,12 @@
     },
     "home" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Startseite"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -537,6 +795,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Home"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дом"
           }
         },
         "zh-Hans" : {
@@ -550,6 +814,12 @@
     "idTransacao" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transaktion ID"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -562,6 +832,12 @@
             "value" : "ID transação"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ID транзакции"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -572,6 +848,12 @@
     },
     "Lightning network address" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lightning network adresse"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -582,6 +864,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Endereço lightning network"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сетевой адрес Lightning"
           }
         },
         "zh-Hans" : {
@@ -595,6 +883,12 @@
     "mediaPrioridade" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mittlere Priorität"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -605,6 +899,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Média Prioridade"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Средний приоритет"
           }
         },
         "zh-Hans" : {
@@ -618,6 +918,12 @@
     "minerador" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bergmann"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -628,6 +934,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Minerador"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Шахтер"
           }
         },
         "zh-Hans" : {
@@ -641,6 +953,12 @@
     "naoConfirmada" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unbestätigt"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -651,6 +969,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Não confirmada"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Неподтвержденный"
           }
         },
         "zh-Hans" : {
@@ -664,6 +988,12 @@
     "naoEncontrado" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nicht gefunden"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -676,6 +1006,12 @@
             "value" : "Não encontrado"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не найдено"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -686,6 +1022,12 @@
     },
     "reportIssues" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Probleme melden"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -696,6 +1038,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reporte issues"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сообщать о проблемах"
           }
         },
         "zh-Hans" : {
@@ -709,6 +1057,12 @@
     "saldo" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gleichgewicht"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -719,6 +1073,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Saldo"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Баланс"
           }
         },
         "zh-Hans" : {
@@ -732,6 +1092,12 @@
     "sat" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sat"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -739,6 +1105,12 @@
           }
         },
         "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sat"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "sat"
@@ -755,6 +1127,12 @@
     "sat/VB" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sat/vB"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -762,6 +1140,12 @@
           }
         },
         "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sat/vB"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "sat/vB"
@@ -777,6 +1161,12 @@
     },
     "Scan the Bitcoin QR Code with your bitcoin wallet to help me improving the app." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scannen Sie den Bitcoin QRCode mit Ihrer Bitcoin-Brieftasche und helfen Sie mir, die App zu verbessern."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -787,6 +1177,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Escaneie o QR code do endereço Bitcoin com sua carteira para me ajudar a continuar melhorando o app."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отсканируйте QR-код биткоина с помощью своего биткоин-кошелька, чтобы помочь мне улучшить приложение."
           }
         },
         "zh-Hans" : {
@@ -800,6 +1196,12 @@
     "Scan the Bitcoin QRCode with your bitcoin wallet to help me improving the app." : {
       "extractionState" : "stale",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scannen Sie den Bitcoin QRCode mit Ihrer Bitcoin-Brieftasche und helfen Sie mir, die App zu verbessern."
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "needs_review",
@@ -810,6 +1212,12 @@
     },
     "Scan the lightning network QR Code with your lightning wallet to help me improving the app." : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scannen Sie den QR-Code des Lightning-Netzwerks mit Ihrem Lightning-Wallet, um die App zu verbessern."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -820,6 +1228,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Escaneie o QR Code lightning network com sua carteira lightning para me ajudar a continuar melhorando o app."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отсканируйте QR-код lightning network с помощью своего кошелька lightning, чтобы помочь мне улучшить приложение."
           }
         },
         "zh-Hans" : {
@@ -833,6 +1247,12 @@
     "Scan the lightning network QRCode with your lightning wallet" : {
       "extractionState" : "stale",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scannen Sie den QR-Code des Lightning-Netzwerks mit Ihrem Lightning-Wallet, um die App zu verbessern."
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "needs_review",
@@ -844,6 +1264,12 @@
     "searchPlaceholder" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suche nach Transaktionen oder Adressen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -856,6 +1282,12 @@
             "value" : "Pesquise por transações ou endereços"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поиск транзакций или адресов"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -866,6 +1298,12 @@
     },
     "sourceCode" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quellcode"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -878,6 +1316,12 @@
             "value" : "Código Fonte"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "исходный код"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -888,6 +1332,12 @@
     },
     "support" : {
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unterstützung"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -898,6 +1348,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Suporte"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поддержка"
           }
         },
         "zh-Hans" : {
@@ -911,6 +1367,12 @@
     "tamanhoMaiusculo" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Größe"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -921,6 +1383,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tamanho"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Размер"
           }
         },
         "zh-Hans" : {
@@ -934,6 +1402,12 @@
     "taxaMaiusculo" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gebühr"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -944,6 +1418,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Taxa"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Гонорар"
           }
         },
         "zh-Hans" : {
@@ -957,6 +1437,12 @@
     "taxaMediana" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mittlere Gebühr"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -967,6 +1453,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Taxa mediana"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Медианная комиссия"
           }
         },
         "zh-Hans" : {
@@ -980,6 +1472,12 @@
     "taxasDeTransacao" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transaktions Gebühren"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -990,6 +1488,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Taxas de transação"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Комиссия за транзакцию"
           }
         },
         "zh-Hans" : {
@@ -1003,6 +1507,12 @@
     "totalEnviado" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insgesamt gesendet"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1013,6 +1523,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Total Enviado"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Всего отправлено"
           }
         },
         "zh-Hans" : {
@@ -1026,6 +1542,12 @@
     "totalRecebido" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insgesamt erhalten"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1036,6 +1558,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Total Recebido"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Всего получено"
           }
         },
         "zh-Hans" : {
@@ -1049,6 +1577,12 @@
     "transacaoMaiusculo" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transaktion"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1059,6 +1593,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Transação"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Транзакция"
           }
         },
         "zh-Hans" : {
@@ -1072,6 +1612,12 @@
     "transacoes" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "transaktionen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1082,6 +1628,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "transações"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "транзакции"
           }
         },
         "zh-Hans" : {
@@ -1095,6 +1647,12 @@
     "Transacoes" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transaktionen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1105,6 +1663,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Transações"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Транзакции"
           }
         },
         "zh-Hans" : {
@@ -1118,6 +1682,12 @@
     "valorMaiusculo" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wert"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1128,6 +1698,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Valor"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ценность"
           }
         },
         "zh-Hans" : {
