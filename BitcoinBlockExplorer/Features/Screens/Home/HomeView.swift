@@ -133,6 +133,8 @@ struct HomeView: View {
                     
                 }
                 
+                AdBannerView(adUnitID: "ca-app-pub-3489866247738033/3403960018").frame(height: 60)
+                
             }
             
             .task {

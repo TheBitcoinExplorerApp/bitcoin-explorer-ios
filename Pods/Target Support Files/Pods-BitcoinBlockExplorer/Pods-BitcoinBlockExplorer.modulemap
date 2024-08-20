@@ -1,0 +1,6 @@
+framework module Pods_BitcoinBlockExplorer {
+  umbrella header "Pods-BitcoinBlockExplorer-umbrella.h"
+
+  export *
+  module * { export * }
+}

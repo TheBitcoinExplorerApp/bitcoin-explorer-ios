@@ -18,48 +18,52 @@ struct ConfigurationsView: View {
     var body: some View {
         
         NavigationStack {
-            
-            List {
-                Section {
-                    Picker(selection: $selected, label: Text(Texts.currencyLabel)
-                        .foregroundStyle(.white)) {
-                            
-                            ForEach(0 ..< self.currencies.count, id: \.self) { index in
-                                Text(self.currencies[index]).tag(index)
+            VStack {
+                List {
+                    Section {
+                        Picker(selection: $selected, label: Text(Texts.currencyLabel)
+                            .foregroundStyle(.white)) {
+                                
+                                ForEach(0 ..< self.currencies.count, id: \.self) { index in
+                                    Text(self.currencies[index]).tag(index)
+                                }
+                                
+                            }.onChange(of: selected) { newValue in
+                                currencyViewModel.currency1 = newValue
                             }
-                            
-                        }.onChange(of: selected) { newValue in
-                            currencyViewModel.currency1 = newValue
-                        }
+                        
+                    }.listRowBackground(Color.caixas)
                     
-                }.listRowBackground(Color.caixas)
-                
-                Section(Texts.support) {
-                    NavigationLink {
-                        DonationsView()
-                    } label: {
-                        Label {
-                            HStack {
-                                Text(Texts.donations)
-                                    .foregroundStyle(.white)
+                    Section(Texts.support) {
+                        NavigationLink {
+                            DonationsView()
+                        } label: {
+                            Label {
+                                HStack {
+                                    Text(Texts.donations)
+                                        .foregroundStyle(.white)
+                                }
+                            } icon: {
+                                Image(systemName: "bitcoinsign")
                             }
-                        } icon: {
-                            Image(systemName: "bitcoinsign")
                         }
-                    }
+                        
+                        LabelLink(Texts.sourceCode, url: "https://github.com/TheBitcoinExplorerApp/bitcoin-explorer-ios", systemImage: "chevron.left.forwardslash.chevron.right")
+                        
+                        LabelLink(Texts.reportIssues, url: "https://github.com/TheBitcoinExplorerApp/bitcoin-explorer-ios/issues", systemImage: "ladybug.fill")
+                        
+                    }.listRowBackground(Color.caixas)
                     
-                    LabelLink(Texts.sourceCode, url: "https://github.com/TheBitcoinExplorerApp/bitcoin-explorer-ios", systemImage: "chevron.left.forwardslash.chevron.right")
-                    
-                    LabelLink(Texts.reportIssues, url: "https://github.com/TheBitcoinExplorerApp/bitcoin-explorer-ios/issues", systemImage: "ladybug.fill")
-                    
-                }.listRowBackground(Color.caixas)
+                }
+                .navigationTitle(Texts.configuracoes)
+                .navigationBarTitleColor(Color.laranja)
+                .background(Color.azul)
+                .scrollContentBackground(.hidden)
                 
-            }
-            
-            .navigationTitle(Texts.configuracoes)
-            .navigationBarTitleColor(Color.laranja)
+                AdBannerView(adUnitID: "ca-app-pub-3489866247738033/3403960018").frame(height: 60)
+                
+            } 
             .background(Color.azul)
-            .scrollContentBackground(.hidden)
             
         }
         
