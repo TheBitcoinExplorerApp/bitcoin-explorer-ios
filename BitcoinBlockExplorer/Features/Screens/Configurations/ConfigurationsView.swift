@@ -50,7 +50,7 @@ struct ConfigurationsView: View {
                         
                         LabelLink(Texts.sourceCode, url: "https://github.com/TheBitcoinExplorerApp/bitcoin-explorer-ios", systemImage: "chevron.left.forwardslash.chevron.right")
                         
-                        LabelLink(Texts.reportIssues, url: "https://github.com/TheBitcoinExplorerApp/bitcoin-explorer-ios/issues", systemImage: "ladybug.fill")
+                        LabelLink(Texts.reportIssues, url: "https://bitcoinblockchainexplorer.atlassian.net/servicedesk/customer/portal/1", systemImage: "ladybug.fill")
                         
                     }.listRowBackground(Color.caixas)
                     

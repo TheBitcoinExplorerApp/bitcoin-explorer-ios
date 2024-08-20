@@ -76,7 +76,7 @@ struct EveryBlocks: View {
                                             .foregroundColor(Color.cinza)
                                             .font(.footnote)
                                     }.padding(.vertical)
-                                        .frame(maxWidth: .infinity, maxHeight: 109)
+                                        .frame(maxWidth: .infinity)
                                         .background(Color.caixas)
                                         .cornerRadius(7)
                                     

@@ -56,21 +56,22 @@ struct BoxBlocks: View {
                                     .font(.footnote)
                                 Text("\(blocks.formatTimestamp(blocks.timestamp))").foregroundColor(Color.cinza)
                                     .font(.footnote)
-                            }.padding(.vertical)
-                                .frame(maxWidth: .infinity, maxHeight: 109)
-                                .background(Color.caixas)
-                                .cornerRadius(7)
+                            }
+                            .padding(.vertical)
+                            .frame(maxWidth: .infinity)
+                            .background(Color.caixas)
+                            .cornerRadius(7)
                             
-                                .onTapGesture {
-                                    hashBlock = blocks.id
-                                    heightBlock = blocks.height
-                                    medianFee = blocks.extras.medianFee
-                                    blockSize = blocks.size
-                                    blockMiner = blocks.extras.pool.name
-                                    numberTransactions = blocks.tx_count
-                                    timestamp = blocks.formatTimestampWithHour(blocks.timestamp)
-                                    abrirModal.toggle()
-                                }
+                            .onTapGesture {
+                                hashBlock = blocks.id
+                                heightBlock = blocks.height
+                                medianFee = blocks.extras.medianFee
+                                blockSize = blocks.size
+                                blockMiner = blocks.extras.pool.name
+                                numberTransactions = blocks.tx_count
+                                timestamp = blocks.formatTimestampWithHour(blocks.timestamp)
+                                abrirModal.toggle()
+                            }
                             
                         }
                         

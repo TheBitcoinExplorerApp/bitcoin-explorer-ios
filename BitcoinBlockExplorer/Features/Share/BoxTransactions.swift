@@ -77,8 +77,10 @@ struct BoxTransactions: View {
                                     Spacer()
                                 }
                                 
-                            }.padding()
-                                .frame(maxWidth: .infinity, maxHeight: 71)
+                            }
+                            .padding(.horizontal)
+                            .padding(.vertical, 5)
+                                .frame(maxWidth: .infinity)
                                 .background(Color.caixas).cornerRadius(7)
                                 .onTapGesture {
                                     idTransacaoButton = transactions.txid
