@@ -19,6 +19,8 @@ struct HomeView: View {
     
     @EnvironmentObject var currencyViewModel:  CurrencyComponentViewModel
     
+    @EnvironmentObject var addManager: AddManager
+    
     func calculateValuePerSatvB(_ value: Int) -> Double {
         return Double(value * 140) / 100000000
     }
@@ -82,7 +84,7 @@ struct HomeView: View {
                                     VStack{
                                         
                                         let valueHourFee =  calculateValuePerSatvB(fee.hourFee)
-  
+                                        
                                         Text("\(fee.hourFee) \(Texts.satVb)").foregroundStyle(Color.cinza)
                                             .font(.footnote)
                                         
@@ -133,7 +135,7 @@ struct HomeView: View {
                     
                 }
                 
-                AdBannerView(adUnitID: "ca-app-pub-3489866247738033/3403960018").frame(height: 60)
+                addManager.addView
                 
             }
             

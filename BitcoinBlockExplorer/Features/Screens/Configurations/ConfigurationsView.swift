@@ -13,6 +13,8 @@ struct ConfigurationsView: View {
     
     @EnvironmentObject var currencyViewModel:  CurrencyComponentViewModel
     
+    @EnvironmentObject var addManager: AddManager
+    
     let currencies = ["🇺🇸 USD", "🇪🇺 EUR", "🇬🇧 GBP", "🇨🇦 CAD", "🇨🇭 CHF", "🇦🇺 AUD", "🇯🇵 JPY", "🇧🇷 BRL", "🇨🇳 CNY"]
     
     var body: some View {
@@ -59,8 +61,8 @@ struct ConfigurationsView: View {
                 .navigationBarTitleColor(Color.laranja)
                 .background(Color.azul)
                 .scrollContentBackground(.hidden)
-                
-                AdBannerView(adUnitID: "ca-app-pub-3489866247738033/3403960018").frame(height: 60)
+        
+                addManager.addView
                 
             } 
             .background(Color.azul)
