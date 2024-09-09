@@ -204,6 +204,8 @@ struct HomeView: View {
 
 #Preview {
     let vm = CurrencyComponentViewModel()
+    let addManager = AddManager()
     return HomeView()
         .environmentObject(vm)
+        .environmentObject(addManager)
 }

@@ -73,5 +73,9 @@ struct ConfigurationsView: View {
 }
 
 #Preview {
-    ConfigurationsView()
+    let vm = CurrencyComponentViewModel()
+    let addManager = AddManager()
+    return ConfigurationsView()
+        .environmentObject(addManager)
+        .environmentObject(vm)
 }
