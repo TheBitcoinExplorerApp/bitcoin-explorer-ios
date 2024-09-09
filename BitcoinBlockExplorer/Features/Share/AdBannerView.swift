@@ -10,6 +10,14 @@ import GoogleMobileAds
 
 struct AdBannerView: UIViewRepresentable {
     
+    private let delegate: AdBannerViewDelegate
+    @ObservedObject var addManager: AddManager
+    
+    init(addManager: AddManager) {
+        self.addManager = addManager
+        self.delegate = AdBannerViewDelegate(addManager: addManager)
+    }
+    
     func makeUIView(context: Context) -> GADBannerView {
         let bannerView = GADBannerView(adSize: GADAdSizeBanner)
         bannerView.adUnitID = "ca-app-pub-3489866247738033/3403960018"
@@ -18,17 +26,22 @@ struct AdBannerView: UIViewRepresentable {
            let rootViewController = windowScene.windows.first?.rootViewController {
             bannerView.rootViewController = rootViewController
         }
-        
+        bannerView.delegate = context.coordinator
         bannerView.load(GADRequest())
         return bannerView
     }
     
     func updateUIView(_ uiView: GADBannerView, context: Context) {}
     
+    func makeCoordinator() ->  AdBannerViewDelegate {
+        AdBannerViewDelegate(addManager: self.addManager)
+    }
+    
 }
 
 class AddManager: ObservableObject {
     @Published var addView: AnyView?
+    @Published var bannerViewIsAdded: Bool = true
     
     init() {
         addView = appearAd()
@@ -36,8 +49,26 @@ class AddManager: ObservableObject {
     
     @ViewBuilder private func appearAd() -> AnyView {
         AnyView(
-            AdBannerView()
+            AdBannerView(addManager: self)
                 .frame(height: 60)
         )
+    }
+}
+
+class AdBannerViewDelegate: NSObject, GADBannerViewDelegate {
+    private var addManager: AddManager
+    
+    init(addManager: AddManager) {
+        self.addManager = addManager
+    }
+    
+    func bannerViewDidReceiveAd(_ bannerView: GADBannerView) {
+        self.addManager.bannerViewIsAdded = true
+        print("Received ad")
+    }
+    
+    func bannerView(_ bannerView: GADBannerView, didFailToReceiveAdWithError error: any Error) {
+        print("Failed to receive ad with error: \(error)")
+        addManager.bannerViewIsAdded = false
     }
 }

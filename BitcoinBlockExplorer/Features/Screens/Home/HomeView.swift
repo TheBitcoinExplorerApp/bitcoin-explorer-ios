@@ -135,7 +135,13 @@ struct HomeView: View {
                     
                 }
                 
-                addManager.addView
+                if addManager.bannerViewIsAdded == false {
+                    VStack {
+                        RoundedRectangle(cornerRadius: 1).frame(width: 0.1, height: 0.1)
+                    }
+                } else {
+                    addManager.addView
+                }
                 
             }
             
