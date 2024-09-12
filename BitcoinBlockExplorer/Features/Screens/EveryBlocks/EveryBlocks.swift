@@ -137,24 +137,10 @@ struct EveryBlocks: View {
                 UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
             }
             
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Image(ToolbarTexts.bitcoinIcone)
-                        .resizable()
-                        .frame(width: 40, height: 40)
-                }
-                ToolbarItem(placement: .principal) {
-                    Text(ToolbarTexts.titleOfTheApp)
-                        .foregroundColor(Color.laranja)
-                        .bold()
-                        .font(.title3)
-                }
-            }
-            .toolbarBackground(Color.azul, for: .navigationBar)
+            .customToolbar()
+
             .background(Color.azul)
         }
-        
     }
 }
 

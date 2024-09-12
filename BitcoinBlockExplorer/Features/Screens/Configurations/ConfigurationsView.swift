@@ -12,9 +12,7 @@ struct ConfigurationsView: View {
     @AppStorage("selected") var selected = 0
     
     @EnvironmentObject var currencyViewModel:  CurrencyComponentViewModel
-    
-    @EnvironmentObject var addManager: AddManager
-    
+        
     let currencies = ["🇺🇸 USD", "🇪🇺 EUR", "🇬🇧 GBP", "🇨🇦 CAD", "🇨🇭 CHF", "🇦🇺 AUD", "🇯🇵 JPY", "🇧🇷 BRL", "🇨🇳 CNY"]
     
     var body: some View {
@@ -62,9 +60,9 @@ struct ConfigurationsView: View {
                 .background(Color.azul)
                 .scrollContentBackground(.hidden)
         
-                addManager.addView
+                AdViewComponent()
                 
-            } 
+            }
             .background(Color.azul)
             
         }

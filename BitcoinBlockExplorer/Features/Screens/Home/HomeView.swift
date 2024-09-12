@@ -17,131 +17,31 @@ struct HomeView: View {
     @State var idTransacaoButton: String = ""
     @State var searchText = ""
     
-    @EnvironmentObject var currencyViewModel:  CurrencyComponentViewModel
-    
-    @EnvironmentObject var addManager: AddManager
-    
-    func calculateValuePerSatvB(_ value: Int) -> Double {
-        return Double(value * 140) / 100000000
-    }
-    
     var body: some View {
         
         NavigationStack{
-            
             VStack{
-                
                 ScrollView{
-                    
-                    Text(HomeTexts.bitcoinPrice)
-                        .foregroundStyle(Color.cinza)
-                        .font(.headline)
-                    
-                    HStack{
-                        Text(currencyViewModel.flag)
-                        
-                        CurrencyViewComponent(rate: 1)
-                            .font(.headline)
-                            .foregroundStyle(Color.laranja)
-                    }.padding()
-                        .background(Color.caixas)
-                        .clipShape(RoundedRectangle(cornerRadius: 7))
-                    
+                    BitcoinPriceViewComponent()
                     VStack{
-                        VStack{
-                            Text(HomeTexts.taxasDeTransacao).foregroundStyle(Color.cinza)
-                                .bold()
-                                .font(.headline)
-                            
-                            HStack {
-                                
-                                Spacer()
-                                
-                                Text(HomeTexts.baixaPrioridade).foregroundStyle(Color.cinza).font(.footnote)
-                                
-                                Spacer()
-                                
-                                Text(HomeTexts.mediaPrioridade).foregroundStyle(Color.cinza).font(.footnote)
-                                
-                                Spacer()
-                                
-                                Text(HomeTexts.altaPrioridade).foregroundStyle(Color.cinza).font(.footnote)
-                                
-                                Spacer()
-                                
-                            }
-                            .padding()
-                            .frame(maxWidth: .infinity)
-                            .background(Color.caixas)
-                            .cornerRadius(7)
-                        }.padding(.horizontal)
-                        
+                        TextsFeesViewComponent()
                         VStack(alignment: .center) {
                             ForEach(feeData.fees, id: \.self) { fee in
-                                
                                 HStack(spacing: 17) {
+                                    HomeFeeViewComponent(fee: fee.hourFee)
                                     
-                                    VStack{
-                                        
-                                        let valueHourFee =  calculateValuePerSatvB(fee.hourFee)
-                                        
-                                        Text("\(fee.hourFee) \(Texts.satVb)").foregroundStyle(Color.cinza)
-                                            .font(.footnote)
-                                        
-                                        CurrencyViewComponent(rate: valueHourFee)
-                                            .font(.caption)
-                                            .foregroundStyle(Color.laranja)
-                                        
-                                    }.padding()
-                                        .background(Color.caixas).cornerRadius(7)
+                                    HomeFeeViewComponent(fee: fee.halfHourFee)
                                     
-                                    VStack{
-                                        
-                                        let halfHourFee = calculateValuePerSatvB(fee.halfHourFee)
-                                        
-                                        Text("\(fee.halfHourFee) \(Texts.satVb)").foregroundStyle(Color.cinza)
-                                            .font(.footnote)
-                                        
-                                        CurrencyViewComponent(rate: halfHourFee)
-                                            .font(.caption)
-                                            .foregroundStyle(Color.laranja)
-                                        
-                                    }.padding()
-                                        .background(Color.caixas).cornerRadius(7)
-                                    
-                                    VStack{
-                                        
-                                        let fastestFee = calculateValuePerSatvB(fee.fastestFee)
-                                        
-                                        Text("\(fee.fastestFee) \(Texts.satVb)").foregroundStyle(Color.cinza)
-                                            .font(.footnote)
-                                        
-                                        CurrencyViewComponent(rate: fastestFee)
-                                            .font(.caption)
-                                            .foregroundStyle(Color.laranja)
-                                        
-                                    }.padding()
-                                        .background(Color.caixas).cornerRadius(7)
+                                    HomeFeeViewComponent(fee: fee.fastestFee)
                                 }
-                                
                             }
                         }
-                        
                     }.padding(.vertical)
-                    
                     BoxBlocks()
-                    
                     BoxTransactions()
-                    
                 }
                 
-                if addManager.bannerViewIsAdded == false {
-                    VStack {
-                        RoundedRectangle(cornerRadius: 1).frame(width: 0.1, height: 0.1)
-                    }
-                } else {
-                    addManager.addView
-                }
+                AdViewComponent()
                 
             }
             
@@ -162,7 +62,6 @@ struct HomeView: View {
                     idTransacaoSearch = searchText
                     abrirModalTransaction.toggle()
                 }
-                
             }
             
             .sheet(isPresented: $abrirModalAddress ) {
@@ -179,27 +78,11 @@ struct HomeView: View {
                 UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
             }
             
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Image(ToolbarTexts.bitcoinIcone)
-                        .resizable()
-                        .frame(width: 40, height: 40)
-                }
-                ToolbarItem(placement: .principal) {
-                    Text(ToolbarTexts.titleOfTheApp)
-                        .foregroundStyle(Color.laranja)
-                        .bold()
-                        .font(.title3)
-                }
-            }
-            .toolbarBackground(Color.azul, for: .navigationBar)
+            .customToolbar()
             
             .background(Color.azul)
         }
-        
     }
-    
 }
 
 #Preview {
