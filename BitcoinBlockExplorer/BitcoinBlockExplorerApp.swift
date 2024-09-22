@@ -11,12 +11,16 @@ import GoogleMobileAds
 @main
 struct BitcoinBlockExplorerApp: App {
     @UIApplicationDelegateAdaptor (AppDelegate.self) var appDelegate
+    
     @StateObject var addManager = AddManager()
+    @StateObject var currencyViewModel = CurrencyComponentViewModel()
     
     var body: some Scene {
         WindowGroup {
-            ContentView().preferredColorScheme(.dark)
+            ContentView()
+                .preferredColorScheme(.dark)
                 .environmentObject(addManager)
+                .environmentObject(currencyViewModel)
         }
     }
 }

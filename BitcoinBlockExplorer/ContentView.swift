@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @StateObject var currencyViewModel = CurrencyComponentViewModel()
-    
+        
     var body: some View {
         
         TabView{
@@ -25,17 +23,20 @@ struct ContentView: View {
             EveryTransactions().tabItem {
                 Label(TransactionsTexts.transacoesMaiusculo, systemImage: "rectangle.grid.1x2.fill")
             }.toolbarBackground(Color.azul, for: .tabBar)
+            
             ConfigurationsView().tabItem {
                 Label(Texts.configuracoes, systemImage: "gearshape.fill")
             }.toolbarBackground(Color.azul, for: .tabBar)
         }
         .accentColor(Color.laranja)
-        
-        .environmentObject(currencyViewModel)
-        
+                
     }
 }
 
 #Preview {
-    ContentView()
+    let addManager = AddManager()
+    let currencyViewModel = CurrencyComponentViewModel()
+    return ContentView()
+        .environmentObject(addManager)
+        .environmentObject(currencyViewModel)
 }
