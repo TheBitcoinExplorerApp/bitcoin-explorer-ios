@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -51,6 +51,11 @@
 		9BC226192A0C68CB0069FDEB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BC226182A0C68CB0069FDEB /* Preview Assets.xcassets */; };
 		9BC487A62C1B8C89007E975A /* BitcoinWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC487A52C1B8C89007E975A /* BitcoinWalletView.swift */; };
 		9BC487A82C1B8CC0007E975A /* LightningWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC487A72C1B8CC0007E975A /* LightningWalletView.swift */; };
+		9BCC46C22CC7D9D5005836F4 /* AdBannerFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCC46C12CC7D9C6005836F4 /* AdBannerFacebook.swift */; };
+		9BCC46C42CC7E676005836F4 /* FBAudienceNetwork.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCC46C32CC7E676005836F4 /* FBAudienceNetwork.xcframework */; };
+		9BCC46C52CC7E676005836F4 /* FBAudienceNetwork.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCC46C32CC7E676005836F4 /* FBAudienceNetwork.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9BCC46C82CC7E73B005836F4 /* GoogleMobileAds.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCC46C72CC7E73B005836F4 /* GoogleMobileAds.xcframework */; };
+		9BCC46C92CC7E73B005836F4 /* GoogleMobileAds.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCC46C72CC7E73B005836F4 /* GoogleMobileAds.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9BD1541D2B7F9DB200C736DB /* AddressTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD1541C2B7F9DB200C736DB /* AddressTexts.swift */; };
 		9BD1541F2B7FA3E300C736DB /* ContentViewTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD1541E2B7FA3E300C736DB /* ContentViewTexts.swift */; };
 		9BEBDF8E2BA785B60077632C /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEBDF8D2BA785B60077632C /* Error.swift */; };
@@ -63,6 +68,21 @@
 		9BFA12472BAB1541000C0CB5 /* LabelLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA12462BAB1541000C0CB5 /* LabelLink.swift */; };
 		9BFA124D2BAB4A4B000C0CB5 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA124C2BAB4A4B000C0CB5 /* ToastView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9BCC46C62CC7E676005836F4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9BCC46C52CC7E676005836F4 /* FBAudienceNetwork.xcframework in Embed Frameworks */,
+				9BCC46C92CC7E73B005836F4 /* GoogleMobileAds.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		81652649BD006240B348E3B9 /* Pods-BitcoinBlockExplorer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcoinBlockExplorer.debug.xcconfig"; path = "Target Support Files/Pods-BitcoinBlockExplorer/Pods-BitcoinBlockExplorer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +131,9 @@
 		9BC226182A0C68CB0069FDEB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9BC487A52C1B8C89007E975A /* BitcoinWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinWalletView.swift; sourceTree = "<group>"; };
 		9BC487A72C1B8CC0007E975A /* LightningWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningWalletView.swift; sourceTree = "<group>"; };
+		9BCC46C12CC7D9C6005836F4 /* AdBannerFacebook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBannerFacebook.swift; sourceTree = "<group>"; };
+		9BCC46C32CC7E676005836F4 /* FBAudienceNetwork.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:V9WTTPBFK9:Meta Platforms, Inc."; lastKnownFileType = wrapper.xcframework; name = FBAudienceNetwork.xcframework; path = Pods/FBAudienceNetwork/Static/FBAudienceNetwork.xcframework; sourceTree = "<group>"; };
+		9BCC46C72CC7E73B005836F4 /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:EQHXZ8M8AV:Google LLC"; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAds.xcframework; path = "Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework/GoogleMobileAds.xcframework"; sourceTree = "<group>"; };
 		9BD1541C2B7F9DB200C736DB /* AddressTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressTexts.swift; sourceTree = "<group>"; };
 		9BD1541E2B7FA3E300C736DB /* ContentViewTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewTexts.swift; sourceTree = "<group>"; };
 		9BEBDF8D2BA785B60077632C /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
@@ -131,6 +154,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BCC46C42CC7E676005836F4 /* FBAudienceNetwork.xcframework in Frameworks */,
+				9BCC46C82CC7E73B005836F4 /* GoogleMobileAds.xcframework in Frameworks */,
 				802D279E91F933086746D45E /* Pods_BitcoinBlockExplorer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,12 +225,12 @@
 		9B3C00092BAC75DD000B55B9 /* Share */ = {
 			isa = PBXGroup;
 			children = (
+				9BCC46C02CC7D9AA005836F4 /* FacebookAds */,
+				9BCC46BF2CC7D990005836F4 /* GoogleAds */,
 				9B1243822A16579700B9A4AF /* BoxBlocks.swift */,
 				9B1243842A165BF700B9A4AF /* BoxTransactions.swift */,
 				9B3C00132BAC7F7C000B55B9 /* ComponentsGeneral */,
 				9B3C00112BAC7F53000B55B9 /* Settings */,
-				9B925AB12C74382A00A754C1 /* AdBannerView.swift */,
-				9BEEACA32C8F85DE00E2E120 /* AdViewComponent.swift */,
 			);
 			path = Share;
 			sourceTree = "<group>";
@@ -409,6 +434,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		9BCC46BF2CC7D990005836F4 /* GoogleAds */ = {
+			isa = PBXGroup;
+			children = (
+				9B925AB12C74382A00A754C1 /* AdBannerView.swift */,
+				9BEEACA32C8F85DE00E2E120 /* AdViewComponent.swift */,
+			);
+			path = GoogleAds;
+			sourceTree = "<group>";
+		};
+		9BCC46C02CC7D9AA005836F4 /* FacebookAds */ = {
+			isa = PBXGroup;
+			children = (
+				9BCC46C12CC7D9C6005836F4 /* AdBannerFacebook.swift */,
+			);
+			path = FacebookAds;
+			sourceTree = "<group>";
+		};
 		9BEBDF8C2BA785AD0077632C /* Error */ = {
 			isa = PBXGroup;
 			children = (
@@ -430,6 +472,8 @@
 		A2429A69F9D1FA5662AC0F92 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9BCC46C72CC7E73B005836F4 /* GoogleMobileAds.xcframework */,
+				9BCC46C32CC7E676005836F4 /* FBAudienceNetwork.xcframework */,
 				9F72E7CEB2FCE47A9CE9A0FB /* Pods_BitcoinBlockExplorer.framework */,
 			);
 			name = Frameworks;
@@ -447,6 +491,7 @@
 				9BC2260B2A0C68CA0069FDEB /* Frameworks */,
 				9BC2260C2A0C68CA0069FDEB /* Resources */,
 				1F71790B670945CDF6ACF057 /* [CP] Copy Pods Resources */,
+				9BCC46C62CC7E676005836F4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -600,6 +645,7 @@
 				9B2BC8E22A12C54700735A8D /* BlockModel.swift in Sources */,
 				9B925AB22C74382A00A754C1 /* AdBannerView.swift in Sources */,
 				9B2BC8E72A13B1CF00735A8D /* BlockData.swift in Sources */,
+				9BCC46C22CC7D9D5005836F4 /* AdBannerFacebook.swift in Sources */,
 				9B43726F2A1CE66000DFE211 /* AddressDataHeader.swift in Sources */,
 				9B2BC8EE2A13F70600735A8D /* EveryTransactions.swift in Sources */,
 				9B2BC8E52A12D1B500735A8D /* FeeData.swift in Sources */,

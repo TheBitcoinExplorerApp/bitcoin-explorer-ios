@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>FBAudienceNetwork-FBAudienceNetwork.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FBAudienceNetwork.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Google-Mobile-Ads-SDK-GoogleMobileAdsResources.xcscheme</key>
 		<dict>
 			<key>isShown</key>

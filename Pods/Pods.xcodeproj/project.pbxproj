@@ -9,101 +9,218 @@
 /* Begin PBXAggregateTarget section */
 		458B188365A307B3C128ABF524D1A3E3 /* GoogleUserMessagingPlatform */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = F9AE922BE3EF4C9C4722B6E5F0DF78F5 /* Build configuration list for PBXAggregateTarget "GoogleUserMessagingPlatform" */;
+			buildConfigurationList = 7977050E657EBE8B83D07AC98326ECB5 /* Build configuration list for PBXAggregateTarget "GoogleUserMessagingPlatform" */;
 			buildPhases = (
-				F29EEAAA4DFE2090777FB40F261494C4 /* [CP] Copy XCFrameworks */,
+				852C0390FEBD387AA29A132D913D9962 /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
-				DF5D9D2040FB835B7EDF66DF56484D7E /* PBXTargetDependency */,
+				C5D3ED360FE849C152BBB93100B26CDE /* PBXTargetDependency */,
 			);
 			name = GoogleUserMessagingPlatform;
+		};
+		D53454FBB630479B01CA0A777383E94F /* FBAudienceNetwork */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E95B240180A3BFFB80544C0C2943F06D /* Build configuration list for PBXAggregateTarget "FBAudienceNetwork" */;
+			buildPhases = (
+				0B30F088A2909E57C202CEE685795F3A /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				6FBCBBFB00103555D489558DB8A3F5AE /* PBXTargetDependency */,
+			);
+			name = FBAudienceNetwork;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		06A07502158C766ABFD36A1FCCD1948F /* Pods-BitcoinBlockExplorer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 945557FC3C300F23E05ACB0EC4C0C6DE /* Pods-BitcoinBlockExplorer-dummy.m */; };
-		0C7418EDFEF3ECFE4F08391E7FA39968 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = DE66624D7FB7B06FF2E3D35C4D711082 /* PrivacyInfo.xcprivacy */; };
-		39659A7C19D67AA2CAC2B1AED9AFC746 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		49A6B24A1A99ED4093767878A4EE9B87 /* GoogleMobileAdsPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837746640689795BB54F973086CE1EAE /* GoogleMobileAdsPlaceholder.swift */; };
-		510B79087AF8A9A0CE9F64D39B5C44B3 /* Google-Mobile-Ads-SDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87421B0407F2349DB2D5C82CA3794AD6 /* Google-Mobile-Ads-SDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9DEA85492262E6E1B76A757FA5D7DDB7 /* Pods-BitcoinBlockExplorer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D98738812A635D87A6B7CF0CAB6D68E /* Pods-BitcoinBlockExplorer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		101342E2ACF1634F54BF9338467115C7 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 5FCE70C60BF0EC8064826BA14C0142D7 /* PrivacyInfo.xcprivacy */; };
+		134E3FA8900E81BD4F86CB0CAEE54B14 /* Pods-BitcoinBlockExplorer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D98738812A635D87A6B7CF0CAB6D68E /* Pods-BitcoinBlockExplorer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		325D1BA5099DABAF9563D1756BD68CB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		4492BDF0B415081EB722D78CC24CFF0A /* Pods-BitcoinBlockExplorer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 945557FC3C300F23E05ACB0EC4C0C6DE /* Pods-BitcoinBlockExplorer-dummy.m */; };
+		49A6B24A1A99ED4093767878A4EE9B87 /* GoogleMobileAdsPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C431FBFDB7D4819A1B95BFE1DC60B6 /* GoogleMobileAdsPlaceholder.swift */; };
+		510B79087AF8A9A0CE9F64D39B5C44B3 /* Google-Mobile-Ads-SDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 64E6F555C5A64D1AD9DC1F135C2A609D /* Google-Mobile-Ads-SDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5402303E9D216EBCA5FC69EEEB7D6CD3 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 427537E886CC5EDD019C9F174448913E /* PrivacyInfo.xcprivacy */; };
 		CB4CD6248465A0227764A9B096F4C1B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		CEF115CCE907010C0D133A3C375ABB5C /* Google-Mobile-Ads-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C82CB052E442BE450E1415431F9A60D4 /* Google-Mobile-Ads-SDK-dummy.m */; };
-		DD5217552925FDA4964B6C30F7227C88 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 50A18E109306BAF831541AA5B4E47979 /* PrivacyInfo.xcprivacy */; };
+		CEF115CCE907010C0D133A3C375ABB5C /* Google-Mobile-Ads-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8A08D1340B611456903C5710DF873D /* Google-Mobile-Ads-SDK-dummy.m */; };
+		D753D4B6B710943BA9714647CA0778AF /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 1248793CDDB378C6CDC22A30CC63AB28 /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		152A52FC1340C96BF6B93499E6BF129E /* PBXContainerItemProxy */ = {
+		5E1B006FEB27BB9359A95E7801A90B90 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 36FD0958A0EC4A0FCF599E9B22719B03;
-			remoteInfo = "Google-Mobile-Ads-SDK-GoogleMobileAdsResources";
+			remoteGlobalIDString = 07E4850854598EAB507B636791D774FB;
+			remoteInfo = "FBAudienceNetwork-FBAudienceNetwork";
 		};
-		20E21ABD42456B709AF3DDA2A7A380B8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 63A7C675C13F87669AF56006D943998B;
-			remoteInfo = "GoogleUserMessagingPlatform-UserMessagingPlatformResources";
-		};
-		532B1906E14C92DD11EF4161626DD4C0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 458B188365A307B3C128ABF524D1A3E3;
-			remoteInfo = GoogleUserMessagingPlatform;
-		};
-		6DA66FCCB31EF37C6AB367D5876AAF5D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 458B188365A307B3C128ABF524D1A3E3;
-			remoteInfo = GoogleUserMessagingPlatform;
-		};
-		ACA9B72CE66C842AE67EA948FDFD3B1C /* PBXContainerItemProxy */ = {
+		71925A8A3DB4044E5EB89172756CD93B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FEA3B3A570634836C0457F3D7CEF1699;
 			remoteInfo = "Google-Mobile-Ads-SDK";
 		};
+		7DBE9DECBF10CBE50F8288D02730E15F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 458B188365A307B3C128ABF524D1A3E3;
+			remoteInfo = GoogleUserMessagingPlatform;
+		};
+		8713F2E214265CEF53F5743BAF4583FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 458B188365A307B3C128ABF524D1A3E3;
+			remoteInfo = GoogleUserMessagingPlatform;
+		};
+		B6E6911C2C2BFBA496FEA338D15CEA70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D53454FBB630479B01CA0A777383E94F;
+			remoteInfo = FBAudienceNetwork;
+		};
+		DBD4B3F726509A451A47122934D369E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63A7C675C13F87669AF56006D943998B;
+			remoteInfo = "GoogleUserMessagingPlatform-UserMessagingPlatformResources";
+		};
+		EA1EE38B596BB6C468B6EC29980D907D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36FD0958A0EC4A0FCF599E9B22719B03;
+			remoteInfo = "Google-Mobile-Ads-SDK-GoogleMobileAdsResources";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		058DA9643E3EAD4930586CB78E3E1F64 /* ResourceBundle-GoogleMobileAdsResources-Google-Mobile-Ads-SDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-GoogleMobileAdsResources-Google-Mobile-Ads-SDK-Info.plist"; sourceTree = "<group>"; };
-		28EC0D6B45622794297A1133DA37EAEC /* ResourceBundle-UserMessagingPlatformResources-GoogleUserMessagingPlatform-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-UserMessagingPlatformResources-GoogleUserMessagingPlatform-Info.plist"; sourceTree = "<group>"; };
-		31ABF05F4F720C8E40F38BAD866EBDC0 /* GoogleUserMessagingPlatform.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleUserMessagingPlatform.release.xcconfig; sourceTree = "<group>"; };
+		002495C7AF857284503AF3D6EA622411 /* GoogleUserMessagingPlatform-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "GoogleUserMessagingPlatform-xcframeworks.sh"; sourceTree = "<group>"; };
+		040DBBEF3AC2C6B52B3064D84490F247 /* Google-Mobile-Ads-SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Google-Mobile-Ads-SDK-prefix.pch"; sourceTree = "<group>"; };
+		04E359BE069B20EC54474FD030F3FDC4 /* UIView+FBNativeAdViewTag.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+FBNativeAdViewTag.h"; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/UIView+FBNativeAdViewTag.h"; sourceTree = "<group>"; };
+		0739F0B82BB5B96CE14FB31787362134 /* FBAudienceNetwork-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBAudienceNetwork-Swift.h"; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBAudienceNetwork-Swift.h"; sourceTree = "<group>"; };
+		0835F2A7E448DE39374FBC527ECDCD5B /* FBInterstitialAdBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBInterstitialAdBridge.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBInterstitialAdBridge.h"; sourceTree = "<group>"; };
+		08B8346039941B6D78A5532CE648EB57 /* FBNativeAdTableViewAdProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeAdTableViewAdProvider.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBNativeAdTableViewAdProvider.h"; sourceTree = "<group>"; };
+		098403746291F276170A3DDB4F842F74 /* Google-Mobile-Ads-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Google-Mobile-Ads-SDK.release.xcconfig"; sourceTree = "<group>"; };
+		09DCE3417834B14F34053DCA1AFE3860 /* FBInterstitialAdBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBInterstitialAdBridge.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBInterstitialAdBridge.h"; sourceTree = "<group>"; };
+		10A003E4FE086BEF390C4EE9A3FB667D /* FBNativeAdView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeAdView.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBNativeAdView.h"; sourceTree = "<group>"; };
+		1248793CDDB378C6CDC22A30CC63AB28 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = "Frameworks/GoogleMobileAdsFramework/GoogleMobileAds.xcframework/ios-arm64/GoogleMobileAds.framework/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
+		12A1F27645CB71ADEBB3205FC8AF2714 /* FBNativeAdScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeAdScrollView.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBNativeAdScrollView.h"; sourceTree = "<group>"; };
+		185666EBA0EC0F9DDCCAEB1A921CCB38 /* FBNativeAdTableViewCellProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeAdTableViewCellProvider.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBNativeAdTableViewCellProvider.h"; sourceTree = "<group>"; };
+		199098F6064263DA0E0C18FF6FDCD8D6 /* FBNativeAdCollectionViewAdProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeAdCollectionViewAdProvider.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBNativeAdCollectionViewAdProvider.h"; sourceTree = "<group>"; };
+		2021BB36D5212474908A272A2868AF5B /* FBAdOptionsView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdOptionsView.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBAdOptionsView.h"; sourceTree = "<group>"; };
+		22F4EB9BB7AC28619E35B1827D50F357 /* ResourceBundle-FBAudienceNetwork-FBAudienceNetwork-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-FBAudienceNetwork-FBAudienceNetwork-Info.plist"; sourceTree = "<group>"; };
+		2484AC9F54E4837E20602D9C16B9B84F /* FBAdCompanionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdCompanionView.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBAdCompanionView.h"; sourceTree = "<group>"; };
+		253109E7540FC6439BFC9472A3FEE162 /* FBRewardedInterstitialAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBRewardedInterstitialAd.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBRewardedInterstitialAd.h"; sourceTree = "<group>"; };
+		25814620B1DBFB558DA096800889CB30 /* FBAdSDKNotificationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdSDKNotificationManager.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBAdSDKNotificationManager.h"; sourceTree = "<group>"; };
+		28408E6AE263DC48828E21BA0F3354D9 /* FBInterstitialAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBInterstitialAd.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBInterstitialAd.h"; sourceTree = "<group>"; };
+		2CD1902F4D2CB4422C9D66B46E5D8C60 /* GoogleUserMessagingPlatform.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleUserMessagingPlatform.release.xcconfig; sourceTree = "<group>"; };
+		2D18FDF785A32C5D777F491C99A56EBA /* FBAdDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdDefines.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBAdDefines.h"; sourceTree = "<group>"; };
+		2E18F08D7C58C70D8A3071865A229278 /* ResourceBundle-UserMessagingPlatformResources-GoogleUserMessagingPlatform-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-UserMessagingPlatformResources-GoogleUserMessagingPlatform-Info.plist"; sourceTree = "<group>"; };
+		2F8E3F9F86F1B5BFFE807A5092BA77AA /* FBAdViewBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdViewBridge.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBAdViewBridge.h"; sourceTree = "<group>"; };
+		33C63AD42AD6C34AD15B49FE5CFC4579 /* FBNativeAdCollectionViewAdProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeAdCollectionViewAdProvider.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBNativeAdCollectionViewAdProvider.h"; sourceTree = "<group>"; };
+		3414A25CAB0C783BCF146987348E1358 /* FBAudienceNetwork-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "FBAudienceNetwork-xcframeworks.sh"; sourceTree = "<group>"; };
+		34B861650EBC5F69A63FCAC395DAEBA6 /* FBNativeAdView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeAdView.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBNativeAdView.h"; sourceTree = "<group>"; };
+		37FA0A9B452A0502568E87326B3D4799 /* FBNativeBannerAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeBannerAd.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBNativeBannerAd.h"; sourceTree = "<group>"; };
+		383D95E80BEA3984E989EDE9D33B8F88 /* FBNativeAdTableViewCellProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeAdTableViewCellProvider.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBNativeAdTableViewCellProvider.h"; sourceTree = "<group>"; };
 		3998091512768CD07733CB4F02B4BD9F /* Google-Mobile-Ads-SDK-GoogleMobileAdsResources */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Google-Mobile-Ads-SDK-GoogleMobileAdsResources"; path = GoogleMobileAdsResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		39EFE763BC391731C80E4E499654245C /* Pods-BitcoinBlockExplorer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BitcoinBlockExplorer-acknowledgements.plist"; sourceTree = "<group>"; };
 		3B060C0C954D293B5924AE20DFE30756 /* Pods-BitcoinBlockExplorer-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BitcoinBlockExplorer-resources.sh"; sourceTree = "<group>"; };
-		3BD97D982CAB87B29E6846F927335BF3 /* Google-Mobile-Ads-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Google-Mobile-Ads-SDK.release.xcconfig"; sourceTree = "<group>"; };
-		3CB2870152A11C8D7854F09D9999E402 /* Google-Mobile-Ads-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Google-Mobile-Ads-SDK.debug.xcconfig"; sourceTree = "<group>"; };
-		50A18E109306BAF831541AA5B4E47979 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = "Frameworks/GoogleMobileAdsFramework/GoogleMobileAds.xcframework/ios-arm64/GoogleMobileAds.framework/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
+		3BD756FA4694CD48B98D44E37EABFD1E /* FBNativeAdViewAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeAdViewAttributes.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBNativeAdViewAttributes.h"; sourceTree = "<group>"; };
+		3CFB4638FBF81D2F2624AEF7DC26A822 /* FBAdBridgeCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdBridgeCommon.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBAdBridgeCommon.h"; sourceTree = "<group>"; };
+		3FDFBF7EBB0E26B3947D5DA28BE05BDC /* FBRewardedVideoAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBRewardedVideoAd.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBRewardedVideoAd.h"; sourceTree = "<group>"; };
+		41B35F991BB7AD7E90D5D19AD1427AFC /* FBAdIconView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdIconView.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBAdIconView.h"; sourceTree = "<group>"; };
+		427537E886CC5EDD019C9F174448913E /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = "Frameworks/Release/UserMessagingPlatform.xcframework/ios-arm64/UserMessagingPlatform.framework/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
+		437ACED9F58D23D933858D422F13DC83 /* Google-Mobile-Ads-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Google-Mobile-Ads-SDK.debug.xcconfig"; sourceTree = "<group>"; };
+		47882A2D1D4524745B64FC23623F6F6C /* FBAdOptionsView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdOptionsView.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBAdOptionsView.h"; sourceTree = "<group>"; };
+		4B2C6D2F94936576F341C7DCD339A960 /* FBAdExtraHint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdExtraHint.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBAdExtraHint.h"; sourceTree = "<group>"; };
+		4B69C3C0F88478203BAC50386207C850 /* FBAudienceNetwork-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBAudienceNetwork-Swift.h"; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBAudienceNetwork-Swift.h"; sourceTree = "<group>"; };
+		4B7DF44604585335A3CF4E613896F581 /* FBNativeAdsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeAdsManager.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBNativeAdsManager.h"; sourceTree = "<group>"; };
+		4B8C67608F5E26AF456B737420D18152 /* Google-Mobile-Ads-SDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Google-Mobile-Ads-SDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		4FCEFD6CF7D486C313517B027AEC5F70 /* FBAdBridgeContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdBridgeContainer.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBAdBridgeContainer.h"; sourceTree = "<group>"; };
+		5088556BAC52E39EF0E47B7EC28E6E00 /* FBNativeBannerAdView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeBannerAdView.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBNativeBannerAdView.h"; sourceTree = "<group>"; };
+		52B0FE72BBA7BACFC9F634CC126960CA /* GoogleUserMessagingPlatform.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleUserMessagingPlatform.debug.xcconfig; sourceTree = "<group>"; };
+		546F35F7971A750490E7C08BEEF6E515 /* FBAdImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdImage.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBAdImage.h"; sourceTree = "<group>"; };
+		5537BC232A96A0A0631566DADAFECA15 /* FBAdView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdView.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBAdView.h"; sourceTree = "<group>"; };
 		56EFFDD696AF9DF3F802062D85FE4624 /* Pods-BitcoinBlockExplorer */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-BitcoinBlockExplorer"; path = Pods_BitcoinBlockExplorer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A43095D552068401F13C0AD2CC780B2 /* FBNativeAdBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeAdBase.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBNativeAdBase.h"; sourceTree = "<group>"; };
+		5FCE70C60BF0EC8064826BA14C0142D7 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
+		61ABCD002CB821A0AF717202AC36326E /* FBAudienceNetwork-FBAudienceNetwork */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "FBAudienceNetwork-FBAudienceNetwork"; path = FBAudienceNetwork.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		63809D1EC0ED36B03EB8D1BF37CE8FFE /* FBAdSDKNotificationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdSDKNotificationManager.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBAdSDKNotificationManager.h"; sourceTree = "<group>"; };
+		64E6F555C5A64D1AD9DC1F135C2A609D /* Google-Mobile-Ads-SDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Google-Mobile-Ads-SDK-umbrella.h"; sourceTree = "<group>"; };
+		6718A5D7E5A37538F96364FB0BA54CC1 /* FBDynamicBannerAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBDynamicBannerAd.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBDynamicBannerAd.h"; sourceTree = "<group>"; };
+		6A5C8A2086684ABF8C954D6CC8C220A3 /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = GoogleMobileAds.xcframework; path = Frameworks/GoogleMobileAdsFramework/GoogleMobileAds.xcframework; sourceTree = "<group>"; };
+		6F5E6196B5482457B1E94D84574E0673 /* FBAudienceNetworkAds.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAudienceNetworkAds.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBAudienceNetworkAds.h"; sourceTree = "<group>"; };
+		7065FEA45E172B0D1C780198B721A968 /* FBAdChoicesView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdChoicesView.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBAdChoicesView.h"; sourceTree = "<group>"; };
+		7292BFC9C219FE6CAF1EB270C1A070D4 /* FBNativeBannerAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeBannerAd.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBNativeBannerAd.h"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7495B8340E789BD69CB29659963FD9CD /* FBAudienceNetwork.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAudienceNetwork.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBAudienceNetwork.h"; sourceTree = "<group>"; };
+		76545527CD82F8AB965E1C3AFD80BBC0 /* FBAdSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdSettings.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBAdSettings.h"; sourceTree = "<group>"; };
 		76559A12BCA6946D53C46D65DC011CA9 /* Pods-BitcoinBlockExplorer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BitcoinBlockExplorer-Info.plist"; sourceTree = "<group>"; };
-		7BBE2B0C28630C727E998777ED1DCF4B /* Google-Mobile-Ads-SDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Google-Mobile-Ads-SDK-Info.plist"; sourceTree = "<group>"; };
+		771723BC806AC8B9EACB4152990D8CE1 /* FBNativeAdTableViewAdProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeAdTableViewAdProvider.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBNativeAdTableViewAdProvider.h"; sourceTree = "<group>"; };
+		7A4A739B17619D560A5835ED4B374792 /* FBRewardedVideoAdBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBRewardedVideoAdBridge.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBRewardedVideoAdBridge.h"; sourceTree = "<group>"; };
+		7FFB8B189757612E1BDA521274967CBB /* FBMediaViewVideoRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBMediaViewVideoRenderer.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBMediaViewVideoRenderer.h"; sourceTree = "<group>"; };
 		80459257421F51BC645D54EF4D00868A /* Pods-BitcoinBlockExplorer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BitcoinBlockExplorer.release.xcconfig"; sourceTree = "<group>"; };
-		837746640689795BB54F973086CE1EAE /* GoogleMobileAdsPlaceholder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GoogleMobileAdsPlaceholder.swift; path = Sources/GoogleMobileAdsPlaceholder.swift; sourceTree = "<group>"; };
-		87421B0407F2349DB2D5C82CA3794AD6 /* Google-Mobile-Ads-SDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Google-Mobile-Ads-SDK-umbrella.h"; sourceTree = "<group>"; };
+		84CB87572051FD7AD2822EC94A4C53DC /* FBAdView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdView.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBAdView.h"; sourceTree = "<group>"; };
+		8721970FB04C361ACC136CF49FABCDF1 /* FBAdSettingsBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdSettingsBridge.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBAdSettingsBridge.h"; sourceTree = "<group>"; };
 		8A377C18F92A8A511869ADA54B5652D2 /* GoogleUserMessagingPlatform-UserMessagingPlatformResources */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "GoogleUserMessagingPlatform-UserMessagingPlatformResources"; path = UserMessagingPlatformResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B3E05B16119ABE8EAA5B60FC319F5A4 /* FBNativeAdBaseView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeAdBaseView.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBNativeAdBaseView.h"; sourceTree = "<group>"; };
 		8D98738812A635D87A6B7CF0CAB6D68E /* Pods-BitcoinBlockExplorer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BitcoinBlockExplorer-umbrella.h"; sourceTree = "<group>"; };
-		8FBCE96FF45F89EB473BBEC6521C7C7E /* UserMessagingPlatform.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = UserMessagingPlatform.xcframework; path = Frameworks/Release/UserMessagingPlatform.xcframework; sourceTree = "<group>"; };
+		93295ACDC3E776535E243096DEFC5C48 /* FBAudienceNetwork.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = FBAudienceNetwork.xcframework; path = Static/FBAudienceNetwork.xcframework; sourceTree = "<group>"; };
+		935B25B43984697B603AFE3D80CCDB5E /* FBAudienceNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBAudienceNetwork.release.xcconfig; sourceTree = "<group>"; };
+		93A03111272100DDF033BC676DD0DAD1 /* FBInterstitialAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBInterstitialAd.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBInterstitialAd.h"; sourceTree = "<group>"; };
 		945557FC3C300F23E05ACB0EC4C0C6DE /* Pods-BitcoinBlockExplorer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BitcoinBlockExplorer-dummy.m"; sourceTree = "<group>"; };
-		94E58860FE9DF20A35AACB84AF645624 /* Google-Mobile-Ads-SDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Google-Mobile-Ads-SDK-xcframeworks.sh"; sourceTree = "<group>"; };
-		9CE2B1E5F4AFF15A541642B247E71E95 /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = GoogleMobileAds.xcframework; path = Frameworks/GoogleMobileAdsFramework/GoogleMobileAds.xcframework; sourceTree = "<group>"; };
+		94A8EEA00D7B5F82AAFB85C6F8AF2D2D /* FBNativeAdBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeAdBase.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBNativeAdBase.h"; sourceTree = "<group>"; };
+		95C22F5D01ADF59939C156C68D3C4DCA /* FBAdViewBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdViewBridge.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBAdViewBridge.h"; sourceTree = "<group>"; };
+		99FF4A243BC4F50EBC90122EEF7F937D /* FBAdUtilityBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdUtilityBridge.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBAdUtilityBridge.h"; sourceTree = "<group>"; };
+		9C1C57D53DF3D57B1BB141EF08C7FAD2 /* FBRewardedInterstitialAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBRewardedInterstitialAd.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBRewardedInterstitialAd.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DFA791F377C88AE97C162588CAA3076 /* FBAdDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdDefines.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBAdDefines.h"; sourceTree = "<group>"; };
+		9E9CC2A3C02F1AE33B14F6616DB36ABC /* FBNativeAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeAd.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBNativeAd.h"; sourceTree = "<group>"; };
+		9F1C91F82B2181DEE368EEF99BD52C0A /* Google-Mobile-Ads-SDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Google-Mobile-Ads-SDK-Info.plist"; sourceTree = "<group>"; };
+		9F2216A4C86E90E34B1AB54B4EA73A2A /* FBAudienceNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBAudienceNetwork.debug.xcconfig; sourceTree = "<group>"; };
+		9F2E7915778BB72F5D2DB73EB49775CD /* FBAdSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdSettings.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBAdSettings.h"; sourceTree = "<group>"; };
+		9F41F33F1F7DF0D8DAC04107CE5A68F9 /* FBMediaView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBMediaView.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBMediaView.h"; sourceTree = "<group>"; };
+		9FE8ABCAFA3DEE7F3B71AF76A671EBA2 /* FBAudienceNetwork.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAudienceNetwork.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBAudienceNetwork.h"; sourceTree = "<group>"; };
+		A33399B908BEF79B8EA2668070167A88 /* FBMediaView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBMediaView.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBMediaView.h"; sourceTree = "<group>"; };
 		A5D9DAA7AB76F5D6DFCBE2964FF38CED /* Pods-BitcoinBlockExplorer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BitcoinBlockExplorer.modulemap"; sourceTree = "<group>"; };
-		C82CB052E442BE450E1415431F9A60D4 /* Google-Mobile-Ads-SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Google-Mobile-Ads-SDK-dummy.m"; sourceTree = "<group>"; };
+		A9758AC858C708B65FC8A3D4E0225989 /* FBAdExperienceConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdExperienceConfig.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBAdExperienceConfig.h"; sourceTree = "<group>"; };
+		AC57A717957AB051FA80CE2B93BA18F6 /* FBAdExtraHint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdExtraHint.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBAdExtraHint.h"; sourceTree = "<group>"; };
+		AD6E8B20FEC3CF121764D2C1C3D558DB /* FBNativeAdCollectionViewCellProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeAdCollectionViewCellProvider.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBNativeAdCollectionViewCellProvider.h"; sourceTree = "<group>"; };
+		B5012AFFCA1AFBBAB41AD9AB2A0A8D45 /* FBAdChoicesView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdChoicesView.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBAdChoicesView.h"; sourceTree = "<group>"; };
+		B9A5F28F91A24AF8C7455EBC8B42814F /* FBAdSize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdSize.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBAdSize.h"; sourceTree = "<group>"; };
+		BF81EDB93E9E75A530A422D2F2D265AA /* FBAdBridgeContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdBridgeContainer.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBAdBridgeContainer.h"; sourceTree = "<group>"; };
+		C19B32BD9B7CE04275382E6FEDAB85D2 /* FBNativeAdsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeAdsManager.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBNativeAdsManager.h"; sourceTree = "<group>"; };
+		C32F9EB5620717C1060EFCA5ED020FAE /* UIView+FBNativeAdViewTag.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+FBNativeAdViewTag.h"; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/UIView+FBNativeAdViewTag.h"; sourceTree = "<group>"; };
+		C5E39FDE4B2B892DD22C06F3FC165EBC /* ResourceBundle-GoogleMobileAdsResources-Google-Mobile-Ads-SDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-GoogleMobileAdsResources-Google-Mobile-Ads-SDK-Info.plist"; sourceTree = "<group>"; };
 		CDD54D2AD60922E95DC9238965DB4030 /* Pods-BitcoinBlockExplorer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BitcoinBlockExplorer-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D10F663B298C8F5CE4AEAD11558C0C20 /* Google-Mobile-Ads-SDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Google-Mobile-Ads-SDK.modulemap"; sourceTree = "<group>"; };
+		CE012F0C80B6C321BD5B7CB119C0296F /* UserMessagingPlatform.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = UserMessagingPlatform.xcframework; path = Frameworks/Release/UserMessagingPlatform.xcframework; sourceTree = "<group>"; };
+		D004D02078AFC92546D4B22D5B4C8A24 /* FBNativeAdViewAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeAdViewAttributes.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBNativeAdViewAttributes.h"; sourceTree = "<group>"; };
+		D147A7EFDA55047C2F824241455753B7 /* FBAdCompanionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdCompanionView.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBAdCompanionView.h"; sourceTree = "<group>"; };
 		D1C150A8AE3B12E44570F94560A46886 /* Pods-BitcoinBlockExplorer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BitcoinBlockExplorer.debug.xcconfig"; sourceTree = "<group>"; };
-		DE66624D7FB7B06FF2E3D35C4D711082 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = "Frameworks/Release/UserMessagingPlatform.xcframework/ios-arm64/UserMessagingPlatform.framework/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
-		E6AFE911BCBC86108CD1441C3F7B3756 /* Google-Mobile-Ads-SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Google-Mobile-Ads-SDK-prefix.pch"; sourceTree = "<group>"; };
-		EB61DA7FFE6D9B8661EB9F7850AF655D /* GoogleUserMessagingPlatform-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "GoogleUserMessagingPlatform-xcframeworks.sh"; sourceTree = "<group>"; };
+		D5952C9D3EC04E7A934D2E818FD19426 /* FBNativeAdCollectionViewCellProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeAdCollectionViewCellProvider.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBNativeAdCollectionViewCellProvider.h"; sourceTree = "<group>"; };
+		DA7CB1093DA3994A780B2C35CECEB7E7 /* FBDynamicBannerAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBDynamicBannerAd.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBDynamicBannerAd.h"; sourceTree = "<group>"; };
+		DB92B94FA851FCE547FF55CD5B9C4989 /* Google-Mobile-Ads-SDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Google-Mobile-Ads-SDK.modulemap"; sourceTree = "<group>"; };
+		DD8A08D1340B611456903C5710DF873D /* Google-Mobile-Ads-SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Google-Mobile-Ads-SDK-dummy.m"; sourceTree = "<group>"; };
+		E46F73F6A1E37360BAB4863E28BE82E0 /* FBAdImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdImage.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBAdImage.h"; sourceTree = "<group>"; };
+		E636F60F7360A14D24792A241EF56605 /* FBAdUtilityBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdUtilityBridge.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBAdUtilityBridge.h"; sourceTree = "<group>"; };
+		E8ECD09F80546127FEB3E12A4D9A84BC /* FBNativeAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeAd.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBNativeAd.h"; sourceTree = "<group>"; };
+		E9B4329C1E8701F1A0E633EE7502197E /* FBAdExperienceConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdExperienceConfig.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBAdExperienceConfig.h"; sourceTree = "<group>"; };
+		EA2DD8EF867C227F39C6BA36E9D3B885 /* FBAdBridgeCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdBridgeCommon.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBAdBridgeCommon.h"; sourceTree = "<group>"; };
+		EC959948A414256B0F4939FABED2E9BB /* FBAudienceNetworkAds.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAudienceNetworkAds.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBAudienceNetworkAds.h"; sourceTree = "<group>"; };
+		EE7C677B74CE866A2A65DCFBB782AA10 /* FBAdIconView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdIconView.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBAdIconView.h"; sourceTree = "<group>"; };
+		EFD85D67321592BE759D47B15B652696 /* FBNativeAdBaseView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeAdBaseView.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBNativeAdBaseView.h"; sourceTree = "<group>"; };
+		F167576FDA9EE1A487465BEE35B7A0CC /* FBAdSize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdSize.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBAdSize.h"; sourceTree = "<group>"; };
+		F1C431FBFDB7D4819A1B95BFE1DC60B6 /* GoogleMobileAdsPlaceholder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GoogleMobileAdsPlaceholder.swift; path = Sources/GoogleMobileAdsPlaceholder.swift; sourceTree = "<group>"; };
+		F1D97BED114A1C4A332754DDF01F9C72 /* FBAdSettingsBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAdSettingsBridge.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBAdSettingsBridge.h"; sourceTree = "<group>"; };
+		F270667FD8C77387220774EA148E2F71 /* FBMediaViewVideoRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBMediaViewVideoRenderer.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBMediaViewVideoRenderer.h"; sourceTree = "<group>"; };
+		F5C55019768CA2FC5ACCCB66A3C75B76 /* FBNativeBannerAdView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeBannerAdView.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBNativeBannerAdView.h"; sourceTree = "<group>"; };
+		F7B28B1D9DD1686A00BBA401791B7A3F /* FBRewardedVideoAdBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBRewardedVideoAdBridge.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64_x86_64-simulator/FBAudienceNetwork.framework/Headers/FBRewardedVideoAdBridge.h"; sourceTree = "<group>"; };
 		F8ECCB3B4E33C0FDD00B394CC2C7EA2E /* Google-Mobile-Ads-SDK */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Google-Mobile-Ads-SDK"; path = Google_Mobile_Ads_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE9FA647701D5D9784F7B39F699820EB /* GoogleUserMessagingPlatform.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleUserMessagingPlatform.debug.xcconfig; sourceTree = "<group>"; };
+		F9BD8E473D178452A06203D6698FDFDF /* FBNativeAdScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBNativeAdScrollView.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBNativeAdScrollView.h"; sourceTree = "<group>"; };
+		FBBDCDCBB2118DA6E8049D9E5DFCDC83 /* FBRewardedVideoAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBRewardedVideoAd.h; path = "Static/FBAudienceNetwork.xcframework/ios-arm64/FBAudienceNetwork.framework/Headers/FBRewardedVideoAd.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,25 +232,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		657CF4638731C0BBB70214E0CB78DE00 /* Frameworks */ = {
+		666D2411B1B716340C635A3F046466BD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7F50FF9F79B9030EDCB761DA3460EC54 /* Frameworks */ = {
+		9140AA8AD1DBD5CF716D0FBDB4F0FD74 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39659A7C19D67AA2CAC2B1AED9AFC746 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB373389BEA7E562E5A926D88D0846E9 /* Frameworks */ = {
+		DBEFBF71B09821D8F6211A394ED3C737 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDE62E3F6072861D003CFA9CDF8532B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				325D1BA5099DABAF9563D1756BD68CB0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,12 +281,24 @@
 			path = "Target Support Files/Pods-BitcoinBlockExplorer";
 			sourceTree = "<group>";
 		};
-		159A744447C0E7167C8631803C008071 /* Frameworks */ = {
+		127B4659365BF7F10B791071B7D19EA3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9CE2B1E5F4AFF15A541642B247E71E95 /* GoogleMobileAds.xcframework */,
+				1248793CDDB378C6CDC22A30CC63AB28 /* PrivacyInfo.xcprivacy */,
 			);
-			name = Frameworks;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		19655A975D6B14BC938A9D88189AB9F1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				002495C7AF857284503AF3D6EA622411 /* GoogleUserMessagingPlatform-xcframeworks.sh */,
+				52B0FE72BBA7BACFC9F634CC126960CA /* GoogleUserMessagingPlatform.debug.xcconfig */,
+				2CD1902F4D2CB4422C9D66B46E5D8C60 /* GoogleUserMessagingPlatform.release.xcconfig */,
+				2E18F08D7C58C70D8A3071865A229278 /* ResourceBundle-UserMessagingPlatformResources-GoogleUserMessagingPlatform-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleUserMessagingPlatform";
 			sourceTree = "<group>";
 		};
 		1AB6A6A8CDF4BD5785964808613D7C43 /* Targets Support Files */ = {
@@ -173,10 +309,29 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		21E53E54DD17563DB8F4A6E18C66CDCF /* Resources */ = {
+		4475D7D8B97DACEBCB246D4EEDE90E60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DE66624D7FB7B06FF2E3D35C4D711082 /* PrivacyInfo.xcprivacy */,
+				93295ACDC3E776535E243096DEFC5C48 /* FBAudienceNetwork.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DD9DF0518C6BCBDF480776058DCEF83 /* GoogleUserMessagingPlatform */ = {
+			isa = PBXGroup;
+			children = (
+				5B68770A38A26FCFAF58041F1C1452BB /* Frameworks */,
+				55DDB431EF748817FC7C171EBE7F5AE9 /* Resources */,
+				19655A975D6B14BC938A9D88189AB9F1 /* Support Files */,
+			);
+			name = GoogleUserMessagingPlatform;
+			path = GoogleUserMessagingPlatform;
+			sourceTree = "<group>";
+		};
+		55DDB431EF748817FC7C171EBE7F5AE9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				427537E886CC5EDD019C9F174448913E /* PrivacyInfo.xcprivacy */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -189,9 +344,28 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		5BFA1D4AD4642199FC8A504636D86FA5 /* Products */ = {
+		5B68770A38A26FCFAF58041F1C1452BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE012F0C80B6C321BD5B7CB119C0296F /* UserMessagingPlatform.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		67DB307F139325A29276AA1A889158DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FDD5CB1ACC1CFC845DB58C63AEE4231A /* FBAudienceNetwork */,
+				8BA7EED628C6171574EE1E492E67BE44 /* Google-Mobile-Ads-SDK */,
+				4DD9DF0518C6BCBDF480776058DCEF83 /* GoogleUserMessagingPlatform */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8A36F5B2E27D64DD57089B5050F2B1B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61ABCD002CB821A0AF717202AC36326E /* FBAudienceNetwork-FBAudienceNetwork */,
 				F8ECCB3B4E33C0FDD00B394CC2C7EA2E /* Google-Mobile-Ads-SDK */,
 				3998091512768CD07733CB4F02B4BD9F /* Google-Mobile-Ads-SDK-GoogleMobileAdsResources */,
 				8A377C18F92A8A511869ADA54B5652D2 /* GoogleUserMessagingPlatform-UserMessagingPlatformResources */,
@@ -200,36 +374,61 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		65DDB6807CC970EF9AC78C515C678942 /* Resources */ = {
+		8BA7EED628C6171574EE1E492E67BE44 /* Google-Mobile-Ads-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				50A18E109306BAF831541AA5B4E47979 /* PrivacyInfo.xcprivacy */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		77AAD7F4D03FF9C1285BDDA1091F64F8 /* Google-Mobile-Ads-SDK */ = {
-			isa = PBXGroup;
-			children = (
-				837746640689795BB54F973086CE1EAE /* GoogleMobileAdsPlaceholder.swift */,
-				159A744447C0E7167C8631803C008071 /* Frameworks */,
-				65DDB6807CC970EF9AC78C515C678942 /* Resources */,
-				E3858A10F7518C7CDDEBF0AC3778E891 /* Support Files */,
+				F1C431FBFDB7D4819A1B95BFE1DC60B6 /* GoogleMobileAdsPlaceholder.swift */,
+				C369EC12134EFD78370E99B6BA0EB739 /* Frameworks */,
+				127B4659365BF7F10B791071B7D19EA3 /* Resources */,
+				954A64E71776A4DB9F568C278380D821 /* Support Files */,
 			);
 			name = "Google-Mobile-Ads-SDK";
 			path = "Google-Mobile-Ads-SDK";
 			sourceTree = "<group>";
 		};
-		C899256EE1C959A4EBC9F48E72A6528D /* Support Files */ = {
+		954A64E71776A4DB9F568C278380D821 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EB61DA7FFE6D9B8661EB9F7850AF655D /* GoogleUserMessagingPlatform-xcframeworks.sh */,
-				FE9FA647701D5D9784F7B39F699820EB /* GoogleUserMessagingPlatform.debug.xcconfig */,
-				31ABF05F4F720C8E40F38BAD866EBDC0 /* GoogleUserMessagingPlatform.release.xcconfig */,
-				28EC0D6B45622794297A1133DA37EAEC /* ResourceBundle-UserMessagingPlatformResources-GoogleUserMessagingPlatform-Info.plist */,
+				DB92B94FA851FCE547FF55CD5B9C4989 /* Google-Mobile-Ads-SDK.modulemap */,
+				DD8A08D1340B611456903C5710DF873D /* Google-Mobile-Ads-SDK-dummy.m */,
+				9F1C91F82B2181DEE368EEF99BD52C0A /* Google-Mobile-Ads-SDK-Info.plist */,
+				040DBBEF3AC2C6B52B3064D84490F247 /* Google-Mobile-Ads-SDK-prefix.pch */,
+				64E6F555C5A64D1AD9DC1F135C2A609D /* Google-Mobile-Ads-SDK-umbrella.h */,
+				4B8C67608F5E26AF456B737420D18152 /* Google-Mobile-Ads-SDK-xcframeworks.sh */,
+				437ACED9F58D23D933858D422F13DC83 /* Google-Mobile-Ads-SDK.debug.xcconfig */,
+				098403746291F276170A3DDB4F842F74 /* Google-Mobile-Ads-SDK.release.xcconfig */,
+				C5E39FDE4B2B892DD22C06F3FC165EBC /* ResourceBundle-GoogleMobileAdsResources-Google-Mobile-Ads-SDK-Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/GoogleUserMessagingPlatform";
+			path = "../Target Support Files/Google-Mobile-Ads-SDK";
+			sourceTree = "<group>";
+		};
+		AB7D272954F83FD9546986ABBB01AC0B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3414A25CAB0C783BCF146987348E1358 /* FBAudienceNetwork-xcframeworks.sh */,
+				9F2216A4C86E90E34B1AB54B4EA73A2A /* FBAudienceNetwork.debug.xcconfig */,
+				935B25B43984697B603AFE3D80CCDB5E /* FBAudienceNetwork.release.xcconfig */,
+				22F4EB9BB7AC28619E35B1827D50F357 /* ResourceBundle-FBAudienceNetwork-FBAudienceNetwork-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FBAudienceNetwork";
+			sourceTree = "<group>";
+		};
+		AC8C6915FED64801FA95827B01A2A07E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5FCE70C60BF0EC8064826BA14C0142D7 /* PrivacyInfo.xcprivacy */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C369EC12134EFD78370E99B6BA0EB739 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A5C8A2086684ABF8C954D6CC8C220A3 /* GoogleMobileAds.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -237,21 +436,10 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				FA8C76703EDBF6E7F7BFB2AF887CBFCC /* Pods */,
-				5BFA1D4AD4642199FC8A504636D86FA5 /* Products */,
+				67DB307F139325A29276AA1A889158DF /* Pods */,
+				8A36F5B2E27D64DD57089B5050F2B1B9 /* Products */,
 				1AB6A6A8CDF4BD5785964808613D7C43 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D10D9F51B04C4F71D5F6FE8642D33CA1 /* GoogleUserMessagingPlatform */ = {
-			isa = PBXGroup;
-			children = (
-				FCEA4B2426F7DD3AF7E0A37381C6947A /* Frameworks */,
-				21E53E54DD17563DB8F4A6E18C66CDCF /* Resources */,
-				C899256EE1C959A4EBC9F48E72A6528D /* Support Files */,
-			);
-			name = GoogleUserMessagingPlatform;
-			path = GoogleUserMessagingPlatform;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -262,48 +450,109 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E3858A10F7518C7CDDEBF0AC3778E891 /* Support Files */ = {
+		FDD5CB1ACC1CFC845DB58C63AEE4231A /* FBAudienceNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				D10F663B298C8F5CE4AEAD11558C0C20 /* Google-Mobile-Ads-SDK.modulemap */,
-				C82CB052E442BE450E1415431F9A60D4 /* Google-Mobile-Ads-SDK-dummy.m */,
-				7BBE2B0C28630C727E998777ED1DCF4B /* Google-Mobile-Ads-SDK-Info.plist */,
-				E6AFE911BCBC86108CD1441C3F7B3756 /* Google-Mobile-Ads-SDK-prefix.pch */,
-				87421B0407F2349DB2D5C82CA3794AD6 /* Google-Mobile-Ads-SDK-umbrella.h */,
-				94E58860FE9DF20A35AACB84AF645624 /* Google-Mobile-Ads-SDK-xcframeworks.sh */,
-				3CB2870152A11C8D7854F09D9999E402 /* Google-Mobile-Ads-SDK.debug.xcconfig */,
-				3BD97D982CAB87B29E6846F927335BF3 /* Google-Mobile-Ads-SDK.release.xcconfig */,
-				058DA9643E3EAD4930586CB78E3E1F64 /* ResourceBundle-GoogleMobileAdsResources-Google-Mobile-Ads-SDK-Info.plist */,
+				EA2DD8EF867C227F39C6BA36E9D3B885 /* FBAdBridgeCommon.h */,
+				3CFB4638FBF81D2F2624AEF7DC26A822 /* FBAdBridgeCommon.h */,
+				4FCEFD6CF7D486C313517B027AEC5F70 /* FBAdBridgeContainer.h */,
+				BF81EDB93E9E75A530A422D2F2D265AA /* FBAdBridgeContainer.h */,
+				B5012AFFCA1AFBBAB41AD9AB2A0A8D45 /* FBAdChoicesView.h */,
+				7065FEA45E172B0D1C780198B721A968 /* FBAdChoicesView.h */,
+				2484AC9F54E4837E20602D9C16B9B84F /* FBAdCompanionView.h */,
+				D147A7EFDA55047C2F824241455753B7 /* FBAdCompanionView.h */,
+				9DFA791F377C88AE97C162588CAA3076 /* FBAdDefines.h */,
+				2D18FDF785A32C5D777F491C99A56EBA /* FBAdDefines.h */,
+				E9B4329C1E8701F1A0E633EE7502197E /* FBAdExperienceConfig.h */,
+				A9758AC858C708B65FC8A3D4E0225989 /* FBAdExperienceConfig.h */,
+				4B2C6D2F94936576F341C7DCD339A960 /* FBAdExtraHint.h */,
+				AC57A717957AB051FA80CE2B93BA18F6 /* FBAdExtraHint.h */,
+				EE7C677B74CE866A2A65DCFBB782AA10 /* FBAdIconView.h */,
+				41B35F991BB7AD7E90D5D19AD1427AFC /* FBAdIconView.h */,
+				546F35F7971A750490E7C08BEEF6E515 /* FBAdImage.h */,
+				E46F73F6A1E37360BAB4863E28BE82E0 /* FBAdImage.h */,
+				2021BB36D5212474908A272A2868AF5B /* FBAdOptionsView.h */,
+				47882A2D1D4524745B64FC23623F6F6C /* FBAdOptionsView.h */,
+				25814620B1DBFB558DA096800889CB30 /* FBAdSDKNotificationManager.h */,
+				63809D1EC0ED36B03EB8D1BF37CE8FFE /* FBAdSDKNotificationManager.h */,
+				76545527CD82F8AB965E1C3AFD80BBC0 /* FBAdSettings.h */,
+				9F2E7915778BB72F5D2DB73EB49775CD /* FBAdSettings.h */,
+				F1D97BED114A1C4A332754DDF01F9C72 /* FBAdSettingsBridge.h */,
+				8721970FB04C361ACC136CF49FABCDF1 /* FBAdSettingsBridge.h */,
+				F167576FDA9EE1A487465BEE35B7A0CC /* FBAdSize.h */,
+				B9A5F28F91A24AF8C7455EBC8B42814F /* FBAdSize.h */,
+				99FF4A243BC4F50EBC90122EEF7F937D /* FBAdUtilityBridge.h */,
+				E636F60F7360A14D24792A241EF56605 /* FBAdUtilityBridge.h */,
+				84CB87572051FD7AD2822EC94A4C53DC /* FBAdView.h */,
+				5537BC232A96A0A0631566DADAFECA15 /* FBAdView.h */,
+				95C22F5D01ADF59939C156C68D3C4DCA /* FBAdViewBridge.h */,
+				2F8E3F9F86F1B5BFFE807A5092BA77AA /* FBAdViewBridge.h */,
+				9FE8ABCAFA3DEE7F3B71AF76A671EBA2 /* FBAudienceNetwork.h */,
+				7495B8340E789BD69CB29659963FD9CD /* FBAudienceNetwork.h */,
+				4B69C3C0F88478203BAC50386207C850 /* FBAudienceNetwork-Swift.h */,
+				0739F0B82BB5B96CE14FB31787362134 /* FBAudienceNetwork-Swift.h */,
+				EC959948A414256B0F4939FABED2E9BB /* FBAudienceNetworkAds.h */,
+				6F5E6196B5482457B1E94D84574E0673 /* FBAudienceNetworkAds.h */,
+				DA7CB1093DA3994A780B2C35CECEB7E7 /* FBDynamicBannerAd.h */,
+				6718A5D7E5A37538F96364FB0BA54CC1 /* FBDynamicBannerAd.h */,
+				93A03111272100DDF033BC676DD0DAD1 /* FBInterstitialAd.h */,
+				28408E6AE263DC48828E21BA0F3354D9 /* FBInterstitialAd.h */,
+				0835F2A7E448DE39374FBC527ECDCD5B /* FBInterstitialAdBridge.h */,
+				09DCE3417834B14F34053DCA1AFE3860 /* FBInterstitialAdBridge.h */,
+				A33399B908BEF79B8EA2668070167A88 /* FBMediaView.h */,
+				9F41F33F1F7DF0D8DAC04107CE5A68F9 /* FBMediaView.h */,
+				7FFB8B189757612E1BDA521274967CBB /* FBMediaViewVideoRenderer.h */,
+				F270667FD8C77387220774EA148E2F71 /* FBMediaViewVideoRenderer.h */,
+				E8ECD09F80546127FEB3E12A4D9A84BC /* FBNativeAd.h */,
+				9E9CC2A3C02F1AE33B14F6616DB36ABC /* FBNativeAd.h */,
+				94A8EEA00D7B5F82AAFB85C6F8AF2D2D /* FBNativeAdBase.h */,
+				5A43095D552068401F13C0AD2CC780B2 /* FBNativeAdBase.h */,
+				8B3E05B16119ABE8EAA5B60FC319F5A4 /* FBNativeAdBaseView.h */,
+				EFD85D67321592BE759D47B15B652696 /* FBNativeAdBaseView.h */,
+				199098F6064263DA0E0C18FF6FDCD8D6 /* FBNativeAdCollectionViewAdProvider.h */,
+				33C63AD42AD6C34AD15B49FE5CFC4579 /* FBNativeAdCollectionViewAdProvider.h */,
+				D5952C9D3EC04E7A934D2E818FD19426 /* FBNativeAdCollectionViewCellProvider.h */,
+				AD6E8B20FEC3CF121764D2C1C3D558DB /* FBNativeAdCollectionViewCellProvider.h */,
+				F9BD8E473D178452A06203D6698FDFDF /* FBNativeAdScrollView.h */,
+				12A1F27645CB71ADEBB3205FC8AF2714 /* FBNativeAdScrollView.h */,
+				C19B32BD9B7CE04275382E6FEDAB85D2 /* FBNativeAdsManager.h */,
+				4B7DF44604585335A3CF4E613896F581 /* FBNativeAdsManager.h */,
+				08B8346039941B6D78A5532CE648EB57 /* FBNativeAdTableViewAdProvider.h */,
+				771723BC806AC8B9EACB4152990D8CE1 /* FBNativeAdTableViewAdProvider.h */,
+				383D95E80BEA3984E989EDE9D33B8F88 /* FBNativeAdTableViewCellProvider.h */,
+				185666EBA0EC0F9DDCCAEB1A921CCB38 /* FBNativeAdTableViewCellProvider.h */,
+				10A003E4FE086BEF390C4EE9A3FB667D /* FBNativeAdView.h */,
+				34B861650EBC5F69A63FCAC395DAEBA6 /* FBNativeAdView.h */,
+				3BD756FA4694CD48B98D44E37EABFD1E /* FBNativeAdViewAttributes.h */,
+				D004D02078AFC92546D4B22D5B4C8A24 /* FBNativeAdViewAttributes.h */,
+				7292BFC9C219FE6CAF1EB270C1A070D4 /* FBNativeBannerAd.h */,
+				37FA0A9B452A0502568E87326B3D4799 /* FBNativeBannerAd.h */,
+				5088556BAC52E39EF0E47B7EC28E6E00 /* FBNativeBannerAdView.h */,
+				F5C55019768CA2FC5ACCCB66A3C75B76 /* FBNativeBannerAdView.h */,
+				9C1C57D53DF3D57B1BB141EF08C7FAD2 /* FBRewardedInterstitialAd.h */,
+				253109E7540FC6439BFC9472A3FEE162 /* FBRewardedInterstitialAd.h */,
+				FBBDCDCBB2118DA6E8049D9E5DFCDC83 /* FBRewardedVideoAd.h */,
+				3FDFBF7EBB0E26B3947D5DA28BE05BDC /* FBRewardedVideoAd.h */,
+				7A4A739B17619D560A5835ED4B374792 /* FBRewardedVideoAdBridge.h */,
+				F7B28B1D9DD1686A00BBA401791B7A3F /* FBRewardedVideoAdBridge.h */,
+				C32F9EB5620717C1060EFCA5ED020FAE /* UIView+FBNativeAdViewTag.h */,
+				04E359BE069B20EC54474FD030F3FDC4 /* UIView+FBNativeAdViewTag.h */,
+				4475D7D8B97DACEBCB246D4EEDE90E60 /* Frameworks */,
+				AC8C6915FED64801FA95827B01A2A07E /* Resources */,
+				AB7D272954F83FD9546986ABBB01AC0B /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Google-Mobile-Ads-SDK";
-			sourceTree = "<group>";
-		};
-		FA8C76703EDBF6E7F7BFB2AF887CBFCC /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				77AAD7F4D03FF9C1285BDDA1091F64F8 /* Google-Mobile-Ads-SDK */,
-				D10D9F51B04C4F71D5F6FE8642D33CA1 /* GoogleUserMessagingPlatform */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		FCEA4B2426F7DD3AF7E0A37381C6947A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8FBCE96FF45F89EB473BBEC6521C7C7E /* UserMessagingPlatform.xcframework */,
-			);
-			name = Frameworks;
+			name = FBAudienceNetwork;
+			path = FBAudienceNetwork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5892BAD6FECB9C33AA16247A71ECA285 /* Headers */ = {
+		1F93764BDB55C330E703A16D1573F975 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DEA85492262E6E1B76A757FA5D7DDB7 /* Pods-BitcoinBlockExplorer-umbrella.h in Headers */,
+				134E3FA8900E81BD4F86CB0CAEE54B14 /* Pods-BitcoinBlockExplorer-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,13 +567,30 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		07E4850854598EAB507B636791D774FB /* FBAudienceNetwork-FBAudienceNetwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14C0124B67FC58FB41FE9FA9A25071ED /* Build configuration list for PBXNativeTarget "FBAudienceNetwork-FBAudienceNetwork" */;
+			buildPhases = (
+				5F8CF6CE2030C50DC79C86DE57229525 /* Sources */,
+				666D2411B1B716340C635A3F046466BD /* Frameworks */,
+				B6EA314230716B37A29BC4CE2D8C0158 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FBAudienceNetwork-FBAudienceNetwork";
+			productName = FBAudienceNetwork;
+			productReference = 61ABCD002CB821A0AF717202AC36326E /* FBAudienceNetwork-FBAudienceNetwork */;
+			productType = "com.apple.product-type.bundle";
+		};
 		36FD0958A0EC4A0FCF599E9B22719B03 /* Google-Mobile-Ads-SDK-GoogleMobileAdsResources */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 901BCE9FDB97599D3F1AE28D7173CB78 /* Build configuration list for PBXNativeTarget "Google-Mobile-Ads-SDK-GoogleMobileAdsResources" */;
+			buildConfigurationList = 04F14F06454EF76FC213854C42890952 /* Build configuration list for PBXNativeTarget "Google-Mobile-Ads-SDK-GoogleMobileAdsResources" */;
 			buildPhases = (
-				0C0ACA67F1D412DE5C025622B4E701F4 /* Sources */,
-				657CF4638731C0BBB70214E0CB78DE00 /* Frameworks */,
-				CA5CF143F3418F3B220660E1C94C2235 /* Resources */,
+				2BE9C09762279DA13DA4B0CACFCE08E1 /* Sources */,
+				DBEFBF71B09821D8F6211A394ED3C737 /* Frameworks */,
+				042FAD9B3011C192F9FDA21796D25408 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -337,11 +603,11 @@
 		};
 		63A7C675C13F87669AF56006D943998B /* GoogleUserMessagingPlatform-UserMessagingPlatformResources */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3BDDF2655DAD87D73E4171BABEC5CD06 /* Build configuration list for PBXNativeTarget "GoogleUserMessagingPlatform-UserMessagingPlatformResources" */;
+			buildConfigurationList = 801CCB5990EECFCE707E138D43FFC001 /* Build configuration list for PBXNativeTarget "GoogleUserMessagingPlatform-UserMessagingPlatformResources" */;
 			buildPhases = (
-				DAC6A7EF506E8C6A59111D143A1FB8A0 /* Sources */,
-				AB373389BEA7E562E5A926D88D0846E9 /* Frameworks */,
-				C8DD13364A053224F3C346755880B296 /* Resources */,
+				80774823DE60E935C95EE91822ACECE8 /* Sources */,
+				9140AA8AD1DBD5CF716D0FBDB4F0FD74 /* Frameworks */,
+				DBCAF90376B33978283858A313A12AF1 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -354,18 +620,19 @@
 		};
 		CEDDEB61A3745D77EFFC1B6F4F752042 /* Pods-BitcoinBlockExplorer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 21A747E460AA1F9E32A863DBF80E33F6 /* Build configuration list for PBXNativeTarget "Pods-BitcoinBlockExplorer" */;
+			buildConfigurationList = 254A7130CF8331FC8D9D2B9E8E583131 /* Build configuration list for PBXNativeTarget "Pods-BitcoinBlockExplorer" */;
 			buildPhases = (
-				5892BAD6FECB9C33AA16247A71ECA285 /* Headers */,
-				0EF14A67EA3D1171B55189E354C66004 /* Sources */,
-				7F50FF9F79B9030EDCB761DA3460EC54 /* Frameworks */,
-				B7556FF6ABE016FDBAB1F1691466A586 /* Resources */,
+				1F93764BDB55C330E703A16D1573F975 /* Headers */,
+				10489D4F2223B93CFC59FB26673BD594 /* Sources */,
+				EDE62E3F6072861D003CFA9CDF8532B4 /* Frameworks */,
+				52D08A28E0DA0DBD80B19601AE8B871B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7CCBAC9A1F64050D2AA6372719BFEB0B /* PBXTargetDependency */,
-				6BDA364F8866EE0A27F79557B2E961BF /* PBXTargetDependency */,
+				AAE81B706C69FC94636CEC0716C5AC6C /* PBXTargetDependency */,
+				FA6AFD2E0B7C232A5AACFF1612BD81D9 /* PBXTargetDependency */,
+				73EE68B0BD133B1E7BFA598AB03F9D95 /* PBXTargetDependency */,
 			);
 			name = "Pods-BitcoinBlockExplorer";
 			productName = Pods_BitcoinBlockExplorer;
@@ -385,8 +652,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				FFE963E6F558FE7EDF3A75E232CA1613 /* PBXTargetDependency */,
-				C792A1EB3CD966C14D7700AD218C4AFB /* PBXTargetDependency */,
+				EB5F9B9C103796DF9A953732B52BCDC7 /* PBXTargetDependency */,
+				7BF0EAF9926CA0E432AB70052674FC46 /* PBXTargetDependency */,
 			);
 			name = "Google-Mobile-Ads-SDK";
 			productName = Google_Mobile_Ads_SDK;
@@ -411,10 +678,13 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 5BFA1D4AD4642199FC8A504636D86FA5 /* Products */;
+			minimizedProjectReferenceProxies = 0;
+			productRefGroup = 8A36F5B2E27D64DD57089B5050F2B1B9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				D53454FBB630479B01CA0A777383E94F /* FBAudienceNetwork */,
+				07E4850854598EAB507B636791D774FB /* FBAudienceNetwork-FBAudienceNetwork */,
 				FEA3B3A570634836C0457F3D7CEF1699 /* Google-Mobile-Ads-SDK */,
 				36FD0958A0EC4A0FCF599E9B22719B03 /* Google-Mobile-Ads-SDK-GoogleMobileAdsResources */,
 				458B188365A307B3C128ABF524D1A3E3 /* GoogleUserMessagingPlatform */,
@@ -425,6 +695,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		042FAD9B3011C192F9FDA21796D25408 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D753D4B6B710943BA9714647CA0778AF /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04E7C848A7D46A00989C29BBA27921F5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -432,32 +710,66 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7556FF6ABE016FDBAB1F1691466A586 /* Resources */ = {
+		52D08A28E0DA0DBD80B19601AE8B871B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8DD13364A053224F3C346755880B296 /* Resources */ = {
+		B6EA314230716B37A29BC4CE2D8C0158 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C7418EDFEF3ECFE4F08391E7FA39968 /* PrivacyInfo.xcprivacy in Resources */,
+				101342E2ACF1634F54BF9338467115C7 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA5CF143F3418F3B220660E1C94C2235 /* Resources */ = {
+		DBCAF90376B33978283858A313A12AF1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD5217552925FDA4964B6C30F7227C88 /* PrivacyInfo.xcprivacy in Resources */,
+				5402303E9D216EBCA5FC69EEEB7D6CD3 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0B30F088A2909E57C202CEE685795F3A /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/FBAudienceNetwork/FBAudienceNetwork-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/FBAudienceNetwork/FBAudienceNetwork-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/FBAudienceNetwork/FBAudienceNetwork-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		852C0390FEBD387AA29A132D913D9962 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/GoogleUserMessagingPlatform/GoogleUserMessagingPlatform-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/GoogleUserMessagingPlatform/GoogleUserMessagingPlatform-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/GoogleUserMessagingPlatform/GoogleUserMessagingPlatform-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F0ACF60633B6C7D02507F5889E0D1DA0 /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -475,38 +787,35 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Google-Mobile-Ads-SDK/Google-Mobile-Ads-SDK-xcframeworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F29EEAAA4DFE2090777FB40F261494C4 /* [CP] Copy XCFrameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/GoogleUserMessagingPlatform/GoogleUserMessagingPlatform-xcframeworks-input-files.xcfilelist",
-			);
-			name = "[CP] Copy XCFrameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/GoogleUserMessagingPlatform/GoogleUserMessagingPlatform-xcframeworks-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/GoogleUserMessagingPlatform/GoogleUserMessagingPlatform-xcframeworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0C0ACA67F1D412DE5C025622B4E701F4 /* Sources */ = {
+		10489D4F2223B93CFC59FB26673BD594 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4492BDF0B415081EB722D78CC24CFF0A /* Pods-BitcoinBlockExplorer-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BE9C09762279DA13DA4B0CACFCE08E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0EF14A67EA3D1171B55189E354C66004 /* Sources */ = {
+		5F8CF6CE2030C50DC79C86DE57229525 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06A07502158C766ABFD36A1FCCD1948F /* Pods-BitcoinBlockExplorer-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80774823DE60E935C95EE91822ACECE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,86 +828,57 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DAC6A7EF506E8C6A59111D143A1FB8A0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6BDA364F8866EE0A27F79557B2E961BF /* PBXTargetDependency */ = {
+		6FBCBBFB00103555D489558DB8A3F5AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FBAudienceNetwork-FBAudienceNetwork";
+			target = 07E4850854598EAB507B636791D774FB /* FBAudienceNetwork-FBAudienceNetwork */;
+			targetProxy = 5E1B006FEB27BB9359A95E7801A90B90 /* PBXContainerItemProxy */;
+		};
+		73EE68B0BD133B1E7BFA598AB03F9D95 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GoogleUserMessagingPlatform;
 			target = 458B188365A307B3C128ABF524D1A3E3 /* GoogleUserMessagingPlatform */;
-			targetProxy = 6DA66FCCB31EF37C6AB367D5876AAF5D /* PBXContainerItemProxy */;
+			targetProxy = 8713F2E214265CEF53F5743BAF4583FB /* PBXContainerItemProxy */;
 		};
-		7CCBAC9A1F64050D2AA6372719BFEB0B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Google-Mobile-Ads-SDK";
-			target = FEA3B3A570634836C0457F3D7CEF1699 /* Google-Mobile-Ads-SDK */;
-			targetProxy = ACA9B72CE66C842AE67EA948FDFD3B1C /* PBXContainerItemProxy */;
-		};
-		C792A1EB3CD966C14D7700AD218C4AFB /* PBXTargetDependency */ = {
+		7BF0EAF9926CA0E432AB70052674FC46 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GoogleUserMessagingPlatform;
 			target = 458B188365A307B3C128ABF524D1A3E3 /* GoogleUserMessagingPlatform */;
-			targetProxy = 532B1906E14C92DD11EF4161626DD4C0 /* PBXContainerItemProxy */;
+			targetProxy = 7DBE9DECBF10CBE50F8288D02730E15F /* PBXContainerItemProxy */;
 		};
-		DF5D9D2040FB835B7EDF66DF56484D7E /* PBXTargetDependency */ = {
+		AAE81B706C69FC94636CEC0716C5AC6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBAudienceNetwork;
+			target = D53454FBB630479B01CA0A777383E94F /* FBAudienceNetwork */;
+			targetProxy = B6E6911C2C2BFBA496FEA338D15CEA70 /* PBXContainerItemProxy */;
+		};
+		C5D3ED360FE849C152BBB93100B26CDE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "GoogleUserMessagingPlatform-UserMessagingPlatformResources";
 			target = 63A7C675C13F87669AF56006D943998B /* GoogleUserMessagingPlatform-UserMessagingPlatformResources */;
-			targetProxy = 20E21ABD42456B709AF3DDA2A7A380B8 /* PBXContainerItemProxy */;
+			targetProxy = DBD4B3F726509A451A47122934D369E8 /* PBXContainerItemProxy */;
 		};
-		FFE963E6F558FE7EDF3A75E232CA1613 /* PBXTargetDependency */ = {
+		EB5F9B9C103796DF9A953732B52BCDC7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Google-Mobile-Ads-SDK-GoogleMobileAdsResources";
 			target = 36FD0958A0EC4A0FCF599E9B22719B03 /* Google-Mobile-Ads-SDK-GoogleMobileAdsResources */;
-			targetProxy = 152A52FC1340C96BF6B93499E6BF129E /* PBXContainerItemProxy */;
+			targetProxy = EA1EE38B596BB6C468B6EC29980D907D /* PBXContainerItemProxy */;
+		};
+		FA6AFD2E0B7C232A5AACFF1612BD81D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Google-Mobile-Ads-SDK";
+			target = FEA3B3A570634836C0457F3D7CEF1699 /* Google-Mobile-Ads-SDK */;
+			targetProxy = 71925A8A3DB4044E5EB89172756CD93B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		06480BBCFB65C1F01A27BBF6C780CD45 /* Debug */ = {
+		09458BCD8F9511E79F32DFE02A7111C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE9FA647701D5D9784F7B39F699820EB /* GoogleUserMessagingPlatform.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGNING_ALLOWED = NO;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GoogleUserMessagingPlatform";
-				IBSC_MODULE = GoogleUserMessagingPlatform;
-				INFOPLIST_FILE = "Target Support Files/GoogleUserMessagingPlatform/ResourceBundle-UserMessagingPlatformResources-GoogleUserMessagingPlatform-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = UserMessagingPlatformResources;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		17C2B046200CDF777613AB5774147A74 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31ABF05F4F720C8E40F38BAD866EBDC0 /* GoogleUserMessagingPlatform.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGNING_ALLOWED = NO;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GoogleUserMessagingPlatform";
-				IBSC_MODULE = GoogleUserMessagingPlatform;
-				INFOPLIST_FILE = "Target Support Files/GoogleUserMessagingPlatform/ResourceBundle-UserMessagingPlatformResources-GoogleUserMessagingPlatform-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = UserMessagingPlatformResources;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		256182C18B973F552B9E938F481B8E89 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE9FA647701D5D9784F7B39F699820EB /* GoogleUserMessagingPlatform.debug.xcconfig */;
+			baseConfigurationReference = 9F2216A4C86E90E34B1AB54B4EA73A2A /* FBAudienceNetwork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -613,16 +893,33 @@
 			};
 			name = Debug;
 		};
-		3F377C93A9CA122DFA166885DB2EFCE5 /* Release */ = {
+		21FDEFA12691F0403565B425BEF87540 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BD97D982CAB87B29E6846F927335BF3 /* Google-Mobile-Ads-SDK.release.xcconfig */;
+			baseConfigurationReference = 52B0FE72BBA7BACFC9F634CC126960CA /* GoogleUserMessagingPlatform.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGNING_ALLOWED = NO;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Google-Mobile-Ads-SDK";
-				IBSC_MODULE = Google_Mobile_Ads_SDK;
-				INFOPLIST_FILE = "Target Support Files/Google-Mobile-Ads-SDK/ResourceBundle-GoogleMobileAdsResources-Google-Mobile-Ads-SDK-Info.plist";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GoogleUserMessagingPlatform";
+				IBSC_MODULE = GoogleUserMessagingPlatform;
+				INFOPLIST_FILE = "Target Support Files/GoogleUserMessagingPlatform/ResourceBundle-UserMessagingPlatformResources-GoogleUserMessagingPlatform-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = GoogleMobileAdsResources;
+				PRODUCT_NAME = UserMessagingPlatformResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		2D8BBC726947BAE6B7B95E076F97EEFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CD1902F4D2CB4422C9D66B46E5D8C60 /* GoogleUserMessagingPlatform.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GoogleUserMessagingPlatform";
+				IBSC_MODULE = GoogleUserMessagingPlatform;
+				INFOPLIST_FILE = "Target Support Files/GoogleUserMessagingPlatform/ResourceBundle-UserMessagingPlatformResources-GoogleUserMessagingPlatform-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = UserMessagingPlatformResources;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -630,9 +927,9 @@
 			};
 			name = Release;
 		};
-		6FA84909D7606A6A86C6F52D2DD3D330 /* Release */ = {
+		4377EB7C84221916577C90692914E402 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80459257421F51BC645D54EF4D00868A /* Pods-BitcoinBlockExplorer.release.xcconfig */;
+			baseConfigurationReference = D1C150A8AE3B12E44570F94560A46886 /* Pods-BitcoinBlockExplorer.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -662,9 +959,42 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		60D89614078C82B241DCDB410961D18C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52B0FE72BBA7BACFC9F634CC126960CA /* GoogleUserMessagingPlatform.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7136E958D217EF8BD02BCA9A88E35875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 098403746291F276170A3DDB4F842F74 /* Google-Mobile-Ads-SDK.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Google-Mobile-Ads-SDK";
+				IBSC_MODULE = Google_Mobile_Ads_SDK;
+				INFOPLIST_FILE = "Target Support Files/Google-Mobile-Ads-SDK/ResourceBundle-GoogleMobileAdsResources-Google-Mobile-Ads-SDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = GoogleMobileAdsResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -734,64 +1064,26 @@
 			};
 			name = Debug;
 		};
-		A29D31B87856AF92176544440E81C422 /* Debug */ = {
+		8C545B32C91FEF39265BA1B7F12032FC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1C150A8AE3B12E44570F94560A46886 /* Pods-BitcoinBlockExplorer.debug.xcconfig */;
+			baseConfigurationReference = 935B25B43984697B603AFE3D80CCDB5E /* FBAudienceNetwork.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BitcoinBlockExplorer/Pods-BitcoinBlockExplorer-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BitcoinBlockExplorer/Pods-BitcoinBlockExplorer.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FBAudienceNetwork";
+				IBSC_MODULE = FBAudienceNetwork;
+				INFOPLIST_FILE = "Target Support Files/FBAudienceNetwork/ResourceBundle-FBAudienceNetwork-FBAudienceNetwork-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = FBAudienceNetwork;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A36E689B9382D2D3AAAE2BE7BA0A5C7A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31ABF05F4F720C8E40F38BAD866EBDC0 /* GoogleUserMessagingPlatform.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
 		AD8B0CABCC3FF9312A1D0BACD972FC7A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BD97D982CAB87B29E6846F927335BF3 /* Google-Mobile-Ads-SDK.release.xcconfig */;
+			baseConfigurationReference = 098403746291F276170A3DDB4F842F74 /* Google-Mobile-Ads-SDK.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -826,9 +1118,44 @@
 			};
 			name = Release;
 		};
-		BC848B57F1C223F087B970B75AB8E6D6 /* Debug */ = {
+		C908391C88B4804B603154995BF1B082 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CB2870152A11C8D7854F09D9999E402 /* Google-Mobile-Ads-SDK.debug.xcconfig */;
+			baseConfigurationReference = 9F2216A4C86E90E34B1AB54B4EA73A2A /* FBAudienceNetwork.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FBAudienceNetwork";
+				IBSC_MODULE = FBAudienceNetwork;
+				INFOPLIST_FILE = "Target Support Files/FBAudienceNetwork/ResourceBundle-FBAudienceNetwork-FBAudienceNetwork-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = FBAudienceNetwork;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		CEFF9F5536CD52A38CAAFCB87B0CF544 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 935B25B43984697B603AFE3D80CCDB5E /* FBAudienceNetwork.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAAF6E58D7AA4FB27BEB52517FFB739A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 437ACED9F58D23D933858D422F13DC83 /* Google-Mobile-Ads-SDK.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGNING_ALLOWED = NO;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Google-Mobile-Ads-SDK";
@@ -843,9 +1170,65 @@
 			};
 			name = Debug;
 		};
+		DF89FD3212611B2B774EF4CEBBF61AAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80459257421F51BC645D54EF4D00868A /* Pods-BitcoinBlockExplorer.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BitcoinBlockExplorer/Pods-BitcoinBlockExplorer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BitcoinBlockExplorer/Pods-BitcoinBlockExplorer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E4FD102A46FEEE2E4201BDB7346D7F69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CD1902F4D2CB4422C9D66B46E5D8C60 /* GoogleUserMessagingPlatform.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		EF9E90760DEC1FB869958EC12B099BEA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CB2870152A11C8D7854F09D9999E402 /* Google-Mobile-Ads-SDK.debug.xcconfig */;
+			baseConfigurationReference = 437ACED9F58D23D933858D422F13DC83 /* Google-Mobile-Ads-SDK.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -944,6 +1327,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		04F14F06454EF76FC213854C42890952 /* Build configuration list for PBXNativeTarget "Google-Mobile-Ads-SDK-GoogleMobileAdsResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAAF6E58D7AA4FB27BEB52517FFB739A /* Debug */,
+				7136E958D217EF8BD02BCA9A88E35875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		090557B8482793B7B8D35E87F08C5B06 /* Build configuration list for PBXNativeTarget "Google-Mobile-Ads-SDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -953,20 +1345,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		21A747E460AA1F9E32A863DBF80E33F6 /* Build configuration list for PBXNativeTarget "Pods-BitcoinBlockExplorer" */ = {
+		14C0124B67FC58FB41FE9FA9A25071ED /* Build configuration list for PBXNativeTarget "FBAudienceNetwork-FBAudienceNetwork" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A29D31B87856AF92176544440E81C422 /* Debug */,
-				6FA84909D7606A6A86C6F52D2DD3D330 /* Release */,
+				C908391C88B4804B603154995BF1B082 /* Debug */,
+				8C545B32C91FEF39265BA1B7F12032FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3BDDF2655DAD87D73E4171BABEC5CD06 /* Build configuration list for PBXNativeTarget "GoogleUserMessagingPlatform-UserMessagingPlatformResources" */ = {
+		254A7130CF8331FC8D9D2B9E8E583131 /* Build configuration list for PBXNativeTarget "Pods-BitcoinBlockExplorer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				06480BBCFB65C1F01A27BBF6C780CD45 /* Debug */,
-				17C2B046200CDF777613AB5774147A74 /* Release */,
+				4377EB7C84221916577C90692914E402 /* Debug */,
+				DF89FD3212611B2B774EF4CEBBF61AAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -980,20 +1372,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		901BCE9FDB97599D3F1AE28D7173CB78 /* Build configuration list for PBXNativeTarget "Google-Mobile-Ads-SDK-GoogleMobileAdsResources" */ = {
+		7977050E657EBE8B83D07AC98326ECB5 /* Build configuration list for PBXAggregateTarget "GoogleUserMessagingPlatform" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BC848B57F1C223F087B970B75AB8E6D6 /* Debug */,
-				3F377C93A9CA122DFA166885DB2EFCE5 /* Release */,
+				60D89614078C82B241DCDB410961D18C /* Debug */,
+				E4FD102A46FEEE2E4201BDB7346D7F69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F9AE922BE3EF4C9C4722B6E5F0DF78F5 /* Build configuration list for PBXAggregateTarget "GoogleUserMessagingPlatform" */ = {
+		801CCB5990EECFCE707E138D43FFC001 /* Build configuration list for PBXNativeTarget "GoogleUserMessagingPlatform-UserMessagingPlatformResources" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				256182C18B973F552B9E938F481B8E89 /* Debug */,
-				A36E689B9382D2D3AAAE2BE7BA0A5C7A /* Release */,
+				21FDEFA12691F0403565B425BEF87540 /* Debug */,
+				2D8BBC726947BAE6B7B95E076F97EEFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E95B240180A3BFFB80544C0C2943F06D /* Build configuration list for PBXAggregateTarget "FBAudienceNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09458BCD8F9511E79F32DFE02A7111C5 /* Debug */,
+				CEFF9F5536CD52A38CAAFCB87B0CF544 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -7,4 +7,5 @@ target 'BitcoinBlockExplorer' do
 
   # Pods for BitcoinBlockExplorer
 pod 'Google-Mobile-Ads-SDK'
+pod 'FBAudienceNetwork'
 end

@@ -23,6 +23,9 @@ struct HomeView: View {
             VStack{
                 ScrollView{
                     BitcoinPriceViewComponent()
+//                    FBAdBannerView()
+//                        .frame(width: .infinity, height: 50)
+//                        .padding(.horizontal)
                     VStack{
                         TextsFeesViewComponent()
                         VStack(alignment: .center) {
