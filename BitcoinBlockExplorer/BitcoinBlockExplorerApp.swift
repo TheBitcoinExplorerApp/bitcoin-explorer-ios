@@ -10,7 +10,7 @@ import GoogleMobileAds
 
 @main
 struct BitcoinBlockExplorerApp: App {
-    @UIApplicationDelegateAdaptor (AppDelegate.self) var appDelegate
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     @StateObject var addManager = AddManager()
     @StateObject var currencyViewModel = CurrencyComponentViewModel()
