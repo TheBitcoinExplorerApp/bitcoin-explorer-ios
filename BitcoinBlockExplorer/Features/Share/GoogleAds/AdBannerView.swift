@@ -20,7 +20,7 @@ struct AdBannerView: UIViewRepresentable {
     
     func makeUIView(context: Context) -> GADBannerView {
         let bannerView = GADBannerView(adSize: GADAdSizeBanner)
-        bannerView.adUnitID = "ca-app-pub-3489866247738033/9170985495"
+        bannerView.adUnitID = ""
         
         if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
            let rootViewController = windowScene.windows.first?.rootViewController {

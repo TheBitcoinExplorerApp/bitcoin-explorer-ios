@@ -17,22 +17,6 @@ struct FBAdBannerView: UIViewControllerRepresentable {
     
 }
 
-class AddFacebookManager: ObservableObject {
-    @Published var addView: AnyView?
-//    @Published var bannerViewIsAdded: Bool = true
-    
-    init() {
-        addView = appearAd()
-    }
-    
-    @ViewBuilder private func appearAd() -> AnyView {
-        AnyView(
-            FBAdBannerView()
-                .frame(height: 60)
-        )
-    }
-}
-
 class FBAdViewController: UIViewController, FBAdViewDelegate {
     private var adView: FBAdView?
 
@@ -40,8 +24,8 @@ class FBAdViewController: UIViewController, FBAdViewDelegate {
         super.viewDidLoad()
 
         // Configura o ad banner
-        let adView = FBAdView(placementID: "", adSize: kFBAdSizeHeight50Banner, rootViewController: self)
-        adView.frame = CGRect(x: 0, y: 0, width: 320, height: 50)
+        let adView = FBAdView(placementID: "2517385811796587_2531852100349958", adSize: kFBAdSizeHeight50Banner, rootViewController: self)
+        adView.frame = CGRect(x: 0, y: view.bounds.height - adView.frame.size.height, width: adView.frame.size.width, height: adView.frame.size.height)
         adView.delegate = self
         adView.loadAd(withBidPayload: "")
         self.adView = adView
@@ -50,13 +34,11 @@ class FBAdViewController: UIViewController, FBAdViewDelegate {
     // Delegate methods
     func adViewDidLoad(_ adView: FBAdView) {
         print("Ad was loaded and ready to be displayed")
-        if let adView = adView as? UIView {
-            self.view.addSubview(adView)
-        }
+        self.view.addSubview(adView)
     }
 
     func adView(_ adView: FBAdView, didFailWithError error: Error) {
-        print("Ad failed to load with error: \(error.localizedDescription)")
+        print("Ad failed to load with error: \(error)")
     }
 
     func adViewDidClick(_ adView: FBAdView) {
