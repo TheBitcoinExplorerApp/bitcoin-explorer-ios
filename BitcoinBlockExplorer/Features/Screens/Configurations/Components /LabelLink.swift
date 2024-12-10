@@ -22,7 +22,8 @@ struct LabelLink: View {
     var body: some View {
         Label {
             HStack {
-                Link(titleKey, destination: destination).foregroundStyle(.white)
+                Link(titleKey, destination: destination)
+                    .foregroundStyle(Color.cinza)
                 Spacer()
                 Image(systemName: "link")
                     .foregroundColor(.secondary)

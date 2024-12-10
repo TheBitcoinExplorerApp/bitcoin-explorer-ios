@@ -22,10 +22,13 @@ struct ConfigurationsView: View {
                 List {
                     Section {
                         Picker(selection: $selected, label: Text(Texts.currencyLabel)
-                            .foregroundStyle(.white)) {
+                            .foregroundStyle(Color.cinza)) {
                                 
                                 ForEach(0 ..< self.currencies.count, id: \.self) { index in
-                                    Text(self.currencies[index]).tag(index)
+                                    Text(self.currencies[index])
+                                        .tag(index)
+                                        .foregroundStyle(Color.cinza)
+                                    
                                 }
                                 
                             }.onChange(of: selected) { newValue in
@@ -41,7 +44,7 @@ struct ConfigurationsView: View {
                             Label {
                                 HStack {
                                     Text(Texts.donations)
-                                        .foregroundStyle(.white)
+                                        .foregroundStyle(Color.cinza)
                                 }
                             } icon: {
                                 Image(systemName: "bitcoinsign")
