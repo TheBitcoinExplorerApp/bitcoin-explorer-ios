@@ -23,13 +23,14 @@ struct LabelLink: View {
         Label {
             HStack {
                 Link(titleKey, destination: destination)
-                    .foregroundStyle(Color.cinza)
+                    .foregroundStyle(Color.texts)
                 Spacer()
                 Image(systemName: "link")
                     .foregroundColor(.secondary)
             }
         } icon: {
             Image(systemName: systemImage)
+                .foregroundStyle(Color.primaryText)
         }
     }
 

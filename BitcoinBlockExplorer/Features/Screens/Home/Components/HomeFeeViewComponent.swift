@@ -19,15 +19,15 @@ struct HomeFeeViewComponent: View {
             
             let valueHourFee =  calculateValuePerSatvB(fee)
             
-            Text("\(fee) \(Texts.satVb)").foregroundStyle(Color.cinza)
+            Text("\(fee) \(Texts.satVb)").foregroundStyle(Color.texts)
                 .font(.footnote)
             
             CurrencyViewComponent(rate: valueHourFee)
                 .font(.caption)
-                .foregroundStyle(Color.laranja)
+                .foregroundStyle(Color.primaryText)
             
         }.padding()
-            .background(Color.caixas).cornerRadius(7)
+            .background(Color.backgroundBox).cornerRadius(7)
     }
 }
 

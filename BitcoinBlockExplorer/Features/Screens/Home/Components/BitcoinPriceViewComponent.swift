@@ -13,7 +13,7 @@ struct BitcoinPriceViewComponent: View {
     
     var body: some View {
         Text(HomeTexts.bitcoinPrice)
-            .foregroundStyle(Color.cinza)
+            .foregroundStyle(Color.texts)
             .font(.headline)
         
         HStack{
@@ -21,9 +21,9 @@ struct BitcoinPriceViewComponent: View {
             
             CurrencyViewComponent(rate: 1)
                 .font(.headline)
-                .foregroundStyle(Color.laranja)
+                .foregroundStyle(Color.primaryText)
         }.padding()
-            .background(Color.caixas)
+            .background(Color.backgroundBox)
             .clipShape(RoundedRectangle(cornerRadius: 7))
     }
 }

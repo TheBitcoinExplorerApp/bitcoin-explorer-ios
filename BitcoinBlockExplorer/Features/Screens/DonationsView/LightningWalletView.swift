@@ -17,14 +17,14 @@ struct LightningWalletView: View {
         ScrollView {
             
             Text(Texts.lightningTitle)
-                .foregroundStyle(Color.laranja)
+                .foregroundStyle(Color.primaryText)
                 .font(.title)
                 .bold()
             
             Spacer()
             
             Text(Texts.scanText2)
-                .foregroundStyle(Color.cinza)
+                .foregroundStyle(Color.texts)
                 .minimumScaleFactor(0.6)
                 .font(.title3)
                 .padding(.horizontal)
@@ -35,7 +35,7 @@ struct LightningWalletView: View {
                 .scaledToFit()
             
             Text(lightningAddress)
-                .foregroundStyle(Color.laranja)
+                .foregroundStyle(Color.primaryText)
                 .lineLimit(2)
                 .padding(.horizontal)
             
@@ -43,7 +43,7 @@ struct LightningWalletView: View {
                 
                 Text(Texts.copy)
                     .padding()
-                    .foregroundStyle(Color.cinza)
+                    .foregroundStyle(Color.texts)
                     .onTapGesture {
                         UIPasteboard.general.string = lightningAddress
                         showToast = true
@@ -52,13 +52,13 @@ struct LightningWalletView: View {
                         }
                     }
                 
-            }.background(Color.caixas)
+            }.background(Color.backgroundBox)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
             
             Spacer()
             
         }.padding()
-            .background(Color.azul)
+            .background(Color.background)
         
             .overlay(
                 Group {

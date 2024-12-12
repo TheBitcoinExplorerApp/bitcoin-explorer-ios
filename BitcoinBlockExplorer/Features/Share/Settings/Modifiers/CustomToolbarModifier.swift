@@ -15,16 +15,19 @@ struct CustomNavigationBarModifier: ViewModifier {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Image(ToolbarTexts.bitcoinIcone)
                         .resizable()
-                        .frame(width: 40, height: 40)
+                        .renderingMode(.template)
+                        .foregroundStyle(Color.primaryText)
+                        .frame(width: 25, height: 30)
+                    
                 }
                 ToolbarItem(placement: .principal) {
                     Text(ToolbarTexts.titleOfTheApp)
-                        .foregroundStyle(Color.laranja)
+                        .foregroundStyle(Color.primaryText)
                         .bold()
                         .font(.title3)
                 }
             }
-            .toolbarBackground(Color.azul, for: .navigationBar)
+            .toolbarBackground(Color.background, for: .navigationBar)
     }
 }
 

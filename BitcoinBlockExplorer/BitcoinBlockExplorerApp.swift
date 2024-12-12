@@ -18,7 +18,6 @@ struct BitcoinBlockExplorerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .preferredColorScheme(.dark)
                 .environmentObject(addManager)
                 .environmentObject(currencyViewModel)
         }

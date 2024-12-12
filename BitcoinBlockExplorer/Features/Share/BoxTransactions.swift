@@ -17,7 +17,7 @@ struct BoxTransactions: View {
         VStack {
             
             HStack {
-                Text(TransactionsTexts.transacoesMaiusculo).foregroundColor(Color.cinza)
+                Text(TransactionsTexts.transacoesMaiusculo).foregroundColor(Color.texts)
                     .bold()
                     .font(.headline)
                 Spacer()
@@ -39,10 +39,10 @@ struct BoxTransactions: View {
                                     Spacer()
                                     Text(TransactionsTexts.idTransacao)
                                         .font(.footnote)
-                                        .foregroundColor(Color.cinza)
+                                        .foregroundColor(Color.texts)
                                     Spacer()
                                     Spacer()
-                                    Text("\(transactions.txid)").foregroundColor(Color.laranja)
+                                    Text("\(transactions.txid)").foregroundColor(Color.primaryText)
                                         .font(.footnote)
                                         .lineLimit(1)
                                     Spacer()
@@ -52,14 +52,14 @@ struct BoxTransactions: View {
                                     Spacer()
                                     Text(TransactionsTexts.valorMaiusculo)
                                         .font(.footnote)
-                                        .foregroundColor(Color.cinza)
+                                        .foregroundColor(Color.texts)
                                     Spacer()
                                     Spacer()
                                     let value = transactions.value / 100000000
                                     
                                     Text("\(value) BTC")
                                         .font(.footnote)
-                                        .foregroundColor(Color.cinza)
+                                        .foregroundColor(Color.texts)
                                     
                                     Spacer()
                                 }
@@ -68,12 +68,12 @@ struct BoxTransactions: View {
                                     Spacer()
                                     Text(TransactionsTexts.taxaMaiusculo)
                                         .font(.footnote)
-                                        .foregroundColor(Color.cinza)
+                                        .foregroundColor(Color.texts)
                                     Spacer()
                                     Spacer()
                                     Text("\(Int(transactions.fee)) \(Texts.sat)")
                                         .font(.footnote)
-                                        .foregroundColor(Color.cinza)
+                                        .foregroundColor(Color.texts)
                                     Spacer()
                                 }
                                 
@@ -81,7 +81,7 @@ struct BoxTransactions: View {
                             .padding(.horizontal)
                             .padding(.vertical, 5)
                                 .frame(maxWidth: .infinity)
-                                .background(Color.caixas).cornerRadius(7)
+                                .background(Color.backgroundBox).cornerRadius(7)
                                 .onTapGesture {
                                     idTransacaoButton = transactions.txid
                                     abrirModalTransaction.toggle()
@@ -98,7 +98,7 @@ struct BoxTransactions: View {
         .padding()
         .sheet(isPresented: $abrirModalTransaction) {
             EachTransaction(idTransacaoButton: $idTransacaoButton, idTransacaoSearch: $idTransacaoSearch, abrirModalTransaction: $abrirModalTransaction)
-                .presentationBackground(Color.azul)
+                .presentationBackground(Color.background)
         }
         
         .task {

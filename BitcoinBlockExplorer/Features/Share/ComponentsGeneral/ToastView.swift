@@ -17,11 +17,11 @@ struct ToastView: View {
                     .padding(.vertical)
                 
                 Text(Texts.copied)
-                    .foregroundColor(Color.cinza)
+                    .foregroundColor(Color.texts)
                 
             }
             .padding(.horizontal)
-            .background(Color.caixas)
+            .background(Color.backgroundBox)
             .clipShape(RoundedRectangle(cornerRadius: 10))
             
         }

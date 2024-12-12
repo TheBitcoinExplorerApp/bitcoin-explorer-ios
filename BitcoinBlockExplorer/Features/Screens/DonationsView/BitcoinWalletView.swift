@@ -19,13 +19,13 @@ struct BitcoinWalletView: View {
             
             Text(Texts.bitcoinAddressTitle)
                 .font(.title)
-                .foregroundStyle(Color.laranja)
+                .foregroundStyle(Color.primaryText)
                 .bold()
             
             Spacer()
             
             Text(Texts.scanText1)
-                .foregroundStyle(Color.cinza)
+                .foregroundStyle(Color.texts)
                 .font(.title3)
                 .minimumScaleFactor(0.6)
                 .padding(.horizontal)
@@ -36,7 +36,7 @@ struct BitcoinWalletView: View {
                 .scaledToFit()
             
             Text(bitcoinAddress)
-                .foregroundStyle(Color.laranja)
+                .foregroundStyle(Color.primaryText)
                 .lineLimit(1)
                 .padding(.horizontal)
             
@@ -44,7 +44,7 @@ struct BitcoinWalletView: View {
                 
                 Text(Texts.copy)
                     .padding()
-                    .foregroundStyle(Color.cinza)
+                    .foregroundStyle(Color.texts)
                     .onTapGesture {
                         UIPasteboard.general.string = bitcoinAddress
                         showToast = true
@@ -53,13 +53,13 @@ struct BitcoinWalletView: View {
                         }
                     }
                 
-            }.background(Color.caixas)
+            }.background(Color.backgroundBox)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
             
             Spacer()
             
         }.padding()
-            .background(Color.azul)
+            .background(Color.background)
         
             .overlay(
                 Group {

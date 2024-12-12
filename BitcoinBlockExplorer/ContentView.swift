@@ -14,21 +14,21 @@ struct ContentView: View {
         TabView{
             HomeView().tabItem {
                 Label(ContentViewTexts.home, systemImage: "house")
-            }.toolbarBackground(Color.azul, for: .tabBar)
+            }.toolbarBackground(Color.background, for: .tabBar)
             
             EveryBlocks().tabItem {
                 Label(BlocksTexts.blocos, systemImage: "cube")
-            }.toolbarBackground(Color.azul, for: .tabBar)
+            }.toolbarBackground(Color.background, for: .tabBar)
             
             EveryTransactions().tabItem {
                 Label(TransactionsTexts.transacoesMaiusculo, systemImage: "rectangle.grid.1x2.fill")
-            }.toolbarBackground(Color.azul, for: .tabBar)
+            }.toolbarBackground(Color.background, for: .tabBar)
             
             ConfigurationsView().tabItem {
                 Label(Texts.configuracoes, systemImage: "gearshape.fill")
-            }.toolbarBackground(Color.azul, for: .tabBar)
+            }.toolbarBackground(Color.background, for: .tabBar)
         }
-        .accentColor(Color.laranja)
+        .accentColor(Color.primaryText)
                 
     }
 }

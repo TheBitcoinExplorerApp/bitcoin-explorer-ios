@@ -40,11 +40,11 @@ struct EveryTransactions: View {
             
             .sheet(isPresented: $abrirModalAddress ) {
                 EachAddress(addressSearch: $addressSearch, abrirModalAddress: $abrirModalAddress)
-                    .presentationBackground(Color.azul)
+                    .presentationBackground(Color.background)
             }
             .sheet(isPresented: $abrirModalTransaction) {
                 EachTransaction(idTransacaoButton: $idTransacaoButton, idTransacaoSearch: $idTransacaoSearch, abrirModalTransaction: $abrirModalTransaction)
-                    .presentationBackground(Color.azul)
+                    .presentationBackground(Color.background)
             }
             
             .onTapGesture {
@@ -53,7 +53,7 @@ struct EveryTransactions: View {
             
             .customToolbar()
             
-            .background(Color.azul)
+            .background(Color.background)
         }
     }
 }

@@ -25,7 +25,7 @@ struct BoxBlocks: View {
             
             HStack{
                 Text(BlocksTexts.blocos)
-                    .foregroundColor(Color.cinza)
+                    .foregroundColor(Color.texts)
                     .bold()
                     .font(.headline)
                 Spacer()
@@ -46,20 +46,20 @@ struct BoxBlocks: View {
                             VStack{
                                 let tamanho = String(format: "%.2f", (blocks.size / 1000000))
                                 
-                                Text("\(blocks.height)").foregroundColor(Color.laranja)
+                                Text("\(blocks.height)").foregroundColor(Color.primaryText)
                                     .font(.callout)
-                                Text("~\(Int(blocks.extras.medianFee)) \(Texts.satVb)").foregroundColor(Color.cinza)
+                                Text("~\(Int(blocks.extras.medianFee)) \(Texts.satVb)").foregroundColor(Color.texts)
                                     .font(.footnote)
-                                Text("\(tamanho) \(BlocksTexts.MB)").foregroundColor(Color.cinza)
+                                Text("\(tamanho) \(BlocksTexts.MB)").foregroundColor(Color.texts)
                                     .font(.footnote)
-                                Text("\(blocks.tx_count) \(TransactionsTexts.transacoes)").foregroundColor(Color.cinza)
+                                Text("\(blocks.tx_count) \(TransactionsTexts.transacoes)").foregroundColor(Color.texts)
                                     .font(.footnote)
-                                Text("\(blocks.formatTimestamp(blocks.timestamp))").foregroundColor(Color.cinza)
+                                Text("\(blocks.formatTimestamp(blocks.timestamp))").foregroundColor(Color.texts)
                                     .font(.footnote)
                             }
                             .padding(.vertical)
                             .frame(maxWidth: .infinity)
-                            .background(Color.caixas)
+                            .background(Color.backgroundBox)
                             .cornerRadius(7)
                             
                             .onTapGesture {
@@ -82,7 +82,7 @@ struct BoxBlocks: View {
         }.padding(.horizontal)
             .sheet(isPresented: $abrirModal) {
                 EachBlock(timestamp: $timestamp,numberTransactions: $numberTransactions, blockMiner: $blockMiner, medianFee: $medianFee, blockSize: $blockSize, hashBlock: $hashBlock, heightBlock: $heightBlock, abrirModal: $abrirModal)
-                    .presentationBackground(Color.azul)
+                    .presentationBackground(Color.background)
             }
         
             .task {

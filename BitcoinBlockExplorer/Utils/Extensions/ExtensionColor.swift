@@ -9,12 +9,14 @@ import SwiftUI
 
 extension Color {
     
-    static let cinza = Color("cinza")
+    static let texts = Color("texts")
     
-    static let caixas = Color("caixas")
+    static let backgroundBox = Color("backgroundBox")
     
-    static let azul = Color("azul")
+    static let background = Color("background")
     
-    static let laranja = Color("laranja")
+    static let primaryText = Color("primaryText")
+    
+    static let dismissBackground = Color("dismissBackground")
     
 }

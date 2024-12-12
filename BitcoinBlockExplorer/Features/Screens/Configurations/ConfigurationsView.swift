@@ -22,12 +22,12 @@ struct ConfigurationsView: View {
                 List {
                     Section {
                         Picker(selection: $selected, label: Text(Texts.currencyLabel)
-                            .foregroundStyle(Color.cinza)) {
+                            .foregroundStyle(Color.texts)) {
                                 
                                 ForEach(0 ..< self.currencies.count, id: \.self) { index in
                                     Text(self.currencies[index])
                                         .tag(index)
-                                        .foregroundStyle(Color.cinza)
+                                        .foregroundStyle(Color.texts)
                                     
                                 }
                                 
@@ -35,7 +35,7 @@ struct ConfigurationsView: View {
                                 currencyViewModel.currency1 = newValue
                             }
                         
-                    }.listRowBackground(Color.caixas)
+                    }.listRowBackground(Color.backgroundBox)
                     
                     Section(Texts.support) {
                         NavigationLink {
@@ -44,10 +44,11 @@ struct ConfigurationsView: View {
                             Label {
                                 HStack {
                                     Text(Texts.donations)
-                                        .foregroundStyle(Color.cinza)
+                                        .foregroundStyle(Color.texts)
                                 }
                             } icon: {
                                 Image(systemName: "bitcoinsign")
+                                    .foregroundStyle(Color.primaryText)
                             }
                         }
                         
@@ -55,18 +56,18 @@ struct ConfigurationsView: View {
                         
                         LabelLink(Texts.reportIssues, url: "https://bitcoinblockchainexplorer.atlassian.net/servicedesk/customer/portal/1", systemImage: "ladybug.fill")
                         
-                    }.listRowBackground(Color.caixas)
+                    }.listRowBackground(Color.backgroundBox)
                     
                 }
                 .navigationTitle(Texts.configuracoes)
-                .navigationBarTitleColor(Color.laranja)
-                .background(Color.azul)
+                .navigationBarTitleColor(Color.primaryText)
+                .background(Color.background)
                 .scrollContentBackground(.hidden)
         
                 AdViewComponent()
                 
             }
-            .background(Color.azul)
+            .background(Color.background)
             
         }
         
