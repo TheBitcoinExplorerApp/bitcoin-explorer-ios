@@ -202,6 +202,7 @@ struct EachTransaction: View {
                                     
                                     Spacer()
                                     Image(TransactionsTexts.setinha)
+                                        .renderingMode(.template)
                                         .foregroundStyle(Color.texts)
                                     Spacer()
                                     

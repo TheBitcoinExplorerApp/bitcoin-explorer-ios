@@ -199,7 +199,8 @@ struct EachBlock: View {
                                     
                                     Spacer()
                                     Image(TransactionsTexts.setinha)
-                                        .foregroundColor(Color.texts)
+                                        .renderingMode(.template)
+                                        .foregroundStyle(Color.texts)
                                     Spacer()
                                     
                                     VStack {
