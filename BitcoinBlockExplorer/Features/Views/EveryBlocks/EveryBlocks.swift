@@ -125,7 +125,7 @@ struct EveryBlocks: View {
                 
             }
             .sheet(isPresented: $abrirModalAddress ) {
-                EachAddress(addressSearch: $addressSearch, abrirModalAddress: $abrirModalAddress)
+                EachAddressView(addressSearch: $addressSearch, abrirModalAddress: $abrirModalAddress)
                     .presentationBackground(Color.background)
             }
             .sheet(isPresented: $abrirModalTransaction) {

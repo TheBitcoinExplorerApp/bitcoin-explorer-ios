@@ -1,5 +1,5 @@
 //
-//  EveryTransactions.swift
+//  HomeView.swift
 //  TesteAPI
 //
 //  Created by Victor Hugo Pacheco Araujo on 16/05/23.
@@ -7,27 +7,53 @@
 
 import SwiftUI
 
-struct EveryTransactions: View {
-    @StateObject var transactionData = TransactionData()
+struct HomeView: View {
     @StateObject var validateAddresses = Validate()
-    // using the search
+    @StateObject var feeData = FeeData()
     @State var addressSearch: String = ""
     @State var idTransacaoSearch: String = ""
-    @State var abrirModalTransaction: Bool = false
     @State var abrirModalAddress: Bool = false
+    @State var abrirModalTransaction: Bool = false
     @State var idTransacaoButton: String = ""
-    @State var searchText: String = ""
+    @State var searchText = ""
     
     var body: some View {
         
         NavigationStack{
-            ScrollView(.vertical) {
-                BoxTransactions()
+            VStack{
+                ScrollView{
+                    BitcoinPriceViewComponent()
+                    VStack{
+                        TextsFeesViewComponent()
+                        VStack(alignment: .center) {
+                            ForEach(feeData.fees, id: \.self) { fee in
+                                HStack(spacing: 17) {
+                                    HomeFeeViewComponent(fee: fee.hourFee)
+                                    
+                                    HomeFeeViewComponent(fee: fee.halfHourFee)
+                                    
+                                    HomeFeeViewComponent(fee: fee.fastestFee)
+                                }
+                            }
+                        }
+                    }.padding(.vertical)
+                    BoxBlocks()
+                    BoxTransactions()
+                }
+                
+                AdViewComponent()
+                
             }
+            
+            .task {
+                feeData.getFees()
+            }
+            
             .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: ToolbarTexts.searchPlaceholder) {
             }
             
             .onSubmit(of: .search) {
+                
                 if validateAddresses.isValidAddress(searchText){
                     addressSearch = searchText
                     abrirModalAddress.toggle()
@@ -39,9 +65,10 @@ struct EveryTransactions: View {
             }
             
             .sheet(isPresented: $abrirModalAddress ) {
-                EachAddress(addressSearch: $addressSearch, abrirModalAddress: $abrirModalAddress)
+                EachAddressView(addressSearch: $addressSearch, abrirModalAddress: $abrirModalAddress)
                     .presentationBackground(Color.background)
             }
+            
             .sheet(isPresented: $abrirModalTransaction) {
                 EachTransaction(idTransacaoButton: $idTransacaoButton, idTransacaoSearch: $idTransacaoSearch, abrirModalTransaction: $abrirModalTransaction)
                     .presentationBackground(Color.background)
@@ -58,8 +85,10 @@ struct EveryTransactions: View {
     }
 }
 
-struct EveryTransactions_Previews: PreviewProvider {
-    static var previews: some View {
-        EveryTransactions()
-    }
+#Preview {
+    let vm = CurrencyComponentViewModel()
+    let addManager = AddManager()
+    return HomeView()
+        .environmentObject(vm)
+        .environmentObject(addManager)
 }

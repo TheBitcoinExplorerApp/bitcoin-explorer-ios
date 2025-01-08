@@ -1,5 +1,5 @@
 //
-//  EachAddress.swift
+//  EachAddressView.swift
 //  BitcoinBlockExplorer
 //
 //  Created by Victor Hugo Pacheco Araujo on 23/05/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct EachAddress: View {
+struct EachAddressView: View {
     
     @StateObject var address = AddressDataHeader()
     @StateObject var addressTransactions = AddressDataTransactions()
