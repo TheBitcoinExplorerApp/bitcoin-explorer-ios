@@ -17,9 +17,11 @@ struct BitcoinBlockExplorerApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(addManager)
-                .environmentObject(currencyViewModel)
+//            ContentView()
+//                .environmentObject(addManager)
+//                .environmentObject(currencyViewModel)
+            
+            StoreKitView()
         }
     }
 }

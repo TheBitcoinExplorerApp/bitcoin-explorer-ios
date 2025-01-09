@@ -30,6 +30,10 @@
 		9B2BC8F42A15487900735A8D /* TransactionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BC8F32A15487900735A8D /* TransactionData.swift */; };
 		9B2BC8F62A1548F900735A8D /* EveryTransactionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BC8F52A1548F900735A8D /* EveryTransactionsModel.swift */; };
 		9B2BC8FD2A155C1F00735A8D /* EachBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BC8FC2A155C1F00735A8D /* EachBlock.swift */; };
+		9B3514882D2F41970034FF98 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3514872D2F41970034FF98 /* StoreKit.framework */; };
+		9B35148C2D2F42160034FF98 /* BitcoinStoreKitConfiguration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 9B35148B2D2F42160034FF98 /* BitcoinStoreKitConfiguration.storekit */; };
+		9B3514912D2F45180034FF98 /* StoreKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3514902D2F45180034FF98 /* StoreKitView.swift */; };
+		9B3514942D2F47430034FF98 /* MyProductIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3514932D2F47330034FF98 /* MyProductIdentifiers.swift */; };
 		9B3852D42B7C2A6000E2D576 /* HomeTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3852D32B7C2A6000E2D576 /* HomeTexts.swift */; };
 		9B3852D62B7C2B2300E2D576 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9B3852D52B7C2B2300E2D576 /* Localizable.xcstrings */; };
 		9B3852D82B7C33C400E2D576 /* ToolbarTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3852D72B7C33C400E2D576 /* ToolbarTexts.swift */; };
@@ -90,6 +94,10 @@
 		9B2BC8F32A15487900735A8D /* TransactionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionData.swift; sourceTree = "<group>"; };
 		9B2BC8F52A1548F900735A8D /* EveryTransactionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveryTransactionsModel.swift; sourceTree = "<group>"; };
 		9B2BC8FC2A155C1F00735A8D /* EachBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachBlock.swift; sourceTree = "<group>"; };
+		9B3514872D2F41970034FF98 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		9B35148B2D2F42160034FF98 /* BitcoinStoreKitConfiguration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = BitcoinStoreKitConfiguration.storekit; sourceTree = "<group>"; };
+		9B3514902D2F45180034FF98 /* StoreKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitView.swift; sourceTree = "<group>"; };
+		9B3514932D2F47330034FF98 /* MyProductIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProductIdentifiers.swift; sourceTree = "<group>"; };
 		9B3852D32B7C2A6000E2D576 /* HomeTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTexts.swift; sourceTree = "<group>"; };
 		9B3852D52B7C2B2300E2D576 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		9B3852D72B7C33C400E2D576 /* ToolbarTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarTexts.swift; sourceTree = "<group>"; };
@@ -136,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				802D279E91F933086746D45E /* Pods_BitcoinBlockExplorer.framework in Frameworks */,
+				9B3514882D2F41970034FF98 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +163,7 @@
 		9B2321EF2B85116D000BFBA9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				9B3514922D2F47230034FF98 /* StoreKit */,
 				9B4372722A1CFD5B00DFE211 /* Functions */,
 				9B3C00102BAC7F07000B55B9 /* Extensions */,
 				9B3C000F2BAC7EC6000B55B9 /* TextsStrings */,
@@ -192,6 +202,23 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		9B35148D2D2F44C40034FF98 /* StoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				9B3514902D2F45180034FF98 /* StoreKitView.swift */,
+			);
+			path = StoreKit;
+			sourceTree = "<group>";
+		};
+		9B3514922D2F47230034FF98 /* StoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				9B3514932D2F47330034FF98 /* MyProductIdentifiers.swift */,
+				9B35148B2D2F42160034FF98 /* BitcoinStoreKitConfiguration.storekit */,
+			);
+			path = StoreKit;
+			sourceTree = "<group>";
+		};
 		9B3C00082BAC75D3000B55B9 /* Features */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +244,7 @@
 		9B3C000A2BAC75E4000B55B9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9B35148D2D2F44C40034FF98 /* StoreKit */,
 				9B3F05982BB3BD58003C746C /* EachAddress */,
 				9B3F05972BB3BD3A003C746C /* EachTransaction */,
 				9B3F05962BB3BD2E003C746C /* EachBlock */,
@@ -436,6 +464,7 @@
 		A2429A69F9D1FA5662AC0F92 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9B3514872D2F41970034FF98 /* StoreKit.framework */,
 				9F72E7CEB2FCE47A9CE9A0FB /* Pods_BitcoinBlockExplorer.framework */,
 			);
 			name = Frameworks;
@@ -506,6 +535,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BC226192A0C68CB0069FDEB /* Preview Assets.xcassets in Resources */,
+				9B35148C2D2F42160034FF98 /* BitcoinStoreKitConfiguration.storekit in Resources */,
 				9BC226162A0C68CB0069FDEB /* Assets.xcassets in Resources */,
 				9B3852D62B7C2B2300E2D576 /* Localizable.xcstrings in Resources */,
 			);
@@ -591,6 +621,7 @@
 				9B2321F12B851181000BFBA9 /* CurrencyComponentViewModel.swift in Sources */,
 				9BEEAC9E2C8F799C00E2E120 /* HomeFeeViewComponent.swift in Sources */,
 				9B2BC8F02A13F72A00735A8D /* EveryBlocks.swift in Sources */,
+				9B3514912D2F45180034FF98 /* StoreKitView.swift in Sources */,
 				9B2BC8F22A13FE5900735A8D /* HomeView.swift in Sources */,
 				9B27E7162A12A8D000E8036E /* FeeModel.swift in Sources */,
 				9B2321F32B851866000BFBA9 /* ConfigurationsView.swift in Sources */,
@@ -608,6 +639,7 @@
 				9B2BC8E22A12C54700735A8D /* BlockModel.swift in Sources */,
 				9B925AB22C74382A00A754C1 /* AdBannerView.swift in Sources */,
 				9B2BC8E72A13B1CF00735A8D /* BlockData.swift in Sources */,
+				9B3514942D2F47430034FF98 /* MyProductIdentifiers.swift in Sources */,
 				9B43726F2A1CE66000DFE211 /* AddressDataHeader.swift in Sources */,
 				9B2BC8EE2A13F70600735A8D /* EveryTransactions.swift in Sources */,
 				9B2BC8E52A12D1B500735A8D /* FeeData.swift in Sources */,
