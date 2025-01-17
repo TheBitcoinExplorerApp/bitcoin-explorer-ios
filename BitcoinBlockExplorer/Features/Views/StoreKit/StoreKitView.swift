@@ -11,7 +11,7 @@ import StoreKit
 struct StoreKitView: View {
     
     @Binding var showSubscriptionView: Bool
-    @EnvironmentObject private var subsStore: SubscriptionStore
+    @EnvironmentObject private var store: SubscriptionStore
     @Environment(\.dismiss) private var dismiss
 
     var body: some View {
@@ -19,7 +19,7 @@ struct StoreKitView: View {
         VStack {
             
             HStack {
-                ForEach(subsStore.subscriptions) { subs in
+                ForEach(store.subscriptions) { subs in
                     VStack(alignment: .leading, spacing: 3) {
                         Text(subs.displayName)
                             .font(.system(.title3, design: .rounded).bold())
@@ -31,7 +31,7 @@ struct StoreKitView: View {
                     
                     Button(subs.displayPrice) {
                         Task {
-                            await subsStore.purchase(subs)
+                            await store.purchase(subs)
                         }
                     }
                     .tint(.blue)
@@ -41,14 +41,16 @@ struct StoreKitView: View {
             }.padding(.horizontal)
             
         }
-        .onChange(of: subsStore.action) { action in
+        .onChange(of: store.action) { action in
             if action == .successful {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                    dismiss()
-                    subsStore.reset()
+                    store.reset()
                 }
             }
         }
+        
+        .alert(isPresented: $store.hasError, error: store.error) {}
         
     }
 }

@@ -17,22 +17,36 @@
 
   ],
   "settings" : {
+    "_askToBuyEnabled" : false,
+    "_billingIssuesEnabled" : true,
+    "_compatibilityTimeRate" : {
+      "3" : 6
+    },
     "_failTransactionsEnabled" : false,
     "_locale" : "en_US",
     "_storefront" : "USA",
     "_storeKitErrors" : [
       {
-        "current" : null,
+        "current" : {
+          "index" : 1,
+          "type" : "generic"
+        },
         "enabled" : false,
         "name" : "Load Products"
       },
       {
-        "current" : null,
+        "current" : {
+          "index" : 1,
+          "type" : "generic"
+        },
         "enabled" : false,
         "name" : "Purchase"
       },
       {
-        "current" : null,
+        "current" : {
+          "index" : 0,
+          "type" : "verification"
+        },
         "enabled" : false,
         "name" : "Verification"
       },
@@ -42,17 +56,26 @@
         "name" : "App Store Sync"
       },
       {
-        "current" : null,
+        "current" : {
+          "index" : 1,
+          "type" : "generic"
+        },
         "enabled" : false,
         "name" : "Subscription Status"
       },
       {
-        "current" : null,
+        "current" : {
+          "index" : 1,
+          "type" : "generic"
+        },
         "enabled" : false,
         "name" : "App Transaction"
       },
       {
-        "current" : null,
+        "current" : {
+          "index" : 1,
+          "type" : "generic"
+        },
         "enabled" : false,
         "name" : "Manage Subscriptions Sheet"
       },
@@ -66,7 +89,8 @@
         "enabled" : false,
         "name" : "Offer Code Redeem Sheet"
       }
-    ]
+    ],
+    "_timeRate" : 1003
   },
   "subscriptionGroups" : [
     {

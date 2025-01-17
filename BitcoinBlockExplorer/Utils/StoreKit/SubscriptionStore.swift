@@ -10,13 +10,36 @@ import StoreKit
 
 typealias RenewalState = StoreKit.Product.SubscriptionInfo.RenewalState
 typealias PurchaseResult = Product.PurchaseResult
+typealias TransactionListener = Task<Void, Error>
 
-enum StoreError: Error {
+enum StoreError: LocalizedError {
     case failedVerification
+    case system(Error)
+    
+    var errorDescription: String? {
+        switch self {
+        case .failedVerification:
+            return "User transaction verification failed"
+        case .system(let err):
+            return err.localizedDescription
+        }
+    }
 }
 
-enum StoreAction {
+enum StoreAction: Equatable {
     case successful
+    case failed(StoreError)
+    
+    static func == (lhs: StoreAction, rhs: StoreAction) -> Bool {
+        switch (lhs, rhs) {
+        case (.successful, .successful):
+            return true
+        case (.failed(let lhsErr), .failed(let rhsErr)):
+            return lhsErr.localizedDescription == rhsErr.localizedDescription
+        default:
+            return false
+        }
+    }
 }
 
 @MainActor
@@ -26,11 +49,32 @@ final class SubscriptionStore: ObservableObject {
     @Published private(set) var purschasedSubscriptions: [Product] = []
     @Published private(set) var subscriptionGroupStatus: RenewalState?
     
-    @Published private(set) var action: StoreAction?
+    @Published private(set) var action: StoreAction? {
+        didSet {
+            switch action {
+            case .failed:
+                hasError = true
+            default:
+                hasError = false
+            }
+        }
+    }
+    
+    
+    @Published var hasError: Bool = false
+    
+    var error: StoreError? {
+        switch action {
+        case .failed(let err):
+            return err
+        default:
+            return nil 
+        }
+    }
     
     private let productsId: [String] = ["VictorHugoPachecoAraujo.BitcoinBlockExplorer.monthly"]
     
-    var updateListenerTask: Task<Void, Error>? = nil
+    private var updateListenerTask: TransactionListener? = nil
     
     init() {
         
@@ -49,21 +93,42 @@ final class SubscriptionStore: ObservableObject {
         updateListenerTask?.cancel()
     }
     
+    func purchase(_ product: Product) async {
+        do {
+            let result = try await product.purchase()
+            try await handlePurchase(from: result)
+        } catch {
+            action = .failed(.system(error))
+            print("Error in purchase: \(error)")
+            
+        }
+    }
+
+    func reset() {
+        action = nil
+    }
+    
 }
 
-extension SubscriptionStore {
+private extension SubscriptionStore {
     
-    func listenForTransactions() -> Task<Void, Error> {
-        return Task.detached {
+    func listenForTransactions() -> TransactionListener {
+        return Task.detached(priority: .background) { @MainActor [weak self] in
+            
+            guard let self else { return }
+            
             for await result in Transaction.updates {
                 do {
-                    let transaction = try await self.checkVerified(result)
+                    let transaction = try self.checkVerified(result)
+                    
+                    self.action = .successful
                     
                     // Deliver products to the user
                     await self.updateCostumerProductStatus()
                     
                     await transaction.finish()
                 } catch {
+                    self.action = .failed(.system(error))
                     print("Transaction failed verification")
                 }
             }
@@ -75,19 +140,11 @@ extension SubscriptionStore {
             subscriptions = try await Product.products(for: productsId)
             print("subscriptions: \(subscriptions)")
         } catch {
+            action = .failed(.system(error))
             print("Failed product request from app store server: \(error)")
         }
     }
-    
-    func purchase(_ product: Product) async {
-        do {
-            let result = try await product.purchase()
-            try await handlePurchase(from: result)
-        } catch {
-            print("Error in purchase: \(error)")
-        }
-    }
-    
+
     func handlePurchase(from result: PurchaseResult) async throws {
         
         switch result {
@@ -116,11 +173,7 @@ extension SubscriptionStore {
             break
         }
     }
-    
-    func reset() {
-        action = nil
-    }
-    
+
     func checkVerified<T>(_ result: VerificationResult<T>) throws -> T {
         switch result {
         case .unverified:

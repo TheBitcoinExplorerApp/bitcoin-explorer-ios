@@ -21,7 +21,8 @@ struct BoxBlocks: View {
     let colunas = [GridItem(spacing: 20), GridItem()]
     
     @State private var showSubscriptionView: Bool = false
-    @EnvironmentObject private var subsStore: SubscriptionStore
+    @State private var hasPurchases: Bool = false
+    @EnvironmentObject private var store: SubscriptionStore
     
     var body: some View {
         VStack{
@@ -62,14 +63,14 @@ struct BoxBlocks: View {
                         .cornerRadius(7)
                         
                         .overlay {
-                            if subsStore.purschasedSubscriptions.isEmpty {
+                            if store.purschasedSubscriptions.isEmpty  {
                                 Color.backgroundBox
                                     .blur(radius: 15)
                             }
                         }
                         
                         .onTapGesture {
-                            if subsStore.purschasedSubscriptions.isEmpty {
+                            if store.purschasedSubscriptions.isEmpty {
                                 showSubscriptionView.toggle()
                             } else {
                                 hashBlock = blocks.id
@@ -83,36 +84,36 @@ struct BoxBlocks: View {
                                 abrirModal.toggle()
                             }
                         }
-
+                        
                     }
                 }
             }
             
         }
         
-//        .overlay {
-//            if showSubscriptionView {
-//                Color.black.opacity(0.8)
-//                    .ignoresSafeArea()
-//                    .transition(.opacity)
-//                
-//                StoreKitView()
-//                    .transition(.move(edge: .bottom).combined(with: .opacity))
-//            }
-//        }
+        //        .overlay {
+        //            if showSubscriptionView {
+        //                Color.black.opacity(0.8)
+        //                    .ignoresSafeArea()
+        //                    .transition(.opacity)
+        //
+        //                StoreKitView()
+        //                    .transition(.move(edge: .bottom).combined(with: .opacity))
+        //            }
+        //        }
         
         .padding(.horizontal)
-            .sheet(isPresented: $abrirModal) {
-                EachBlock(timestamp: $timestamp,numberTransactions: $numberTransactions, blockMiner: $blockMiner, medianFee: $medianFee, blockSize: $blockSize, hashBlock: $hashBlock, heightBlock: $heightBlock, abrirModal: $abrirModal)
-                    .presentationBackground(Color.background)
-            }
-            .sheet(isPresented: $showSubscriptionView) {
-                StoreKitView(showSubscriptionView: $showSubscriptionView)
-            }
+        .sheet(isPresented: $abrirModal) {
+            EachBlock(timestamp: $timestamp,numberTransactions: $numberTransactions, blockMiner: $blockMiner, medianFee: $medianFee, blockSize: $blockSize, hashBlock: $hashBlock, heightBlock: $heightBlock, abrirModal: $abrirModal)
+                .presentationBackground(Color.background)
+        }
+        .sheet(isPresented: $showSubscriptionView) {
+            StoreKitView(showSubscriptionView: $showSubscriptionView)
+        }
         
-            .task {
-                blockData.getBlockDatas(4)
-            }
+        .task {
+            blockData.getBlockDatas(4)
+        }
         
     }
 }
