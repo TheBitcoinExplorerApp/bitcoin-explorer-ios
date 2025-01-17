@@ -21,7 +21,6 @@ struct BoxBlocks: View {
     let colunas = [GridItem(spacing: 20), GridItem()]
     
     @State private var showSubscriptionView: Bool = false
-    @State private var hasPurchases: Bool = false
     @EnvironmentObject private var store: SubscriptionStore
     
     var body: some View {
