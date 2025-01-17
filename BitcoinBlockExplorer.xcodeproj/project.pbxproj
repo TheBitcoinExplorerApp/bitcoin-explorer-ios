@@ -33,7 +33,6 @@
 		9B3514882D2F41970034FF98 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3514872D2F41970034FF98 /* StoreKit.framework */; };
 		9B35148C2D2F42160034FF98 /* BitcoinStoreKitConfiguration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 9B35148B2D2F42160034FF98 /* BitcoinStoreKitConfiguration.storekit */; };
 		9B3514912D2F45180034FF98 /* StoreKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3514902D2F45180034FF98 /* StoreKitView.swift */; };
-		9B3514942D2F47430034FF98 /* MyProductIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3514932D2F47330034FF98 /* MyProductIdentifiers.swift */; };
 		9B3852D42B7C2A6000E2D576 /* HomeTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3852D32B7C2A6000E2D576 /* HomeTexts.swift */; };
 		9B3852D62B7C2B2300E2D576 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9B3852D52B7C2B2300E2D576 /* Localizable.xcstrings */; };
 		9B3852D82B7C33C400E2D576 /* ToolbarTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3852D72B7C33C400E2D576 /* ToolbarTexts.swift */; };
@@ -68,6 +67,7 @@
 		9BFA12452BAB104C000C0CB5 /* DonationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA12442BAB104C000C0CB5 /* DonationsView.swift */; };
 		9BFA12472BAB1541000C0CB5 /* LabelLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA12462BAB1541000C0CB5 /* LabelLink.swift */; };
 		9BFA124D2BAB4A4B000C0CB5 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA124C2BAB4A4B000C0CB5 /* ToastView.swift */; };
+		9BFDF4A62D384A0700EE4046 /* SubscriptionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFDF4A52D3849E200EE4046 /* SubscriptionStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,7 +97,6 @@
 		9B3514872D2F41970034FF98 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		9B35148B2D2F42160034FF98 /* BitcoinStoreKitConfiguration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = BitcoinStoreKitConfiguration.storekit; sourceTree = "<group>"; };
 		9B3514902D2F45180034FF98 /* StoreKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitView.swift; sourceTree = "<group>"; };
-		9B3514932D2F47330034FF98 /* MyProductIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProductIdentifiers.swift; sourceTree = "<group>"; };
 		9B3852D32B7C2A6000E2D576 /* HomeTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTexts.swift; sourceTree = "<group>"; };
 		9B3852D52B7C2B2300E2D576 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		9B3852D72B7C33C400E2D576 /* ToolbarTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarTexts.swift; sourceTree = "<group>"; };
@@ -134,6 +133,7 @@
 		9BFA12442BAB104C000C0CB5 /* DonationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationsView.swift; sourceTree = "<group>"; };
 		9BFA12462BAB1541000C0CB5 /* LabelLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelLink.swift; sourceTree = "<group>"; };
 		9BFA124C2BAB4A4B000C0CB5 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		9BFDF4A52D3849E200EE4046 /* SubscriptionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionStore.swift; sourceTree = "<group>"; };
 		9F72E7CEB2FCE47A9CE9A0FB /* Pods_BitcoinBlockExplorer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitcoinBlockExplorer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2FB5F46FEA11B8DE41A03DB /* Pods-BitcoinBlockExplorer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcoinBlockExplorer.release.xcconfig"; path = "Target Support Files/Pods-BitcoinBlockExplorer/Pods-BitcoinBlockExplorer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -213,7 +213,7 @@
 		9B3514922D2F47230034FF98 /* StoreKit */ = {
 			isa = PBXGroup;
 			children = (
-				9B3514932D2F47330034FF98 /* MyProductIdentifiers.swift */,
+				9BFDF4A52D3849E200EE4046 /* SubscriptionStore.swift */,
 				9B35148B2D2F42160034FF98 /* BitcoinStoreKitConfiguration.storekit */,
 			);
 			path = StoreKit;
@@ -634,12 +634,12 @@
 				9BEEACA02C8F7B0500E2E120 /* BitcoinPriceViewComponent.swift in Sources */,
 				9B4BE3642A17BBA000050C33 /* EachTransactionData.swift in Sources */,
 				9B4372762A1D2C1800DFE211 /* AddressDataTransactions.swift in Sources */,
+				9BFDF4A62D384A0700EE4046 /* SubscriptionStore.swift in Sources */,
 				9B43726D2A1CDFAA00DFE211 /* EachAddressView.swift in Sources */,
 				9B5689ED2B7CEFF10009A751 /* Texts.swift in Sources */,
 				9B2BC8E22A12C54700735A8D /* BlockModel.swift in Sources */,
 				9B925AB22C74382A00A754C1 /* AdBannerView.swift in Sources */,
 				9B2BC8E72A13B1CF00735A8D /* BlockData.swift in Sources */,
-				9B3514942D2F47430034FF98 /* MyProductIdentifiers.swift in Sources */,
 				9B43726F2A1CE66000DFE211 /* AddressDataHeader.swift in Sources */,
 				9B2BC8EE2A13F70600735A8D /* EveryTransactions.swift in Sources */,
 				9B2BC8E52A12D1B500735A8D /* FeeData.swift in Sources */,

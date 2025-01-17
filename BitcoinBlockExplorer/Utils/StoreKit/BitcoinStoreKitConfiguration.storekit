@@ -83,21 +83,21 @@
           "codeOffers" : [
 
           ],
-          "displayPrice" : "1",
+          "displayPrice" : "0.99",
           "familyShareable" : false,
           "groupNumber" : 1,
           "internalID" : "E2738548",
           "introductoryOffer" : null,
           "localizations" : [
             {
-              "description" : "The best information about the Bitcoin Blockchain blocks ",
-              "displayName" : "See the Blocks",
+              "description" : "Access to the all Bitcoin Blockchain data\n",
+              "displayName" : "All Access",
               "locale" : "en_US"
             }
           ],
-          "productID" : "VictorHugoPachecoAraujo.BitcoinBlockExplorer.bitcoinData",
+          "productID" : "VictorHugoPachecoAraujo.BitcoinBlockExplorer.monthly",
           "recurringSubscriptionPeriod" : "P1M",
-          "referenceName" : "Bitcoin Data",
+          "referenceName" : "Bitcoin Block - All access",
           "subscriptionGroupID" : "EDD56862",
           "type" : "RecurringSubscription",
           "winbackOffers" : [

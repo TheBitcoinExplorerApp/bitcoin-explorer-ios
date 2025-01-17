@@ -14,14 +14,14 @@ struct BitcoinBlockExplorerApp: App {
     
     @StateObject var addManager = AddManager()
     @StateObject var currencyViewModel = CurrencyComponentViewModel()
+    @StateObject var subscriptionStore = SubscriptionStore()
     
     var body: some Scene {
         WindowGroup {
-//            ContentView()
-//                .environmentObject(addManager)
-//                .environmentObject(currencyViewModel)
-            
-            StoreKitView()
+            ContentView()
+                .environmentObject(addManager)
+                .environmentObject(currencyViewModel)
+                .environmentObject(subscriptionStore)
         }
     }
 }
