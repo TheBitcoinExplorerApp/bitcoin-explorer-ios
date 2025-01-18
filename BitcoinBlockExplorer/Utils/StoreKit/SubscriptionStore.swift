@@ -46,7 +46,7 @@ enum StoreAction: Equatable {
 final class SubscriptionStore: ObservableObject {
     
     @Published private(set) var subscriptions: [Product] = []
-    @Published private(set) var purschasedSubscriptions: [Product] = []
+    @Published private(set) var purschasedSubscriptions: Bool = false
     @Published private(set) var subscriptionGroupStatus: RenewalState?
     
     @Published private(set) var action: StoreAction? {
@@ -192,7 +192,7 @@ private extension SubscriptionStore {
                 switch transaction.productType {
                 case .autoRenewable:
                     if let subscription = subscriptions.first(where: {$0.id == transaction.productID}) {
-                        purschasedSubscriptions.append(subscription)
+                        purschasedSubscriptions = true
                     }
                 default:
                     break

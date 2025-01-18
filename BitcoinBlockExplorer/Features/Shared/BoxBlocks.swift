@@ -62,14 +62,14 @@ struct BoxBlocks: View {
                         .cornerRadius(7)
                         
                         .overlay {
-                            if store.purschasedSubscriptions.isEmpty  {
+                            if store.purschasedSubscriptions == false {
                                 Color.backgroundBox
                                     .blur(radius: 15)
                             }
                         }
                         
                         .onTapGesture {
-                            if store.purschasedSubscriptions.isEmpty {
+                            if store.purschasedSubscriptions == false {
                                 showSubscriptionView.toggle()
                             } else {
                                 hashBlock = blocks.id
