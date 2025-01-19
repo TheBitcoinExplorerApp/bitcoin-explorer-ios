@@ -48,8 +48,6 @@
 		9B5689EF2B7D106A0009A751 /* BlocksTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5689EE2B7D106A0009A751 /* BlocksTexts.swift */; };
 		9B5689F12B7D178E0009A751 /* TransactionsTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5689F02B7D178E0009A751 /* TransactionsTexts.swift */; };
 		9B925AB22C74382A00A754C1 /* AdBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B925AB12C74382A00A754C1 /* AdBannerView.swift */; };
-		9BB215C62D2D97C5000FBB9B /* EachAddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB215C52D2D97B4000FBB9B /* EachAddressViewModel.swift */; };
-		9BB215C82D2D985F000FBB9B /* EachAddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB215C72D2D9858000FBB9B /* EachAddressModel.swift */; };
 		9BC226122A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC226112A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift */; };
 		9BC226142A0C68CA0069FDEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC226132A0C68CA0069FDEB /* ContentView.swift */; };
 		9BC226162A0C68CB0069FDEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BC226152A0C68CB0069FDEB /* Assets.xcassets */; };
@@ -113,8 +111,6 @@
 		9B5689F02B7D178E0009A751 /* TransactionsTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTexts.swift; sourceTree = "<group>"; };
 		9B925AB02C74367300A754C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9B925AB12C74382A00A754C1 /* AdBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBannerView.swift; sourceTree = "<group>"; };
-		9BB215C52D2D97B4000FBB9B /* EachAddressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachAddressViewModel.swift; sourceTree = "<group>"; };
-		9BB215C72D2D9858000FBB9B /* EachAddressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachAddressModel.swift; sourceTree = "<group>"; };
 		9BC2260E2A0C68CA0069FDEB /* BitcoinBlockExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinBlockExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC226112A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinBlockExplorerApp.swift; sourceTree = "<group>"; };
 		9BC226132A0C68CA0069FDEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -168,6 +164,7 @@
 				9B3C00102BAC7F07000B55B9 /* Extensions */,
 				9B3C000F2BAC7EC6000B55B9 /* TextsStrings */,
 				9B3852D52B7C2B2300E2D576 /* Localizable.xcstrings */,
+				9B3C00122BAC7F59000B55B9 /* Modifiers */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -219,22 +216,12 @@
 			path = StoreKit;
 			sourceTree = "<group>";
 		};
-		9B3C00082BAC75D3000B55B9 /* Features */ = {
-			isa = PBXGroup;
-			children = (
-				9B3C000A2BAC75E4000B55B9 /* Views */,
-				9B3C00092BAC75DD000B55B9 /* Shared */,
-			);
-			path = Features;
-			sourceTree = "<group>";
-		};
 		9B3C00092BAC75DD000B55B9 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
 				9B1243822A16579700B9A4AF /* BoxBlocks.swift */,
 				9B1243842A165BF700B9A4AF /* BoxTransactions.swift */,
 				9B3C00132BAC7F7C000B55B9 /* ComponentsGeneral */,
-				9B3C00112BAC7F53000B55B9 /* Settings */,
 				9B925AB12C74382A00A754C1 /* AdBannerView.swift */,
 				9BEEACA32C8F85DE00E2E120 /* AdViewComponent.swift */,
 			);
@@ -253,6 +240,7 @@
 				9B3C000D2BAC7890000B55B9 /* Configurations */,
 				9B3C000C2BAC7642000B55B9 /* EveryBlocks */,
 				9B3C000B2BAC75F6000B55B9 /* Home */,
+				9B3C00092BAC75DD000B55B9 /* Shared */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -311,14 +299,6 @@
 				9B3852D92B7C39C300E2D576 /* ExtensionColor.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		9B3C00112BAC7F53000B55B9 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				9B3C00122BAC7F59000B55B9 /* Modifiers */,
-			);
-			path = Settings;
 			sourceTree = "<group>";
 		};
 		9B3C00122BAC7F59000B55B9 /* Modifiers */ = {
@@ -385,8 +365,6 @@
 		9B3F05982BB3BD58003C746C /* EachAddress */ = {
 			isa = PBXGroup;
 			children = (
-				9BB215C72D2D9858000FBB9B /* EachAddressModel.swift */,
-				9BB215C52D2D97B4000FBB9B /* EachAddressViewModel.swift */,
 				9B43726C2A1CDFAA00DFE211 /* EachAddressView.swift */,
 			);
 			path = EachAddress;
@@ -425,7 +403,7 @@
 				9B925AB02C74367300A754C1 /* Info.plist */,
 				9BC226112A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift */,
 				9BC226132A0C68CA0069FDEB /* ContentView.swift */,
-				9B3C00082BAC75D3000B55B9 /* Features */,
+				9B3C000A2BAC75E4000B55B9 /* Views */,
 				9B2BC8E32A12D19800735A8D /* Services */,
 				9B27E7142A12A8B400E8036E /* Model */,
 				9B2321EF2B85116D000BFBA9 /* Utils */,
@@ -596,7 +574,6 @@
 				9B3852DA2B7C39C300E2D576 /* ExtensionColor.swift in Sources */,
 				9B2BC8F62A1548F900735A8D /* EveryTransactionsModel.swift in Sources */,
 				9B1243852A165BF700B9A4AF /* BoxTransactions.swift in Sources */,
-				9BB215C62D2D97C5000FBB9B /* EachAddressViewModel.swift in Sources */,
 				9B2321EA2B84E279000BFBA9 /* Coins.swift in Sources */,
 				9B2321EE2B84E967000BFBA9 /* FormatCoin.swift in Sources */,
 				9B2BC8F42A15487900735A8D /* TransactionData.swift in Sources */,
@@ -604,7 +581,6 @@
 				9BEBDF8E2BA785B60077632C /* Error.swift in Sources */,
 				9B4372712A1CE88900DFE211 /* AddressHeaderModel.swift in Sources */,
 				9BEEACA22C8F7C0200E2E120 /* TextsFeesViewComponent.swift in Sources */,
-				9BB215C82D2D985F000FBB9B /* EachAddressModel.swift in Sources */,
 				9BEEACA42C8F85DE00E2E120 /* AdViewComponent.swift in Sources */,
 				9B2BC8FD2A155C1F00735A8D /* EachBlock.swift in Sources */,
 				9B12438D2A16C11C00B9A4AF /* BlockTransactionData.swift in Sources */,
