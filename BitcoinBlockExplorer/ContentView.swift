@@ -16,10 +16,6 @@ struct ContentView: View {
                 Label(ContentViewTexts.home, systemImage: "house")
             }.toolbarBackground(Color.background, for: .tabBar)
             
-            EveryBlocks().tabItem {
-                Label(BlocksTexts.blocos, systemImage: "cube")
-            }.toolbarBackground(Color.background, for: .tabBar)
-            
             EveryTransactions().tabItem {
                 Label(TransactionsTexts.transacoesMaiusculo, systemImage: "rectangle.grid.1x2.fill")
             }.toolbarBackground(Color.background, for: .tabBar)
@@ -34,9 +30,8 @@ struct ContentView: View {
 }
 
 #Preview {
-    let addManager = AddManager()
-    let currencyViewModel = CurrencyComponentViewModel()
     return ContentView()
-        .environmentObject(addManager)
-        .environmentObject(currencyViewModel)
+        .environmentObject(AddManager())
+        .environmentObject(CurrencyComponentViewModel())
+        .environmentObject(SubscriptionStore())
 }

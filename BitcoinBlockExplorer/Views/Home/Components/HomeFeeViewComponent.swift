@@ -33,4 +33,5 @@ struct HomeFeeViewComponent: View {
 
 #Preview {
     HomeFeeViewComponent()
+        .environmentObject(CurrencyComponentViewModel())
 }

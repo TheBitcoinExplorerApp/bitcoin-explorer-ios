@@ -1,13 +1,13 @@
 //
-//  BoxBlocks.swift
+//  TesteStoreKit.swift
 //  BitcoinBlockExplorer
 //
-//  Created by Victor Hugo Pacheco Araujo on 18/05/23.
+//  Created by Victor Hugo Pacheco Araujo on 20/01/25.
 //
 
 import SwiftUI
 
-struct BoxBlocks: View {
+struct TesteStoreKit: View {
     
     @State var timestamp: String = ""
     @State var numberTransactions: Int64 = 0
@@ -19,7 +19,10 @@ struct BoxBlocks: View {
     @StateObject var blockData = BlockData()
     @State var abrirModal: Bool = false
     let colunas = [GridItem(spacing: 20), GridItem()]
-     
+    
+    @State private var showSubscriptionView: Bool = false
+    @EnvironmentObject private var store: SubscriptionStore
+    
     var body: some View {
         VStack{
             
@@ -53,18 +56,27 @@ struct BoxBlocks: View {
                     .background(Color.backgroundBox)
                     .cornerRadius(7)
                     
+                    .overlay {
+                        if store.purschasedSubscriptions == false {
+                            Color.backgroundBox
+                                .blur(radius: 15)
+                        }
+                    }
+                    
                     .onTapGesture {
-                        
-                        hashBlock = blocks.id
-                        heightBlock = blocks.height
-                        medianFee = blocks.extras.medianFee
-                        blockSize = blocks.size
-                        blockMiner = blocks.extras.pool.name
-                        numberTransactions = blocks.tx_count
-                        timestamp = blocks.formatTimestampWithHour(blocks.timestamp)
-                        
-                        abrirModal.toggle()
-                        
+                        if store.purschasedSubscriptions == false {
+                            showSubscriptionView.toggle()
+                        } else {
+                            hashBlock = blocks.id
+                            heightBlock = blocks.height
+                            medianFee = blocks.extras.medianFee
+                            blockSize = blocks.size
+                            blockMiner = blocks.extras.pool.name
+                            numberTransactions = blocks.tx_count
+                            timestamp = blocks.formatTimestampWithHour(blocks.timestamp)
+                            
+                            abrirModal.toggle()
+                        }
                     }
                     
                 }
@@ -81,7 +93,10 @@ struct BoxBlocks: View {
             EachBlock(timestamp: $timestamp,numberTransactions: $numberTransactions, blockMiner: $blockMiner, medianFee: $medianFee, blockSize: $blockSize, hashBlock: $hashBlock, heightBlock: $heightBlock, abrirModal: $abrirModal)
                 .presentationBackground(Color.background)
         }
-       
+        .sheet(isPresented: $showSubscriptionView) {
+            StoreKitView(showSubscriptionView: $showSubscriptionView)
+        }
+        
         .task {
             blockData.getBlockDatas(4)
         }
@@ -90,5 +105,6 @@ struct BoxBlocks: View {
 }
 
 #Preview {
-    BoxBlocks()
+    TesteStoreKit()
+        .environmentObject(SubscriptionStore())
 }
