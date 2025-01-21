@@ -47,7 +47,7 @@
 		9B5689EF2B7D106A0009A751 /* BlocksTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5689EE2B7D106A0009A751 /* BlocksTexts.swift */; };
 		9B5689F12B7D178E0009A751 /* TransactionsTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5689F02B7D178E0009A751 /* TransactionsTexts.swift */; };
 		9B57DC352D3F2EEF00A810F5 /* TesteStoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B57DC342D3F2EEA00A810F5 /* TesteStoreKit.swift */; };
-		9B57DC582D3F38C200A810F5 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B57DC572D3F38BC00A810F5 /* ServiceManager.swift */; };
+		9B57DC582D3F38C200A810F5 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B57DC572D3F38BC00A810F5 /* APIHandler.swift */; };
 		9B57DC5A2D3F3AB400A810F5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B57DC592D3F3AAE00A810F5 /* HomeViewModel.swift */; };
 		9B925AB22C74382A00A754C1 /* AdBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B925AB12C74382A00A754C1 /* AdBannerView.swift */; };
 		9BC226122A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC226112A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift */; };
@@ -111,7 +111,7 @@
 		9B5689EE2B7D106A0009A751 /* BlocksTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocksTexts.swift; sourceTree = "<group>"; };
 		9B5689F02B7D178E0009A751 /* TransactionsTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTexts.swift; sourceTree = "<group>"; };
 		9B57DC342D3F2EEA00A810F5 /* TesteStoreKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteStoreKit.swift; sourceTree = "<group>"; };
-		9B57DC572D3F38BC00A810F5 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		9B57DC572D3F38BC00A810F5 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 		9B57DC592D3F3AAE00A810F5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		9B925AB02C74367300A754C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9B925AB12C74382A00A754C1 /* AdBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBannerView.swift; sourceTree = "<group>"; };
@@ -189,7 +189,7 @@
 		9B2BC8E32A12D19800735A8D /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				9B57DC572D3F38BC00A810F5 /* ServiceManager.swift */,
+				9B57DC572D3F38BC00A810F5 /* APIHandler.swift */,
 				9BEBDF8C2BA785AD0077632C /* Error */,
 				9B2BC8E42A12D1B500735A8D /* FeeData.swift */,
 				9B2BC8E62A13B1CF00735A8D /* BlockData.swift */,
@@ -571,7 +571,7 @@
 				9BC487A62C1B8C89007E975A /* BitcoinWalletView.swift in Sources */,
 				9B3852DA2B7C39C300E2D576 /* ExtensionColor.swift in Sources */,
 				9B2BC8F62A1548F900735A8D /* EveryTransactionsModel.swift in Sources */,
-				9B57DC582D3F38C200A810F5 /* ServiceManager.swift in Sources */,
+				9B57DC582D3F38C200A810F5 /* APIHandler.swift in Sources */,
 				9B1243852A165BF700B9A4AF /* BoxTransactions.swift in Sources */,
 				9B2321EA2B84E279000BFBA9 /* Coins.swift in Sources */,
 				9B2321EE2B84E967000BFBA9 /* FormatCoin.swift in Sources */,
