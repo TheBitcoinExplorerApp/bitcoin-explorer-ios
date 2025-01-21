@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @StateObject var validateAddresses = Validate()
-    @StateObject var feeData = FeeData()
+    @StateObject var viewModel = HomeViewModel()
     @State var addressSearch: String = ""
     @State var idTransacaoSearch: String = ""
     @State var abrirModalAddress: Bool = false
@@ -26,17 +26,21 @@ struct HomeView: View {
                     VStack{
                         TextsFeesViewComponent()
                         VStack(alignment: .center) {
-                            ForEach(feeData.fees, id: \.self) { fee in
+                            ForEach(viewModel.fees, id: \.self) { fee in
                                 HStack(spacing: 17) {
+                                    
                                     HomeFeeViewComponent(fee: fee.hourFee)
                                     
                                     HomeFeeViewComponent(fee: fee.halfHourFee)
                                     
                                     HomeFeeViewComponent(fee: fee.fastestFee)
+                                    
                                 }
                             }
                         }
-                    }.padding(.vertical)
+                    }
+                    .padding(.vertical)
+                    
                     BoxBlocks()
                     BoxTransactions()
                 }
@@ -46,7 +50,7 @@ struct HomeView: View {
             }
             
             .task {
-                feeData.getFees()
+                viewModel.getFees()
             }
             
             .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: ToolbarTexts.searchPlaceholder) {
