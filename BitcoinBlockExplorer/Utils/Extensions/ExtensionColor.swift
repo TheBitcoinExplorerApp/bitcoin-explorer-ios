@@ -19,4 +19,6 @@ extension Color {
     
     static let dismissBackground = Color("dismissBackground")
     
+    static let chainBackground = Color("chainBackground")
+    
 }

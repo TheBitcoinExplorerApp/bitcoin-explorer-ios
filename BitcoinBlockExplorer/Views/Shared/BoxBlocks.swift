@@ -16,14 +16,14 @@ struct BoxBlocks: View {
     @State var blockSize: Double = 0
     @State var heightBlock: Int = 0
     @State var hashBlock: String = ""
-    @StateObject var blockData = BlockData()
     @State var abrirModal: Bool = false
-    let colunas = [GridItem(spacing: 20), GridItem()]
-     
+    
+    let blocks: [Blocks]
+    
     var body: some View {
-        VStack{
+        VStack {
             
-            HStack{
+            HStack {
                 Text(BlocksTexts.blocos)
                     .foregroundColor(Color.texts)
                     .bold()
@@ -31,64 +31,67 @@ struct BoxBlocks: View {
                 Spacer()
             }
             
-            LazyVGrid(columns: colunas, spacing: 15) {
-                ForEach(blockData.blockDatas, id: \.self) { blocks in
+            ScrollView(.horizontal) {
+                
+                ZStack {
+                    Rectangle()
+                        .frame(maxWidth: .infinity, maxHeight: 8)
+                        .foregroundStyle(Color.chainBackground)
                     
-                    VStack{
-                        let tamanho = String(format: "%.2f", (blocks.size / 1000000))
-                        
-                        Text("\(blocks.height)").foregroundColor(Color.primaryText)
-                            .font(.callout)
-                        Text("~\(Int(blocks.extras.medianFee)) \(Texts.satVb)").foregroundColor(Color.texts)
-                            .font(.footnote)
-                        Text("\(tamanho) \(BlocksTexts.MB)").foregroundColor(Color.texts)
-                            .font(.footnote)
-                        Text("\(blocks.tx_count) \(TransactionsTexts.transacoes)").foregroundColor(Color.texts)
-                            .font(.footnote)
-                        Text("\(blocks.formatTimestamp(blocks.timestamp))").foregroundColor(Color.texts)
-                            .font(.footnote)
+                    HStack(spacing: 10) {
+                        ForEach(blocks, id: \.self) { blocks in
+                            
+                            VStack {
+                                let tamanho = String(format: "%.2f", (blocks.size / 1000000))
+                                
+                                Text("\(blocks.height)").foregroundColor(Color.primaryText)
+                                    .font(.callout)
+                                Text("~\(Int(blocks.extras.medianFee)) \(Texts.satVb)").foregroundColor(Color.texts)
+                                    .font(.footnote)
+                                Text("\(tamanho) \(BlocksTexts.MB)").foregroundColor(Color.texts)
+                                    .font(.callout)
+                                Text("\(blocks.tx_count) \(TransactionsTexts.transacoes)").foregroundColor(Color.texts)
+                                    .truncationMode(.tail)
+                                    .font(.footnote)
+                                Text("\(blocks.formatTimestamp(blocks.timestamp))").foregroundColor(Color.texts)
+                                    .font(.footnote)
+                            }
+                            .padding()
+                            .background(Color.backgroundBox)
+                            .cornerRadius(7)
+                            
+                            .onTapGesture {
+                                hashBlock = blocks.id
+                                heightBlock = blocks.height
+                                medianFee = blocks.extras.medianFee
+                                blockSize = blocks.size
+                                blockMiner = blocks.extras.pool.name
+                                numberTransactions = blocks.tx_count
+                                timestamp = blocks.formatTimestampWithHour(blocks.timestamp)
+                                
+                                abrirModal.toggle()
+                            }
+                          
+                        }
                     }
-                    .padding(.vertical)
-                    .frame(maxWidth: .infinity)
-                    .background(Color.backgroundBox)
-                    .cornerRadius(7)
-                    
-                    .onTapGesture {
-                        
-                        hashBlock = blocks.id
-                        heightBlock = blocks.height
-                        medianFee = blocks.extras.medianFee
-                        blockSize = blocks.size
-                        blockMiner = blocks.extras.pool.name
-                        numberTransactions = blocks.tx_count
-                        timestamp = blocks.formatTimestampWithHour(blocks.timestamp)
-                        
-                        abrirModal.toggle()
-                        
-                    }
-                    
                 }
-            }
-            .overlay {
-                if blockData.loading {
-                    ProgressView().scaleEffect(1.2)
-                }
-            }
+            }.scrollIndicators(.hidden)
+            
         }
-        
-        .padding(.horizontal)
+        .padding(.leading)
         .sheet(isPresented: $abrirModal) {
             EachBlock(timestamp: $timestamp,numberTransactions: $numberTransactions, blockMiner: $blockMiner, medianFee: $medianFee, blockSize: $blockSize, hashBlock: $hashBlock, heightBlock: $heightBlock, abrirModal: $abrirModal)
                 .presentationBackground(Color.background)
-        }
-       
-        .task {
-            blockData.getBlockDatas(4)
         }
         
     }
 }
 
 #Preview {
-    BoxBlocks()
+    BoxBlocks(blocks: [Blocks(id: "sds", height: 9, size: 93.2, tx_count: 23, timestamp: 293232, extras: Extras(medianFee: 9.3, pool: Pool(name: "nome")))])
+}
+#Preview {
+   return HomeView()
+        .environmentObject(CurrencyComponentViewModel())
+        .environmentObject(AddManager())
 }

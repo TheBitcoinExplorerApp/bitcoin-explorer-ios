@@ -10,7 +10,7 @@ import SwiftUI
 class BlockData: ObservableObject {
     @Published var blockDatas: [Blocks] = []
     @Published var loading = false
-    var maxBlockCount: Int = 0
+//    var maxBlockCount: Int = 0
     
     func getBlockDatas(_ maxBlockCount: Int) {
         

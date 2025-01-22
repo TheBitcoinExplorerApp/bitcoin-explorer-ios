@@ -253,9 +253,8 @@
 		9B3C000B2BAC75F6000B55B9 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				9B57DC592D3F3AAE00A810F5 /* HomeViewModel.swift */,
-				9BEEAC9C2C8F798B00E2E120 /* Components */,
-				9B2BC8F12A13FE5900735A8D /* HomeView.swift */,
+				9BBE4F682D400BF100E2D991 /* HomeViewModel */,
+				9BBE4F672D400BD100E2D991 /* HomeView */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -377,6 +376,40 @@
 			path = Functions;
 			sourceTree = "<group>";
 		};
+		9BBE4F652D400B7D00E2D991 /* TransactionsFeeComponents */ = {
+			isa = PBXGroup;
+			children = (
+				9BEEAC9D2C8F799C00E2E120 /* HomeFeeViewComponent.swift */,
+				9BEEACA12C8F7C0200E2E120 /* TextsFeesViewComponent.swift */,
+			);
+			path = TransactionsFeeComponents;
+			sourceTree = "<group>";
+		};
+		9BBE4F662D400BB800E2D991 /* BitcoinPriceComponent */ = {
+			isa = PBXGroup;
+			children = (
+				9BEEAC9F2C8F7B0500E2E120 /* BitcoinPriceViewComponent.swift */,
+			);
+			path = BitcoinPriceComponent;
+			sourceTree = "<group>";
+		};
+		9BBE4F672D400BD100E2D991 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				9B2BC8F12A13FE5900735A8D /* HomeView.swift */,
+				9BEEAC9C2C8F798B00E2E120 /* Components */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		9BBE4F682D400BF100E2D991 /* HomeViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9B57DC592D3F3AAE00A810F5 /* HomeViewModel.swift */,
+			);
+			path = HomeViewModel;
+			sourceTree = "<group>";
+		};
 		9BC226052A0C68CA0069FDEB = {
 			isa = PBXGroup;
 			children = (
@@ -430,9 +463,8 @@
 		9BEEAC9C2C8F798B00E2E120 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				9BEEAC9D2C8F799C00E2E120 /* HomeFeeViewComponent.swift */,
-				9BEEAC9F2C8F7B0500E2E120 /* BitcoinPriceViewComponent.swift */,
-				9BEEACA12C8F7C0200E2E120 /* TextsFeesViewComponent.swift */,
+				9BBE4F662D400BB800E2D991 /* BitcoinPriceComponent */,
+				9BBE4F652D400B7D00E2D991 /* TransactionsFeeComponents */,
 			);
 			path = Components;
 			sourceTree = "<group>";

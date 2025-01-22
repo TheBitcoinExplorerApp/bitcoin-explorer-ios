@@ -20,41 +20,40 @@ struct EveryTransactions: View {
     
     var body: some View {
         
-        NavigationStack{
-            ScrollView(.vertical) {
-                BoxTransactions()
-            }
-            .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: ToolbarTexts.searchPlaceholder) {
-            }
-            
-            .onSubmit(of: .search) {
-                if validateAddresses.isValidAddress(searchText){
-                    addressSearch = searchText
-                    abrirModalAddress.toggle()
-                    
-                } else {
-                    idTransacaoSearch = searchText
-                    abrirModalTransaction.toggle()
-                }
-            }
-            
-            .sheet(isPresented: $abrirModalAddress ) {
-                EachAddressView(addressSearch: $addressSearch, abrirModalAddress: $abrirModalAddress)
-                    .presentationBackground(Color.background)
-            }
-            .sheet(isPresented: $abrirModalTransaction) {
-                EachTransaction(idTransacaoButton: $idTransacaoButton, idTransacaoSearch: $idTransacaoSearch, abrirModalTransaction: $abrirModalTransaction)
-                    .presentationBackground(Color.background)
-            }
-            
-            .onTapGesture {
-                UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-            }
-            
-            .customToolbar()
-            
-            .background(Color.background)
+        ScrollView(.vertical) {
+            BoxTransactions()
         }
+        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: ToolbarTexts.searchPlaceholder) {
+        }
+        
+        .onSubmit(of: .search) {
+            if validateAddresses.isValidAddress(searchText){
+                addressSearch = searchText
+                abrirModalAddress.toggle()
+                
+            } else {
+                idTransacaoSearch = searchText
+                abrirModalTransaction.toggle()
+            }
+        }
+        
+        .sheet(isPresented: $abrirModalAddress ) {
+            EachAddressView(addressSearch: $addressSearch, abrirModalAddress: $abrirModalAddress)
+                .presentationBackground(Color.background)
+        }
+        .sheet(isPresented: $abrirModalTransaction) {
+            EachTransaction(idTransacaoButton: $idTransacaoButton, idTransacaoSearch: $idTransacaoSearch, abrirModalTransaction: $abrirModalTransaction)
+                .presentationBackground(Color.background)
+        }
+        
+        .onTapGesture {
+            UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+        }
+        
+        .customToolbar()
+        
+        .background(Color.background)
+        
     }
 }
 

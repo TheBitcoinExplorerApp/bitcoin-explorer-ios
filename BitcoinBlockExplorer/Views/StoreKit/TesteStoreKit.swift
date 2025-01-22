@@ -89,10 +89,10 @@ struct TesteStoreKit: View {
         }
         
         .padding(.horizontal)
-        .sheet(isPresented: $abrirModal) {
-            EachBlock(timestamp: $timestamp,numberTransactions: $numberTransactions, blockMiner: $blockMiner, medianFee: $medianFee, blockSize: $blockSize, hashBlock: $hashBlock, heightBlock: $heightBlock, abrirModal: $abrirModal)
-                .presentationBackground(Color.background)
-        }
+//        .sheet(isPresented: $abrirModal) {
+//            EachBlock(timestamp: $timestamp,numberTransactions: $numberTransactions, blockMiner: $blockMiner, medianFee: $medianFee, blockSize: $blockSize, hashBlock: $hashBlock, heightBlock: $heightBlock)
+//                .presentationBackground(Color.background)
+//        }
         .sheet(isPresented: $showSubscriptionView) {
             StoreKitView(showSubscriptionView: $showSubscriptionView)
         }

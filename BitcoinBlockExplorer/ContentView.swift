@@ -8,24 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
-        
+    
     var body: some View {
         
-        TabView{
-            HomeView().tabItem {
+        TabView {
+            NavigationStack {
+                HomeView()
+            }.tabItem {
                 Label(ContentViewTexts.home, systemImage: "house")
             }.toolbarBackground(Color.background, for: .tabBar)
             
-            EveryTransactions().tabItem {
+            NavigationStack {
+                EveryTransactions()
+            }.tabItem {
                 Label(TransactionsTexts.transacoesMaiusculo, systemImage: "rectangle.grid.1x2.fill")
             }.toolbarBackground(Color.background, for: .tabBar)
             
-            ConfigurationsView().tabItem {
+            NavigationStack {
+                ConfigurationsView()
+            }.tabItem {
                 Label(Texts.configuracoes, systemImage: "gearshape.fill")
             }.toolbarBackground(Color.background, for: .tabBar)
         }
         .accentColor(Color.primaryText)
-                
+        
     }
 }
 

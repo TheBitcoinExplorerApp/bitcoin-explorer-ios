@@ -73,7 +73,7 @@ class CurrencyComponentViewModel: ObservableObject {
         } catch GHError.invalidData {
             print("Dado invalido")
         } catch {
-            print("Erro inesperado")
+            print(error)
         }
         
         return 0
