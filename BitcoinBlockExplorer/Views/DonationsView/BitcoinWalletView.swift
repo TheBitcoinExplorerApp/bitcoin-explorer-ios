@@ -66,7 +66,7 @@ struct BitcoinWalletView: View {
                     if showToast {
                         withAnimation() {
                             ToastView()
-                                .frame(maxHeight: .infinity, alignment: .bottom)
+                                .frame(maxHeight: .infinity, alignment: .center)
                                 .transition(.move(edge: .bottom))
                         }
                         

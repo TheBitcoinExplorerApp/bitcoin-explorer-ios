@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Blocks: Hashable, Codable {
-    let id: String
+    let id: String // hash
     let height: Int
     let size: Double
     let tx_count: Int64
@@ -22,7 +22,6 @@ struct Blocks: Hashable, Codable {
         
         let date = Date(timeIntervalSince1970: timestamp)
         return dateFormatter.string(from: date)
-        
     }
     
     func formatTimestampWithHour(_ timestamp: TimeInterval) -> String {
@@ -34,7 +33,6 @@ struct Blocks: Hashable, Codable {
         
         let date = Date(timeIntervalSince1970: timestamp)
         return dateFormatter.string(from: date)
-        
     }
     
 }

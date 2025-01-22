@@ -95,7 +95,7 @@ struct HomeView: View {
                 .presentationBackground(Color.background)
         }
         
-        .customToolbar()
+        .titleToolbar()
         
         .background(Color.background)
     }

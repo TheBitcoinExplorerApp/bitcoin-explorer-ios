@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Fee: Hashable, Codable {
+struct FeeModel: Hashable, Codable {
     // high priority
     let fastestFee: Int
     // medium priority

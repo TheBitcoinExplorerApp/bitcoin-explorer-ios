@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CustomNavigationBarModifier: ViewModifier {
+struct NavigationBarModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
             .navigationBarTitleDisplayMode(.inline)
@@ -32,7 +32,7 @@ struct CustomNavigationBarModifier: ViewModifier {
 }
 
 extension View {
-    func customToolbar() -> some View {
-        self.modifier(CustomNavigationBarModifier())
+    func titleToolbar() -> some View {
+        self.modifier(NavigationBarModifier())
     }
 }

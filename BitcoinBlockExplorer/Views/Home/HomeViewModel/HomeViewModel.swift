@@ -12,14 +12,14 @@ class HomeViewModel: ObservableObject {
     
     @Published var loading: Bool = false
     
-    @Published var fees: [Fee] = []
+    @Published var fees: [FeeModel] = []
     @Published var blockHeaderData: [Blocks] = []
     
     let feesURL = "https://mempool.space/api/v1/fees/recommended"
     let blocksHeaderURL = "https://mempool.space/api/v1/blocks/"
     
     func getFees() {
-        self.apiHandler.fetchData(from: feesURL) { (result: Result<Fee, Error>) in
+        self.apiHandler.fetchData(from: feesURL) { (result: Result<FeeModel, Error>) in
             Task { @MainActor in
                 switch result {
                 case .success(let fees):

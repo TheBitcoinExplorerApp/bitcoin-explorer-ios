@@ -253,32 +253,7 @@ struct EachAddressView: View {
                 UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
             }
             
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button{
-                        abrirModalAddress.toggle()
-                    } label: {
-                        Circle()
-                            .fill()
-                            .foregroundStyle(Color.dismissBackground)
-                            .frame(width: 30, height: 30)
-                            .overlay() {
-                                Text("X")
-                                    .clipShape(Circle())
-                                    .font(.system(size: 22.5))
-                                    .foregroundStyle(Color.primaryText)
-                            }
-                    }
-                }
-                
-                ToolbarItem(placement: .principal) {
-                    Text(AddressTexts.enderecoMaiusculo)
-                        .foregroundStyle(Color.texts)
-                        .bold()
-                        .font(.headline)
-                }
-            }.toolbarBackground(Color.background, for: .navigationBar)
+            .sheetToolbar(title: AddressTexts.enderecoMaiusculo)
             
         }
         

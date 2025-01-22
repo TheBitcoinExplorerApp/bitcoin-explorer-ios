@@ -25,7 +25,6 @@ struct ToastView: View {
             .clipShape(RoundedRectangle(cornerRadius: 10))
             
         }
-        .padding(.bottom, 50)
     }
 }
 

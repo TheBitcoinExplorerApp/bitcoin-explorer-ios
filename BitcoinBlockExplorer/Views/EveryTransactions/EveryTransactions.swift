@@ -50,7 +50,7 @@ struct EveryTransactions: View {
             UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
         }
         
-        .customToolbar()
+        .titleToolbar()
         
         .background(Color.background)
         
