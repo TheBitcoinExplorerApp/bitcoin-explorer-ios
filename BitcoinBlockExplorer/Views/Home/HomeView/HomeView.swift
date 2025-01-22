@@ -58,7 +58,7 @@ struct HomeView: View {
             .refreshable {
                 self.inRefresh = true
                 viewModel.getFees()
-                viewModel.getBlockHeader(4)
+                viewModel.getBlockHeader(50)
             }
             
             AdViewComponent()
@@ -67,7 +67,7 @@ struct HomeView: View {
         
         .task {
             viewModel.getFees()
-            viewModel.getBlockHeader(20)
+            viewModel.getBlockHeader(50)
         }
         
         .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: ToolbarTexts.searchPlaceholder) {
