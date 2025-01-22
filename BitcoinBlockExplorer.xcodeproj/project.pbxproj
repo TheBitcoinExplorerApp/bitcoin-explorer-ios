@@ -160,6 +160,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9B0C492F2D41335D00CE9929 /* BoxBlocks */ = {
+			isa = PBXGroup;
+			children = (
+				9B1243822A16579700B9A4AF /* BoxBlocks.swift */,
+			);
+			path = BoxBlocks;
+			sourceTree = "<group>";
+		};
 		9B2321EF2B85116D000BFBA9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,7 +233,6 @@
 		9B3C00092BAC75DD000B55B9 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				9B1243822A16579700B9A4AF /* BoxBlocks.swift */,
 				9B1243842A165BF700B9A4AF /* BoxTransactions.swift */,
 				9B3C00132BAC7F7C000B55B9 /* ComponentsGeneral */,
 				9B925AB12C74382A00A754C1 /* AdBannerView.swift */,
@@ -463,6 +470,7 @@
 		9BEEAC9C2C8F798B00E2E120 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				9B0C492F2D41335D00CE9929 /* BoxBlocks */,
 				9BBE4F662D400BB800E2D991 /* BitcoinPriceComponent */,
 				9BBE4F652D400B7D00E2D991 /* TransactionsFeeComponents */,
 			);
