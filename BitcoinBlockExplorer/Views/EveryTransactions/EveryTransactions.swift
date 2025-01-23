@@ -22,7 +22,10 @@ struct EveryTransactions: View {
         
         ScrollView(.vertical) {
             BoxTransactions()
+                .id(2)
         }
+        .background(Color.background)
+
         .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: ToolbarTexts.searchPlaceholder) {
         }
         
@@ -45,14 +48,8 @@ struct EveryTransactions: View {
             EachTransaction(idTransacaoButton: $idTransacaoButton, idTransacaoSearch: $idTransacaoSearch, abrirModalTransaction: $abrirModalTransaction)
                 .presentationBackground(Color.background)
         }
-        
-        .onTapGesture {
-            UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-        }
-        
+    
         .titleToolbar()
-        
-        .background(Color.background)
         
     }
 }

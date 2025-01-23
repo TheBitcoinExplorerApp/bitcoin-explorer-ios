@@ -25,36 +25,10 @@ struct HomeView: View {
         
         VStack{
             ScrollView{
-                
-                if viewModel.loading && !inRefresh {
-                    ProgressView()
-                        .scaleEffect(1.2)
-                } else {
-                    
-                    BitcoinPriceViewComponent()
-                    VStack{
-                        TextsFeesViewComponent()
-                        VStack(alignment: .center) {
-                            ForEach(viewModel.fees, id: \.self) { fee in
-                                HStack(spacing: 17) {
-                                    
-                                    HomeFeeViewComponent(fee: fee.hourFee)
-                                    
-                                    HomeFeeViewComponent(fee: fee.halfHourFee)
-                                    
-                                    HomeFeeViewComponent(fee: fee.fastestFee)
-                                    
-                                }
-                            }
-                        }
-                    }
-                    .padding(.vertical)
-                    
-                    BoxBlocks(blocks: viewModel.blockHeaderData)
-                    
-                }
-                
+                home
+                    .id(1)
             }
+            
             .refreshable {
                 self.inRefresh = true
                 viewModel.getFees()
@@ -98,6 +72,40 @@ struct HomeView: View {
         .titleToolbar()
         
         .background(Color.background)
+                
+    }
+    
+    var home: some View {
+        VStack {
+            if viewModel.loading && !inRefresh {
+                ProgressView()
+                    .scaleEffect(1.2)
+            } else {
+                
+                BitcoinPriceViewComponent()
+                VStack{
+                    TextsFeesViewComponent()
+                    VStack(alignment: .center) {
+                        ForEach(viewModel.fees, id: \.self) { fee in
+                            HStack(spacing: 17) {
+                                
+                                HomeFeeViewComponent(fee: fee.hourFee)
+                                
+                                HomeFeeViewComponent(fee: fee.halfHourFee)
+                                
+                                HomeFeeViewComponent(fee: fee.fastestFee)
+                                
+                            }
+                        }
+                    }
+                }
+                .padding(.vertical)
+                
+                BoxBlocks(blocks: viewModel.blockHeaderData)
+                
+            }
+        }
+        
     }
 }
 
