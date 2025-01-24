@@ -9,9 +9,6 @@ import SwiftUI
 
 struct CurrencyViewComponent: View {
     
-    // Bitcoin value
-    @State var value: Double = 0
-        
     var rate: Double
 
     @EnvironmentObject var currencyViewModel:  CurrencyComponentViewModel
@@ -19,16 +16,18 @@ struct CurrencyViewComponent: View {
     var body: some View {
         VStack{
             
-            let priceFinal = rate * (value)
+            let priceFinal = rate * (currencyViewModel.price)
             let currentCoin = formatCoin(priceFinal, symbol: currencyViewModel.symbol ?? "")
             
             Text("\(currentCoin)")
-            
-        }
-        .task {
-            value = await currencyViewModel.getCoins()
         }
         
+        .task {
+            withAnimation(.bouncy) {
+                currencyViewModel.getAllCoins()
+            }
+        }
+    
     }
 }
 

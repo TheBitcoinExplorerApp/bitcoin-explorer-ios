@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     @StateObject var viewModel = HomeViewModel()
     
-    @State var inRefresh: Bool = false
+    @EnvironmentObject var currencyViewModel:  CurrencyComponentViewModel
     
     // Search variables
     @StateObject var validateAddresses = Validate()
@@ -23,20 +23,20 @@ struct HomeView: View {
     
     var body: some View {
         
-        VStack{
+        VStack {
             ScrollView{
                 home
                     .id(1)
             }
             
             .refreshable {
-                self.inRefresh = true
                 viewModel.getFees()
                 viewModel.getBlockHeader(50)
+                currencyViewModel.getAllCoins()
+                print(currencyViewModel.price)
             }
             
             AdViewComponent()
-            
         }
         
         .task {
@@ -72,37 +72,33 @@ struct HomeView: View {
         .titleToolbar()
         
         .background(Color.background)
-                
+        
     }
     
     var home: some View {
         VStack {
-            if viewModel.loading && !inRefresh {
-                ProgressView()
-                    .scaleEffect(1.2)
-            } else {
-                
-                BitcoinPriceViewComponent()
-                VStack{
-                    TextsFeesViewComponent()
-                    VStack(alignment: .center) {
-                        ForEach(viewModel.fees, id: \.self) { fee in
-                            HStack(spacing: 17) {
-                                
-                                HomeFeeViewComponent(fee: fee.hourFee)
-                                
-                                HomeFeeViewComponent(fee: fee.halfHourFee)
-                                
-                                HomeFeeViewComponent(fee: fee.fastestFee)
-                                
-                            }
+            BitcoinPriceViewComponent()
+            VStack{
+                TextsFeesViewComponent()
+                VStack(alignment: .center) {
+                    ForEach(viewModel.fees, id: \.self) { fee in
+                        HStack(spacing: 17) {
+                            
+                            HomeFeeViewComponent(fee: fee.hourFee)
+                            
+                            HomeFeeViewComponent(fee: fee.halfHourFee)
+                            
+                            HomeFeeViewComponent(fee: fee.fastestFee)
+                            
                         }
                     }
                 }
-                .padding(.vertical)
-                
+            }.padding(.vertical)
+            if viewModel.loading {
+                ProgressView()
+                    .scaleEffect(1.2)
+            } else {
                 BoxBlocks(blocks: viewModel.blockHeaderData)
-                
             }
         }
         
@@ -110,7 +106,7 @@ struct HomeView: View {
 }
 
 #Preview {
-   return HomeView()
+    return HomeView()
         .environmentObject(CurrencyComponentViewModel())
         .environmentObject(AddManager())
 }

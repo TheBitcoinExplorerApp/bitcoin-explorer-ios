@@ -31,7 +31,7 @@ struct ConfigurationsView: View {
                             }
                             
                         }.onChange(of: selected) { newValue in
-                            currencyViewModel.currency1 = newValue
+                            currencyViewModel.currency = newValue
                         }
                     
                 }.listRowBackground(Color.backgroundBox)
