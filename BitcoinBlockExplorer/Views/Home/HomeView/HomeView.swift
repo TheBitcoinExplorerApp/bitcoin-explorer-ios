@@ -28,12 +28,10 @@ struct HomeView: View {
                 home
                     .id(1)
             }
-            
             .refreshable {
                 viewModel.getFees()
                 viewModel.getBlockHeader(50)
-                currencyViewModel.getAllCoins()
-                print(currencyViewModel.price)
+                currencyViewModel.getCoins()
             }
             
             AdViewComponent()
@@ -44,15 +42,12 @@ struct HomeView: View {
             viewModel.getBlockHeader(50)
         }
         
-        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: ToolbarTexts.searchPlaceholder) {
-        }
+        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: ToolbarTexts.searchPlaceholder) {}
         
         .onSubmit(of: .search) {
-            
             if validateAddresses.isValidAddress(searchText){
                 addressSearch = searchText
                 abrirModalAddress.toggle()
-                
             } else {
                 idTransacaoSearch = searchText
                 abrirModalTransaction.toggle()

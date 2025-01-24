@@ -24,10 +24,10 @@ struct CurrencyViewComponent: View {
         
         .task {
             withAnimation(.bouncy) {
-                currencyViewModel.getAllCoins()
+                currencyViewModel.getCoins()
             }
         }
-    
+        
     }
 }
 

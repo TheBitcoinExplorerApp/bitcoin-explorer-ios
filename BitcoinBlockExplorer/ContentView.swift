@@ -30,7 +30,6 @@ struct ContentView: View {
                     HomeView()
                         .onChange(of: tappedTwice, perform: { tapped in
                             if tapped {
-                                print("duas")
                                 withAnimation {
                                     proxy.scrollTo(1, anchor: .top)
                                 }

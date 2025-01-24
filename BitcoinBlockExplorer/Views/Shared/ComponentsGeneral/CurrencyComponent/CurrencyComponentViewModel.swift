@@ -21,55 +21,9 @@ class CurrencyComponentViewModel: ObservableObject {
     var flag: String = "🇺🇸"
     @AppStorage("currency") var currency: Int = 0
     
-    func getAllCoins() {
-        Task { @MainActor in
-            self.getCoins()
-            self.getCoins2()
-        }
-        switch currency {
-        case 0:
-            self.price = coins?.USD ?? 0
-            self.symbol = "$"
-            self.flag = "🇺🇸"
-        case 1:
-            self.price = coins?.EUR ?? 0
-            self.symbol = "€"
-            self.flag = "🇪🇺"
-        case 2:
-            self.price = coins?.GBP ?? 0
-            self.symbol = "£"
-            self.flag = "🇬🇧"
-        case 3:
-            self.price = coins?.CAD ?? 0
-            self.symbol = "$"
-            self.flag = "🇨🇦"
-        case 4:
-            self.price = coins?.CHF ?? 0
-            self.symbol = "CHF"
-            self.flag = "🇨🇭"
-        case 5:
-            self.price = coins?.AUD ?? 0
-            self.symbol = "$"
-            self.flag = "🇦🇺"
-        case 6:
-            self.price = coins?.JPY ?? 0
-            self.symbol = "¥"
-            self.flag = "🇯🇵"
-        case 7:
-            self.price = coins2?.BRL.last ?? 0
-            self.symbol = "R$"
-            self.flag = "🇧🇷"
-        case 8:
-            self.price = coins2?.CNY.last ?? 0
-            self.symbol = "¥"
-            self.flag = "🇨🇳"
-        default:
-            break
-        }
-    }
-    
     func getCoins() {
         let coinsURL = "https://mempool.space/api/v1/prices"
+        let coins2URL = "https://blockchain.info/ticker"
         
         self.loading = true
         
@@ -78,30 +32,67 @@ class CurrencyComponentViewModel: ObservableObject {
                 self.loading = false
                 switch result {
                 case .success(let coins):
-                    self.coins = coins
+                    switch self.currency {
+                    case 0:
+                        self.price = coins.USD
+                        self.symbol = "$"
+                        self.flag = "🇺🇸"
+                    case 1:
+                        self.price = coins.EUR
+                        self.symbol = "€"
+                        self.flag = "🇪🇺"
+                    case 2:
+                        self.price = coins.GBP
+                        self.symbol = "£"
+                        self.flag = "🇬🇧"
+                    case 3:
+                        self.price = coins.CAD
+                        self.symbol = "$"
+                        self.flag = "🇨🇦"
+                    case 4:
+                        self.price = coins.CHF
+                        self.symbol = "CHF"
+                        self.flag = "🇨🇭"
+                    case 5:
+                        self.price = coins.AUD
+                        self.symbol = "$"
+                        self.flag = "🇦🇺"
+                    case 6:
+                        self.price = coins.JPY
+                        self.symbol = "¥"
+                        self.flag = "🇯🇵"
+                    default:
+                        break
+                    }
                 case .failure(let error):
                     print("Error in fetch coins \(error)")
                 }
             }
         }
-    }
-    
-    func getCoins2() {
-        let coinsURL = "https://blockchain.info/ticker"
         
-        self.loading = true
-        
-        self.apiHandler.fetchData(from: coinsURL) { (result: Result<Coins2, Error>) in
+        self.apiHandler.fetchData(from: coins2URL) { (result: Result<Coins2, Error>) in
             Task { @MainActor in
                 self.loading = false
                 switch result {
                 case .success(let coins):
-                    self.coins2 = coins
+                    switch self.currency {
+                    case 7:
+                        self.price = coins.BRL.last
+                        self.symbol = "R$"
+                        self.flag = "🇧🇷"
+                    case 8:
+                        self.price = coins.CNY.last
+                        self.symbol = "¥"
+                        self.flag = "🇨🇳"
+                    default:
+                        break
+                    }
                 case .failure(let error):
                     print("Error in fetch coins 2 \(error)")
                 }
             }
         }
+
     }
     
 }
