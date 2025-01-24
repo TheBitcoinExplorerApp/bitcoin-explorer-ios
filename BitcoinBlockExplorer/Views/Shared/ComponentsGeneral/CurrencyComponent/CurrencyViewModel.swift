@@ -1,5 +1,5 @@
 //
-//  CurrencyComponentViewModel.swift
+//  CurrencyViewModel.swift
 //  BitcoinBlockExplorer
 //
 //  Created by Victor Hugo Pacheco Araujo on 20/02/24.
@@ -7,11 +7,9 @@
 
 import SwiftUI
 
-class CurrencyComponentViewModel: ObservableObject {
+class CurrencyViewModel: ObservableObject {
     private let apiHandler = APIHandler()
-    
-    @Published var loading: Bool = false
-    
+        
     var coins: Coins?
     var coins2: Coins2?
     var symbol: String?
@@ -24,12 +22,9 @@ class CurrencyComponentViewModel: ObservableObject {
     func getCoins() {
         let coinsURL = "https://mempool.space/api/v1/prices"
         let coins2URL = "https://blockchain.info/ticker"
-        
-        self.loading = true
-        
+            
         self.apiHandler.fetchData(from: coinsURL) { (result: Result<Coins, Error>) in
             Task { @MainActor in
-                self.loading = false
                 switch result {
                 case .success(let coins):
                     switch self.currency {
@@ -72,7 +67,6 @@ class CurrencyComponentViewModel: ObservableObject {
         
         self.apiHandler.fetchData(from: coins2URL) { (result: Result<Coins2, Error>) in
             Task { @MainActor in
-                self.loading = false
                 switch result {
                 case .success(let coins):
                     switch self.currency {

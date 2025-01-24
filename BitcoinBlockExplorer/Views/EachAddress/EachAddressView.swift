@@ -68,7 +68,7 @@ struct EachAddressView: View {
                                         .foregroundStyle(Color.primaryText)
                                         .font(.callout)
                                         
-                                        CurrencyViewComponent(rate: received)
+                                        CurrencyView(rate: received)
                                             .font(.footnote)
                                             .foregroundStyle(Color.texts)
                                         
@@ -91,7 +91,7 @@ struct EachAddressView: View {
                                             .foregroundStyle(Color.primaryText)
                                             .font(.callout)
                                         
-                                        CurrencyViewComponent(rate: sent)
+                                        CurrencyView(rate: sent)
                                             .font(.footnote)
                                             .foregroundStyle(Color.texts)
                                         
@@ -115,7 +115,7 @@ struct EachAddressView: View {
                                             .foregroundStyle(Color.primaryText)
                                             .font(.callout)
                                         
-                                        CurrencyViewComponent(rate: balance)
+                                        CurrencyView(rate: balance)
                                             .font(.footnote)
                                             .foregroundStyle(Color.texts)
                                     }
@@ -187,7 +187,7 @@ struct EachAddressView: View {
                                                     .foregroundStyle(Color.texts)
                                                     .font(.footnote)
                                                 
-                                                CurrencyViewComponent(rate: prevDesembrulhado)
+                                                CurrencyView(rate: prevDesembrulhado)
                                                     .font(.caption)
                                                     .foregroundStyle(Color.primaryText)
                                                 
@@ -224,7 +224,7 @@ struct EachAddressView: View {
                                                 .foregroundStyle(Color.texts)
                                                 .font(.footnote)
                                             
-                                            CurrencyViewComponent(rate: vOut)
+                                            CurrencyView(rate: vOut)
                                                 .font(.caption)
                                                 .foregroundStyle(Color.primaryText)
                                             

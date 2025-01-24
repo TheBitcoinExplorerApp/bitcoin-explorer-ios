@@ -152,7 +152,7 @@ struct EachTransaction: View {
                                                 .foregroundStyle(Color.primaryText)
                                                 .font(.callout)
                                             
-                                            CurrencyViewComponent(rate: fee)
+                                            CurrencyView(rate: fee)
                                                 .font(.footnote)
                                                 .foregroundStyle(Color.texts)
                                         }
@@ -188,7 +188,7 @@ struct EachTransaction: View {
                                                     .foregroundStyle(Color.texts)
                                                     .font(.footnote)
                                                 
-                                                CurrencyViewComponent(rate: pValue)
+                                                CurrencyView(rate: pValue)
                                                     .font(.caption)
                                                     .foregroundStyle(Color.primaryText)
                                                 
@@ -225,7 +225,7 @@ struct EachTransaction: View {
                                                 .foregroundStyle(Color.texts)
                                                 .font(.footnote)
                                             
-                                            CurrencyViewComponent(rate: value)
+                                            CurrencyView(rate: value)
                                                 .font(.caption)
                                                 .foregroundStyle(Color.primaryText)
                                             

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BitcoinPriceViewComponent: View {
     
-    @EnvironmentObject var currencyViewModel:  CurrencyComponentViewModel
+    @EnvironmentObject var currencyViewModel:  CurrencyViewModel
     
     var body: some View {
         Text(HomeTexts.bitcoinPrice)
@@ -19,7 +19,7 @@ struct BitcoinPriceViewComponent: View {
         HStack{
             Text(currencyViewModel.flag)
             
-            CurrencyViewComponent(rate: 1)
+            CurrencyView(rate: 1)
                 .font(.headline)
                 .foregroundStyle(Color.primaryText)
         }.padding()
@@ -29,7 +29,7 @@ struct BitcoinPriceViewComponent: View {
 }
 
 #Preview {
-    let vm = CurrencyComponentViewModel()
+    let vm = CurrencyViewModel()
     return BitcoinPriceViewComponent()
         .environmentObject(vm)
 }

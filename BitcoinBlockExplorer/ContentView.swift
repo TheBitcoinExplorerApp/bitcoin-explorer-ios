@@ -79,7 +79,7 @@ struct ContentView: View {
 #Preview {
     return ContentView()
         .environmentObject(AddManager())
-        .environmentObject(CurrencyComponentViewModel())
+        .environmentObject(CurrencyViewModel())
         .environmentObject(SubscriptionStore())
 }
 

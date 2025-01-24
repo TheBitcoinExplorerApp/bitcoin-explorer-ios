@@ -11,7 +11,7 @@ struct ConfigurationsView: View {
     
     @AppStorage("selected") var selected = 0
     
-    @EnvironmentObject var currencyViewModel:  CurrencyComponentViewModel
+    @EnvironmentObject var currencyViewModel:  CurrencyViewModel
     
     let currencies = ["🇺🇸 USD", "🇪🇺 EUR", "🇬🇧 GBP", "🇨🇦 CAD", "🇨🇭 CHF", "🇦🇺 AUD", "🇯🇵 JPY", "🇧🇷 BRL", "🇨🇳 CNY"]
     
@@ -72,7 +72,7 @@ struct ConfigurationsView: View {
 }
 
 #Preview {
-    let vm = CurrencyComponentViewModel()
+    let vm = CurrencyViewModel()
     let addManager = AddManager()
     return ConfigurationsView()
         .environmentObject(addManager)

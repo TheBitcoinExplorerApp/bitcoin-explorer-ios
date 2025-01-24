@@ -13,7 +13,7 @@ struct BitcoinBlockExplorerApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     @StateObject var addManager = AddManager()
-    @StateObject var currencyViewModel = CurrencyComponentViewModel()
+    @StateObject var currencyViewModel = CurrencyViewModel()
     @StateObject var subscriptionStore = SubscriptionStore()
     
     var body: some Scene {

@@ -216,7 +216,7 @@ struct EachBlock: View {
                                     .foregroundColor(Color.texts)
                                     .font(.footnote)
                                 
-                                CurrencyViewComponent(rate: valueDesembrulhado)
+                                CurrencyView(rate: valueDesembrulhado)
                                     .font(.caption)
                                     .foregroundStyle(Color.primaryText)
                                 
@@ -253,7 +253,7 @@ struct EachBlock: View {
                                 .foregroundColor(Color.texts)
                                 .font(.footnote)
                             
-                            CurrencyViewComponent(rate: valueVout)
+                            CurrencyView(rate: valueVout)
                                 .font(.caption)
                                 .foregroundStyle(Color.primaryText)
                             

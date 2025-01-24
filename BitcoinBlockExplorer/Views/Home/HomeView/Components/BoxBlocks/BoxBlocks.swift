@@ -79,6 +79,6 @@ struct BoxBlocks: View {
 }
 #Preview {
    return HomeView()
-        .environmentObject(CurrencyComponentViewModel())
+        .environmentObject(CurrencyViewModel())
         .environmentObject(AddManager())
 }

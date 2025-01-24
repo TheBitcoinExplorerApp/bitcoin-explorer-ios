@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct CurrencyViewComponent: View {
+struct CurrencyView: View {
     
     var rate: Double
 
-    @EnvironmentObject var currencyViewModel:  CurrencyComponentViewModel
+    @EnvironmentObject var currencyViewModel:  CurrencyViewModel
     
     var body: some View {
         VStack{
@@ -32,7 +32,7 @@ struct CurrencyViewComponent: View {
 }
 
 #Preview {
-    let vm = CurrencyComponentViewModel()
-    return CurrencyViewComponent(rate: 1)
+    let vm = CurrencyViewModel()
+    return CurrencyView(rate: 1)
         .environmentObject(vm)
 }

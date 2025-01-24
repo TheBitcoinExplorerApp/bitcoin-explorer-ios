@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     @StateObject var viewModel = HomeViewModel()
     
-    @EnvironmentObject var currencyViewModel:  CurrencyComponentViewModel
+    @EnvironmentObject var currencyViewModel:  CurrencyViewModel
     
     // Search variables
     @StateObject var validateAddresses = Validate()
@@ -102,6 +102,6 @@ struct HomeView: View {
 
 #Preview {
     return HomeView()
-        .environmentObject(CurrencyComponentViewModel())
+        .environmentObject(CurrencyViewModel())
         .environmentObject(AddManager())
 }

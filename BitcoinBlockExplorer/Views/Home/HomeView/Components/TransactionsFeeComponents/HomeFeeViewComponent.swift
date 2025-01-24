@@ -22,7 +22,7 @@ struct HomeFeeViewComponent: View {
             Text("\(fee) \(Texts.satVb)").foregroundStyle(Color.texts)
                 .font(.footnote)
             
-            CurrencyViewComponent(rate: valueHourFee)
+            CurrencyView(rate: valueHourFee)
                 .font(.caption)
                 .foregroundStyle(Color.primaryText)
             
@@ -33,5 +33,5 @@ struct HomeFeeViewComponent: View {
 
 #Preview {
     HomeFeeViewComponent()
-        .environmentObject(CurrencyComponentViewModel())
+        .environmentObject(CurrencyViewModel())
 }
