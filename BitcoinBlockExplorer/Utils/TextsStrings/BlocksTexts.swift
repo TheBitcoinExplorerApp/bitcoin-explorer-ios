@@ -9,7 +9,7 @@ import Foundation
 
 struct BlocksTexts {
     
-    static let blocos: String = String(localized: "blocos")
+    static let blockchain: String = String(localized: "blockchain")
     
     static let blocoMaiusculo: String = String(localized: "blocoMaiusculo")
     
@@ -24,5 +24,9 @@ struct BlocksTexts {
     static let taxaMediana: String = String(localized: "taxaMediana")
     
     static let minerador: String = String(localized: "minerador")
+    
+    static let mempoolTitle: String = String(localized: "mempoolTitle")
+    
+    static let blocos: String = String(localized: "blocos")
     
 }

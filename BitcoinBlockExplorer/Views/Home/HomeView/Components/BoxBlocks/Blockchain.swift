@@ -1,5 +1,5 @@
 //
-//  BoxBlocks.swift
+//  Blockchain.swift
 //  BitcoinBlockExplorer
 //
 //  Created by Victor Hugo Pacheco Araujo on 18/05/23.
@@ -7,18 +7,21 @@
 
 import SwiftUI
 
-struct BoxBlocks: View {
+struct Blockchain: View {
     
     @State var abrirModal: Bool = false
     @State var blockHeader: Blocks?
- 
+    
     let blocks: [Blocks]
+    let mempoolData: MempoolModel
+    let mempoolSize: Double
+    let mempoolVSize: Int
     
     var body: some View {
         VStack {
             
             HStack {
-                Text(BlocksTexts.blocos)
+                Text(BlocksTexts.blockchain)
                     .foregroundColor(Color.texts)
                     .bold()
                     .font(.headline)
@@ -29,17 +32,19 @@ struct BoxBlocks: View {
                 
                 ZStack {
                     Rectangle()
-                        .frame(maxWidth: .infinity, maxHeight: 8)
+                        .frame(maxWidth: .infinity, maxHeight: 5)
                         .foregroundStyle(Color.chainBackground)
                     
                     HStack(spacing: 10) {
+                        mempool
                         ForEach(blocks, id: \.self) { block in
                             
                             VStack {
-                                let tamanho = String(format: "%.2f", (block.size / 1000000))
+                                let tamanho = formatSizeToMB(block.size)
                                 
                                 Text("\(block.height)").foregroundColor(Color.primaryText)
                                     .font(.callout)
+                                    .bold()
                                 Text("~\(Int(block.extras.medianFee)) \(Texts.satVb)").foregroundColor(Color.texts)
                                     .font(.footnote)
                                 Text("\(tamanho) \(BlocksTexts.MB)").foregroundColor(Color.texts)
@@ -58,7 +63,7 @@ struct BoxBlocks: View {
                                 self.blockHeader = block
                                 abrirModal.toggle()
                             }
-                          
+                            
                         }
                     }
                 }
@@ -72,13 +77,52 @@ struct BoxBlocks: View {
         }
         
     }
+    
+    var mempool: some View {
+        VStack {
+            Text(BlocksTexts.mempoolTitle)
+                .font(.callout)
+                .bold()
+                .foregroundStyle(Color.texts)
+            
+            Text("\(mempoolData.count) \(TransactionsTexts.transacoes)")
+                .foregroundStyle(Color.texts)
+                .font(.footnote)
+            
+            Text("\(formatSizeToMB(mempoolSize)) \(BlocksTexts.MB)")
+                .foregroundStyle(Color.primaryText)
+                .font(.callout)
+                .bold()
+            
+            Text("\(TransactionsTexts.taxaMaiusculo): \(String(format: "%.8f", mempoolFees(mempoolData.total_fee))) BTC")
+                .foregroundStyle(Color.texts)
+                .font(.footnote)
+            
+            Text("\(mempoolVSize) \(BlocksTexts.blocos)")
+                .foregroundStyle(Color.texts)
+                .font(.footnote)
+        }
+        .padding()
+        .background(Color.backgroundBox)
+        .cornerRadius(7)
+        
+    }
+    
+    func mempoolFees(_ totalFee: Double) -> Double {
+        return totalFee / 100000000
+    }
+    
+    func formatSizeToMB(_ size: Double) -> String {
+        String(format: "%.2f", (size / 1000000))
+    }
+    
 }
 
 #Preview {
-    BoxBlocks(blocks: [Blocks(id: "sds", height: 9, size: 93.2, tx_count: 23, timestamp: 293232, extras: Extras(medianFee: 9.3, pool: Pool(name: "nome")))])
+    Blockchain(blocks: [Blocks(id: "sds", height: 9, size: 93.2, tx_count: 23, timestamp: 293232, extras: Extras(medianFee: 9.3, pool: Pool(name: "nome")))], mempoolData: MempoolModel(count: 0, total_fee: 0), mempoolSize: 0, mempoolVSize: 0)
 }
 #Preview {
-   return HomeView()
+    return HomeView()
         .environmentObject(CurrencyViewModel())
         .environmentObject(AddManager())
 }

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		802D279E91F933086746D45E /* Pods_BitcoinBlockExplorer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F72E7CEB2FCE47A9CE9A0FB /* Pods_BitcoinBlockExplorer.framework */; };
-		9B1243832A16579700B9A4AF /* BoxBlocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1243822A16579700B9A4AF /* BoxBlocks.swift */; };
+		9B1243832A16579700B9A4AF /* Blockchain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1243822A16579700B9A4AF /* Blockchain.swift */; };
 		9B1243852A165BF700B9A4AF /* BoxTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1243842A165BF700B9A4AF /* BoxTransactions.swift */; };
 		9B1243872A166AC000B9A4AF /* EachTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1243862A166AC000B9A4AF /* EachTransaction.swift */; };
 		9B12438B2A16BD6C00B9A4AF /* TransactionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B12438A2A16BD6C00B9A4AF /* TransactionsModel.swift */; };
@@ -45,6 +45,8 @@
 		9B57DC352D3F2EEF00A810F5 /* TesteStoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B57DC342D3F2EEA00A810F5 /* TesteStoreKit.swift */; };
 		9B57DC582D3F38C200A810F5 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B57DC572D3F38BC00A810F5 /* APIHandler.swift */; };
 		9B57DC5A2D3F3AB400A810F5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B57DC592D3F3AAE00A810F5 /* HomeViewModel.swift */; };
+		9B65DF652D466DED007517B7 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B65DF642D466DE2007517B7 /* Endpoint.swift */; };
+		9B65DF672D4678A0007517B7 /* MempoolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B65DF662D46789B007517B7 /* MempoolModel.swift */; };
 		9B925AB22C74382A00A754C1 /* AdBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B925AB12C74382A00A754C1 /* AdBannerView.swift */; };
 		9BB0E8732D4162F100C6777A /* SheetToolbarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB0E8722D4162D900C6777A /* SheetToolbarModifier.swift */; };
 		9BB0E8772D41684300C6777A /* EachBlockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB0E8762D41683D00C6777A /* EachBlockViewModel.swift */; };
@@ -69,7 +71,7 @@
 
 /* Begin PBXFileReference section */
 		81652649BD006240B348E3B9 /* Pods-BitcoinBlockExplorer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcoinBlockExplorer.debug.xcconfig"; path = "Target Support Files/Pods-BitcoinBlockExplorer/Pods-BitcoinBlockExplorer.debug.xcconfig"; sourceTree = "<group>"; };
-		9B1243822A16579700B9A4AF /* BoxBlocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxBlocks.swift; sourceTree = "<group>"; };
+		9B1243822A16579700B9A4AF /* Blockchain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blockchain.swift; sourceTree = "<group>"; };
 		9B1243842A165BF700B9A4AF /* BoxTransactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxTransactions.swift; sourceTree = "<group>"; };
 		9B1243862A166AC000B9A4AF /* EachTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachTransaction.swift; sourceTree = "<group>"; };
 		9B12438A2A16BD6C00B9A4AF /* TransactionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsModel.swift; sourceTree = "<group>"; };
@@ -106,6 +108,8 @@
 		9B57DC342D3F2EEA00A810F5 /* TesteStoreKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteStoreKit.swift; sourceTree = "<group>"; };
 		9B57DC572D3F38BC00A810F5 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 		9B57DC592D3F3AAE00A810F5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		9B65DF642D466DE2007517B7 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		9B65DF662D46789B007517B7 /* MempoolModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MempoolModel.swift; sourceTree = "<group>"; };
 		9B925AB02C74367300A754C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9B925AB12C74382A00A754C1 /* AdBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBannerView.swift; sourceTree = "<group>"; };
 		9BB0E8722D4162D900C6777A /* SheetToolbarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetToolbarModifier.swift; sourceTree = "<group>"; };
@@ -157,7 +161,7 @@
 		9B0C492F2D41335D00CE9929 /* BoxBlocks */ = {
 			isa = PBXGroup;
 			children = (
-				9B1243822A16579700B9A4AF /* BoxBlocks.swift */,
+				9B1243822A16579700B9A4AF /* Blockchain.swift */,
 			);
 			path = BoxBlocks;
 			sourceTree = "<group>";
@@ -165,6 +169,7 @@
 		9B0C49302D41347100CE9929 /* HomeModels */ = {
 			isa = PBXGroup;
 			children = (
+				9B65DF662D46789B007517B7 /* MempoolModel.swift */,
 				9B27E7152A12A8D000E8036E /* FeeModel.swift */,
 				9B2BC8E12A12C54700735A8D /* BlockModel.swift */,
 			);
@@ -174,6 +179,7 @@
 		9B2321EF2B85116D000BFBA9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				9B65DF632D466DD4007517B7 /* Endpoints */,
 				9B3514922D2F47230034FF98 /* StoreKit */,
 				9B4372722A1CFD5B00DFE211 /* Functions */,
 				9B3C00102BAC7F07000B55B9 /* Extensions */,
@@ -188,7 +194,6 @@
 			isa = PBXGroup;
 			children = (
 				9B2BC8F52A1548F900735A8D /* EveryTransactionsModel.swift */,
-				9B12438A2A16BD6C00B9A4AF /* TransactionsModel.swift */,
 				9B4372702A1CE88900DFE211 /* AddressHeaderModel.swift */,
 			);
 			path = Model;
@@ -228,6 +233,7 @@
 		9B3C00092BAC75DD000B55B9 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				9B65DF622D466CD5007517B7 /* Model */,
 				9B1243842A165BF700B9A4AF /* BoxTransactions.swift */,
 				9B3C00132BAC7F7C000B55B9 /* ComponentsGeneral */,
 				9B925AB12C74382A00A754C1 /* AdBannerView.swift */,
@@ -380,6 +386,22 @@
 				9B2321ED2B84E967000BFBA9 /* FormatCoin.swift */,
 			);
 			path = Functions;
+			sourceTree = "<group>";
+		};
+		9B65DF622D466CD5007517B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9B12438A2A16BD6C00B9A4AF /* TransactionsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9B65DF632D466DD4007517B7 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				9B65DF642D466DE2007517B7 /* Endpoint.swift */,
+			);
+			path = Endpoints;
 			sourceTree = "<group>";
 		};
 		9BB0E8742D4167F400C6777A /* EachBlockView */ = {
@@ -623,7 +645,7 @@
 				9B2321EA2B84E279000BFBA9 /* CurrencyModel.swift in Sources */,
 				9B2321EE2B84E967000BFBA9 /* FormatCoin.swift in Sources */,
 				9B2BC8F42A15487900735A8D /* TransactionData.swift in Sources */,
-				9B1243832A16579700B9A4AF /* BoxBlocks.swift in Sources */,
+				9B1243832A16579700B9A4AF /* Blockchain.swift in Sources */,
 				9B4372712A1CE88900DFE211 /* AddressHeaderModel.swift in Sources */,
 				9BEEACA22C8F7C0200E2E120 /* TextsFeesViewComponent.swift in Sources */,
 				9BEEACA42C8F85DE00E2E120 /* AdViewComponent.swift in Sources */,
@@ -640,6 +662,7 @@
 				9B1243872A166AC000B9A4AF /* EachTransaction.swift in Sources */,
 				9BC487A82C1B8CC0007E975A /* LightningWalletView.swift in Sources */,
 				9B2321F12B851181000BFBA9 /* CurrencyViewModel.swift in Sources */,
+				9B65DF652D466DED007517B7 /* Endpoint.swift in Sources */,
 				9BEEAC9E2C8F799C00E2E120 /* HomeFeeViewComponent.swift in Sources */,
 				9B3514912D2F45180034FF98 /* StoreKitView.swift in Sources */,
 				9B2BC8F22A13FE5900735A8D /* HomeView.swift in Sources */,
@@ -649,6 +672,7 @@
 				9BFA124D2BAB4A4B000C0CB5 /* ToastView.swift in Sources */,
 				9B5689F12B7D178E0009A751 /* TransactionsTexts.swift in Sources */,
 				9B2321EC2B84E3EB000BFBA9 /* CurrencyView.swift in Sources */,
+				9B65DF672D4678A0007517B7 /* MempoolModel.swift in Sources */,
 				9B57DC352D3F2EEF00A810F5 /* TesteStoreKit.swift in Sources */,
 				9B12438B2A16BD6C00B9A4AF /* TransactionsModel.swift in Sources */,
 				9BB0E8732D4162F100C6777A /* SheetToolbarModifier.swift in Sources */,

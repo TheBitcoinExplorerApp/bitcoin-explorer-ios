@@ -17,6 +17,16 @@
     "%@ BTC" : {
 
     },
+    "%@: %@ BTC" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@: %2$@ BTC"
+          }
+        }
+      }
+    },
     "%@..." : {
 
     },
@@ -223,6 +233,41 @@
         }
       }
     },
+    "blockchain" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blockchain"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blockchain"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blockchain"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Блокчейн"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "区块链"
+          }
+        }
+      }
+    },
     "blocoMaiusculo" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -270,19 +315,19 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Blocks"
+            "value" : "blocks"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Blocos"
+            "value" : "blocos"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Блоки"
+            "value" : "блоки"
           }
         },
         "zh-Hans" : {
@@ -914,6 +959,41 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "中优先级"
+          }
+        }
+      }
+    },
+    "mempoolTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mempool"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mempool"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mempool"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Мемпул"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "内存池"
           }
         }
       }

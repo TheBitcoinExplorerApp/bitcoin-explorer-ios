@@ -10,12 +10,12 @@ import Foundation
 class APIHandler {
 
     func fetchData<T: Decodable>(
-        from urlString: String,
+        from urlString: Endpoint,
         completion: @escaping (Result<T, Error>) -> Void
     ) {
         
         // Verifica se a URL é válida
-        guard let url = URL(string: urlString) else {
+        guard let url = URL(string: urlString.endpoint) else {
             completion(.failure(URLError(.badURL)))
             return
         }

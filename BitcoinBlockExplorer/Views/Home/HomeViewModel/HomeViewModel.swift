@@ -14,12 +14,36 @@ class HomeViewModel: ObservableObject {
     
     @Published var fees: [FeeModel] = []
     @Published var blockHeaderData: [Blocks] = []
+    @Published var mempoolData: MempoolModel?
+    @Published var mempoolSize: [MempoolSize] = []
     
-    let feesURL = "https://mempool.space/api/v1/fees/recommended"
-    let blocksHeaderURL = "https://mempool.space/api/v1/blocks/"
+    func getTotalMempoolSize() -> Double {
+        let totalSize = mempoolSize.map({ $0.blockSize }).reduce(0,+)
+        return totalSize
+    }
     
+    func getTotalMempoolVSize() -> Int {
+        let lastBlocks = mempoolSize.map({ $0.blockVSize }).last ?? 0
+        let lastBlocksMb = lastBlocks / 1000000
+        let decimal: Double = lastBlocksMb.truncatingRemainder(dividingBy: 1)
+        var totalLastBlocksInt = 0
+        
+        if decimal > 0 {
+            totalLastBlocksInt = Int(lastBlocksMb + 1)
+        } else {
+            totalLastBlocksInt = Int(lastBlocksMb)
+        }
+        
+        let totalBlocks = totalLastBlocksInt + (mempoolSize.count - 1)
+        return totalBlocks
+    }
+    
+}
+
+// API Fetchs
+extension HomeViewModel {
     func getFees() {
-        self.apiHandler.fetchData(from: feesURL) { (result: Result<FeeModel, Error>) in
+        self.apiHandler.fetchData(from: .fees) { (result: Result<FeeModel, Error>) in
             Task { @MainActor in
                 switch result {
                 case .success(let fees):
@@ -34,7 +58,7 @@ class HomeViewModel: ObservableObject {
     func getBlockHeader(_ maxBlockCount: Int) {
         self.loading = true
         
-        self.apiHandler.fetchData(from: blocksHeaderURL) { (result: Result<[Blocks], Error>) in
+        self.apiHandler.fetchData(from: .blockHeader) { (result: Result<[Blocks], Error>) in
             Task { @MainActor in
                 self.loading = false
                 switch result {
@@ -51,4 +75,29 @@ class HomeViewModel: ObservableObject {
         }
     }
     
+    func getMempool() {
+        self.apiHandler.fetchData(from: .mempool) { (result: Result<MempoolModel, Error>) in
+            Task { @MainActor in
+                switch result {
+                case .success(let mempool):
+                    self.mempoolData = mempool
+                case .failure(let error):
+                    print("Error in fetch mempool \(error)")
+                }
+            }
+        }
+    }
+    
+    func getMempoolSize() {
+        self.apiHandler.fetchData(from: .mempoolSize) { (result: Result<[MempoolSize], Error>) in
+            Task { @MainActor in
+                switch result {
+                case .success(let mempool):
+                    self.mempoolSize = mempool
+                case .failure(let error):
+                    print("Error in fetch mempool size \(error)")
+                }
+            }
+        }
+    }
 }

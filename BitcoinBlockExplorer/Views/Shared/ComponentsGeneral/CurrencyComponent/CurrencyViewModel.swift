@@ -20,10 +20,8 @@ class CurrencyViewModel: ObservableObject {
     @AppStorage("currency") var currency: Int = 0
     
     func getCoins() {
-        let coinsURL = "https://mempool.space/api/v1/prices"
-        let coins2URL = "https://blockchain.info/ticker"
             
-        self.apiHandler.fetchData(from: coinsURL) { (result: Result<Coins, Error>) in
+        self.apiHandler.fetchData(from: .coins) { (result: Result<Coins, Error>) in
             Task { @MainActor in
                 switch result {
                 case .success(let coins):
@@ -65,7 +63,7 @@ class CurrencyViewModel: ObservableObject {
             }
         }
         
-        self.apiHandler.fetchData(from: coins2URL) { (result: Result<Coins2, Error>) in
+        self.apiHandler.fetchData(from: .coins2) { (result: Result<Coins2, Error>) in
             Task { @MainActor in
                 switch result {
                 case .success(let coins):

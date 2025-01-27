@@ -9,7 +9,6 @@ import SwiftUI
 
 struct HomeView: View {
     @StateObject var viewModel = HomeViewModel()
-    
     @EnvironmentObject var currencyViewModel:  CurrencyViewModel
     
     // Search variables
@@ -31,15 +30,18 @@ struct HomeView: View {
             .refreshable {
                 viewModel.getFees()
                 viewModel.getBlockHeader(50)
+                viewModel.getMempool()
+                viewModel.getMempoolSize()
                 currencyViewModel.getCoins()
             }
             
             AdViewComponent()
         }
-        
         .task {
             viewModel.getFees()
             viewModel.getBlockHeader(50)
+            viewModel.getMempool()
+            viewModel.getMempoolSize()
         }
         
         .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: ToolbarTexts.searchPlaceholder) {}
@@ -93,7 +95,9 @@ struct HomeView: View {
                 ProgressView()
                     .scaleEffect(1.2)
             } else {
-                BoxBlocks(blocks: viewModel.blockHeaderData)
+                if let mempool = viewModel.mempoolData {
+                    Blockchain(blocks: viewModel.blockHeaderData, mempoolData: mempool, mempoolSize: viewModel.getTotalMempoolSize(), mempoolVSize: viewModel.getTotalMempoolVSize())
+                }
             }
         }
         

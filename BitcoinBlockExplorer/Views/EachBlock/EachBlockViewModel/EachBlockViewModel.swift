@@ -17,12 +17,10 @@ class EachBlockViewModel: ObservableObject {
     private let maxTransactions: Int = 50
         
     func getBlockTransactions(_ hashBlock: String) {
-        
-        let blockTransactionsURL = "https://mempool.space/api/block/\(hashBlock)/txs"
 
         self.loading = true
         
-        self.apiHandler.fetchData(from: blockTransactionsURL) { (result: Result<[Transactions], Error>) in
+        self.apiHandler.fetchData(from: .blockTransactions(hash: hashBlock)) { (result: Result<[Transactions], Error>) in
             Task { @MainActor in
                 self.loading = false
                 switch result {
