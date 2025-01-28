@@ -12,7 +12,7 @@ struct EachBlock: View {
     @StateObject var viewModel = EachBlockViewModel()
    
     @Binding var abrirModal: Bool
-    @Binding var blockHeader: Blocks?
+    @Binding var blockHeader: Block?
     
     @State private var showToast: Bool = false
     
@@ -274,5 +274,5 @@ struct EachBlock: View {
 }
 
 #Preview {
-    EachBlock(abrirModal: .constant(false), blockHeader: .constant(Blocks(id: "sds", height: 9, size: 93.2, tx_count: 23, timestamp: 293232, extras: Extras(medianFee: 9.3, pool: Pool(name: "nome")))))
+    EachBlock(abrirModal: .constant(false), blockHeader: .constant(Block(id: "sds", height: 9, size: 93.2, tx_count: 23, timestamp: 293232, extras: Extras(medianFee: 9.3, pool: Pool(name: "nome")))))
 }

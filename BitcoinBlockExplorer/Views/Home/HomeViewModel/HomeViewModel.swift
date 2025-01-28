@@ -12,9 +12,9 @@ class HomeViewModel: ObservableObject {
     
     @Published var loading: Bool = false
     
-    @Published var fees: [FeeModel] = []
-    @Published var blockHeaderData: [Blocks] = []
-    @Published var mempoolData: MempoolModel?
+    @Published var fees: [Fee] = []
+    @Published var blockHeaderData: [Block] = []
+    @Published var mempoolData: Mempool?
     @Published var mempoolSize: [MempoolSize] = []
     
     func getTotalMempoolSize() -> Double {
@@ -43,7 +43,7 @@ class HomeViewModel: ObservableObject {
 // API Fetchs
 extension HomeViewModel {
     func getFees() {
-        self.apiHandler.fetchData(from: .fees) { (result: Result<FeeModel, Error>) in
+        self.apiHandler.fetchData(from: .fees) { (result: Result<Fee, Error>) in
             Task { @MainActor in
                 switch result {
                 case .success(let fees):
@@ -58,7 +58,7 @@ extension HomeViewModel {
     func getBlockHeader(_ maxBlockCount: Int) {
         self.loading = true
         
-        self.apiHandler.fetchData(from: .blockHeader) { (result: Result<[Blocks], Error>) in
+        self.apiHandler.fetchData(from: .blockHeader) { (result: Result<[Block], Error>) in
             Task { @MainActor in
                 self.loading = false
                 switch result {
@@ -76,7 +76,7 @@ extension HomeViewModel {
     }
     
     func getMempool() {
-        self.apiHandler.fetchData(from: .mempool) { (result: Result<MempoolModel, Error>) in
+        self.apiHandler.fetchData(from: .mempool) { (result: Result<Mempool, Error>) in
             Task { @MainActor in
                 switch result {
                 case .success(let mempool):

@@ -18,8 +18,8 @@
 		9B2321F12B851181000BFBA9 /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2321F02B851181000BFBA9 /* CurrencyViewModel.swift */; };
 		9B2321F32B851866000BFBA9 /* ConfigurationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2321F22B851866000BFBA9 /* ConfigurationsView.swift */; };
 		9B23E5DF2A51E6F9007045A6 /* LastBlockHeightData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B23E5DE2A51E6F9007045A6 /* LastBlockHeightData.swift */; };
-		9B27E7162A12A8D000E8036E /* FeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B27E7152A12A8D000E8036E /* FeeModel.swift */; };
-		9B2BC8E22A12C54700735A8D /* BlockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BC8E12A12C54700735A8D /* BlockModel.swift */; };
+		9B27E7162A12A8D000E8036E /* Fee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B27E7152A12A8D000E8036E /* Fee.swift */; };
+		9B2BC8E22A12C54700735A8D /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BC8E12A12C54700735A8D /* Block.swift */; };
 		9B2BC8EE2A13F70600735A8D /* EveryTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BC8ED2A13F70600735A8D /* EveryTransactions.swift */; };
 		9B2BC8F22A13FE5900735A8D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BC8F12A13FE5900735A8D /* HomeView.swift */; };
 		9B2BC8F42A15487900735A8D /* TransactionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BC8F32A15487900735A8D /* TransactionData.swift */; };
@@ -46,7 +46,7 @@
 		9B57DC582D3F38C200A810F5 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B57DC572D3F38BC00A810F5 /* APIHandler.swift */; };
 		9B57DC5A2D3F3AB400A810F5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B57DC592D3F3AAE00A810F5 /* HomeViewModel.swift */; };
 		9B65DF652D466DED007517B7 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B65DF642D466DE2007517B7 /* Endpoint.swift */; };
-		9B65DF672D4678A0007517B7 /* MempoolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B65DF662D46789B007517B7 /* MempoolModel.swift */; };
+		9B65DF672D4678A0007517B7 /* Mempool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B65DF662D46789B007517B7 /* Mempool.swift */; };
 		9B925AB22C74382A00A754C1 /* AdBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B925AB12C74382A00A754C1 /* AdBannerView.swift */; };
 		9BB0E8732D4162F100C6777A /* SheetToolbarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB0E8722D4162D900C6777A /* SheetToolbarModifier.swift */; };
 		9BB0E8772D41684300C6777A /* EachBlockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB0E8762D41683D00C6777A /* EachBlockViewModel.swift */; };
@@ -81,8 +81,8 @@
 		9B2321F02B851181000BFBA9 /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
 		9B2321F22B851866000BFBA9 /* ConfigurationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationsView.swift; sourceTree = "<group>"; };
 		9B23E5DE2A51E6F9007045A6 /* LastBlockHeightData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastBlockHeightData.swift; sourceTree = "<group>"; };
-		9B27E7152A12A8D000E8036E /* FeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeeModel.swift; sourceTree = "<group>"; };
-		9B2BC8E12A12C54700735A8D /* BlockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockModel.swift; sourceTree = "<group>"; };
+		9B27E7152A12A8D000E8036E /* Fee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fee.swift; sourceTree = "<group>"; };
+		9B2BC8E12A12C54700735A8D /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 		9B2BC8ED2A13F70600735A8D /* EveryTransactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveryTransactions.swift; sourceTree = "<group>"; };
 		9B2BC8F12A13FE5900735A8D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		9B2BC8F32A15487900735A8D /* TransactionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionData.swift; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 		9B57DC572D3F38BC00A810F5 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 		9B57DC592D3F3AAE00A810F5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		9B65DF642D466DE2007517B7 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		9B65DF662D46789B007517B7 /* MempoolModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MempoolModel.swift; sourceTree = "<group>"; };
+		9B65DF662D46789B007517B7 /* Mempool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mempool.swift; sourceTree = "<group>"; };
 		9B925AB02C74367300A754C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9B925AB12C74382A00A754C1 /* AdBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBannerView.swift; sourceTree = "<group>"; };
 		9BB0E8722D4162D900C6777A /* SheetToolbarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetToolbarModifier.swift; sourceTree = "<group>"; };
@@ -169,9 +169,9 @@
 		9B0C49302D41347100CE9929 /* HomeModels */ = {
 			isa = PBXGroup;
 			children = (
-				9B65DF662D46789B007517B7 /* MempoolModel.swift */,
-				9B27E7152A12A8D000E8036E /* FeeModel.swift */,
-				9B2BC8E12A12C54700735A8D /* BlockModel.swift */,
+				9B65DF662D46789B007517B7 /* Mempool.swift */,
+				9B27E7152A12A8D000E8036E /* Fee.swift */,
+				9B2BC8E12A12C54700735A8D /* Block.swift */,
 			);
 			path = HomeModels;
 			sourceTree = "<group>";
@@ -235,9 +235,10 @@
 			children = (
 				9B65DF622D466CD5007517B7 /* Model */,
 				9B1243842A165BF700B9A4AF /* BoxTransactions.swift */,
-				9B3C00132BAC7F7C000B55B9 /* ComponentsGeneral */,
 				9B925AB12C74382A00A754C1 /* AdBannerView.swift */,
 				9BEEACA32C8F85DE00E2E120 /* AdViewComponent.swift */,
+				9B3F05932BB3BC1B003C746C /* CurrencyComponent */,
+				9BFA124C2BAB4A4B000C0CB5 /* ToastView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -317,15 +318,6 @@
 			path = Modifiers;
 			sourceTree = "<group>";
 		};
-		9B3C00132BAC7F7C000B55B9 /* ComponentsGeneral */ = {
-			isa = PBXGroup;
-			children = (
-				9B3F05932BB3BC1B003C746C /* CurrencyComponent */,
-				9BFA124C2BAB4A4B000C0CB5 /* ToastView.swift */,
-			);
-			path = ComponentsGeneral;
-			sourceTree = "<group>";
-		};
 		9B3F05932BB3BC1B003C746C /* CurrencyComponent */ = {
 			isa = PBXGroup;
 			children = (
@@ -357,8 +349,8 @@
 		9B3F05962BB3BD2E003C746C /* EachBlock */ = {
 			isa = PBXGroup;
 			children = (
-				9BB0E8752D41680300C6777A /* EachBlockViewModel */,
-				9BB0E8742D4167F400C6777A /* EachBlockView */,
+				9BB0E8762D41683D00C6777A /* EachBlockViewModel.swift */,
+				9B2BC8FC2A155C1F00735A8D /* EachBlock.swift */,
 			);
 			path = EachBlock;
 			sourceTree = "<group>";
@@ -402,22 +394,6 @@
 				9B65DF642D466DE2007517B7 /* Endpoint.swift */,
 			);
 			path = Endpoints;
-			sourceTree = "<group>";
-		};
-		9BB0E8742D4167F400C6777A /* EachBlockView */ = {
-			isa = PBXGroup;
-			children = (
-				9B2BC8FC2A155C1F00735A8D /* EachBlock.swift */,
-			);
-			path = EachBlockView;
-			sourceTree = "<group>";
-		};
-		9BB0E8752D41680300C6777A /* EachBlockViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				9BB0E8762D41683D00C6777A /* EachBlockViewModel.swift */,
-			);
-			path = EachBlockViewModel;
 			sourceTree = "<group>";
 		};
 		9BBE4F652D400B7D00E2D991 /* TransactionsFeeComponents */ = {
@@ -666,13 +642,13 @@
 				9BEEAC9E2C8F799C00E2E120 /* HomeFeeViewComponent.swift in Sources */,
 				9B3514912D2F45180034FF98 /* StoreKitView.swift in Sources */,
 				9B2BC8F22A13FE5900735A8D /* HomeView.swift in Sources */,
-				9B27E7162A12A8D000E8036E /* FeeModel.swift in Sources */,
+				9B27E7162A12A8D000E8036E /* Fee.swift in Sources */,
 				9B2321F32B851866000BFBA9 /* ConfigurationsView.swift in Sources */,
 				9BC226122A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift in Sources */,
 				9BFA124D2BAB4A4B000C0CB5 /* ToastView.swift in Sources */,
 				9B5689F12B7D178E0009A751 /* TransactionsTexts.swift in Sources */,
 				9B2321EC2B84E3EB000BFBA9 /* CurrencyView.swift in Sources */,
-				9B65DF672D4678A0007517B7 /* MempoolModel.swift in Sources */,
+				9B65DF672D4678A0007517B7 /* Mempool.swift in Sources */,
 				9B57DC352D3F2EEF00A810F5 /* TesteStoreKit.swift in Sources */,
 				9B12438B2A16BD6C00B9A4AF /* TransactionsModel.swift in Sources */,
 				9BB0E8732D4162F100C6777A /* SheetToolbarModifier.swift in Sources */,
@@ -683,7 +659,7 @@
 				9BFDF4A62D384A0700EE4046 /* SubscriptionStore.swift in Sources */,
 				9B43726D2A1CDFAA00DFE211 /* EachAddressView.swift in Sources */,
 				9B5689ED2B7CEFF10009A751 /* Texts.swift in Sources */,
-				9B2BC8E22A12C54700735A8D /* BlockModel.swift in Sources */,
+				9B2BC8E22A12C54700735A8D /* Block.swift in Sources */,
 				9B925AB22C74382A00A754C1 /* AdBannerView.swift in Sources */,
 				9B43726F2A1CE66000DFE211 /* AddressDataHeader.swift in Sources */,
 				9B2BC8EE2A13F70600735A8D /* EveryTransactions.swift in Sources */,

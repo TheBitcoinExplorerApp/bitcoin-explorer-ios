@@ -1,5 +1,5 @@
 //
-//  FeeModel.swift
+//  Fee.swift
 //  TesteAPI
 //
 //  Created by Victor Hugo Pacheco Araujo on 15/05/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FeeModel: Hashable, Codable {
+struct Fee: Hashable, Codable {
     // high priority
     let fastestFee: Int
     // medium priority

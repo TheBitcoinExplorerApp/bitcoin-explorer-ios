@@ -1,5 +1,5 @@
 //
-//  BlockModel.swift
+//  Block.swift
 //  TesteAPI
 //
 //  Created by Victor Hugo Pacheco Araujo on 15/05/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Blocks: Hashable, Codable {
+struct Block: Hashable, Codable {
     let id: String // hash
     let height: Int
     let size: Double

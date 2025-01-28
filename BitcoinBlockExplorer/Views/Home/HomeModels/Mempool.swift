@@ -1,11 +1,11 @@
 //
-//  MempoolModel.swift
+//  Mempool.swift
 //  BitcoinBlockExplorer
 //
 //  Created by Victor Hugo Pacheco Araujo on 26/01/25.
 //
 
-struct MempoolModel: Hashable, Decodable {
+struct Mempool: Hashable, Decodable {
     let count: Int
     let total_fee: Double
 }

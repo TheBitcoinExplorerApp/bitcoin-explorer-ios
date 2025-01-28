@@ -10,26 +10,21 @@ import SwiftUI
 struct Blockchain: View {
     
     @State var abrirModal: Bool = false
-    @State var blockHeader: Blocks?
+    @State var blockHeader: Block?
     
-    let blocks: [Blocks]
-    let mempoolData: MempoolModel
-    let mempoolSize: Double
-    let mempoolVSize: Int
+    @EnvironmentObject var viewModel: HomeViewModel
     
     var body: some View {
         VStack {
-            
             HStack {
                 Text(BlocksTexts.blockchain)
                     .foregroundColor(Color.texts)
                     .bold()
                     .font(.headline)
                 Spacer()
-            }
+            }.padding(.leading)
             
             ScrollView(.horizontal) {
-                
                 ZStack {
                     Rectangle()
                         .frame(maxWidth: .infinity, maxHeight: 5)
@@ -37,8 +32,8 @@ struct Blockchain: View {
                     
                     HStack(spacing: 10) {
                         mempool
-                        ForEach(blocks, id: \.self) { block in
-                            
+                        ForEach(viewModel.blockHeaderData, id: \.self) { block in
+                        
                             VStack {
                                 let tamanho = formatSizeToMB(block.size)
                                 
@@ -54,11 +49,14 @@ struct Blockchain: View {
                                     .font(.footnote)
                                 Text("\(block.formatTimestamp(block.timestamp))").foregroundColor(Color.texts)
                                     .font(.footnote)
+                                
+                                Image(systemName: "chevron.down")
+                                    .resizable()
+                                    .frame(width: 10, height: 5)
                             }
                             .padding()
                             .background(Color.backgroundBox)
-                            .cornerRadius(7)
-                            
+                            .clipShape(RoundedRectangle(cornerRadius: 7))
                             .onTapGesture {
                                 self.blockHeader = block
                                 abrirModal.toggle()
@@ -66,16 +64,14 @@ struct Blockchain: View {
                             
                         }
                     }
-                }
+                }.padding(.leading)
             }.scrollIndicators(.hidden)
             
         }
-        .padding(.leading)
         .sheet(isPresented: $abrirModal) {
             EachBlock(abrirModal: $abrirModal, blockHeader: $blockHeader)
                 .presentationBackground(Color.background)
         }
-        
     }
     
     var mempool: some View {
@@ -85,27 +81,30 @@ struct Blockchain: View {
                 .bold()
                 .foregroundStyle(Color.texts)
             
-            Text("\(mempoolData.count) \(TransactionsTexts.transacoes)")
+            Text("\(viewModel.mempoolData?.count ?? 0) \(TransactionsTexts.transacoes)")
                 .foregroundStyle(Color.texts)
                 .font(.footnote)
             
-            Text("\(formatSizeToMB(mempoolSize)) \(BlocksTexts.MB)")
+            Text("\(formatSizeToMB(viewModel.getTotalMempoolSize())) \(BlocksTexts.MB)")
                 .foregroundStyle(Color.primaryText)
                 .font(.callout)
                 .bold()
             
-            Text("\(TransactionsTexts.taxaMaiusculo): \(String(format: "%.8f", mempoolFees(mempoolData.total_fee))) BTC")
+            Text("\(TransactionsTexts.taxaMaiusculo): \(String(format: "%.8f", mempoolFees(viewModel.mempoolData?.total_fee ?? 0))) BTC")
                 .foregroundStyle(Color.texts)
                 .font(.footnote)
             
-            Text("\(mempoolVSize) \(BlocksTexts.blocos)")
+            Text("\(viewModel.getTotalMempoolVSize()) \(BlocksTexts.blocos)")
                 .foregroundStyle(Color.texts)
                 .font(.footnote)
         }
         .padding()
         .background(Color.backgroundBox)
-        .cornerRadius(7)
-        
+        .clipShape(RoundedRectangle(cornerRadius: 7))
+        .overlay {
+            RoundedRectangle(cornerRadius: 7)
+                .stroke(Color.primaryText, lineWidth: 1)
+        }
     }
     
     func mempoolFees(_ totalFee: Double) -> Double {
@@ -119,7 +118,8 @@ struct Blockchain: View {
 }
 
 #Preview {
-    Blockchain(blocks: [Blocks(id: "sds", height: 9, size: 93.2, tx_count: 23, timestamp: 293232, extras: Extras(medianFee: 9.3, pool: Pool(name: "nome")))], mempoolData: MempoolModel(count: 0, total_fee: 0), mempoolSize: 0, mempoolVSize: 0)
+    Blockchain()
+        .environmentObject(HomeViewModel())
 }
 #Preview {
     return HomeView()

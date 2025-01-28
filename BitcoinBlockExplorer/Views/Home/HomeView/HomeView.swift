@@ -44,28 +44,6 @@ struct HomeView: View {
             viewModel.getMempoolSize()
         }
         
-        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: ToolbarTexts.searchPlaceholder) {}
-        
-        .onSubmit(of: .search) {
-            if validateAddresses.isValidAddress(searchText){
-                addressSearch = searchText
-                abrirModalAddress.toggle()
-            } else {
-                idTransacaoSearch = searchText
-                abrirModalTransaction.toggle()
-            }
-        }
-        
-        .sheet(isPresented: $abrirModalAddress ) {
-            EachAddressView(addressSearch: $addressSearch, abrirModalAddress: $abrirModalAddress)
-                .presentationBackground(Color.background)
-        }
-        
-        .sheet(isPresented: $abrirModalTransaction) {
-            EachTransaction(idTransacaoButton: $idTransacaoButton, idTransacaoSearch: $idTransacaoSearch, abrirModalTransaction: $abrirModalTransaction)
-                .presentationBackground(Color.background)
-        }
-        
         .titleToolbar()
         
         .background(Color.background)
@@ -95,13 +73,13 @@ struct HomeView: View {
                 ProgressView()
                     .scaleEffect(1.2)
             } else {
-                if let mempool = viewModel.mempoolData {
-                    Blockchain(blocks: viewModel.blockHeaderData, mempoolData: mempool, mempoolSize: viewModel.getTotalMempoolSize(), mempoolVSize: viewModel.getTotalMempoolVSize())
-                }
+                Blockchain()
+                    .environmentObject(viewModel)
             }
         }
         
     }
+    
 }
 
 #Preview {
