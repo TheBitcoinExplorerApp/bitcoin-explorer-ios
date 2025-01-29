@@ -31,7 +31,7 @@ struct EachTransaction: View {
                             
                             VStack{
                                 HStack{
-                                    Text(TransactionsTexts.transacaoMaiusculo)
+                                    Text(Texts.transacaoMaiusculo)
                                         .foregroundStyle(Color.texts)
                                         .font(.callout)
                                     Spacer()
@@ -54,7 +54,7 @@ struct EachTransaction: View {
                         }
                         
                     } else {
-                        Text(TransactionsTexts.naoEncontrado)
+                        Text(Texts.naoEncontrado)
                             .font(.title)
                             .foregroundStyle(Color.texts)
                     }
@@ -70,7 +70,7 @@ struct EachTransaction: View {
                                 if let blockHeightDesembrulhado = transactions.status.block_height {
                                     VStack{
                                         HStack{
-                                            Text(BlocksTexts.blocoMaiusculo)
+                                            Text(Texts.blocoMaiusculo)
                                                 .foregroundStyle(Color.texts)
                                                 .font(.callout)
                                             Text("\(blockHeightDesembrulhado)")
@@ -91,12 +91,12 @@ struct EachTransaction: View {
                                     HStack{
                                         if(transactions.status.confirmed) {
                                             let confirmacoes = lastBlock.lastBlock - transactions.status.block_height! + 1
-                                            let mensagem = confirmacoes > 1 ? TransactionsTexts.confirmacoes : TransactionsTexts.confirmacao
+                                            let mensagem = confirmacoes > 1 ? Texts.confirmacoes : Texts.confirmacao
                                             Text("\(String(confirmacoes)) \(mensagem)")
                                                 .foregroundStyle(Color.texts)
                                                 .font(.callout)
                                         } else {
-                                            Text(TransactionsTexts.naoConfirmada)
+                                            Text(Texts.naoConfirmada)
                                                 .foregroundStyle(Color.texts)
                                                 .font(.callout)
                                         }
@@ -110,7 +110,7 @@ struct EachTransaction: View {
                             VStack{
                                 VStack{
                                     HStack{
-                                        Text(BlocksTexts.dataEHora)
+                                        Text(Texts.dataEHora)
                                             .foregroundStyle(Color.texts)
                                             .font(.callout)
                                         Spacer()
@@ -119,7 +119,7 @@ struct EachTransaction: View {
                                                 .foregroundStyle(Color.primaryText)
                                                 .font(.callout)
                                         } else {
-                                            Text(TransactionsTexts.aguardandoConfirmacao)
+                                            Text(Texts.aguardandoConfirmacao)
                                                 .foregroundStyle(Color.primaryText)
                                                 .font(.callout)
                                         }
@@ -128,7 +128,7 @@ struct EachTransaction: View {
                                     Divider().padding(.horizontal, -largura)
                                     
                                     HStack{
-                                        Text(BlocksTexts.tamanhoMaiusculo)
+                                        Text(Texts.tamanhoMaiusculo)
                                             .foregroundStyle(Color.texts)
                                             .font(.callout)
                                         Spacer()
@@ -140,7 +140,7 @@ struct EachTransaction: View {
                                     Divider().padding(.horizontal, -largura)
                                     
                                     HStack{
-                                        Text(TransactionsTexts.taxaMaiusculo)
+                                        Text(Texts.taxaMaiusculo)
                                             .foregroundStyle(Color.texts)
                                             .font(.callout)
                                         Spacer()
@@ -164,7 +164,7 @@ struct EachTransaction: View {
                             }.padding(.horizontal)
                             
                             HStack{
-                                Text(TransactionsTexts.entradasESaidas)
+                                Text(Texts.entradasESaidas)
                                     .foregroundStyle(Color.texts)
                                     .font(.callout)
                                 Spacer()
@@ -193,7 +193,7 @@ struct EachTransaction: View {
                                                     .foregroundStyle(Color.primaryText)
                                                 
                                             } else {
-                                                Text(TransactionsTexts.coinbase)
+                                                Text(Texts.coinbase)
                                                     .foregroundStyle(Color.texts)
                                                     .font(.footnote)
                                             }
@@ -201,7 +201,7 @@ struct EachTransaction: View {
                                     }
                                     
                                     Spacer()
-                                    Image(TransactionsTexts.setinha)
+                                    Image(Texts.setinha)
                                         .renderingMode(.template)
                                         .foregroundStyle(Color.texts)
                                     Spacer()
@@ -214,7 +214,7 @@ struct EachTransaction: View {
                                                     .lineLimit(1)
                                                     .font(.footnote)
                                             } else {
-                                                Text(TransactionsTexts.coinbase)
+                                                Text(Texts.coinbase)
                                                     .foregroundStyle(Color.texts)
                                                     .font(.footnote)
                                             }
@@ -257,7 +257,7 @@ struct EachTransaction: View {
                 UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
             }
 
-            .sheetToolbar(title: TransactionsTexts.transacaoMaiusculo)
+            .sheetToolbar(title: Texts.transacaoMaiusculo)
             
         }
         

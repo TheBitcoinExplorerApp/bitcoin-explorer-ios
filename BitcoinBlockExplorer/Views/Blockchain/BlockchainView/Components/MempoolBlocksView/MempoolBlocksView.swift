@@ -1,5 +1,5 @@
 //
-//  Blockchain.swift
+//  MempoolBlocksView.swift
 //  BitcoinBlockExplorer
 //
 //  Created by Victor Hugo Pacheco Araujo on 18/05/23.
@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-struct Blockchain: View {
+struct MempoolBlocksView: View {
     
     @State var abrirModal: Bool = false
     @State var blockHeader: Block?
     
-    @EnvironmentObject var viewModel: HomeViewModel
+    @EnvironmentObject var viewModel: BlockchainViewModel
     
     var body: some View {
         VStack {
             HStack {
-                Text(BlocksTexts.blockchain)
+                Text(Texts.blockchain)
                     .foregroundColor(Color.texts)
                     .bold()
                     .font(.headline)
@@ -42,9 +42,9 @@ struct Blockchain: View {
                                     .bold()
                                 Text("~\(Int(block.extras.medianFee)) \(Texts.satVb)").foregroundColor(Color.texts)
                                     .font(.footnote)
-                                Text("\(tamanho) \(BlocksTexts.MB)").foregroundColor(Color.texts)
+                                Text("\(tamanho) \(Texts.MB)").foregroundColor(Color.texts)
                                     .font(.callout)
-                                Text("\(block.tx_count) \(TransactionsTexts.transacoes)").foregroundColor(Color.texts)
+                                Text("\(block.tx_count) \(Texts.transacoes)").foregroundColor(Color.texts)
                                     .truncationMode(.tail)
                                     .font(.footnote)
                                 Text("\(block.formatTimestamp(block.timestamp))").foregroundColor(Color.texts)
@@ -76,25 +76,25 @@ struct Blockchain: View {
     
     var mempool: some View {
         VStack {
-            Text(BlocksTexts.mempoolTitle)
+            Text(Texts.mempoolTitle)
                 .font(.callout)
                 .bold()
                 .foregroundStyle(Color.texts)
             
-            Text("\(viewModel.mempoolData?.count ?? 0) \(TransactionsTexts.transacoes)")
+            Text("\(viewModel.mempoolData?.count ?? 0) \(Texts.transacoes)")
                 .foregroundStyle(Color.texts)
                 .font(.footnote)
             
-            Text("\(formatSizeToMB(viewModel.getTotalMempoolSize())) \(BlocksTexts.MB)")
+            Text("\(formatSizeToMB(viewModel.getTotalMempoolSize())) \(Texts.MB)")
                 .foregroundStyle(Color.primaryText)
                 .font(.callout)
                 .bold()
             
-            Text("\(TransactionsTexts.taxaMaiusculo): \(String(format: "%.8f", mempoolFees(viewModel.mempoolData?.total_fee ?? 0))) BTC")
+            Text("\(Texts.taxaMaiusculo): \(String(format: "%.8f", mempoolFees(viewModel.mempoolData?.total_fee ?? 0))) BTC")
                 .foregroundStyle(Color.texts)
                 .font(.footnote)
             
-            Text("\(viewModel.getTotalMempoolVSize()) \(BlocksTexts.blocos)")
+            Text("\(viewModel.getTotalMempoolVSize()) \(Texts.blocos)")
                 .foregroundStyle(Color.texts)
                 .font(.footnote)
         }
@@ -118,11 +118,11 @@ struct Blockchain: View {
 }
 
 #Preview {
-    Blockchain()
-        .environmentObject(HomeViewModel())
+    MempoolBlocksView()
+        .environmentObject(BlockchainViewModel())
 }
 #Preview {
-    return HomeView()
+    return BlockchainView()
         .environmentObject(CurrencyViewModel())
         .environmentObject(AddManager())
 }

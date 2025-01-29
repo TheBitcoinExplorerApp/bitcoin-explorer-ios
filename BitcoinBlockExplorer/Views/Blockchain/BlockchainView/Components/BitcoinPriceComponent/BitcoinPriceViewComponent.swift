@@ -12,7 +12,7 @@ struct BitcoinPriceViewComponent: View {
     @EnvironmentObject var currencyViewModel:  CurrencyViewModel
     
     var body: some View {
-        Text(HomeTexts.bitcoinPrice)
+        Text(Texts.bitcoinPrice)
             .foregroundStyle(Color.texts)
             .font(.headline)
         

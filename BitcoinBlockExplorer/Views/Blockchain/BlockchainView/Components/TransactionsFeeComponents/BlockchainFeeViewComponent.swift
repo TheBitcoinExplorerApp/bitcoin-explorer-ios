@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeFeeViewComponent: View {
+struct BlockchainFeeViewComponent: View {
     @State var fee: Int = 0
     
     func calculateValuePerSatvB(_ value: Int) -> Double {
@@ -32,6 +32,6 @@ struct HomeFeeViewComponent: View {
 }
 
 #Preview {
-    HomeFeeViewComponent()
+    BlockchainFeeViewComponent()
         .environmentObject(CurrencyViewModel())
 }

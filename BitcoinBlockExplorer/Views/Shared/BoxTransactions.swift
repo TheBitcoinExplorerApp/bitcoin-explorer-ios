@@ -17,7 +17,7 @@ struct BoxTransactions: View {
         VStack {
             
             HStack {
-                Text(TransactionsTexts.transacoesMaiusculo).foregroundColor(Color.texts)
+                Text(Texts.transacoesMaiusculo).foregroundColor(Color.texts)
                     .bold()
                     .font(.headline)
                 Spacer()
@@ -37,7 +37,7 @@ struct BoxTransactions: View {
                             HStack{
                                 VStack{
                                     Spacer()
-                                    Text(TransactionsTexts.idTransacao)
+                                    Text(Texts.idTransacao)
                                         .font(.footnote)
                                         .foregroundColor(Color.texts)
                                     Spacer()
@@ -50,7 +50,7 @@ struct BoxTransactions: View {
                                 
                                 VStack{
                                     Spacer()
-                                    Text(TransactionsTexts.valorMaiusculo)
+                                    Text(Texts.valorMaiusculo)
                                         .font(.footnote)
                                         .foregroundColor(Color.texts)
                                     Spacer()
@@ -66,7 +66,7 @@ struct BoxTransactions: View {
                                 
                                 VStack{
                                     Spacer()
-                                    Text(TransactionsTexts.taxaMaiusculo)
+                                    Text(Texts.taxaMaiusculo)
                                         .font(.footnote)
                                         .foregroundColor(Color.texts)
                                     Spacer()

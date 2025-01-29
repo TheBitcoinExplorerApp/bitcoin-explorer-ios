@@ -10,7 +10,7 @@ import SwiftUI
 struct TextsFeesViewComponent: View {
     var body: some View {
         VStack{
-            Text(HomeTexts.taxasDeTransacao).foregroundStyle(Color.texts)
+            Text(Texts.taxasDeTransacao).foregroundStyle(Color.texts)
                 .bold()
                 .font(.headline)
             
@@ -18,15 +18,15 @@ struct TextsFeesViewComponent: View {
                 
                 Spacer()
                 
-                Text(HomeTexts.baixaPrioridade).foregroundStyle(Color.texts).font(.footnote)
+                Text(Texts.baixaPrioridade).foregroundStyle(Color.texts).font(.footnote)
                 
                 Spacer()
                 
-                Text(HomeTexts.mediaPrioridade).foregroundStyle(Color.texts).font(.footnote)
+                Text(Texts.mediaPrioridade).foregroundStyle(Color.texts).font(.footnote)
                 
                 Spacer()
                 
-                Text(HomeTexts.altaPrioridade).foregroundStyle(Color.texts).font(.footnote)
+                Text(Texts.altaPrioridade).foregroundStyle(Color.texts).font(.footnote)
                 
                 Spacer()
                 

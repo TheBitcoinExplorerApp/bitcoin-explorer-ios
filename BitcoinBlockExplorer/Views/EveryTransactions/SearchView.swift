@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct EveryTransactions: View {
+struct SearchView: View {
     @StateObject var transactionData = TransactionData()
     @StateObject var validateAddresses = Validate()
     // using the search
@@ -25,8 +25,8 @@ struct EveryTransactions: View {
                 .id(2)
         }
         .background(Color.background)
-
-        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: ToolbarTexts.searchPlaceholder) {
+        
+        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: Texts.searchPlaceholder) {
         }
         
         .onSubmit(of: .search) {
@@ -48,14 +48,12 @@ struct EveryTransactions: View {
             EachTransaction(idTransacaoButton: $idTransacaoButton, idTransacaoSearch: $idTransacaoSearch, abrirModalTransaction: $abrirModalTransaction)
                 .presentationBackground(Color.background)
         }
-    
+        
         .titleToolbar()
         
     }
 }
 
-struct EveryTransactions_Previews: PreviewProvider {
-    static var previews: some View {
-        EveryTransactions()
-    }
+#Preview {
+    SearchView()
 }

@@ -30,7 +30,7 @@ struct EachAddressView: View {
                         } label: {
                             VStack{
                                 HStack{
-                                    Text(AddressTexts.enderecoMaiusculo)
+                                    Text(Texts.enderecoMaiusculo)
                                         .foregroundStyle(Color.texts)
                                         .font(.callout)
                                     Spacer()
@@ -45,7 +45,7 @@ struct EachAddressView: View {
                             
                         }
                     } else {
-                        Text(TransactionsTexts.naoEncontrado)
+                        Text(Texts.naoEncontrado)
                             .font(.title)
                             .foregroundStyle(Color.texts)
                     }
@@ -55,7 +55,7 @@ struct EachAddressView: View {
                         VStack{
                             VStack{
                                 HStack{
-                                    Text(AddressTexts.totalRecebido)
+                                    Text(Texts.totalRecebido)
                                         .foregroundStyle(Color.texts)
                                         .font(.callout)
                                     Spacer()
@@ -78,7 +78,7 @@ struct EachAddressView: View {
                                 Divider().padding(.horizontal, -largura)
                                 
                                 HStack{
-                                    Text(AddressTexts.totalEnviado)
+                                    Text(Texts.totalEnviado)
                                         .foregroundStyle(Color.texts)
                                         .font(.callout)
                                     Spacer()
@@ -102,7 +102,7 @@ struct EachAddressView: View {
                                 Divider().padding(.horizontal, -largura)
                                 
                                 HStack{
-                                    Text(AddressTexts.saldo)
+                                    Text(Texts.saldo)
                                         .foregroundStyle(Color.texts)
                                         .font(.callout)
                                     Spacer()
@@ -130,7 +130,7 @@ struct EachAddressView: View {
                     
                     if address.erro == nil {
                         HStack{
-                            Text(TransactionsTexts.transacoesMaiusculo)
+                            Text(Texts.transacoesMaiusculo)
                                 .foregroundStyle(Color.texts)
                                 .font(.callout)
                             Spacer()
@@ -192,7 +192,7 @@ struct EachAddressView: View {
                                                     .foregroundStyle(Color.primaryText)
                                                 
                                             } else {
-                                                Text(TransactionsTexts.coinbase)
+                                                Text(Texts.coinbase)
                                                     .foregroundStyle(Color.texts)
                                                     .font(.footnote)
                                             }
@@ -200,7 +200,7 @@ struct EachAddressView: View {
                                     }
                                     
                                     Spacer()
-                                    Image(TransactionsTexts.setinha)
+                                    Image(Texts.setinha)
                                         .renderingMode(.template)
                                         .foregroundStyle(Color.texts)
                                     Spacer()
@@ -213,7 +213,7 @@ struct EachAddressView: View {
                                                     .lineLimit(1)
                                                     .font(.footnote)
                                             } else {
-                                                Text(TransactionsTexts.coinbase)
+                                                Text(Texts.coinbase)
                                                     .foregroundStyle(Color.texts)
                                                     .font(.footnote)
                                             }
@@ -253,7 +253,7 @@ struct EachAddressView: View {
                 UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
             }
             
-            .sheetToolbar(title: AddressTexts.enderecoMaiusculo)
+            .sheetToolbar(title: Texts.enderecoMaiusculo)
             
         }
         

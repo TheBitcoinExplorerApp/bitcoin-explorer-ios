@@ -1,5 +1,5 @@
 //
-//  HomeViewModel.swift
+//  BlockchainViewModel.swift
 //  BitcoinBlockExplorer
 //
 //  Created by Victor Hugo Pacheco Araujo on 20/01/25.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class HomeViewModel: ObservableObject {
+class BlockchainViewModel: ObservableObject {
     private let apiHandler = APIHandler()
     
     @Published var loading: Bool = false
@@ -41,7 +41,7 @@ class HomeViewModel: ObservableObject {
 }
 
 // API Fetchs
-extension HomeViewModel {
+extension BlockchainViewModel {
     func getFees() {
         self.apiHandler.fetchData(from: .fees) { (result: Result<Fee, Error>) in
             Task { @MainActor in

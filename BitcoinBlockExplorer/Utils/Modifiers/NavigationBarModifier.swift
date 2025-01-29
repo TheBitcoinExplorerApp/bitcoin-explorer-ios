@@ -13,7 +13,7 @@ struct NavigationBarModifier: ViewModifier {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Image(ToolbarTexts.bitcoinIcone)
+                    Image(Texts.bitcoinIcone)
                         .resizable()
                         .renderingMode(.template)
                         .foregroundStyle(Color.primaryText)
@@ -21,7 +21,7 @@ struct NavigationBarModifier: ViewModifier {
                     
                 }
                 ToolbarItem(placement: .principal) {
-                    Text(ToolbarTexts.titleOfTheApp)
+                    Text(Texts.titleOfTheApp)
                         .foregroundStyle(Color.primaryText)
                         .bold()
                         .font(.title3)

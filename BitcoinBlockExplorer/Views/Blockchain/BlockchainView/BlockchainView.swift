@@ -1,5 +1,5 @@
 //
-//  HomeView.swift
+//  BlockchainView.swift
 //  TesteAPI
 //
 //  Created by Victor Hugo Pacheco Araujo on 16/05/23.
@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct HomeView: View {
-    @StateObject var viewModel = HomeViewModel()
+struct BlockchainView: View {
+    @StateObject var viewModel = BlockchainViewModel()
     @EnvironmentObject var currencyViewModel:  CurrencyViewModel
     
     // Search variables
@@ -24,7 +24,7 @@ struct HomeView: View {
         
         VStack {
             ScrollView{
-                home
+                blockchain
                     .id(1)
             }
             .refreshable {
@@ -50,7 +50,7 @@ struct HomeView: View {
         
     }
     
-    var home: some View {
+    var blockchain: some View {
         VStack {
             BitcoinPriceViewComponent()
             VStack{
@@ -59,11 +59,11 @@ struct HomeView: View {
                     ForEach(viewModel.fees, id: \.self) { fee in
                         HStack(spacing: 17) {
                             
-                            HomeFeeViewComponent(fee: fee.hourFee)
+                            BlockchainFeeViewComponent(fee: fee.hourFee)
                             
-                            HomeFeeViewComponent(fee: fee.halfHourFee)
+                            BlockchainFeeViewComponent(fee: fee.halfHourFee)
                             
-                            HomeFeeViewComponent(fee: fee.fastestFee)
+                            BlockchainFeeViewComponent(fee: fee.fastestFee)
                             
                         }
                     }
@@ -73,7 +73,7 @@ struct HomeView: View {
                 ProgressView()
                     .scaleEffect(1.2)
             } else {
-                Blockchain()
+                MempoolBlocksView()
                     .environmentObject(viewModel)
             }
         }
@@ -83,7 +83,7 @@ struct HomeView: View {
 }
 
 #Preview {
-    return HomeView()
+    return BlockchainView()
         .environmentObject(CurrencyViewModel())
         .environmentObject(AddManager())
 }

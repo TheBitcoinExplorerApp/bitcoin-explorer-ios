@@ -27,7 +27,7 @@ struct ContentView: View {
         return ScrollViewReader { proxy in
             TabView(selection: handler) {
                 NavigationStack {
-                    HomeView()
+                    BlockchainView()
                         .onChange(of: tappedTwice, perform: { tapped in
                             if tapped {
                                 withAnimation {
@@ -38,13 +38,13 @@ struct ContentView: View {
                         })
                 }
                 .tabItem {
-                    Label(ContentViewTexts.home, systemImage: "house")
+                    Label(Texts.blockchain, systemImage: "cube.fill")
                 }
                 .toolbarBackground(Color.background, for: .tabBar)
                 .tag(1)
                 
                 NavigationStack {
-                    EveryTransactions()
+                    SearchView()
                         .onChange(of: tappedTwice, perform: { tapped in
                             if tapped {
                                 withAnimation {
@@ -55,7 +55,7 @@ struct ContentView: View {
                         })
                 }
                 .tabItem {
-                    Label(TransactionsTexts.transacoesMaiusculo, systemImage: "rectangle.grid.1x2.fill")
+                    Label(Texts.search, systemImage: "magnifyingglass")
                 }
                 .toolbarBackground(Color.background, for: .tabBar)
                 .tag(2)

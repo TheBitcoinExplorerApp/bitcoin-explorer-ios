@@ -27,7 +27,7 @@ struct EachBlock: View {
                     header
                     
                     HStack{
-                        Text("\(blockHeader?.tx_count ?? 0) \(TransactionsTexts.transacoesMaiusculo)")
+                        Text("\(blockHeader?.tx_count ?? 0) \(Texts.transacoesMaiusculo)")
                             .foregroundColor(Color.texts)
                             .font(.callout)
                         Spacer()
@@ -58,7 +58,7 @@ struct EachBlock: View {
                 viewModel.getBlockTransactions(blockHeader?.id ?? "")
             }
             
-            .sheetToolbar(title: BlocksTexts.blocoMaiusculo)
+            .sheetToolbar(title: Texts.blocoMaiusculo)
             
         }
         
@@ -69,7 +69,7 @@ struct EachBlock: View {
             HStack{
                 
                 HStack{
-                    Text(BlocksTexts.blocoMaiusculo)
+                    Text(Texts.blocoMaiusculo)
                         .foregroundColor(Color.texts)
                         .font(.callout)
                     Text("\(blockHeader?.height ?? 0)")
@@ -93,7 +93,7 @@ struct EachBlock: View {
                 
                 VStack{
                     HStack{
-                        Text(BlocksTexts.hash)
+                        Text(Texts.hash)
                             .foregroundColor(Color.texts)
                             .font(.callout)
                         Spacer()
@@ -110,7 +110,7 @@ struct EachBlock: View {
             
             VStack{
                 HStack{
-                    Text(BlocksTexts.dataEHora)
+                    Text(Texts.dataEHora)
                         .foregroundColor(Color.texts)
                         .font(.callout)
                     Spacer()
@@ -125,11 +125,11 @@ struct EachBlock: View {
                 HStack{
                     let tamanho = String(format: "%.2f", ((blockHeader?.size ?? 0) / 1000000))
                     
-                    Text(BlocksTexts.tamanhoMaiusculo)
+                    Text(Texts.tamanhoMaiusculo)
                         .foregroundColor(Color.texts)
                         .font(.callout)
                     Spacer()
-                    Text("\(tamanho) \(BlocksTexts.MB)")
+                    Text("\(tamanho) \(Texts.MB)")
                         .foregroundColor(Color.primaryText)
                         .font(.callout)
                 }
@@ -138,7 +138,7 @@ struct EachBlock: View {
                     .padding(.horizontal, -largura)
                 
                 HStack{
-                    Text(BlocksTexts.taxaMediana)
+                    Text(Texts.taxaMediana)
                         .foregroundColor(Color.texts)
                         .font(.callout)
                     Spacer()
@@ -150,7 +150,7 @@ struct EachBlock: View {
                 Divider().padding(.horizontal, -largura)
                 
                 HStack{
-                    Text(BlocksTexts.minerador)
+                    Text(Texts.minerador)
                         .foregroundColor(Color.texts)
                         .font(.callout)
                     Spacer()
@@ -221,7 +221,7 @@ struct EachBlock: View {
                                     .foregroundStyle(Color.primaryText)
                                 
                             } else {
-                                Text(TransactionsTexts.coinbase)
+                                Text(Texts.coinbase)
                                     .foregroundColor(Color.texts)
                                     .font(.footnote)
                             }
@@ -229,7 +229,7 @@ struct EachBlock: View {
                     }
                     
                     Spacer()
-                    Image(TransactionsTexts.setinha)
+                    Image(Texts.setinha)
                         .renderingMode(.template)
                         .foregroundStyle(Color.texts)
                     Spacer()
@@ -242,7 +242,7 @@ struct EachBlock: View {
                                     .font(.footnote)
                                     .lineLimit(1)
                             } else {
-                                Text(TransactionsTexts.opReturn)
+                                Text(Texts.opReturn)
                                     .foregroundColor(Color.texts)
                                     .font(.footnote)
                             }
