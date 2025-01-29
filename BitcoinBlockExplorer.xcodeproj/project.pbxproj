@@ -239,7 +239,7 @@
 				9B3F05972BB3BD3A003C746C /* EachTransaction */,
 				9B3F05962BB3BD2E003C746C /* EachBlock */,
 				9B3F05952BB3BD15003C746C /* DonationsView */,
-				9B3F05942BB3BCBD003C746C /* EveryTransactions */,
+				9B3F05942BB3BCBD003C746C /* Search */,
 				9B3C000D2BAC7890000B55B9 /* Configurations */,
 				9B3C000B2BAC75F6000B55B9 /* Blockchain */,
 				9B3C00092BAC75DD000B55B9 /* Shared */,
@@ -310,12 +310,12 @@
 			path = CurrencyComponent;
 			sourceTree = "<group>";
 		};
-		9B3F05942BB3BCBD003C746C /* EveryTransactions */ = {
+		9B3F05942BB3BCBD003C746C /* Search */ = {
 			isa = PBXGroup;
 			children = (
 				9B2BC8ED2A13F70600735A8D /* SearchView.swift */,
 			);
-			path = EveryTransactions;
+			path = Search;
 			sourceTree = "<group>";
 		};
 		9B3F05952BB3BD15003C746C /* DonationsView */ = {

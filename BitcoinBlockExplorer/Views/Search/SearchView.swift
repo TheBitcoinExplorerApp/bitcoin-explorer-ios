@@ -57,3 +57,10 @@ struct SearchView: View {
 #Preview {
     SearchView()
 }
+
+#Preview {
+    return ContentView()
+        .environmentObject(AddManager())
+        .environmentObject(CurrencyViewModel())
+        .environmentObject(SubscriptionStore())
+}
