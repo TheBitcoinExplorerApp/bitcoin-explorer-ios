@@ -82,16 +82,3 @@ struct ContentView: View {
         .environmentObject(CurrencyViewModel())
         .environmentObject(SubscriptionStore())
 }
-
-
-struct TesteView: View {
-    
-    var body: some View {
-        ScrollView {
-            ForEach(0..<1000) { n in
-                Text("\(n)")
-            }
-        }
-        .scrollIndicators(.visible)
-    }
-}
