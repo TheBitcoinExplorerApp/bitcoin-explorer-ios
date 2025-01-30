@@ -11,6 +11,10 @@ class LastBlockViewModel: ObservableObject {
     private let apiHandler = APIHandler()
     
     @Published var lastBlock: Int64 = 0
+    
+    init() {
+        self.getLastBlock()
+    }
 }
 
 // API Fetchs

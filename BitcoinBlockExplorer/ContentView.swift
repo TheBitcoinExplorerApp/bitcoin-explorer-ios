@@ -81,4 +81,5 @@ struct ContentView: View {
         .environmentObject(AddManager())
         .environmentObject(CurrencyViewModel())
         .environmentObject(SubscriptionStore())
+        .environmentObject(LastBlockViewModel())
 }

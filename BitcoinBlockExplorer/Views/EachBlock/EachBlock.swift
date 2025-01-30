@@ -78,7 +78,7 @@ struct EachBlock: View {
                 }
                 .padding()
                 .background(Color.backgroundBox)
-                .cornerRadius(7)
+                .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
                 
                 Spacer()
             }.padding()
@@ -103,7 +103,7 @@ struct EachBlock: View {
                             .lineLimit(1)
                     }.padding()
                         .background(Color.backgroundBox)
-                        .cornerRadius(7)
+                        .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
                 }.padding(.horizontal)
                 
             }
@@ -123,7 +123,7 @@ struct EachBlock: View {
                     .padding(.horizontal, -largura)
                 
                 HStack{
-                    let tamanho = String(format: "%.2f", ((blockHeader?.size ?? 0) / 1000000))
+                    let tamanho = String(format: "%.2f", ((blockHeader?.size ?? 0) / Double.bytesToMB))
                     
                     Text(Texts.tamanhoMaiusculo)
                         .foregroundColor(Color.texts)
@@ -162,7 +162,7 @@ struct EachBlock: View {
             }
             .padding()
             .background(Color.backgroundBox)
-            .cornerRadius(7)
+            .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
             .padding(.horizontal)
             
         }
@@ -195,7 +195,7 @@ struct EachBlock: View {
                         Spacer()
                     }.padding()
                         .background(Color.backgroundBox)
-                        .cornerRadius(7)
+                        .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
                 }.padding(.horizontal)
                 
             }
@@ -210,7 +210,7 @@ struct EachBlock: View {
                                     .font(.footnote)
                                     .lineLimit(1)
                                 
-                                let valueDesembrulhado = prevoutDesembrulhado.value / 100000000
+                                let valueDesembrulhado = prevoutDesembrulhado.value / Double.BtcInSats
                                 
                                 Text("\(String(format: "%.8f", valueDesembrulhado)) BTC")
                                     .foregroundColor(Color.texts)
@@ -247,7 +247,7 @@ struct EachBlock: View {
                                     .font(.footnote)
                             }
                             
-                            let valueVout = transaction.vout[index].value / 100000000
+                            let valueVout = transaction.vout[index].value / Double.BtcInSats
                             
                             Text("\(String(format: "%.8f", valueVout)) BTC")
                                 .foregroundColor(Color.texts)
@@ -262,7 +262,7 @@ struct EachBlock: View {
                     
                 }.padding()
                     .background(Color.backgroundBox)
-                    .cornerRadius(7)
+                    .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
             }.padding(.horizontal)
             
             HStack {

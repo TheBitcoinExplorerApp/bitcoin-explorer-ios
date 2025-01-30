@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct HalvingView: View {
-    let viewModel: BlockchainViewModel
     
+    @EnvironmentObject var viewModel: BlockchainViewModel
     @EnvironmentObject var lastBlockViewModel: LastBlockViewModel
     
     @State private var progress: CGFloat = 0.0
@@ -40,20 +40,20 @@ struct HalvingView: View {
                                 .font(.subheadline)
                         }
        
-                        RoundedRectangle(cornerRadius: 7)
+                        RoundedRectangle(cornerRadius: CGFloat.cornerRadius)
                             .frame(height: 25)
                             .foregroundStyle(Color.background)
                             .overlay(alignment: .leading) {
-                                RoundedRectangle(cornerRadius: 7)
+                                RoundedRectangle(cornerRadius: CGFloat.cornerRadius)
                                     .fill(Color.primaryText)
                                     .frame(width: progress * geometry.size.width, height: 25)
-                                    .animation(.easeInOut(duration: 1), value: progress)
+                                    .animation(.easeInOut, value: progress)
                             }
                         
                     }
                     .padding()
                     .background(Color.backgroundBox)
-                    .clipShape(RoundedRectangle(cornerRadius: 7))
+                    .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
                 }
               
             }
@@ -70,6 +70,7 @@ struct HalvingView: View {
 }
 
 #Preview {
-    HalvingView(viewModel: BlockchainViewModel())
+    HalvingView()
         .environmentObject(LastBlockViewModel())
+        .environmentObject(BlockchainViewModel())
 }

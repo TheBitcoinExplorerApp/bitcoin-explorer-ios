@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EachTransaction: View {
     @StateObject var transaction = EachTransactionData()
-//    @EnvironmentObject var lastBlock: LastBlockViewModel
+    @EnvironmentObject var lastBlock: LastBlockViewModel
     @Binding var idTransacaoButton: String
     @Binding var idTransacaoSearch: String
     @Binding var abrirModalTransaction: Bool
@@ -48,7 +48,7 @@ struct EachTransaction: View {
                                     }
                                 }.padding()
                                     .background(Color.backgroundBox)
-                                    .clipShape(RoundedRectangle(cornerRadius: 7))
+                                    .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
                             }.padding(.horizontal)
                             
                         }
@@ -78,7 +78,7 @@ struct EachTransaction: View {
                                                 .font(.callout)
                                         }.padding()
                                             .background(Color.backgroundBox)
-                                            .clipShape(RoundedRectangle(cornerRadius: 7))
+                                            .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
                                     }.padding(.horizontal)
                                     
                                 } else {
@@ -90,9 +90,7 @@ struct EachTransaction: View {
                                 VStack{
                                     HStack{
                                         if(transactions.status.confirmed) {
-                                            let confirmacoes =
-//                                            lastBlock.lastBlock -
-                                            transactions.status.block_height! + 1
+                                            let confirmacoes = lastBlock.lastBlock - transactions.status.block_height! + 1
                                             let mensagem = confirmacoes > 1 ? Texts.confirmacoes : Texts.confirmacao
                                             Text("\(String(confirmacoes)) \(mensagem)")
                                                 .foregroundStyle(Color.texts)
@@ -104,7 +102,7 @@ struct EachTransaction: View {
                                         }
                                     }.padding()
                                         .background(Color.backgroundBox)
-                                        .clipShape(RoundedRectangle(cornerRadius: 7))
+                                        .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
                                 }.padding(.horizontal)
                                 
                             }
@@ -147,7 +145,7 @@ struct EachTransaction: View {
                                             .font(.callout)
                                         Spacer()
                                         
-                                        let fee = transactions.fee / 100000000
+                                        let fee = transactions.fee / Double.BtcInSats
                                         
                                         VStack{
                                             Text("\(fee) BTC")
@@ -162,7 +160,7 @@ struct EachTransaction: View {
                                     
                                 }.padding()
                                     .background(Color.backgroundBox)
-                                    .clipShape(RoundedRectangle(cornerRadius: 7))
+                                    .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
                             }.padding(.horizontal)
                             
                             HStack{
@@ -184,7 +182,7 @@ struct EachTransaction: View {
                                                     .lineLimit(1)
                                                     .font(.footnote)
                                                 
-                                                let pValue = prevoutDesembrulhado.value / 100000000
+                                                let pValue = prevoutDesembrulhado.value / Double.BtcInSats
                                                 
                                                 Text("\(pValue) BTC")
                                                     .foregroundStyle(Color.texts)
@@ -221,7 +219,7 @@ struct EachTransaction: View {
                                                     .font(.footnote)
                                             }
                                             
-                                            let value = transactions.vout[index].value / 100000000
+                                            let value = transactions.vout[index].value / Double.BtcInSats
                                             
                                             Text("\(value) BTC")
                                                 .foregroundStyle(Color.texts)
@@ -236,7 +234,7 @@ struct EachTransaction: View {
                                     
                                 }.padding()
                                     .background(Color.backgroundBox)
-                                    .clipShape(RoundedRectangle(cornerRadius: 7))
+                                    .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
                             }.padding(.horizontal)
                             
                         }

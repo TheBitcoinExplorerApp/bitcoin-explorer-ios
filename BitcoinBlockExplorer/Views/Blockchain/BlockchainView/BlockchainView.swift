@@ -9,6 +9,7 @@ import SwiftUI
 
 struct BlockchainView: View {
     @StateObject var viewModel = BlockchainViewModel()
+    
     @EnvironmentObject var lastBlockViewModel: LastBlockViewModel
     @EnvironmentObject var currencyViewModel:  CurrencyViewModel
     
@@ -31,7 +32,7 @@ struct BlockchainView: View {
             .refreshable {
                 viewModel.getFees()
                 viewModel.getBlockHeader(50)
-                viewModel.getMempool()
+                viewModel.getMempoolData()
                 viewModel.getMempoolSize()
                 currencyViewModel.getCoins()
                 lastBlockViewModel.getLastBlock()
@@ -43,9 +44,8 @@ struct BlockchainView: View {
         .task {
             viewModel.getFees()
             viewModel.getBlockHeader(50)
-            viewModel.getMempool()
+            viewModel.getMempoolData()
             viewModel.getMempoolSize()
-            lastBlockViewModel.getLastBlock()
         }
         
         .titleToolbar()
@@ -59,7 +59,8 @@ struct BlockchainView: View {
             BitcoinPriceViewComponent()
             fees
             blockchain
-            HalvingView(viewModel: viewModel)
+            HalvingView()
+                .environmentObject(viewModel)
         }
     }
     
@@ -69,7 +70,8 @@ struct BlockchainView: View {
                 ProgressView()
                     .scaleEffect(1.2)
             } else {
-                MempoolBlocksView(viewModel: viewModel)
+                MempoolBlocksView()
+                    .environmentObject(viewModel)
             }
         }
     }

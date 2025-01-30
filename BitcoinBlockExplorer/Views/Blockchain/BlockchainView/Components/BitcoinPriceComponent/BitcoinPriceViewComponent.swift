@@ -24,7 +24,7 @@ struct BitcoinPriceViewComponent: View {
                 .foregroundStyle(Color.primaryText)
         }.padding()
             .background(Color.backgroundBox)
-            .clipShape(RoundedRectangle(cornerRadius: 7))
+            .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
     }
 }
 

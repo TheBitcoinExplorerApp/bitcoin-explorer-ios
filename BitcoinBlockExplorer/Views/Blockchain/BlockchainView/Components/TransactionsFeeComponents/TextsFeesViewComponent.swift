@@ -34,7 +34,7 @@ struct TextsFeesViewComponent: View {
             .padding()
             .frame(maxWidth: .infinity)
             .background(Color.backgroundBox)
-            .cornerRadius(7)
+            .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
         }.padding(.horizontal)
     }
 }

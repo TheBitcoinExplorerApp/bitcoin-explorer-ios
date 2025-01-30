@@ -11,30 +11,30 @@ import SwiftUI
 class BlockchainViewModel: ObservableObject {
     private let apiHandler = APIHandler()
     
-    private var numberBlocksAfterLastHalving: Int64 = 0
-    
     @Published var loading: Bool = false
     
     @Published var fees: [Fee] = []
     @Published var blockHeaderData: [Block] = []
+    
     @Published var mempoolData: Mempool?
     @Published var mempoolSize: [MempoolSize] = []
     
     @Published var hasFinishedHalving: Bool = false
+    private var numberBlocksAfterLastHalving: Int64 = 0
     
 }
 
 // Logics Mempool
 extension BlockchainViewModel {
     
-    func getTotalMempoolSize() -> Double {
+    func getTotalMempoolSize(_ mempoolSize: [MempoolSize]) -> Double {
         let totalSize = mempoolSize.map({ $0.blockSize }).reduce(0,+)
         return totalSize
     }
     
-    func getTotalMempoolVSize() -> Int {
+    func getTotalMempoolBlocks(_ mempoolSize: [MempoolSize]) -> Int {
         let lastBlocks = mempoolSize.map({ $0.blockVSize }).last ?? 0
-        let lastBlocksMb = lastBlocks / 1000000
+        let lastBlocksMb = lastBlocks / Double.bytesToMB
         let decimal: Double = lastBlocksMb.truncatingRemainder(dividingBy: 1)
         var totalLastBlocksInt = 0
         
@@ -45,6 +45,7 @@ extension BlockchainViewModel {
         }
         
         let totalBlocks = totalLastBlocksInt + (mempoolSize.count - 1)
+        
         return totalBlocks
     }
     
@@ -75,18 +76,14 @@ extension BlockchainViewModel {
     
     func getNumberBlocksLeftNextHalving() -> Int64 {
         guard !hasFinishedHalving else { return 0 } // Impede chamadas desnecessárias
-        return 210000 - self.numberBlocksAfterLastHalving
+        return Int64.numberBlocksEachHalving - self.numberBlocksAfterLastHalving
     }
     
     func getProgress(_ lastBlockHeight: Int64) -> Double {
-        let progressPercentage = Double(self.getNumberBlocksAfterLastHalving(lastBlockHeight)) / Double(210000)
-        
-        return withAnimation {
-            progressPercentage
-        }
+        let progressPercentage = Double(self.getNumberBlocksAfterLastHalving(lastBlockHeight)) / Double.numberBlocksEachHalving
+    
+        return progressPercentage
     }
-    
-    
 }
 
 // API Fetchs
@@ -124,7 +121,7 @@ extension BlockchainViewModel {
         }
     }
     
-    func getMempool() {
+    func getMempoolData() {
         self.apiHandler.fetchData(from: .mempool) { (result: Result<Mempool, Error>) in
             Task { @MainActor in
                 switch result {

@@ -55,7 +55,7 @@ struct BoxTransactions: View {
                                         .foregroundColor(Color.texts)
                                     Spacer()
                                     Spacer()
-                                    let value = transactions.value / 100000000
+                                    let value = transactions.value / Double.BtcInSats
                                     
                                     Text("\(value) BTC")
                                         .font(.footnote)
@@ -81,7 +81,8 @@ struct BoxTransactions: View {
                             .padding(.horizontal)
                             .padding(.vertical, 5)
                                 .frame(maxWidth: .infinity)
-                                .background(Color.backgroundBox).cornerRadius(7)
+                                .background(Color.backgroundBox)
+                                .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
                                 .onTapGesture {
                                     idTransacaoButton = transactions.txid
                                     abrirModalTransaction.toggle()

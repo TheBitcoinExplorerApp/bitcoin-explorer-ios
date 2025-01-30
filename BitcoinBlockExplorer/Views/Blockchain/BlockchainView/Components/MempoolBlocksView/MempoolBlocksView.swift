@@ -12,7 +12,7 @@ struct MempoolBlocksView: View {
     @State var abrirModal: Bool = false
     @State var blockHeader: Block?
     
-    let viewModel: BlockchainViewModel
+    @EnvironmentObject var viewModel: BlockchainViewModel
     
     var body: some View {
         VStack {
@@ -37,14 +37,18 @@ struct MempoolBlocksView: View {
                             VStack {
                                 let tamanho = formatSizeToMB(block.size)
                                 
-                                Text("\(block.height)").foregroundColor(Color.primaryText)
+                                Text("\(block.height)")
+                                    .foregroundColor(Color.primaryText)
                                     .font(.callout)
                                     .bold()
-                                Text("~\(Int(block.extras.medianFee)) \(Texts.satVb)").foregroundColor(Color.texts)
+                                Text("~\(Int(block.extras.medianFee)) \(Texts.satVb)")
+                                    .foregroundColor(Color.texts)
                                     .font(.footnote)
-                                Text("\(tamanho) \(Texts.MB)").foregroundColor(Color.texts)
+                                Text("\(tamanho) \(Texts.MB)")
+                                    .foregroundColor(Color.texts)
                                     .font(.callout)
-                                Text("\(block.tx_count) \(Texts.transacoes)").foregroundColor(Color.texts)
+                                Text("\(block.tx_count) \(Texts.transacoes)")
+                                    .foregroundColor(Color.texts)
                                     .truncationMode(.tail)
                                     .font(.footnote)
                                 Text("\(block.formatTimestamp(block.timestamp))").foregroundColor(Color.texts)
@@ -56,7 +60,7 @@ struct MempoolBlocksView: View {
                             }
                             .padding()
                             .background(Color.backgroundBox)
-                            .clipShape(RoundedRectangle(cornerRadius: 7))
+                            .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
                             .onTapGesture {
                                 self.blockHeader = block
                                 abrirModal.toggle()
@@ -85,7 +89,7 @@ struct MempoolBlocksView: View {
                 .foregroundStyle(Color.texts)
                 .font(.footnote)
             
-            Text("\(formatSizeToMB(viewModel.getTotalMempoolSize())) \(Texts.MB)")
+            Text("\(formatSizeToMB(viewModel.getTotalMempoolSize(viewModel.mempoolSize))) \(Texts.MB)")
                 .foregroundStyle(Color.primaryText)
                 .font(.callout)
                 .bold()
@@ -94,31 +98,32 @@ struct MempoolBlocksView: View {
                 .foregroundStyle(Color.texts)
                 .font(.footnote)
             
-            Text("\(viewModel.getTotalMempoolVSize()) \(Texts.blocos)")
+            Text("\(viewModel.getTotalMempoolBlocks(viewModel.mempoolSize)) \(Texts.blocos)")
                 .foregroundStyle(Color.texts)
                 .font(.footnote)
         }
         .padding()
         .background(Color.backgroundBox)
-        .clipShape(RoundedRectangle(cornerRadius: 7))
+        .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
         .overlay {
-            RoundedRectangle(cornerRadius: 7)
+            RoundedRectangle(cornerRadius: CGFloat.cornerRadius)
                 .stroke(Color.primaryText, lineWidth: 1)
         }
     }
     
     func mempoolFees(_ totalFee: Double) -> Double {
-        return totalFee / 100000000
+        return totalFee / Double.BtcInSats
     }
     
     func formatSizeToMB(_ size: Double) -> String {
-        String(format: "%.2f", (size / 1000000))
+        String(format: "%.2f", (size / Double.bytesToMB))
     }
     
 }
 
 #Preview {
-    MempoolBlocksView(viewModel: BlockchainViewModel())
+    MempoolBlocksView()
+        .environmentObject(BlockchainViewModel())
 }
 #Preview {
     return BlockchainView()

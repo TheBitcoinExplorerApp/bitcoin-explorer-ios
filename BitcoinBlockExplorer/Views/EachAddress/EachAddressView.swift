@@ -40,7 +40,7 @@ struct EachAddressView: View {
                                         .font(.callout)
                                 }.padding()
                                     .background(Color.backgroundBox)
-                                    .cornerRadius(7)
+                                    .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
                             }.padding(.horizontal)
                             
                         }
@@ -62,7 +62,7 @@ struct EachAddressView: View {
                                     
                                     VStack {
                                         
-                                        let received = address.chain_stats.funded_txo_sum / 100000000
+                                        let received = address.chain_stats.funded_txo_sum / Double.BtcInSats
                                         
                                     Text("\(received) BTC")
                                         .foregroundStyle(Color.primaryText)
@@ -85,7 +85,7 @@ struct EachAddressView: View {
                                     
                                     VStack{
                                         
-                                        let sent = address.chain_stats.spent_txo_sum / 100000000
+                                        let sent = address.chain_stats.spent_txo_sum / Double.BtcInSats
                                         
                                         Text("\(sent) BTC")
                                             .foregroundStyle(Color.primaryText)
@@ -109,7 +109,7 @@ struct EachAddressView: View {
                                     
                                     VStack{
                                         
-                                        let balance = (address.chain_stats.funded_txo_sum - address.chain_stats.spent_txo_sum) / 100000000
+                                        let balance = (address.chain_stats.funded_txo_sum - address.chain_stats.spent_txo_sum) / Double.BtcInSats
                                         
                                         Text("\(balance) BTC")
                                             .foregroundStyle(Color.primaryText)
@@ -123,7 +123,7 @@ struct EachAddressView: View {
                                 }
                             }.padding()
                                 .background(Color.backgroundBox)
-                                .cornerRadius(7)
+                                .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
                         }.padding(.horizontal)
                         
                     }
@@ -166,7 +166,7 @@ struct EachAddressView: View {
                                         }
                                     }.padding()
                                         .background(Color.backgroundBox)
-                                        .cornerRadius(7)
+                                        .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
                                 }.padding(.horizontal)
                                 
                             }
@@ -181,7 +181,7 @@ struct EachAddressView: View {
                                                     .lineLimit(1)
                                                     .font(.footnote)
                                                 
-                                                let prevDesembrulhado = prevoutDesembrulhado.value / 100000000
+                                                let prevDesembrulhado = prevoutDesembrulhado.value / Double.BtcInSats
                                                 
                                                 Text("\(prevDesembrulhado) BTC")
                                                     .foregroundStyle(Color.texts)
@@ -218,7 +218,7 @@ struct EachAddressView: View {
                                                     .font(.footnote)
                                             }
                                             
-                                            let vOut = addressTransaction.vout[index].value / 100000000
+                                            let vOut = addressTransaction.vout[index].value / Double.BtcInSats
                                             
                                             Text("\(vOut) BTC")
                                                 .foregroundStyle(Color.texts)
@@ -233,7 +233,7 @@ struct EachAddressView: View {
                                     
                                 }.padding()
                                     .background(Color.backgroundBox)
-                                    .cornerRadius(7)
+                                    .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
                             }.padding(.horizontal)
                             
                             HStack {

@@ -21,3 +21,4 @@ func formatCoin(_ numero: Double, symbol: String) -> String {
         return "\(numero)"
     }
 }
+

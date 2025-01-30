@@ -38,7 +38,7 @@
 //                ForEach(blockData.blockDatas, id: \.self) { blocks in
 //                    
 //                    VStack{
-//                        let tamanho = String(format: "%.2f", (blocks.size / 1000000))
+//                        let tamanho = String(format: "%.2f", (blocks.size / Double.bytesToMB))
 //                        
 //                        Text("\(blocks.height)").foregroundColor(Color.primaryText)
 //                            .font(.callout)
@@ -54,7 +54,7 @@
 //                    .padding(.vertical)
 //                    .frame(maxWidth: .infinity)
 //                    .background(Color.backgroundBox)
-//                    .cornerRadius(7)
+//                    .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
 //                    
 //                    .overlay {
 //                        if store.purschasedSubscriptions == false {

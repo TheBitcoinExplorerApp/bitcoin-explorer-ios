@@ -11,7 +11,7 @@ struct BlockchainFeeViewComponent: View {
     @State var fee: Int = 0
     
     func calculateValuePerSatvB(_ value: Int) -> Double {
-        return Double(value * 140) / 100000000
+        return Double(value * Int.averageNumberTransactions) / Double.BtcInSats
     }
     
     var body: some View {
@@ -27,7 +27,8 @@ struct BlockchainFeeViewComponent: View {
                 .foregroundStyle(Color.primaryText)
             
         }.padding()
-            .background(Color.backgroundBox).cornerRadius(7)
+            .background(Color.backgroundBox)
+            .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
     }
 }
 

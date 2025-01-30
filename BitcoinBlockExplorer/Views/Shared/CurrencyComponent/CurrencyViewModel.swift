@@ -9,18 +9,14 @@ import SwiftUI
 
 class CurrencyViewModel: ObservableObject {
     private let apiHandler = APIHandler()
-        
-    var coins: Coins?
-    var coins2: Coins2?
+
+    @Published var price: Double = 0
+    var flag: String = "🇺🇸"
     var symbol: String?
     
-    @Published var price: Double = 0
-    
-    var flag: String = "🇺🇸"
     @AppStorage("currency") var currency: Int = 0
     
     func getCoins() {
-            
         self.apiHandler.fetchData(from: .coins) { (result: Result<Coins, Error>) in
             Task { @MainActor in
                 switch result {
@@ -84,7 +80,6 @@ class CurrencyViewModel: ObservableObject {
                 }
             }
         }
-
     }
     
 }
