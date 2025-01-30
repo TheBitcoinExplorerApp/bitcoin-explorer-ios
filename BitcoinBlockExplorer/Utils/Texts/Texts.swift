@@ -142,3 +142,10 @@ extension Texts {
     
     static let saldo: String = String(localized: "saldo")
 }
+
+// Halving labels
+extension Texts {
+    static let halving: String = String(localized: "Halving")
+    
+    static let restante: String = String(localized: "restante")
+}

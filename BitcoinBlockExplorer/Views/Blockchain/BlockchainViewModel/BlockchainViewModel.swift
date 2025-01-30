@@ -6,9 +6,12 @@
 //
 
 import Foundation
+import SwiftUI
 
 class BlockchainViewModel: ObservableObject {
     private let apiHandler = APIHandler()
+    
+    private var numberBlocksAfterLastHalving: Int64 = 0
     
     @Published var loading: Bool = false
     
@@ -16,6 +19,20 @@ class BlockchainViewModel: ObservableObject {
     @Published var blockHeaderData: [Block] = []
     @Published var mempoolData: Mempool?
     @Published var mempoolSize: [MempoolSize] = []
+    
+    @Published var hasFinishedHalving: Bool = false
+    
+    init() {
+        self.getFees()
+        self.getBlockHeader(50)
+        self.getMempool()
+        self.getMempoolSize()
+    }
+    
+}
+
+// Logics Mempool
+extension BlockchainViewModel {
     
     func getTotalMempoolSize() -> Double {
         let totalSize = mempoolSize.map({ $0.blockSize }).reduce(0,+)
@@ -37,6 +54,45 @@ class BlockchainViewModel: ObservableObject {
         let totalBlocks = totalLastBlocksInt + (mempoolSize.count - 1)
         return totalBlocks
     }
+    
+}
+
+// Logics Halving
+extension BlockchainViewModel {
+    func getNumberBlocksAfterLastHalving(_ lastBlockHeight: Int64) -> Int64 {
+        guard !hasFinishedHalving else { return 0 } // Impede chamadas desnecessárias
+        
+        let halvingsList = Halvings.allCases.map { $0.halvings }.sorted { $0.blockHeight < $1.blockHeight }
+        
+        let lastHalving = halvingsList.filter { $0.blockHeight <= lastBlockHeight }.last
+        
+        guard let lastHalvingBlock = lastHalving?.blockHeight else {
+            return 0 // Retorna 0 se não houver um halving anterior
+        }
+        
+        if lastHalvingBlock == halvingsList.last?.blockHeight {
+            hasFinishedHalving = true
+            return 0
+        }
+        
+        let numberBlocks = lastBlockHeight - lastHalvingBlock
+        self.numberBlocksAfterLastHalving = numberBlocks
+        return numberBlocks
+    }
+    
+    func getNumberBlocksLeftNextHalving() -> Int64 {
+        guard !hasFinishedHalving else { return 0 } // Impede chamadas desnecessárias
+        return 210000 - self.numberBlocksAfterLastHalving
+    }
+    
+    func getProgress(_ lastBlockHeight: Int64) -> Double {
+        let progressPercentage = Double(self.getNumberBlocksAfterLastHalving(lastBlockHeight)) / Double(210000)
+        
+        return withAnimation {
+            progressPercentage
+        }
+    }
+    
     
 }
 
@@ -101,3 +157,4 @@ extension BlockchainViewModel {
         }
     }
 }
+

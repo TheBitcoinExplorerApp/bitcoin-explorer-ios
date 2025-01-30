@@ -9,6 +9,7 @@ import SwiftUI
 
 struct BlockchainView: View {
     @StateObject var viewModel = BlockchainViewModel()
+    @EnvironmentObject var lastBlockViewModel: LastBlockViewModel
     @EnvironmentObject var currencyViewModel:  CurrencyViewModel
     
     // Search variables
@@ -24,7 +25,7 @@ struct BlockchainView: View {
         
         VStack {
             ScrollView{
-                blockchain
+                blockchainView
                     .id(1)
             }
             .refreshable {
@@ -33,15 +34,10 @@ struct BlockchainView: View {
                 viewModel.getMempool()
                 viewModel.getMempoolSize()
                 currencyViewModel.getCoins()
+                lastBlockViewModel.getLastBlock()
             }
             
             AdViewComponent()
-        }
-        .task {
-            viewModel.getFees()
-            viewModel.getBlockHeader(50)
-            viewModel.getMempool()
-            viewModel.getMempoolSize()
         }
         
         .titleToolbar()
@@ -50,34 +46,40 @@ struct BlockchainView: View {
         
     }
     
-    var blockchain: some View {
+    var blockchainView: some View {
         VStack {
             BitcoinPriceViewComponent()
-            VStack{
-                TextsFeesViewComponent()
-                VStack(alignment: .center) {
-                    ForEach(viewModel.fees, id: \.self) { fee in
-                        HStack(spacing: 17) {
-                            
-                            BlockchainFeeViewComponent(fee: fee.hourFee)
-                            
-                            BlockchainFeeViewComponent(fee: fee.halfHourFee)
-                            
-                            BlockchainFeeViewComponent(fee: fee.fastestFee)
-                            
-                        }
-                    }
-                }
-            }.padding(.vertical)
+            fees
+            blockchain
+            HalvingView(viewModel: viewModel)
+        }
+    }
+    
+    var blockchain: some View {
+        VStack {
             if viewModel.loading {
                 ProgressView()
                     .scaleEffect(1.2)
             } else {
-                MempoolBlocksView()
-                    .environmentObject(viewModel)
+                MempoolBlocksView(viewModel: viewModel)
             }
         }
-        
+    }
+    
+    var fees: some View {
+        VStack{
+            TextsFeesViewComponent()
+            VStack(alignment: .center) {
+                ForEach(viewModel.fees, id: \.self) { fee in
+                    HStack(spacing: 17) {
+                        BlockchainFeeViewComponent(fee: fee.hourFee)
+                        BlockchainFeeViewComponent(fee: fee.halfHourFee)
+                        BlockchainFeeViewComponent(fee: fee.fastestFee)
+                    }
+                }
+            }
+        }
+        .padding(.vertical)
     }
     
 }
@@ -86,4 +88,5 @@ struct BlockchainView: View {
     return BlockchainView()
         .environmentObject(CurrencyViewModel())
         .environmentObject(AddManager())
+        .environmentObject(LastBlockViewModel())
 }

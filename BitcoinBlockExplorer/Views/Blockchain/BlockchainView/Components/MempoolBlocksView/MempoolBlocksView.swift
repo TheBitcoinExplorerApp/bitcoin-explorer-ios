@@ -12,7 +12,7 @@ struct MempoolBlocksView: View {
     @State var abrirModal: Bool = false
     @State var blockHeader: Block?
     
-    @EnvironmentObject var viewModel: BlockchainViewModel
+    let viewModel: BlockchainViewModel
     
     var body: some View {
         VStack {
@@ -118,11 +118,11 @@ struct MempoolBlocksView: View {
 }
 
 #Preview {
-    MempoolBlocksView()
-        .environmentObject(BlockchainViewModel())
+    MempoolBlocksView(viewModel: BlockchainViewModel())
 }
 #Preview {
     return BlockchainView()
         .environmentObject(CurrencyViewModel())
         .environmentObject(AddManager())
+        .environmentObject(LastBlockViewModel())
 }

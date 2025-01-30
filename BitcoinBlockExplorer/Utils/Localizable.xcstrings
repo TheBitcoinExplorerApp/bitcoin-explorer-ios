@@ -790,6 +790,41 @@
         }
       }
     },
+    "Halving" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halving"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halving"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halving"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "халвинг"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "减半"
+          }
+        }
+      }
+    },
     "hash" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1099,6 +1134,41 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "报告问题"
+          }
+        }
+      }
+    },
+    "restante" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "übrig"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "remaining"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "restante"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "оставшийся"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "其余的"
           }
         }
       }
@@ -1586,6 +1656,9 @@
           }
         }
       }
+    },
+    "The halving countdown is finished!" : {
+
     },
     "totalEnviado" : {
       "extractionState" : "manual",

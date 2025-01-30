@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EachTransaction: View {
     @StateObject var transaction = EachTransactionData()
-    @StateObject var lastBlock = LastBlockData()
+//    @EnvironmentObject var lastBlock: LastBlockViewModel
     @Binding var idTransacaoButton: String
     @Binding var idTransacaoSearch: String
     @Binding var abrirModalTransaction: Bool
@@ -90,7 +90,9 @@ struct EachTransaction: View {
                                 VStack{
                                     HStack{
                                         if(transactions.status.confirmed) {
-                                            let confirmacoes = lastBlock.lastBlock - transactions.status.block_height! + 1
+                                            let confirmacoes =
+//                                            lastBlock.lastBlock -
+                                            transactions.status.block_height! + 1
                                             let mensagem = confirmacoes > 1 ? Texts.confirmacoes : Texts.confirmacao
                                             Text("\(String(confirmacoes)) \(mensagem)")
                                                 .foregroundStyle(Color.texts)
@@ -249,8 +251,6 @@ struct EachTransaction: View {
                 } else {
                     transaction.getEachTransactionInfo(idTransacaoButton)
                 }
-                
-                lastBlock.getLastBlock()
             }
             
             .onTapGesture {

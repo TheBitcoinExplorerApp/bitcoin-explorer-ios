@@ -15,6 +15,7 @@ struct BitcoinBlockExplorerApp: App {
     @StateObject var addManager = AddManager()
     @StateObject var currencyViewModel = CurrencyViewModel()
     @StateObject var subscriptionStore = SubscriptionStore()
+    @StateObject var lastBlockViewModel = LastBlockViewModel()
     
     var body: some Scene {
         WindowGroup {
@@ -22,6 +23,7 @@ struct BitcoinBlockExplorerApp: App {
                 .environmentObject(addManager)
                 .environmentObject(currencyViewModel)
                 .environmentObject(subscriptionStore)
+                .environmentObject(lastBlockViewModel)
         }
     }
 }
