@@ -40,6 +40,14 @@ struct BlockchainView: View {
             AdViewComponent()
         }
         
+        .task {
+            viewModel.getFees()
+            viewModel.getBlockHeader(50)
+            viewModel.getMempool()
+            viewModel.getMempoolSize()
+            lastBlockViewModel.getLastBlock()
+        }
+        
         .titleToolbar()
         
         .background(Color.background)

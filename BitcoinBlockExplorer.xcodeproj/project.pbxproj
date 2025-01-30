@@ -172,7 +172,6 @@
 				9B65DF632D466DD4007517B7 /* Endpoints */,
 				9B3514922D2F47230034FF98 /* StoreKit */,
 				9B4372722A1CFD5B00DFE211 /* Functions */,
-				9B3C00102BAC7F07000B55B9 /* Extensions */,
 				9B3C000F2BAC7EC6000B55B9 /* Texts */,
 				9B3852D52B7C2B2300E2D576 /* Localizable.xcstrings */,
 				9B3C00122BAC7F59000B55B9 /* Modifiers */,
@@ -282,13 +281,6 @@
 				9B5689EC2B7CEFF10009A751 /* Texts.swift */,
 			);
 			path = Texts;
-			sourceTree = "<group>";
-		};
-		9B3C00102BAC7F07000B55B9 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		9B3C00122BAC7F59000B55B9 /* Modifiers */ = {

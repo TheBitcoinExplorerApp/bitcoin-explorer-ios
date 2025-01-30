@@ -22,13 +22,6 @@ class BlockchainViewModel: ObservableObject {
     
     @Published var hasFinishedHalving: Bool = false
     
-    init() {
-        self.getFees()
-        self.getBlockHeader(50)
-        self.getMempool()
-        self.getMempoolSize()
-    }
-    
 }
 
 // Logics Mempool
