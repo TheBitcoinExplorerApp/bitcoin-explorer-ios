@@ -32,7 +32,7 @@ struct HalvingView: View {
             } else {
                 VStack{
                     HStack {
-                        Text("\(viewModel.getNumberBlocksAfterLastHalving(6930000)) \(Texts.blocos)")
+                        Text("\(viewModel.getNumberBlocksAfterLastHalving(lastBlockViewModel.lastBlock)) \(Texts.blocos)")
                             .foregroundStyle(Color.texts)
                             .font(.subheadline)
                         Spacer()
