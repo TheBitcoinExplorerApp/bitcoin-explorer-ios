@@ -54,6 +54,8 @@
 		9BD669022D4AA6D1001709D1 /* Halvings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD669012D4AA6C9001709D1 /* Halvings.swift */; };
 		9BD669042D4BB376001709D1 /* HalvingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD669032D4BB376001709D1 /* HalvingView.swift */; };
 		9BD669072D4C3DD1001709D1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD669062D4C3DC1001709D1 /* Extensions.swift */; };
+		9BD6690A2D4C4776001709D1 /* FullNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD669092D4C4771001709D1 /* FullNode.swift */; };
+		9BD6690D2D4C4901001709D1 /* FullNodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD6690C2D4C4901001709D1 /* FullNodesView.swift */; };
 		9BEEAC9E2C8F799C00E2E120 /* BlockchainFeeViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEEAC9D2C8F799C00E2E120 /* BlockchainFeeViewComponent.swift */; };
 		9BEEACA02C8F7B0500E2E120 /* BitcoinPriceViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEEAC9F2C8F7B0500E2E120 /* BitcoinPriceViewComponent.swift */; };
 		9BEEACA22C8F7C0200E2E120 /* TextsFeesViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEEACA12C8F7C0200E2E120 /* TextsFeesViewComponent.swift */; };
@@ -115,6 +117,8 @@
 		9BD669012D4AA6C9001709D1 /* Halvings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Halvings.swift; sourceTree = "<group>"; };
 		9BD669032D4BB376001709D1 /* HalvingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalvingView.swift; sourceTree = "<group>"; };
 		9BD669062D4C3DC1001709D1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9BD669092D4C4771001709D1 /* FullNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullNode.swift; sourceTree = "<group>"; };
+		9BD6690C2D4C4901001709D1 /* FullNodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullNodesView.swift; sourceTree = "<group>"; };
 		9BEEAC9D2C8F799C00E2E120 /* BlockchainFeeViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainFeeViewComponent.swift; sourceTree = "<group>"; };
 		9BEEAC9F2C8F7B0500E2E120 /* BitcoinPriceViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinPriceViewComponent.swift; sourceTree = "<group>"; };
 		9BEEACA12C8F7C0200E2E120 /* TextsFeesViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextsFeesViewComponent.swift; sourceTree = "<group>"; };
@@ -161,9 +165,11 @@
 		9B0C49302D41347100CE9929 /* BlockchainModels */ = {
 			isa = PBXGroup;
 			children = (
+				9BD669092D4C4771001709D1 /* FullNode.swift */,
 				9B65DF662D46789B007517B7 /* Mempool.swift */,
 				9B27E7152A12A8D000E8036E /* Fee.swift */,
 				9B2BC8E12A12C54700735A8D /* Block.swift */,
+				9BD669012D4AA6C9001709D1 /* Halvings.swift */,
 			);
 			path = BlockchainModels;
 			sourceTree = "<group>";
@@ -453,7 +459,6 @@
 		9BD668FE2D4AA638001709D1 /* HalvingBlockchainView */ = {
 			isa = PBXGroup;
 			children = (
-				9BD669012D4AA6C9001709D1 /* Halvings.swift */,
 				9BD669032D4BB376001709D1 /* HalvingView.swift */,
 			);
 			path = HalvingBlockchainView;
@@ -475,9 +480,18 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		9BD6690B2D4C48ED001709D1 /* FullNodesView */ = {
+			isa = PBXGroup;
+			children = (
+				9BD6690C2D4C4901001709D1 /* FullNodesView.swift */,
+			);
+			path = FullNodesView;
+			sourceTree = "<group>";
+		};
 		9BEEAC9C2C8F798B00E2E120 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				9BD6690B2D4C48ED001709D1 /* FullNodesView */,
 				9BD668FE2D4AA638001709D1 /* HalvingBlockchainView */,
 				9B0C492F2D41335D00CE9929 /* MempoolBlocksView */,
 				9BBE4F662D400BB800E2D991 /* BitcoinPriceComponent */,
@@ -624,6 +638,7 @@
 				9B2321EA2B84E279000BFBA9 /* CurrencyModel.swift in Sources */,
 				9B2321EE2B84E967000BFBA9 /* FormatCoin.swift in Sources */,
 				9BD669022D4AA6D1001709D1 /* Halvings.swift in Sources */,
+				9BD6690D2D4C4901001709D1 /* FullNodesView.swift in Sources */,
 				9B2BC8F42A15487900735A8D /* TransactionData.swift in Sources */,
 				9B1243832A16579700B9A4AF /* MempoolBlocksView.swift in Sources */,
 				9B4372712A1CE88900DFE211 /* AddressHeaderModel.swift in Sources */,
@@ -661,6 +676,7 @@
 				9B5689ED2B7CEFF10009A751 /* Texts.swift in Sources */,
 				9B2BC8E22A12C54700735A8D /* Block.swift in Sources */,
 				9BD669072D4C3DD1001709D1 /* Extensions.swift in Sources */,
+				9BD6690A2D4C4776001709D1 /* FullNode.swift in Sources */,
 				9B925AB22C74382A00A754C1 /* AdBannerView.swift in Sources */,
 				9B43726F2A1CE66000DFE211 /* AddressDataHeader.swift in Sources */,
 				9B2BC8EE2A13F70600735A8D /* SearchView.swift in Sources */,

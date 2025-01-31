@@ -790,6 +790,41 @@
         }
       }
     },
+    "fullNode" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Knoten"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full Nodes"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Total de Nós"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Узел"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "节点"
+          }
+        }
+      }
+    },
     "Halving" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -821,6 +856,41 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "减半"
+          }
+        }
+      }
+    },
+    "halvingCountdownFinished" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Countdown zur Halbierung ist abgelaufen!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The halving countdown is finished!"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Os halvings chegaram ao fim!"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обратный отсчет до сокращения вдвое завершен!"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "减半倒计时结束！"
           }
         }
       }
@@ -1656,9 +1726,6 @@
           }
         }
       }
-    },
-    "The halving countdown is finished!" : {
-
     },
     "totalEnviado" : {
       "extractionState" : "manual",

@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var viewModel = BlockchainViewModel()
+    
     @State private var tabSelection = 1
     @State private var tappedTwice: Bool = false
     
@@ -36,6 +39,7 @@ struct ContentView: View {
                                 tappedTwice = false
                             }
                         })
+                        .environmentObject(viewModel)
                 }
                 .tabItem {
                     Label(Texts.blockchain, systemImage: "cube.fill")

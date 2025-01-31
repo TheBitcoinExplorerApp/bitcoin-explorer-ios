@@ -22,6 +22,8 @@ class BlockchainViewModel: ObservableObject {
     @Published var hasFinishedHalving: Bool = false
     private var numberBlocksAfterLastHalving: Int64 = 0
     
+    @Published var totalFullNodes: Int = 0
+    
 }
 
 // Logics Mempool
@@ -65,7 +67,9 @@ extension BlockchainViewModel {
         }
         
         if lastHalvingBlock == halvingsList.last?.blockHeight {
-            hasFinishedHalving = true
+            Task { @MainActor in
+                hasFinishedHalving = true
+            }
             return 0
         }
         
@@ -142,6 +146,19 @@ extension BlockchainViewModel {
                     self.mempoolSize = mempool
                 case .failure(let error):
                     print("Error in fetch mempool size \(error)")
+                }
+            }
+        }
+    }
+    
+    func getFullNodes() {
+        self.apiHandler.fetchData(from: .fullNodes) { (result: Result<FullNode, Error>) in
+            Task { @MainActor in
+                switch result {
+                case .success(let fullNode):
+                    self.totalFullNodes = fullNode.results.first?.total_nodes ?? 0
+                case .failure(let error):
+                    print("Error in fetch full nodes \(error)")
                 }
             }
         }

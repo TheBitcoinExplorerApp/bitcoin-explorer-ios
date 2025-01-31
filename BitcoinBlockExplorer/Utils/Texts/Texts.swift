@@ -148,4 +148,12 @@ extension Texts {
     static let halving: String = String(localized: "Halving")
     
     static let restante: String = String(localized: "restante")
+    
+    static let halvingCountdownFinished: String = String(localized: "halvingCountdownFinished")
 }
+
+// Full node label
+extension Texts {
+    static let fullNode: String = String(localized: "fullNode")
+}
+
