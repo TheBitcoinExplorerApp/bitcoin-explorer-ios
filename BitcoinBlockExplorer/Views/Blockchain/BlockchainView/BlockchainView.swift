@@ -29,26 +29,20 @@ struct BlockchainView: View {
                     .id(1)
             }
             .refreshable {
-                viewModel.getFees()
-                viewModel.getBlockHeader(50)
-                viewModel.getMempoolData()
-                viewModel.getMempoolSize()
-                currencyViewModel.getCoins()
-                lastBlockViewModel.getLastBlock()
+                viewModel.fetchFees()
+                viewModel.fetchBlockHeader(50)
+                viewModel.fetchMempoolData()
+                viewModel.fetchMempoolSize()
+                currencyViewModel.fetchCoins()
+                lastBlockViewModel.fetchLastBlock()
                 viewModel.getFullNodes()
+                viewModel.fetchHashrate()
             }
             
-            AdViewComponent()
+#warning("comentado o add")
+//            AdViewComponent()
         }
-        
-        .task {
-            viewModel.getFees()
-            viewModel.getBlockHeader(50)
-            viewModel.getMempoolData()
-            viewModel.getMempoolSize()
-            viewModel.getFullNodes()
-        }
-        
+     
         .titleToolbar()
         
         .background(Color.background)
@@ -61,7 +55,13 @@ struct BlockchainView: View {
             fees
             blockchain
             HalvingView()
-            FullNodesView()
+            
+            HStack {
+                FullNodesView()
+                Spacer()
+                HashrateView()
+            }.padding(.horizontal)
+            
         }
     }
     
@@ -90,6 +90,9 @@ struct BlockchainView: View {
             }
         }
         .padding(.vertical)
+        .task {
+            viewModel.fetchFees()
+        }
     }
     
 }

@@ -24,7 +24,7 @@ struct CurrencyView: View {
         
         .task {
             withAnimation(.bouncy) {
-                currencyViewModel.getCoins()
+                currencyViewModel.fetchCoins()
             }
         }
         

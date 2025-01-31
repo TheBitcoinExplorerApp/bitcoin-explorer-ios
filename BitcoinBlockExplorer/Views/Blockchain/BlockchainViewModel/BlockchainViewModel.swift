@@ -22,12 +22,85 @@ class BlockchainViewModel: ObservableObject {
     @Published var hasFinishedHalving: Bool = false
     private var numberBlocksAfterLastHalving: Int64 = 0
     
-    @Published var totalFullNodes: Int = 0
+    @AppStorage("totalFullNodes") var totalFullNodes: Int = 0
+    private let fullNodesKey = "lastFullNodesFetchTime"
+    
+    @Published var hashRate: Double = 0
+    
+    init() {
+        self.fetchBlockHeader(50)
+        self.fetchMempoolData()
+        self.fetchMempoolSize()
+    }
     
 }
 
-// Logics Mempool
+// Fees
 extension BlockchainViewModel {
+    func fetchFees() {
+        self.apiHandler.fetchData(from: .fees) { (result: Result<Fee, Error>) in
+            Task { @MainActor in
+                switch result {
+                case .success(let fees):
+                    self.fees = [fees]
+                case .failure(let error):
+                    print("Error in fetch fess \(error)")
+                }
+            }
+        }
+    }
+}
+
+// Blocks Header
+extension BlockchainViewModel {
+    func fetchBlockHeader(_ maxBlockCount: Int) {
+        self.loading = true
+        
+        self.apiHandler.fetchData(from: .blockHeader) { (result: Result<[Block], Error>) in
+            Task { @MainActor in
+                self.loading = false
+                switch result {
+                case .success(let blocksHeader):
+                    if(blocksHeader.count > maxBlockCount){
+                        self.blockHeaderData = Array(blocksHeader.prefix(upTo: maxBlockCount))
+                    } else {
+                        self.blockHeaderData = blocksHeader
+                    }
+                case .failure(let error):
+                    print("Error in fetch blockHeader \(error)")
+                }
+            }
+        }
+    }
+}
+
+// Mempool
+extension BlockchainViewModel {
+    func fetchMempoolData() {
+        self.apiHandler.fetchData(from: .mempool) { (result: Result<Mempool, Error>) in
+            Task { @MainActor in
+                switch result {
+                case .success(let mempool):
+                    self.mempoolData = mempool
+                case .failure(let error):
+                    print("Error in fetch mempool \(error)")
+                }
+            }
+        }
+    }
+    
+    func fetchMempoolSize() {
+        self.apiHandler.fetchData(from: .mempoolSize) { (result: Result<[MempoolSize], Error>) in
+            Task { @MainActor in
+                switch result {
+                case .success(let mempool):
+                    self.mempoolSize = mempool
+                case .failure(let error):
+                    print("Error in fetch mempool size \(error)")
+                }
+            }
+        }
+    }
     
     func getTotalMempoolSize(_ mempoolSize: [MempoolSize]) -> Double {
         let totalSize = mempoolSize.map({ $0.blockSize }).reduce(0,+)
@@ -50,7 +123,6 @@ extension BlockchainViewModel {
         
         return totalBlocks
     }
-    
 }
 
 // Logics Halving
@@ -85,73 +157,14 @@ extension BlockchainViewModel {
     
     func getProgress(_ lastBlockHeight: Int64) -> Double {
         let progressPercentage = Double(self.getNumberBlocksAfterLastHalving(lastBlockHeight)) / Double.numberBlocksEachHalving
-    
+        
         return progressPercentage
     }
 }
 
-// API Fetchs
+// Full Nodes
 extension BlockchainViewModel {
-    func getFees() {
-        self.apiHandler.fetchData(from: .fees) { (result: Result<Fee, Error>) in
-            Task { @MainActor in
-                switch result {
-                case .success(let fees):
-                    self.fees = [fees]
-                case .failure(let error):
-                    print("Error in fetch fess \(error)")
-                }
-            }
-        }
-    }
-    
-    func getBlockHeader(_ maxBlockCount: Int) {
-        self.loading = true
-        
-        self.apiHandler.fetchData(from: .blockHeader) { (result: Result<[Block], Error>) in
-            Task { @MainActor in
-                self.loading = false
-                switch result {
-                case .success(let blocksHeader):
-                    if(blocksHeader.count > maxBlockCount){
-                        self.blockHeaderData = Array(blocksHeader.prefix(upTo: maxBlockCount))
-                    } else {
-                        self.blockHeaderData = blocksHeader
-                    }
-                case .failure(let error):
-                    print("Error in fetch blockHeader \(error)")
-                }
-            }
-        }
-    }
-    
-    func getMempoolData() {
-        self.apiHandler.fetchData(from: .mempool) { (result: Result<Mempool, Error>) in
-            Task { @MainActor in
-                switch result {
-                case .success(let mempool):
-                    self.mempoolData = mempool
-                case .failure(let error):
-                    print("Error in fetch mempool \(error)")
-                }
-            }
-        }
-    }
-    
-    func getMempoolSize() {
-        self.apiHandler.fetchData(from: .mempoolSize) { (result: Result<[MempoolSize], Error>) in
-            Task { @MainActor in
-                switch result {
-                case .success(let mempool):
-                    self.mempoolSize = mempool
-                case .failure(let error):
-                    print("Error in fetch mempool size \(error)")
-                }
-            }
-        }
-    }
-    
-    func getFullNodes() {
+     func fetchFullNodes() {
         self.apiHandler.fetchData(from: .fullNodes) { (result: Result<FullNode, Error>) in
             Task { @MainActor in
                 switch result {
@@ -163,5 +176,30 @@ extension BlockchainViewModel {
             }
         }
     }
+    
+    func getFullNodes() {
+        let now = Date()
+        let lastFetch = UserDefaults.standard.object(forKey: fullNodesKey) as? Date ?? Date.distantPast
+        
+        if now.timeIntervalSince(lastFetch) >= 3600 { // 3600 segundos = 1 hora
+            // Chamar a API apenas se já passou 1 hora
+            fetchFullNodes()
+            UserDefaults.standard.set(now, forKey: fullNodesKey)
+        }
+    }
 }
 
+extension BlockchainViewModel {
+    func fetchHashrate() {
+        self.apiHandler.fetchData(from: .hashrate) { (result: Result<Hashrate, Error>) in
+            Task { @MainActor in
+                switch result {
+                case .success(let hashrate):
+                    self.hashRate = hashrate.currentHashrate
+                case .failure(let error):
+                    print("Error in fetch hashrate \(error)")
+                }
+            }
+        }
+    }
+}

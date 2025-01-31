@@ -157,3 +157,7 @@ extension Texts {
     static let fullNode: String = String(localized: "fullNode")
 }
 
+// Hashrate
+extension Texts {
+    static let hashrate: String = String(localized: "hashrate")
+}

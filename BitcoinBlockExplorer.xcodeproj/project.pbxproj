@@ -43,6 +43,8 @@
 		9B65DF652D466DED007517B7 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B65DF642D466DE2007517B7 /* Endpoint.swift */; };
 		9B65DF672D4678A0007517B7 /* Mempool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B65DF662D46789B007517B7 /* Mempool.swift */; };
 		9B925AB22C74382A00A754C1 /* AdBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B925AB12C74382A00A754C1 /* AdBannerView.swift */; };
+		9BADB8F92D4CFF91007D0535 /* Hashrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADB8F82D4CFF8E007D0535 /* Hashrate.swift */; };
+		9BADB8FC2D4D0124007D0535 /* HashrateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADB8FB2D4D0124007D0535 /* HashrateView.swift */; };
 		9BB0E8732D4162F100C6777A /* SheetToolbarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB0E8722D4162D900C6777A /* SheetToolbarModifier.swift */; };
 		9BB0E8772D41684300C6777A /* EachBlockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB0E8762D41683D00C6777A /* EachBlockViewModel.swift */; };
 		9BC226122A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC226112A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift */; };
@@ -105,6 +107,8 @@
 		9B65DF662D46789B007517B7 /* Mempool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mempool.swift; sourceTree = "<group>"; };
 		9B925AB02C74367300A754C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9B925AB12C74382A00A754C1 /* AdBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBannerView.swift; sourceTree = "<group>"; };
+		9BADB8F82D4CFF8E007D0535 /* Hashrate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hashrate.swift; sourceTree = "<group>"; };
+		9BADB8FB2D4D0124007D0535 /* HashrateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashrateView.swift; sourceTree = "<group>"; };
 		9BB0E8722D4162D900C6777A /* SheetToolbarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetToolbarModifier.swift; sourceTree = "<group>"; };
 		9BB0E8762D41683D00C6777A /* EachBlockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachBlockViewModel.swift; sourceTree = "<group>"; };
 		9BC2260E2A0C68CA0069FDEB /* BitcoinBlockExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinBlockExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +169,7 @@
 		9B0C49302D41347100CE9929 /* BlockchainModels */ = {
 			isa = PBXGroup;
 			children = (
+				9BADB8F82D4CFF8E007D0535 /* Hashrate.swift */,
 				9BD669092D4C4771001709D1 /* FullNode.swift */,
 				9B65DF662D46789B007517B7 /* Mempool.swift */,
 				9B27E7152A12A8D000E8036E /* Fee.swift */,
@@ -380,6 +385,14 @@
 			path = Endpoints;
 			sourceTree = "<group>";
 		};
+		9BADB8FA2D4D0115007D0535 /* HashrateView */ = {
+			isa = PBXGroup;
+			children = (
+				9BADB8FB2D4D0124007D0535 /* HashrateView.swift */,
+			);
+			path = HashrateView;
+			sourceTree = "<group>";
+		};
 		9BBE4F652D400B7D00E2D991 /* TransactionsFeeComponents */ = {
 			isa = PBXGroup;
 			children = (
@@ -491,6 +504,7 @@
 		9BEEAC9C2C8F798B00E2E120 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				9BADB8FA2D4D0115007D0535 /* HashrateView */,
 				9BD6690B2D4C48ED001709D1 /* FullNodesView */,
 				9BD668FE2D4AA638001709D1 /* HalvingBlockchainView */,
 				9B0C492F2D41335D00CE9929 /* MempoolBlocksView */,
@@ -631,6 +645,7 @@
 			files = (
 				9BFA12452BAB104C000C0CB5 /* DonationsView.swift in Sources */,
 				9B23E5DF2A51E6F9007045A6 /* LastBlockViewModel.swift in Sources */,
+				9BADB8F92D4CFF91007D0535 /* Hashrate.swift in Sources */,
 				9BC487A62C1B8C89007E975A /* BitcoinWalletView.swift in Sources */,
 				9B2BC8F62A1548F900735A8D /* EveryTransactionsModel.swift in Sources */,
 				9B57DC582D3F38C200A810F5 /* APIHandler.swift in Sources */,
@@ -652,6 +667,7 @@
 				9BC226142A0C68CA0069FDEB /* ContentView.swift in Sources */,
 				9B4372742A1CFD7600DFE211 /* ValidateSearch.swift in Sources */,
 				9B1243872A166AC000B9A4AF /* EachTransaction.swift in Sources */,
+				9BADB8FC2D4D0124007D0535 /* HashrateView.swift in Sources */,
 				9BC487A82C1B8CC0007E975A /* LightningWalletView.swift in Sources */,
 				9B2321F12B851181000BFBA9 /* CurrencyViewModel.swift in Sources */,
 				9B65DF652D466DED007517B7 /* Endpoint.swift in Sources */,

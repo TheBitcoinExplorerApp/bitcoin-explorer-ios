@@ -930,6 +930,41 @@
         }
       }
     },
+    "hashrate" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hashrate"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hashrate"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taxa de Hash"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "хэшрейт"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "哈希率"
+          }
+        }
+      }
+    },
     "idTransacao" : {
       "extractionState" : "manual",
       "localizations" : {

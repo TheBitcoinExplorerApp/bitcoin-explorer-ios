@@ -16,7 +16,7 @@ class CurrencyViewModel: ObservableObject {
     
     @AppStorage("currency") var currency: Int = 0
     
-    func getCoins() {
+    func fetchCoins() {
         self.apiHandler.fetchData(from: .coins) { (result: Result<Coins, Error>) in
             Task { @MainActor in
                 switch result {

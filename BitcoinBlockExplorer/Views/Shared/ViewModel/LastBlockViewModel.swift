@@ -13,13 +13,13 @@ class LastBlockViewModel: ObservableObject {
     @Published var lastBlock: Int64 = 0
     
     init() {
-        self.getLastBlock()
+        self.fetchLastBlock()
     }
 }
 
 // API Fetchs
 extension LastBlockViewModel {
-    func getLastBlock() {
+    func fetchLastBlock() {
         self.apiHandler.fetchData(from: .lastBlock) { (result: Result<Int64, Error>) in
             Task { @MainActor in
                 switch result {

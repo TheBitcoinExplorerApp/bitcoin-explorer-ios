@@ -33,7 +33,7 @@ struct MempoolBlocksView: View {
                     HStack(spacing: 10) {
                         mempool
                         ForEach(viewModel.blockHeaderData, id: \.self) { block in
-                        
+                            
                             VStack {
                                 let tamanho = formatSizeToMB(block.size)
                                 
