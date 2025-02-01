@@ -12,7 +12,7 @@ struct BlockRewardView: View {
     
     var body: some View {
         VStack {
-            Text("Recompensa último bloco")
+            Text(Texts.blockReward)
                 .font(.body)
                 .bold()
                 .foregroundStyle(.texts)
