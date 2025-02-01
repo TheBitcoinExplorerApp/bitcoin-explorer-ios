@@ -38,6 +38,7 @@ struct BlockchainView: View {
                 viewModel.getFullNodes()
                 viewModel.fetchHashrate()
                 viewModel.fetchBlockReward()
+                viewModel.fetchDifficultyAdjustment()
             }
             
 #warning("comentado o add")
@@ -56,6 +57,8 @@ struct BlockchainView: View {
             fees
             blockchain
             HalvingView()
+            DifficultyAdjustmentView()
+                .padding(.bottom)
         
             HStack {
                 FullNodesView()

@@ -62,7 +62,6 @@ struct HalvingView: View {
         .padding()
         .onChange(of: lastBlockViewModel.lastBlock) { newBlock in
             self.progress = viewModel.getProgress(newBlock)
-            
         }
         
     }

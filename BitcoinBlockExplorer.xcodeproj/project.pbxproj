@@ -47,6 +47,8 @@
 		9BADB8FC2D4D0124007D0535 /* HashrateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADB8FB2D4D0124007D0535 /* HashrateView.swift */; };
 		9BADB8FE2D4D11FB007D0535 /* BlockReward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADB8FD2D4D11EE007D0535 /* BlockReward.swift */; };
 		9BADB9042D4D13D0007D0535 /* BlockRewardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADB9032D4D13D0007D0535 /* BlockRewardView.swift */; };
+		9BADB9072D4DA0E0007D0535 /* DifficultyAdjustment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADB9062D4DA0D1007D0535 /* DifficultyAdjustment.swift */; };
+		9BADB9092D4DA3D6007D0535 /* DifficultyAdjustmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADB9082D4DA3D6007D0535 /* DifficultyAdjustmentView.swift */; };
 		9BB0E8732D4162F100C6777A /* SheetToolbarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB0E8722D4162D900C6777A /* SheetToolbarModifier.swift */; };
 		9BB0E8772D41684300C6777A /* EachBlockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB0E8762D41683D00C6777A /* EachBlockViewModel.swift */; };
 		9BC226122A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC226112A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift */; };
@@ -113,6 +115,8 @@
 		9BADB8FB2D4D0124007D0535 /* HashrateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashrateView.swift; sourceTree = "<group>"; };
 		9BADB8FD2D4D11EE007D0535 /* BlockReward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockReward.swift; sourceTree = "<group>"; };
 		9BADB9032D4D13D0007D0535 /* BlockRewardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockRewardView.swift; sourceTree = "<group>"; };
+		9BADB9062D4DA0D1007D0535 /* DifficultyAdjustment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyAdjustment.swift; sourceTree = "<group>"; };
+		9BADB9082D4DA3D6007D0535 /* DifficultyAdjustmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyAdjustmentView.swift; sourceTree = "<group>"; };
 		9BB0E8722D4162D900C6777A /* SheetToolbarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetToolbarModifier.swift; sourceTree = "<group>"; };
 		9BB0E8762D41683D00C6777A /* EachBlockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachBlockViewModel.swift; sourceTree = "<group>"; };
 		9BC2260E2A0C68CA0069FDEB /* BitcoinBlockExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinBlockExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -395,6 +399,15 @@
 			path = BlockReward;
 			sourceTree = "<group>";
 		};
+		9BADB9052D4DA0B5007D0535 /* DifficultyAdjustment */ = {
+			isa = PBXGroup;
+			children = (
+				9BADB9062D4DA0D1007D0535 /* DifficultyAdjustment.swift */,
+				9BADB9082D4DA3D6007D0535 /* DifficultyAdjustmentView.swift */,
+			);
+			path = DifficultyAdjustment;
+			sourceTree = "<group>";
+		};
 		9BBE4F652D400B7D00E2D991 /* TransactionsFee */ = {
 			isa = PBXGroup;
 			children = (
@@ -509,6 +522,7 @@
 		9BEEAC9C2C8F798B00E2E120 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				9BADB9052D4DA0B5007D0535 /* DifficultyAdjustment */,
 				9BADB9022D4D13BE007D0535 /* BlockReward */,
 				9BADB8FA2D4D0115007D0535 /* Hashrate */,
 				9BD6690B2D4C48ED001709D1 /* FullNodes */,
@@ -650,6 +664,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BFA12452BAB104C000C0CB5 /* DonationsView.swift in Sources */,
+				9BADB9072D4DA0E0007D0535 /* DifficultyAdjustment.swift in Sources */,
 				9B23E5DF2A51E6F9007045A6 /* LastBlockViewModel.swift in Sources */,
 				9BADB8F92D4CFF91007D0535 /* Hashrate.swift in Sources */,
 				9BADB9042D4D13D0007D0535 /* BlockRewardView.swift in Sources */,
@@ -682,6 +697,7 @@
 				9BEEAC9E2C8F799C00E2E120 /* BlockchainFeeViewComponent.swift in Sources */,
 				9B3514912D2F45180034FF98 /* StoreKitView.swift in Sources */,
 				9B2BC8F22A13FE5900735A8D /* BlockchainView.swift in Sources */,
+				9BADB9092D4DA3D6007D0535 /* DifficultyAdjustmentView.swift in Sources */,
 				9B27E7162A12A8D000E8036E /* Fee.swift in Sources */,
 				9B2321F32B851866000BFBA9 /* ConfigurationsView.swift in Sources */,
 				9BD669042D4BB376001709D1 /* HalvingView.swift in Sources */,

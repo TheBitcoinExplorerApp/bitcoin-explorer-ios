@@ -162,6 +162,12 @@ extension Texts {
     static let hashrate: String = String(localized: "hashrate")
 }
 
+// Block Reward
 extension Texts {
     static let blockReward: String = String(localized: "blockReward")
+}
+
+// Difficult Adjustment
+extension Texts {
+    static let difficultAdjustment: String = String(localized: "difficultAdjustment")
 }

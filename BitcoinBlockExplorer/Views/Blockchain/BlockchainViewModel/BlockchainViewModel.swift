@@ -29,6 +29,8 @@ class BlockchainViewModel: ObservableObject {
     
     @Published var blockReward: Double = 0
     
+    @Published var difficultAdjustment: DifficultyAdjustment?
+    
     init() {
         self.fetchBlockHeader(50)
         self.fetchMempoolData()
@@ -219,6 +221,22 @@ extension BlockchainViewModel {
                     }
                 case .failure(let error):
                     print("Error in fetch block reward \(error)")
+                }
+            }
+        }
+    }
+}
+
+// DifficultyAdjustment
+extension BlockchainViewModel {
+    func fetchDifficultyAdjustment() {
+        self.apiHandler.fetchData(from: .difficultyAdjustment) { (result: Result<DifficultyAdjustment, Error>) in
+            Task { @MainActor in
+                switch result {
+                case .success(let difficultyAdjustment):
+                    self.difficultAdjustment = difficultyAdjustment
+                case .failure(let error):
+                    print("Error in fetch difficult adjustment \(error)")
                 }
             }
         }

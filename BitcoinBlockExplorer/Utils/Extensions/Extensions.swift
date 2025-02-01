@@ -21,6 +21,8 @@ extension Double {
     static let numberBlocksEachHalving: Double = 210000
     
     static let hashToExahash: Double = 1000000000000000000
+    
+    static let difficultAdjustment: Double = 2016
 }
 
 extension Int64 {
