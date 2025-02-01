@@ -1,42 +1,35 @@
 //
-//  HashrateView.swift
+//  FullNodesView.swift
 //  BitcoinBlockExplorer
 //
-//  Created by Victor Hugo Pacheco Araujo on 31/01/25.
+//  Created by Victor Hugo Pacheco Araujo on 30/01/25.
 //
 
 import SwiftUI
 
-struct HashrateView: View {
+struct FullNodesView: View {
     @EnvironmentObject var viewModel: BlockchainViewModel
     
     var body: some View {
         VStack {
-            Text(Texts.hashrate)
+            Text(Texts.fullNode)
                 .font(.body)
                 .bold()
                 .foregroundStyle(.texts)
-            Text("\(formatHashrate(viewModel.hashRate))")
-                .font(.title2)
+            Text("\(viewModel.totalFullNodes)")
+                .font(.title3)
                 .foregroundStyle(.primaryText)
                 .padding()
                 .background(Color.backgroundBox)
                 .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
         }
         .task {
-            viewModel.fetchHashrate()
+            viewModel.getFullNodes()
         }
     }
-    
-    private func formatHashrate(_ hashrate: Double) -> String {
-        let exahash = hashrate / Double.hashToExahash
-        
-        return String(format: "%.2f EH/s", exahash)
-    }
-    
 }
 
 #Preview {
-    HashrateView()
+    FullNodesView()
         .environmentObject(BlockchainViewModel())
 }

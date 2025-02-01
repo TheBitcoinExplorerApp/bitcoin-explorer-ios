@@ -8,7 +8,7 @@
 
 enum Endpoint {
     case fees, blockHeader, blockTransactions(hash: String), coins, coins2, mempool, mempoolSize, lastBlock,
-    fullNodes, hashrate
+    fullNodes, hashrate, blockReward
     
     var endpoint: String {
         switch self {
@@ -32,6 +32,8 @@ enum Endpoint {
             return "https://bitnodes.io/api/v1/snapshots/"
         case .hashrate:
             return "https://mempool.space/api/v1/mining/hashrate/3d"
+        case .blockReward:
+            return "https://mempool.space/api/v1/mining/reward-stats/1"
         }
         
     }

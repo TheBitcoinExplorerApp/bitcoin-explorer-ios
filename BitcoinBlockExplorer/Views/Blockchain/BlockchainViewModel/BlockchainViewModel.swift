@@ -27,6 +27,8 @@ class BlockchainViewModel: ObservableObject {
     
     @Published var hashRate: Double = 0
     
+    @Published var blockReward: Double = 0
+    
     init() {
         self.fetchBlockHeader(50)
         self.fetchMempoolData()
@@ -189,6 +191,7 @@ extension BlockchainViewModel {
     }
 }
 
+// Hashrate
 extension BlockchainViewModel {
     func fetchHashrate() {
         self.apiHandler.fetchData(from: .hashrate) { (result: Result<Hashrate, Error>) in
@@ -198,6 +201,24 @@ extension BlockchainViewModel {
                     self.hashRate = hashrate.currentHashrate
                 case .failure(let error):
                     print("Error in fetch hashrate \(error)")
+                }
+            }
+        }
+    }
+}
+
+// Block Reward
+extension BlockchainViewModel {
+    func fetchBlockReward() {
+        self.apiHandler.fetchData(from: .blockReward) { (result: Result<BlockReward, Error>) in
+            Task { @MainActor in
+                switch result {
+                case .success(let blockReward):
+                    if let reward = Double(blockReward.totalReward) {
+                        self.blockReward = reward
+                    }
+                case .failure(let error):
+                    print("Error in fetch block reward \(error)")
                 }
             }
         }
