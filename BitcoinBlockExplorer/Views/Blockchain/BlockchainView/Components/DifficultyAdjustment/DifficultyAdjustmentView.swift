@@ -36,7 +36,7 @@ struct DifficultyAdjustmentView: View {
                 
                 RoundedRectangle(cornerRadius: CGFloat.cornerRadius)
                     .frame(height: 25)
-                    .foregroundStyle(Color.background)
+                    .foregroundStyle(Color.myBackground)
                     .overlay(alignment: .leading) {
                         GeometryReader { geometry in
                             RoundedRectangle(cornerRadius: CGFloat.cornerRadius)

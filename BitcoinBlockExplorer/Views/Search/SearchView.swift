@@ -24,7 +24,7 @@ struct SearchView: View {
             BoxTransactions()
                 .id(2)
         }
-        .background(Color.background)
+        .background(Color.myBackground)
         
         .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: Texts.searchPlaceholder) {
         }
@@ -42,11 +42,11 @@ struct SearchView: View {
         
         .sheet(isPresented: $abrirModalAddress ) {
             EachAddressView(addressSearch: $addressSearch, abrirModalAddress: $abrirModalAddress)
-                .presentationBackground(Color.background)
+                .presentationBackground(Color.myBackground)
         }
         .sheet(isPresented: $abrirModalTransaction) {
             EachTransaction(idTransacaoButton: $idTransacaoButton, idTransacaoSearch: $idTransacaoSearch, abrirModalTransaction: $abrirModalTransaction)
-                .presentationBackground(Color.background)
+                .presentationBackground(Color.myBackground)
         }
         
         .titleToolbar()

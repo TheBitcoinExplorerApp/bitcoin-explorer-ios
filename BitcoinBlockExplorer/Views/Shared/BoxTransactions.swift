@@ -99,7 +99,7 @@ struct BoxTransactions: View {
         .padding()
         .sheet(isPresented: $abrirModalTransaction) {
             EachTransaction(idTransacaoButton: $idTransacaoButton, idTransacaoSearch: $idTransacaoSearch, abrirModalTransaction: $abrirModalTransaction)
-                .presentationBackground(Color.background)
+                .presentationBackground(Color.myBackground)
         }
         
         .task {

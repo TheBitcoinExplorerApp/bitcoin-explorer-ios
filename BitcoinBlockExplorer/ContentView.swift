@@ -44,7 +44,7 @@ struct ContentView: View {
                 .tabItem {
                     Label(Texts.blockchain, systemImage: "cube.fill")
                 }
-                .toolbarBackground(Color.background, for: .tabBar)
+                .toolbarBackground(Color.myBackground, for: .tabBar)
                 .tag(1)
                 
                 NavigationStack {
@@ -61,7 +61,7 @@ struct ContentView: View {
                 .tabItem {
                     Label(Texts.search, systemImage: "magnifyingglass")
                 }
-                .toolbarBackground(Color.background, for: .tabBar)
+                .toolbarBackground(Color.myBackground, for: .tabBar)
                 .tag(2)
                 
                 NavigationStack {
@@ -70,7 +70,7 @@ struct ContentView: View {
                 .tabItem {
                     Label(Texts.configuracoes, systemImage: "gearshape.fill")
                 }
-                .toolbarBackground(Color.background, for: .tabBar)
+                .toolbarBackground(Color.myBackground, for: .tabBar)
                 .tag(3)
                 
             }

@@ -40,7 +40,7 @@ struct SheetToolbarModifier: ViewModifier {
                         .bold()
                         .font(.headline)
                 }
-            }.toolbarBackground(Color.background, for: .navigationBar)
+            }.toolbarBackground(Color.myBackground, for: .navigationBar)
     }
 }
 

@@ -74,7 +74,7 @@ struct MempoolBlocksView: View {
         }
         .sheet(isPresented: $abrirModal) {
             EachBlock(abrirModal: $abrirModal, blockHeader: $blockHeader)
-                .presentationBackground(Color.background)
+                .presentationBackground(Color.myBackground)
         }
     }
     

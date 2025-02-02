@@ -11,6 +11,7 @@ struct BlockchainView: View {
     @EnvironmentObject var viewModel: BlockchainViewModel
     @EnvironmentObject var lastBlockViewModel: LastBlockViewModel
     @EnvironmentObject var currencyViewModel:  CurrencyViewModel
+    @EnvironmentObject var networkMonitor: NetworkMonitor
     
     // Search variables
     @StateObject var validateAddresses = Validate()
@@ -44,31 +45,37 @@ struct BlockchainView: View {
 #warning("comentado o add")
 //            AdViewComponent()
         }
-     
+   
         .titleToolbar()
         
-        .background(Color.background)
+        .background(Color.myBackground)
         
     }
     
     var blockchainView: some View {
         VStack {
-            BitcoinPriceViewComponent()
-            fees
-            blockchain
-            HalvingView()
-            DifficultyAdjustmentView()
-                .padding(.bottom)
-        
-            HStack {
-                FullNodesView()
-                Spacer()
-                HashrateView()
-            }
-            .padding(.horizontal)
-            .padding(.bottom)
+            if networkMonitor.isConnected {
+                
+                BitcoinPriceViewComponent()
+                fees
+                blockchain
+                HalvingView()
+                DifficultyAdjustmentView()
+                    .padding(.bottom)
             
-            BlockRewardView()
+                HStack {
+                    FullNodesView()
+                    Spacer()
+                    HashrateView()
+                }
+                .padding(.horizontal)
+                .padding(.bottom)
+                
+                BlockRewardView()
+                
+            } else {
+                NetworkConnectionView()
+            }
         }
     }
     
@@ -110,4 +117,5 @@ struct BlockchainView: View {
         .environmentObject(AddManager())
         .environmentObject(LastBlockViewModel())
         .environmentObject(BlockchainViewModel())
+        .environmentObject(NetworkMonitor())
 }

@@ -171,3 +171,8 @@ extension Texts {
 extension Texts {
     static let difficultAdjustment: String = String(localized: "difficultAdjustment")
 }
+
+// Internet connection Label
+extension Texts {
+    static let internetConnectionLabel: String = String(localized: "internetConnectionLabel")
+}

@@ -58,7 +58,7 @@ struct LightningWalletView: View {
             Spacer()
             
         }.padding()
-            .background(Color.background)
+            .background(Color.myBackground)
         
             .overlay(
                 Group {

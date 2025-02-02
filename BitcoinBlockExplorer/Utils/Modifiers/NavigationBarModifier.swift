@@ -27,7 +27,7 @@ struct NavigationBarModifier: ViewModifier {
                         .font(.title3)
                 }
             }
-            .toolbarBackground(Color.background, for: .navigationBar)
+            .toolbarBackground(Color.myBackground, for: .navigationBar)
     }
 }
 

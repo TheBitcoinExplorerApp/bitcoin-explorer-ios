@@ -16,7 +16,7 @@ struct DonationsView: View {
             
             LightningWalletView()
             
-        }.background(Color.background)
+        }.background(Color.myBackground)
             .tabViewStyle(.page(indexDisplayMode: .always))
             .indexViewStyle(.page(backgroundDisplayMode: .always))
         

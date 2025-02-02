@@ -13,10 +13,12 @@ struct BitcoinBlockExplorerApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     @StateObject var addManager = AddManager()
+    @StateObject var networkMonitor = NetworkMonitor()
+    
     @StateObject var currencyViewModel = CurrencyViewModel()
     @StateObject var subscriptionStore = SubscriptionStore()
     @StateObject var lastBlockViewModel = LastBlockViewModel()
-    
+
     var body: some Scene {
         WindowGroup {
             ContentView()
@@ -24,6 +26,7 @@ struct BitcoinBlockExplorerApp: App {
                 .environmentObject(currencyViewModel)
                 .environmentObject(subscriptionStore)
                 .environmentObject(lastBlockViewModel)
+                .environmentObject(networkMonitor)
         }
     }
 }

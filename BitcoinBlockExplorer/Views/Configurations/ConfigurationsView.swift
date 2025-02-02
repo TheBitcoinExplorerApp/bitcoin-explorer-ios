@@ -60,13 +60,13 @@ struct ConfigurationsView: View {
             }
             .navigationTitle(Texts.configuracoes)
             .navigationBarTitleColor(Color.primaryText)
-            .background(Color.background)
+            .background(Color.myBackground)
             .scrollContentBackground(.hidden)
             
             AdViewComponent()
             
         }
-        .background(Color.background)
+        .background(Color.myBackground)
        
     }
 }
