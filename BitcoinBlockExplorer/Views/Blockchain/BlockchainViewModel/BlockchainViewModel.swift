@@ -30,13 +30,7 @@ class BlockchainViewModel: ObservableObject {
     @Published var blockReward: Double = 0
     
     @Published var difficultAdjustment: DifficultyAdjustment?
-    
-    init() {
-        self.fetchBlockHeader(50)
-        self.fetchMempoolData()
-        self.fetchMempoolSize()
-    }
-    
+        
 }
 
 // Fees

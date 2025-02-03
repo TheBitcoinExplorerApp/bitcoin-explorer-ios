@@ -45,7 +45,13 @@ struct BlockchainView: View {
 #warning("comentado o add")
 //            AdViewComponent()
         }
-   
+        
+        .task {
+            viewModel.fetchBlockHeader(50)
+            viewModel.fetchMempoolData()
+            viewModel.fetchMempoolSize()
+        }
+ 
         .titleToolbar()
         
         .background(Color.myBackground)

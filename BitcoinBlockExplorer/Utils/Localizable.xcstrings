@@ -1076,31 +1076,31 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Überprüfen Sie Ihre Internetverbindung"
+            "value" : "Bitte überprüfen Sie Ihre Internetverbindung und aktualisieren Sie die App."
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Check your internet connection!"
+            "value" : "Please, check your internet connection and refresh the app."
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Verifique sua conexão a internet!"
+            "value" : "Verifique sua conexão a internet e recarregue o aplicativo."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Проверьте подключение к Интернету"
+            "value" : "Пожалуйста, проверьте свое интернет-соединение и обновите приложение."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "检查你的互联网连接"
+            "value" : "请检查您的互联网连接并刷新应用程序."
           }
         }
       }
