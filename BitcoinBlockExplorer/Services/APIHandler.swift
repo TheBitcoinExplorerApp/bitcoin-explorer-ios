@@ -19,15 +19,9 @@ class APIHandler {
             completion(.failure(URLError(.badURL)))
             return
         }
-        
-        let config = URLSessionConfiguration.default
-        config.timeoutIntervalForRequest = 40  // Timeout after 5 seconds
-        config.timeoutIntervalForResource = 60 // Total resource timeout
-        
-        let session = URLSession(configuration: config)
-        
+    
         // Cria a tarefa
-        let task = session.dataTask(with: url) { data, response, error in
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
           
             // Verifica erros de rede
             if let error = error {
