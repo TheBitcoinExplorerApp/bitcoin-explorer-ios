@@ -61,20 +61,27 @@ struct StoreKitView: View {
                     .padding()
                     
                     ForEach(store.subscriptions) { subs in
-                        VStack(alignment: .leading) {
-                            Text(subs.displayName)
-                                .font(.system(.title3, design: .rounded).bold())
+                        VStack {
                             
-                            Text("\(subs.displayPrice) \(Texts.perMonth)")
+                            VStack(alignment: .leading) {
+                                Text(subs.displayName)
+                                    .font(.system(.title3, design: .rounded).bold())
+                                
+                                Text("\(subs.displayPrice) \(Texts.perMonth)")
+                            }
                             
-                            Button(Texts.subscribe) {
+                            Button {
                                 Task {
                                     await store.purchase(subs)
                                 }
+                            } label: {
+                                Text(Texts.subscribe)
+                                    .font(.title2)
+                                    .bold()
                             }
                             .tint(Color.primaryText)
                             .buttonStyle(.bordered)
-                            .font(.callout.bold())
+                        
                         }
                         .padding()
                         .background(Color.backgroundBox)
