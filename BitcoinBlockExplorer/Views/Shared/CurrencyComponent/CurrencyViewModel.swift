@@ -11,7 +11,6 @@ class CurrencyViewModel: ObservableObject {
     private let apiHandler = APIHandler()
 
     @Published var price: Double = 0
-    @Published var showErrorAlert = false
 
     var flag: String = "🇺🇸"
     var symbol: String?
@@ -57,7 +56,6 @@ class CurrencyViewModel: ObservableObject {
                     }
                 case .failure(let error):
                     print("Error in fetch coins \(error)")
-                    self.showErrorAlert = true
                 }
             }
         }
@@ -80,7 +78,6 @@ class CurrencyViewModel: ObservableObject {
                     }
                 case .failure(let error):
                     print("Error in fetch coins 2 \(error)")
-                    self.showErrorAlert = true
                 }
             }
         }

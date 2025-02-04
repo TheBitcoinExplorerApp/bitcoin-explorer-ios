@@ -21,8 +21,8 @@ class APIHandler {
         }
         
         let config = URLSessionConfiguration.default
-        config.timeoutIntervalForRequest = 10  // Timeout after 5 seconds
-        config.timeoutIntervalForResource = 30 // Total resource timeout
+        config.timeoutIntervalForRequest = 40  // Timeout after 5 seconds
+        config.timeoutIntervalForResource = 60 // Total resource timeout
         
         let session = URLSession(configuration: config)
         
