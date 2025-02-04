@@ -122,4 +122,5 @@ struct BlockchainView: View {
         .environmentObject(LastBlockViewModel())
         .environmentObject(BlockchainViewModel())
         .environmentObject(NetworkMonitor())
+        .environmentObject(SubscriptionStore())
 }

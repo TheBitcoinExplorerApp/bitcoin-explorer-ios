@@ -10,7 +10,7 @@ import SwiftUI
 struct EachBlock: View {
     
     @StateObject var viewModel = EachBlockViewModel()
-   
+    
     @Binding var abrirModal: Bool
     @Binding var blockHeader: Block?
     
@@ -19,50 +19,47 @@ struct EachBlock: View {
     var largura = UIScreen.main.bounds.size.width
     
     var body: some View {
-        NavigationStack {
-            
-            VStack{
-                ScrollView{
-                                        
-                    header
-                    
-                    HStack{
-                        Text("\(blockHeader?.tx_count ?? 0) \(Texts.transacoesMaiusculo)")
-                            .foregroundColor(Color.texts)
-                            .font(.callout)
-                        Spacer()
-                    }
-                    .padding(.horizontal)
-                    .padding(.top)
-                    
-                    if viewModel.loading {
-                        ProgressView().scaleEffect(1.2)
-                    } else {
-                        transactions
-                    }
+        
+        VStack{
+            ScrollView{
+                
+                header
+                
+                HStack{
+                    Text("\(blockHeader?.tx_count ?? 0) \(Texts.transacoesMaiusculo)")
+                        .foregroundColor(Color.texts)
+                        .font(.callout)
+                    Spacer()
+                }
+                .padding(.horizontal)
+                .padding(.top)
+                
+                if viewModel.loading {
+                    ProgressView().scaleEffect(1.2)
+                } else {
+                    transactions
                 }
             }
-            
-            .overlay {
-                if showToast {
-                    withAnimation() {
-                        ToastView()
-                            .frame(maxHeight: .infinity, alignment: .bottom)
-                            .transition(.move(edge: .bottom))
-                    }
-                    
-                }
-            }
-            
-            .task {
-                viewModel.getBlockTransactions(blockHeader?.id ?? "")
-            }
-            
-            .sheetToolbar(title: Texts.blocoMaiusculo)
-            
-            .errorAlert(showAlert: $viewModel.showErrorAlert)
-
         }
+        
+        .overlay {
+            if showToast {
+                withAnimation() {
+                    ToastView()
+                        .frame(maxHeight: .infinity, alignment: .bottom)
+                        .transition(.move(edge: .bottom))
+                }
+                
+            }
+        }
+        
+        .task {
+            viewModel.getBlockTransactions(blockHeader?.id ?? "")
+        }
+        
+        .sheetToolbar(title: Texts.blocoMaiusculo)
+        
+        .errorAlert(showAlert: $viewModel.showErrorAlert)
         
     }
     

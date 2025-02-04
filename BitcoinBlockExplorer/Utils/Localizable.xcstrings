@@ -198,6 +198,41 @@
         }
       }
     },
+    "bitcoinBlockPro" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitcoin Block Explorer Pro"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitcoin Block Explorer Pro"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitcoin Block Explorer Pro"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обозреватель биткойн-блоков Pro"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "比特币区块浏览器专业版"
+          }
+        }
+      }
+    },
     "bitcoinPrice" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -264,6 +299,41 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "区块链"
+          }
+        }
+      }
+    },
+    "BlockchainExplorerAndFees" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blockchain Explorer und Gebühren"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blockchain Explorer and Fees"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Explorador da blockchain e taxas"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Исследователь блокчейна и сборы"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "区块链浏览器和费用"
           }
         }
       }
@@ -369,6 +439,41 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "区块"
+          }
+        }
+      }
+    },
+    "calculator" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kalkulator"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calculator"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calculadora"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Калькулятор"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "计算器"
           }
         }
       }
@@ -929,6 +1034,41 @@
         }
       }
     },
+    "free" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frei"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Free"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grátis"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Свободный"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自由的"
+          }
+        }
+      }
+    },
     "fullNode" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -960,6 +1100,41 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "节点"
+          }
+        }
+      }
+    },
+    "fullNodeHashrateAndBlockRewardLabelStoreKit" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Knoten, Hashrate und Blockbelohnung"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full Nodes, Hashrate and Block Reward"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nós, Taxa de Hash e Recompensa último bloco"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Узлы, хэшрейт и вознаграждение за блок"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完整节点、哈希率和区块奖励"
           }
         }
       }
@@ -1030,6 +1205,41 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "减半倒计时结束！"
+          }
+        }
+      }
+    },
+    "halvingCountdownLabelStoreKit" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halving Countdown"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halving Countdown"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contagem do Halving"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "халвинг Обратный отсчет"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "减半倒计时"
           }
         }
       }
@@ -1417,6 +1627,76 @@
         }
       }
     },
+    "perMonth" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "pro Monat"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "per month"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "por mês"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "в месяц"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "每月"
+          }
+        }
+      }
+    },
+    "pro" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro"
+          }
+        }
+      }
+    },
     "reportIssues" : {
       "localizations" : {
         "de" : {
@@ -1762,6 +2042,41 @@
         }
       }
     },
+    "searchTransactionsBlocksAndAddress" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suche nach Transaktionen, Blöcken und Adressen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search Transactions, Blocks and Addresses"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pesquise transações, blocos e endereços"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поиск транзакций, блоков и адресов"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "搜索交易、区块和地址"
+          }
+        }
+      }
+    },
     "sourceCode" : {
       "localizations" : {
         "de" : {
@@ -1792,6 +2107,41 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "源代码"
+          }
+        }
+      }
+    },
+    "subscribe" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abonnieren"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subscribe"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Assine"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Подписываться"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "订阅"
           }
         }
       }

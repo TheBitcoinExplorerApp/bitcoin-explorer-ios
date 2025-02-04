@@ -16,6 +16,8 @@ struct Texts {
     static let blockchain: String = String(localized: "blockchain")
     
     static let search: String = String(localized: "search")
+    
+    static let calculator: String = String(localized: "calculator")
 }
 
 // Fees
@@ -180,4 +182,26 @@ extension Texts {
 // Error Alert
 extension Texts {
     static let errorMessage: String = String(localized: "errorMessage")
+}
+
+// Subscribe View
+extension Texts {
+    static let free: String = String(localized: "free")
+    
+    static let pro: String = String(localized: "pro")
+    
+    static let BlockchainExplorerAndFees: String = String(localized: "BlockchainExplorerAndFees")
+    
+    static let searchTransactionsBlocksAndAddress: String = String(localized: "searchTransactionsBlocksAndAddress")
+    
+    static let halvingCountdownLabelStoreKit: String = String(localized: "halvingCountdownLabelStoreKit")
+        
+    static let fullNodeHashrateAndBlockRewardLabelStoreKit: String = String(localized: "fullNodeHashrateAndBlockRewardLabelStoreKit")
+    
+    static let perMonth: String = String(localized: "perMonth")
+    
+    static let subscribe: String = String(localized: "subscribe")
+    
+    static let bitcoinBlockPro: String = String(localized: "bitcoinBlockPro")
+    
 }

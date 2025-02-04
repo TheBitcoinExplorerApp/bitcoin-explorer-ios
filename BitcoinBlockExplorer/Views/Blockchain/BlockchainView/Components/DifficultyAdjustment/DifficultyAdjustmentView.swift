@@ -50,6 +50,8 @@ struct DifficultyAdjustmentView: View {
             .background(Color.backgroundBox)
             .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
             
+            .lockView()
+            
         }
         .padding(.horizontal)
         
@@ -78,4 +80,5 @@ struct DifficultyAdjustmentView: View {
 #Preview {
     DifficultyAdjustmentView()
         .environmentObject(BlockchainViewModel())
+        .environmentObject(SubscriptionStore())
 }

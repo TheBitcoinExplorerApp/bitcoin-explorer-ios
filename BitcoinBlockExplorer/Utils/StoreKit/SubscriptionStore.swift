@@ -191,7 +191,7 @@ private extension SubscriptionStore {
                 
                 switch transaction.productType {
                 case .autoRenewable:
-                    if let subscription = subscriptions.first(where: {$0.id == transaction.productID}) {
+                    if let _ = subscriptions.first(where: {$0.id == transaction.productID}) {
                         purschasedSubscriptions = true
                     }
                 default:

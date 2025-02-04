@@ -27,6 +27,8 @@ struct BlockRewardView: View {
                 .background(Color.backgroundBox)
                 .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
             
+                .lockView()
+            
         }
         .padding(.bottom)
         

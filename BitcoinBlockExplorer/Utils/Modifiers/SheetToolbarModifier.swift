@@ -14,33 +14,35 @@ struct SheetToolbarModifier: ViewModifier {
     var title: String = ""
     
     func body(content: Content) -> some View {
-        content
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button{
-                        dismiss()
-                    } label: {
-                        Circle()
-                            .fill()
-                            .foregroundStyle(Color.dismissBackground)
-                            .frame(width: 30, height: 30)
-                            .overlay() {
-                                Text("X")
-                                    .clipShape(Circle())
-                                    .font(.system(size: 22.5))
-                                    .foregroundColor(Color.primaryText)
-                            }
+        NavigationStack {
+            content
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button{
+                            dismiss()
+                        } label: {
+                            Circle()
+                                .fill()
+                                .foregroundStyle(Color.dismissBackground)
+                                .frame(width: 30, height: 30)
+                                .overlay() {
+                                    Text("X")
+                                        .clipShape(Circle())
+                                        .font(.system(size: 22.5))
+                                        .foregroundColor(Color.primaryText)
+                                }
+                        }
                     }
-                }
-                
-                ToolbarItem(placement: .principal) {
-                    Text(title)
-                        .foregroundStyle(Color.texts)
-                        .bold()
-                        .font(.headline)
-                }
-            }.toolbarBackground(Color.myBackground, for: .navigationBar)
+                    
+                    ToolbarItem(placement: .principal) {
+                        Text(title)
+                            .foregroundStyle(Color.texts)
+                            .bold()
+                            .font(.headline)
+                    }
+                }.toolbarBackground(Color.myBackground, for: .navigationBar)
+        }
     }
 }
 

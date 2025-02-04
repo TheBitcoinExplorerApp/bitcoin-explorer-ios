@@ -13,7 +13,7 @@ struct HalvingView: View {
     @EnvironmentObject var lastBlockViewModel: LastBlockViewModel
     
     @State private var progress: CGFloat = 0.0
-    
+        
     var body: some View {
         VStack {
             HStack {
@@ -56,8 +56,10 @@ struct HalvingView: View {
                 .padding()
                 .background(Color.backgroundBox)
                 .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
+                
+                .lockView()
+                
             }
-            
         }
         .padding()
         .onChange(of: lastBlockViewModel.lastBlock) { newBlock in
@@ -75,4 +77,5 @@ struct HalvingView: View {
     HalvingView()
         .environmentObject(LastBlockViewModel())
         .environmentObject(BlockchainViewModel())
+        .environmentObject(SubscriptionStore())
 }

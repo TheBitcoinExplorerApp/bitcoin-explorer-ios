@@ -22,6 +22,8 @@ struct FullNodesView: View {
                 .padding()
                 .background(Color.backgroundBox)
                 .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
+            
+                .lockView()
         }
         .task {
             viewModel.getFullNodes()

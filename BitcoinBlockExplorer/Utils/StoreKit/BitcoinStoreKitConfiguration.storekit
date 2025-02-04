@@ -93,7 +93,11 @@
     {
       "id" : "EDD56862",
       "localizations" : [
-
+        {
+          "description" : "Acesse todos os dados",
+          "displayName" : "Bitcoin Block Explorer",
+          "locale" : "pt_BR"
+        }
       ],
       "name" : "All Features",
       "subscriptions" : [
@@ -112,13 +116,18 @@
           "localizations" : [
             {
               "description" : "Access to the all Bitcoin Blockchain data\n",
-              "displayName" : "All Access",
+              "displayName" : "Bitcoin Block Explorer Pro",
               "locale" : "en_US"
+            },
+            {
+              "description" : "Acesse todos os dados da Blockchain",
+              "displayName" : "Bitcoin Block Explorer Pro",
+              "locale" : "pt_BR"
             }
           ],
           "productID" : "VictorHugoPachecoAraujo.BitcoinBlockExplorer.monthly",
           "recurringSubscriptionPeriod" : "P1M",
-          "referenceName" : "Bitcoin Block - All access",
+          "referenceName" : "Bitcoin Block Explorer Pro",
           "subscriptionGroupID" : "EDD56862",
           "type" : "RecurringSubscription",
           "winbackOffers" : [

@@ -22,6 +22,8 @@ struct HashrateView: View {
                 .padding()
                 .background(Color.backgroundBox)
                 .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
+            
+                .lockView()
         }
         .task {
             viewModel.fetchHashrate()
@@ -39,4 +41,5 @@ struct HashrateView: View {
 #Preview {
     HashrateView()
         .environmentObject(BlockchainViewModel())
+        .environmentObject(SubscriptionStore())
 }

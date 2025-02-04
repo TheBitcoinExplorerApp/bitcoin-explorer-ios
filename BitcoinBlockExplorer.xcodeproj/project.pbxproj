@@ -12,6 +12,9 @@
 		9B1243852A165BF700B9A4AF /* BoxTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1243842A165BF700B9A4AF /* BoxTransactions.swift */; };
 		9B1243872A166AC000B9A4AF /* EachTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1243862A166AC000B9A4AF /* EachTransaction.swift */; };
 		9B12438B2A16BD6C00B9A4AF /* TransactionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B12438A2A16BD6C00B9A4AF /* TransactionsModel.swift */; };
+		9B17925F2D52508100D4C4AA /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B17925E2D52507D00D4C4AA /* LockView.swift */; };
+		9B1792612D5250E700D4C4AA /* TransparentBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1792602D5250E000D4C4AA /* TransparentBlurView.swift */; };
+		9B1792632D52562200D4C4AA /* LockViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1792622D52561800D4C4AA /* LockViewModifier.swift */; };
 		9B2321EA2B84E279000BFBA9 /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2321E92B84E279000BFBA9 /* CurrencyModel.swift */; };
 		9B2321EC2B84E3EB000BFBA9 /* CurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2321EB2B84E3EB000BFBA9 /* CurrencyView.swift */; };
 		9B2321EE2B84E967000BFBA9 /* FormatCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2321ED2B84E967000BFBA9 /* FormatCoin.swift */; };
@@ -37,7 +40,6 @@
 		9B4BE3642A17BBA000050C33 /* EachTransactionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4BE3632A17BBA000050C33 /* EachTransactionData.swift */; };
 		9B5564452B962FE3007AEA55 /* NavigationTitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5564442B962FE3007AEA55 /* NavigationTitleModifier.swift */; };
 		9B5689ED2B7CEFF10009A751 /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5689EC2B7CEFF10009A751 /* Texts.swift */; };
-		9B57DC352D3F2EEF00A810F5 /* TesteStoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B57DC342D3F2EEA00A810F5 /* TesteStoreKit.swift */; };
 		9B57DC582D3F38C200A810F5 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B57DC572D3F38BC00A810F5 /* APIHandler.swift */; };
 		9B57DC5A2D3F3AB400A810F5 /* BlockchainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B57DC592D3F3AAE00A810F5 /* BlockchainViewModel.swift */; };
 		9B65DF652D466DED007517B7 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B65DF642D466DE2007517B7 /* Endpoint.swift */; };
@@ -82,6 +84,9 @@
 		9B1243842A165BF700B9A4AF /* BoxTransactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxTransactions.swift; sourceTree = "<group>"; };
 		9B1243862A166AC000B9A4AF /* EachTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachTransaction.swift; sourceTree = "<group>"; };
 		9B12438A2A16BD6C00B9A4AF /* TransactionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsModel.swift; sourceTree = "<group>"; };
+		9B17925E2D52507D00D4C4AA /* LockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
+		9B1792602D5250E000D4C4AA /* TransparentBlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentBlurView.swift; sourceTree = "<group>"; };
+		9B1792622D52561800D4C4AA /* LockViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockViewModifier.swift; sourceTree = "<group>"; };
 		9B2321E92B84E279000BFBA9 /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
 		9B2321EB2B84E3EB000BFBA9 /* CurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyView.swift; sourceTree = "<group>"; };
 		9B2321ED2B84E967000BFBA9 /* FormatCoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatCoin.swift; sourceTree = "<group>"; };
@@ -107,7 +112,6 @@
 		9B4BE3632A17BBA000050C33 /* EachTransactionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachTransactionData.swift; sourceTree = "<group>"; };
 		9B5564442B962FE3007AEA55 /* NavigationTitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitleModifier.swift; sourceTree = "<group>"; };
 		9B5689EC2B7CEFF10009A751 /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
-		9B57DC342D3F2EEA00A810F5 /* TesteStoreKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteStoreKit.swift; sourceTree = "<group>"; };
 		9B57DC572D3F38BC00A810F5 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 		9B57DC592D3F3AAE00A810F5 /* BlockchainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainViewModel.swift; sourceTree = "<group>"; };
 		9B65DF642D466DE2007517B7 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
@@ -182,6 +186,15 @@
 			path = MempoolBlocks;
 			sourceTree = "<group>";
 		};
+		9B17925D2D52507700D4C4AA /* LockView */ = {
+			isa = PBXGroup;
+			children = (
+				9B1792602D5250E000D4C4AA /* TransparentBlurView.swift */,
+				9B17925E2D52507D00D4C4AA /* LockView.swift */,
+			);
+			path = LockView;
+			sourceTree = "<group>";
+		};
 		9B2321EF2B85116D000BFBA9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,7 +234,6 @@
 		9B35148D2D2F44C40034FF98 /* StoreKit */ = {
 			isa = PBXGroup;
 			children = (
-				9B57DC342D3F2EEA00A810F5 /* TesteStoreKit.swift */,
 				9B3514902D2F45180034FF98 /* StoreKitView.swift */,
 			);
 			path = StoreKit;
@@ -247,6 +259,7 @@
 				9BEEACA32C8F85DE00E2E120 /* AdViewComponent.swift */,
 				9B3F05932BB3BC1B003C746C /* CurrencyComponent */,
 				9BFA124C2BAB4A4B000C0CB5 /* ToastView.swift */,
+				9B17925D2D52507700D4C4AA /* LockView */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -304,6 +317,7 @@
 		9B3C00122BAC7F59000B55B9 /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
+				9B1792622D52561800D4C4AA /* LockViewModifier.swift */,
 				9BAB8F482D518E6700FEE3F8 /* ErrorAlertModifier.swift */,
 				9BB0E8722D4162D900C6777A /* SheetToolbarModifier.swift */,
 				9B5564442B962FE3007AEA55 /* NavigationTitleModifier.swift */,
@@ -692,6 +706,7 @@
 				9BADB9072D4DA0E0007D0535 /* DifficultyAdjustment.swift in Sources */,
 				9B23E5DF2A51E6F9007045A6 /* LastBlockViewModel.swift in Sources */,
 				9BADB8F92D4CFF91007D0535 /* Hashrate.swift in Sources */,
+				9B1792632D52562200D4C4AA /* LockViewModifier.swift in Sources */,
 				9BADB9042D4D13D0007D0535 /* BlockRewardView.swift in Sources */,
 				9BC487A62C1B8C89007E975A /* BitcoinWalletView.swift in Sources */,
 				9BD674EF2D4EE0CF00440B92 /* NetworkMonitor.swift in Sources */,
@@ -722,6 +737,7 @@
 				9B2321F12B851181000BFBA9 /* CurrencyViewModel.swift in Sources */,
 				9B65DF652D466DED007517B7 /* Endpoint.swift in Sources */,
 				9BD674F42D4EEDCB00440B92 /* NetworkConnectionView.swift in Sources */,
+				9B1792612D5250E700D4C4AA /* TransparentBlurView.swift in Sources */,
 				9BEEAC9E2C8F799C00E2E120 /* BlockchainFeeViewComponent.swift in Sources */,
 				9B3514912D2F45180034FF98 /* StoreKitView.swift in Sources */,
 				9B2BC8F22A13FE5900735A8D /* BlockchainView.swift in Sources */,
@@ -733,10 +749,10 @@
 				9BFA124D2BAB4A4B000C0CB5 /* ToastView.swift in Sources */,
 				9B2321EC2B84E3EB000BFBA9 /* CurrencyView.swift in Sources */,
 				9B65DF672D4678A0007517B7 /* Mempool.swift in Sources */,
-				9B57DC352D3F2EEF00A810F5 /* TesteStoreKit.swift in Sources */,
 				9B12438B2A16BD6C00B9A4AF /* TransactionsModel.swift in Sources */,
 				9BB0E8732D4162F100C6777A /* SheetToolbarModifier.swift in Sources */,
 				9BEEACA02C8F7B0500E2E120 /* BitcoinPriceViewComponent.swift in Sources */,
+				9B17925F2D52508100D4C4AA /* LockView.swift in Sources */,
 				9B4BE3642A17BBA000050C33 /* EachTransactionData.swift in Sources */,
 				9B4372762A1D2C1800DFE211 /* AddressDataTransactions.swift in Sources */,
 				9BFDF4A62D384A0700EE4046 /* SubscriptionStore.swift in Sources */,

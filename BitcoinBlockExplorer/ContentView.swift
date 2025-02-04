@@ -86,4 +86,5 @@ struct ContentView: View {
         .environmentObject(CurrencyViewModel())
         .environmentObject(SubscriptionStore())
         .environmentObject(LastBlockViewModel())
+        .environmentObject(NetworkMonitor())
 }
