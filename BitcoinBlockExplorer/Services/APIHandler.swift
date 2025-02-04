@@ -20,8 +20,14 @@ class APIHandler {
             return
         }
         
+        let config = URLSessionConfiguration.default
+        config.timeoutIntervalForRequest = 10  // Timeout after 5 seconds
+        config.timeoutIntervalForResource = 30 // Total resource timeout
+        
+        let session = URLSession(configuration: config)
+        
         // Cria a tarefa
-        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+        let task = session.dataTask(with: url) { data, response, error in
           
             // Verifica erros de rede
             if let error = error {

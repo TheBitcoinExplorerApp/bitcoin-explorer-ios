@@ -46,12 +46,9 @@ struct BlockchainView: View {
 //            AdViewComponent()
         }
         
-        .task {
-            viewModel.fetchBlockHeader(50)
-            viewModel.fetchMempoolData()
-            viewModel.fetchMempoolSize()
-        }
- 
+        .errorAlert(showAlert: $viewModel.showErrorAlert)
+        .errorAlert(showAlert: $lastBlockViewModel.showErrorAlert)
+
         .titleToolbar()
         
         .background(Color.myBackground)
@@ -113,6 +110,7 @@ struct BlockchainView: View {
         .task {
             viewModel.fetchFees()
         }
+    
     }
     
 }

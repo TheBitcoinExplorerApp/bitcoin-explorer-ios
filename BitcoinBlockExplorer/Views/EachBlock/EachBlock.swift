@@ -60,6 +60,8 @@ struct EachBlock: View {
             
             .sheetToolbar(title: Texts.blocoMaiusculo)
             
+            .errorAlert(showAlert: $viewModel.showErrorAlert)
+
         }
         
     }

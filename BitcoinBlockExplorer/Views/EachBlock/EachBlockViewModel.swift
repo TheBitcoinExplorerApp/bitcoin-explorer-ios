@@ -13,6 +13,7 @@ class EachBlockViewModel: ObservableObject {
     
     @Published var loading: Bool = false
     @Published var blockTransactions: [Transactions] = []
+    @Published var showErrorAlert = false
     
     private let maxTransactions: Int = 50
         
@@ -32,6 +33,7 @@ class EachBlockViewModel: ObservableObject {
                     }
                 case .failure(let error):
                     print("Error in fetch blockTransactions: \(error)")
+                    self.showErrorAlert = true
                 }
             }
         }

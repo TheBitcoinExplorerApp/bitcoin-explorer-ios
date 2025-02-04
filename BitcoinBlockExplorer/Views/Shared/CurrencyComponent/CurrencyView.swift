@@ -22,6 +22,8 @@ struct CurrencyView: View {
             Text("\(currentCoin)")
         }
         
+        .errorAlert(showAlert: $currencyViewModel.showErrorAlert)
+        
         .task {
             withAnimation(.bouncy) {
                 currencyViewModel.fetchCoins()

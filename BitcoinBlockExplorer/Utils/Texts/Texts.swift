@@ -176,3 +176,8 @@ extension Texts {
 extension Texts {
     static let internetConnectionLabel: String = String(localized: "internetConnectionLabel")
 }
+
+// Error Alert
+extension Texts {
+    static let errorMessage: String = String(localized: "errorMessage")
+}

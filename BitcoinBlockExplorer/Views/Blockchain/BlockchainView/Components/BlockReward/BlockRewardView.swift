@@ -28,6 +28,8 @@ struct BlockRewardView: View {
                 .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
             
         }
+        .padding(.bottom)
+        
         .task {
             viewModel.fetchBlockReward()
         }

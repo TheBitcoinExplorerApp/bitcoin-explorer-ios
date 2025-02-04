@@ -10,8 +10,8 @@ import SwiftUI
 
 class BlockchainViewModel: ObservableObject {
     private let apiHandler = APIHandler()
-    
     @Published var loading: Bool = false
+    @Published var showErrorAlert = false
     
     @Published var fees: [Fee] = []
     @Published var blockHeaderData: [Block] = []
@@ -30,6 +30,12 @@ class BlockchainViewModel: ObservableObject {
     @Published var blockReward: Double = 0
     
     @Published var difficultAdjustment: DifficultyAdjustment?
+    
+    init() {
+        self.fetchBlockHeader(50)
+        self.fetchMempoolData()
+        self.fetchMempoolSize()
+    }
         
 }
 
@@ -42,7 +48,8 @@ extension BlockchainViewModel {
                 case .success(let fees):
                     self.fees = [fees]
                 case .failure(let error):
-                    print("Error in fetch fess \(error)")
+                    print("Error in fetch fess \(error.localizedDescription)")
+                    self.showErrorAlert = true
                 }
             }
         }
@@ -65,7 +72,8 @@ extension BlockchainViewModel {
                         self.blockHeaderData = blocksHeader
                     }
                 case .failure(let error):
-                    print("Error in fetch blockHeader \(error)")
+                    print("Error in fetch blockHeader \(error.localizedDescription)")
+                    self.showErrorAlert = true
                 }
             }
         }
@@ -81,7 +89,9 @@ extension BlockchainViewModel {
                 case .success(let mempool):
                     self.mempoolData = mempool
                 case .failure(let error):
-                    print("Error in fetch mempool \(error)")
+                    print("Error in fetch mempool \(error.localizedDescription)")
+                    self.showErrorAlert = true
+
                 }
             }
         }
@@ -94,7 +104,8 @@ extension BlockchainViewModel {
                 case .success(let mempool):
                     self.mempoolSize = mempool
                 case .failure(let error):
-                    print("Error in fetch mempool size \(error)")
+                    print("Error in fetch mempool size \(error.localizedDescription)")
+                    self.showErrorAlert = true
                 }
             }
         }
@@ -169,7 +180,8 @@ extension BlockchainViewModel {
                 case .success(let fullNode):
                     self.totalFullNodes = fullNode.results.first?.total_nodes ?? 0
                 case .failure(let error):
-                    print("Error in fetch full nodes \(error)")
+                    print("Error in fetch full nodes \(error.localizedDescription)")
+                    self.showErrorAlert = true
                 }
             }
         }
@@ -197,6 +209,7 @@ extension BlockchainViewModel {
                     self.hashRate = hashrate.currentHashrate
                 case .failure(let error):
                     print("Error in fetch hashrate \(error)")
+                    self.showErrorAlert = true
                 }
             }
         }
@@ -215,6 +228,7 @@ extension BlockchainViewModel {
                     }
                 case .failure(let error):
                     print("Error in fetch block reward \(error)")
+                    self.showErrorAlert = true
                 }
             }
         }
@@ -231,6 +245,7 @@ extension BlockchainViewModel {
                     self.difficultAdjustment = difficultyAdjustment
                 case .failure(let error):
                     print("Error in fetch difficult adjustment \(error)")
+                    self.showErrorAlert = true
                 }
             }
         }
