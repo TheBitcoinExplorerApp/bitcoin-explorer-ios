@@ -14,6 +14,8 @@ struct MempoolBlocksView: View {
     
     @EnvironmentObject var viewModel: BlockchainViewModel
     
+    @State private var isAnimating = false
+    
     var body: some View {
         VStack {
             HStack {
@@ -103,12 +105,14 @@ struct MempoolBlocksView: View {
                 .font(.footnote)
         }
         .padding()
-        .background(Color.backgroundBox)
+        .background(
+            LinearGradient(
+                colors: [.backgroundBox, .gray],
+                startPoint: .leading,
+                endPoint: .trailing
+            )
+        )
         .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
-        .overlay {
-            RoundedRectangle(cornerRadius: CGFloat.cornerRadius)
-                .stroke(Color.primaryText, lineWidth: 1)
-        }
     }
     
     func mempoolFees(_ totalFee: Double) -> Double {
@@ -130,4 +134,6 @@ struct MempoolBlocksView: View {
         .environmentObject(CurrencyViewModel())
         .environmentObject(AddManager())
         .environmentObject(LastBlockViewModel())
+        .environmentObject(NetworkMonitor())
+        .environmentObject(BlockchainViewModel())
 }
