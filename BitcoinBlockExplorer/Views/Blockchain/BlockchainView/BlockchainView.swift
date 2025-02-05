@@ -12,19 +12,12 @@ struct BlockchainView: View {
     @EnvironmentObject var lastBlockViewModel: LastBlockViewModel
     @EnvironmentObject var currencyViewModel:  CurrencyViewModel
     @EnvironmentObject var networkMonitor: NetworkMonitor
-    
-    // Search variables
-    @StateObject var validateAddresses = Validate()
-    @State var addressSearch: String = ""
-    @State var idTransacaoSearch: String = ""
-    @State var abrirModalAddress: Bool = false
-    @State var abrirModalTransaction: Bool = false
-    @State var idTransacaoButton: String = ""
-    @State var searchText = ""
-    
+  
     var body: some View {
         
         VStack {
+            SearchView()
+            
             ScrollView{
                 blockchainView
                     .id(1)

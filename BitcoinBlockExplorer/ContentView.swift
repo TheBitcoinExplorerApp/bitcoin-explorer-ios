@@ -48,7 +48,7 @@ struct ContentView: View {
                 .tag(1)
                 
                 NavigationStack {
-                    SearchView()
+                    CalculatorView()
                         .onChange(of: tappedTwice, perform: { tapped in
                             if tapped {
                                 withAnimation {
