@@ -33,12 +33,11 @@
 		9B3514912D2F45180034FF98 /* StoreKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3514902D2F45180034FF98 /* StoreKitView.swift */; };
 		9B376E862D52F6260094CFD7 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B376E852D52F6220094CFD7 /* SearchView.swift */; };
 		9B376E892D52F9B40094CFD7 /* EachTransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B376E882D52F9AB0094CFD7 /* EachTransactionViewModel.swift */; };
+		9B376E8B2D5301F10094CFD7 /* EachAddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B376E8A2D5301EB0094CFD7 /* EachAddressViewModel.swift */; };
 		9B3852D62B7C2B2300E2D576 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9B3852D52B7C2B2300E2D576 /* Localizable.xcstrings */; };
 		9B43726D2A1CDFAA00DFE211 /* EachAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B43726C2A1CDFAA00DFE211 /* EachAddressView.swift */; };
-		9B43726F2A1CE66000DFE211 /* AddressDataHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B43726E2A1CE66000DFE211 /* AddressDataHeader.swift */; };
 		9B4372712A1CE88900DFE211 /* AddressHeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4372702A1CE88900DFE211 /* AddressHeaderModel.swift */; };
 		9B4372742A1CFD7600DFE211 /* ValidateSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4372732A1CFD7600DFE211 /* ValidateSearch.swift */; };
-		9B4372762A1D2C1800DFE211 /* AddressDataTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4372752A1D2C1800DFE211 /* AddressDataTransactions.swift */; };
 		9B5564452B962FE3007AEA55 /* NavigationTitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5564442B962FE3007AEA55 /* NavigationTitleModifier.swift */; };
 		9B5689ED2B7CEFF10009A751 /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5689EC2B7CEFF10009A751 /* Texts.swift */; };
 		9B57DC582D3F38C200A810F5 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B57DC572D3F38BC00A810F5 /* APIHandler.swift */; };
@@ -106,12 +105,11 @@
 		9B3514902D2F45180034FF98 /* StoreKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitView.swift; sourceTree = "<group>"; };
 		9B376E852D52F6220094CFD7 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		9B376E882D52F9AB0094CFD7 /* EachTransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachTransactionViewModel.swift; sourceTree = "<group>"; };
+		9B376E8A2D5301EB0094CFD7 /* EachAddressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachAddressViewModel.swift; sourceTree = "<group>"; };
 		9B3852D52B7C2B2300E2D576 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		9B43726C2A1CDFAA00DFE211 /* EachAddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachAddressView.swift; sourceTree = "<group>"; };
-		9B43726E2A1CE66000DFE211 /* AddressDataHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDataHeader.swift; sourceTree = "<group>"; };
 		9B4372702A1CE88900DFE211 /* AddressHeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressHeaderModel.swift; sourceTree = "<group>"; };
 		9B4372732A1CFD7600DFE211 /* ValidateSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateSearch.swift; sourceTree = "<group>"; };
-		9B4372752A1D2C1800DFE211 /* AddressDataTransactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDataTransactions.swift; sourceTree = "<group>"; };
 		9B5564442B962FE3007AEA55 /* NavigationTitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitleModifier.swift; sourceTree = "<group>"; };
 		9B5689EC2B7CEFF10009A751 /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
 		9B57DC572D3F38BC00A810F5 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
@@ -216,7 +214,6 @@
 			isa = PBXGroup;
 			children = (
 				9B2BC8F52A1548F900735A8D /* EveryTransactionsModel.swift */,
-				9B4372702A1CE88900DFE211 /* AddressHeaderModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -226,8 +223,6 @@
 			children = (
 				9B57DC572D3F38BC00A810F5 /* APIHandler.swift */,
 				9B2BC8F32A15487900735A8D /* TransactionData.swift */,
-				9B43726E2A1CE66000DFE211 /* AddressDataHeader.swift */,
-				9B4372752A1D2C1800DFE211 /* AddressDataTransactions.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -261,7 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				9BD674F02D4EED8900440B92 /* NetworkConnection */,
-				9BD669082D4C4393001709D1 /* ViewModel */,
+				9BD669082D4C4393001709D1 /* LastBlock */,
 				9B65DF622D466CD5007517B7 /* Model */,
 				9B1243842A165BF700B9A4AF /* BoxTransactions.swift */,
 				9B925AB12C74382A00A754C1 /* AdBannerView.swift */,
@@ -385,7 +380,9 @@
 		9B3F05982BB3BD58003C746C /* EachAddress */ = {
 			isa = PBXGroup;
 			children = (
+				9B376E8A2D5301EB0094CFD7 /* EachAddressViewModel.swift */,
 				9B43726C2A1CDFAA00DFE211 /* EachAddressView.swift */,
+				9B4372702A1CE88900DFE211 /* AddressHeaderModel.swift */,
 			);
 			path = EachAddress;
 			sourceTree = "<group>";
@@ -536,12 +533,12 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		9BD669082D4C4393001709D1 /* ViewModel */ = {
+		9BD669082D4C4393001709D1 /* LastBlock */ = {
 			isa = PBXGroup;
 			children = (
 				9B23E5DE2A51E6F9007045A6 /* LastBlockViewModel.swift */,
 			);
-			path = ViewModel;
+			path = LastBlock;
 			sourceTree = "<group>";
 		};
 		9BD6690B2D4C48ED001709D1 /* FullNodes */ = {
@@ -761,12 +758,12 @@
 				9BC226122A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift in Sources */,
 				9BFA124D2BAB4A4B000C0CB5 /* ToastView.swift in Sources */,
 				9B2321EC2B84E3EB000BFBA9 /* CurrencyView.swift in Sources */,
+				9B376E8B2D5301F10094CFD7 /* EachAddressViewModel.swift in Sources */,
 				9B65DF672D4678A0007517B7 /* Mempool.swift in Sources */,
 				9B12438B2A16BD6C00B9A4AF /* TransactionsModel.swift in Sources */,
 				9BB0E8732D4162F100C6777A /* SheetToolbarModifier.swift in Sources */,
 				9BEEACA02C8F7B0500E2E120 /* BitcoinPriceViewComponent.swift in Sources */,
 				9B17925F2D52508100D4C4AA /* LockView.swift in Sources */,
-				9B4372762A1D2C1800DFE211 /* AddressDataTransactions.swift in Sources */,
 				9BFDF4A62D384A0700EE4046 /* SubscriptionStore.swift in Sources */,
 				9B43726D2A1CDFAA00DFE211 /* EachAddressView.swift in Sources */,
 				9B5689ED2B7CEFF10009A751 /* Texts.swift in Sources */,
@@ -774,7 +771,6 @@
 				9BD669072D4C3DD1001709D1 /* Extensions.swift in Sources */,
 				9BD6690A2D4C4776001709D1 /* FullNode.swift in Sources */,
 				9B925AB22C74382A00A754C1 /* AdBannerView.swift in Sources */,
-				9B43726F2A1CE66000DFE211 /* AddressDataHeader.swift in Sources */,
 				9B2BC8EE2A13F70600735A8D /* CalculatorView.swift in Sources */,
 				9BB0E8772D41684300C6777A /* EachBlockViewModel.swift in Sources */,
 			);
