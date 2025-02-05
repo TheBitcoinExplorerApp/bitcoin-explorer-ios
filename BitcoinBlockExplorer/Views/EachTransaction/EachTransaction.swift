@@ -53,6 +53,9 @@ struct EachTransaction: View {
             } else {
                 viewModel.getEachTransaction(idTransacaoButton)
             }
+            
+            lastBlockViewModel.fetchLastBlock()
+            
         }
         
         .sheetToolbar(title: Texts.transacaoMaiusculo)

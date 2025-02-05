@@ -37,21 +37,31 @@ struct StoreKitView: View {
                         PlansView(feature: Texts.bitcoinPrice, isAvailableInFree: true, isAvailableInPro: true)
                         Divider()
                             .padding(.horizontal)
+                        
                         PlansView(feature: Texts.BlockchainExplorerAndFees, isAvailableInFree: true, isAvailableInPro: true)
                         Divider()
                             .padding(.horizontal)
+                        
                         PlansView(feature: Texts.searchTransactionsBlocksAndAddress, isAvailableInFree: true, isAvailableInPro: true)
                         Divider()
                             .padding(.horizontal)
+                        
+                        PlansView(feature: Texts.noAds, isAvailableInFree: false, isAvailableInPro: true)
+                        Divider()
+                            .padding(.horizontal)
+                        
                         PlansView(feature: Texts.halvingCountdownLabelStoreKit, isAvailableInFree: false, isAvailableInPro: true)
                         Divider()
                             .padding(.horizontal)
+                        
                         PlansView(feature: Texts.difficultAdjustment, isAvailableInFree: false, isAvailableInPro: true)
                         Divider()
                             .padding(.horizontal)
+                        
                         PlansView(feature: Texts.fullNodeHashrateAndBlockRewardLabelStoreKit, isAvailableInFree: false, isAvailableInPro: true)
                         Divider()
                             .padding(.horizontal)
+                        
                         PlansView(feature: Texts.calculator, isAvailableInFree: false, isAvailableInPro: true)
                         
                     }
@@ -89,7 +99,7 @@ struct StoreKitView: View {
                     }
                     
                 }
-                .scrollIndicators(.hidden)
+
             }
             .background(Color.myBackground)
             .onChange(of: store.action) { action in

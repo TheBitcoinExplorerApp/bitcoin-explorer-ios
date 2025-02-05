@@ -9,9 +9,10 @@ import SwiftUI
 
 struct AdViewComponent: View {
     @EnvironmentObject var addManager: AddManager
+    @EnvironmentObject private var store: SubscriptionStore
     
     var body: some View {
-        if addManager.bannerViewIsAdded == false {
+        if addManager.bannerViewIsAdded == false || store.purschasedSubscriptions == true {
             VStack {
                 RoundedRectangle(cornerRadius: 1).frame(width: 0.1, height: 0.1)
             }
@@ -22,7 +23,7 @@ struct AdViewComponent: View {
 }
 
 #Preview {
-    let addManager = AddManager()
     return AdViewComponent()
-        .environmentObject(addManager)
+        .environmentObject(AddManager())
+        .environmentObject(SubscriptionStore())
 }

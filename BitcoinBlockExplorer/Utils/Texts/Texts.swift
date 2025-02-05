@@ -206,4 +206,10 @@ extension Texts {
     
     static let bitcoinBlockPro: String = String(localized: "bitcoinBlockPro")
     
+    static let noAds: String = String(localized: "noAds")
+    
+    static let proAccess: String = String(localized: "proAccess")
+    
+    static let youArePro: String = String(localized: "youArePro")
+    
 }

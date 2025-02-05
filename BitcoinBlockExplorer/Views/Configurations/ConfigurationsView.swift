@@ -12,6 +12,9 @@ struct ConfigurationsView: View {
     @AppStorage("selected") var selected = 0
     
     @EnvironmentObject var currencyViewModel:  CurrencyViewModel
+    @EnvironmentObject var store: SubscriptionStore
+    
+    @State private var showSubscriptionView: Bool = false
     
     let currencies = ["🇺🇸 USD", "🇪🇺 EUR", "🇬🇧 GBP", "🇨🇦 CAD", "🇨🇭 CHF", "🇦🇺 AUD", "🇯🇵 JPY", "🇧🇷 BRL", "🇨🇳 CNY"]
     
@@ -57,6 +60,35 @@ struct ConfigurationsView: View {
                     
                 }.listRowBackground(Color.backgroundBox)
                 
+                Section {
+                    HStack {
+                        
+                        if store.purschasedSubscriptions == false {
+                            Text(Texts.proAccess)
+                                .foregroundStyle(Color.texts)
+                            Spacer()
+                            Button {
+                                showSubscriptionView.toggle()
+                            } label: {
+                                Text(Texts.subscribe)
+                                    .font(.headline)
+                                    .bold()
+                            }
+                            .tint(Color.primaryText)
+                            .buttonStyle(.bordered)
+                        } else {
+                            Text(Texts.youArePro)
+                                .foregroundStyle(Color.texts)
+                            Spacer()
+                            Image(systemName: "checkmark.circle.fill")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(maxWidth: 20)
+                                .foregroundStyle(.green)
+                        }
+                    }
+                }.listRowBackground(Color.backgroundBox)
+                
             }
             .navigationTitle(Texts.configuracoes)
             .navigationBarTitleColor(Color.primaryText)
@@ -67,14 +99,17 @@ struct ConfigurationsView: View {
             
         }
         .background(Color.myBackground)
+        
+        .sheet(isPresented: $showSubscriptionView) {
+            StoreKitView(showSubscriptionView: $showSubscriptionView)
+        }
        
     }
 }
 
 #Preview {
-    let vm = CurrencyViewModel()
-    let addManager = AddManager()
     return ConfigurationsView()
-        .environmentObject(addManager)
-        .environmentObject(vm)
+        .environmentObject(AddManager())
+        .environmentObject(CurrencyViewModel())
+        .environmentObject(SubscriptionStore())
 }
