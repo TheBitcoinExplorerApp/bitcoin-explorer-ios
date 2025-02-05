@@ -15,10 +15,11 @@ struct SearchView: View {
 //    @State var abrirModal: Bool = false
     
     @State var addressSearch: String = ""
-    @State var idTransacaoSearch: String = ""
     @State var abrirModalAddress: Bool = false
+    
     @State var abrirModalTransaction: Bool = false
     @State var idTransacaoButton: String = ""
+    @State var idTransacaoSearch: String = ""
 
     @EnvironmentObject var viewModel: BlockchainViewModel
     @EnvironmentObject var lastBlockViewModel: LastBlockViewModel
