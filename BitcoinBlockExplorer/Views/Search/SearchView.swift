@@ -68,13 +68,17 @@ struct SearchView: View {
 
         if isBlockHeight(input) {
             resultType = input
+            searchText = ""
         } else if isBlockHash(input) {
             resultType = input
+            searchText = ""
         } else if isValidBitcoinAddress(input) {
             addressSearch = input
+            searchText = ""
             abrirModalAddress.toggle()
         } else if isValidTransactionID(input) {
             idTransacaoSearch = input
+            searchText = ""
             abrirModalTransaction.toggle()
         } else {
             resultType = "invalid"
