@@ -12,7 +12,7 @@ struct CalculatorView: View {
     var body: some View {
         
         ScrollView(.vertical) {
-            BoxTransactions()
+            EmptyView()
                 .id(2)
         }
         .background(Color.myBackground)
@@ -24,11 +24,4 @@ struct CalculatorView: View {
 
 #Preview {
     CalculatorView()
-}
-
-#Preview {
-    return ContentView()
-        .environmentObject(AddManager())
-        .environmentObject(CurrencyViewModel())
-        .environmentObject(SubscriptionStore())
 }

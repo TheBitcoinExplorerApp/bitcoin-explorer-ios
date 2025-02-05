@@ -53,4 +53,28 @@ class APIHandler {
         // Inicia a tarefa
         task.resume()
     }
+    
+    func fetchBlockHash(for height: Int, completion: @escaping (Result<String, Error>) -> Void) {
+        let urlString = "https://mempool.space/api/block-height/\(height)"
+        guard let url = URL(string: urlString) else {
+            completion(.failure(URLError(.badURL)))
+            return
+        }
+
+        let task = URLSession.shared.dataTask(with: url) { data, _, error in
+            if let error = error {
+                completion(.failure(error))
+                return
+            }
+            
+            guard let data = data, let blockHash = String(data: data, encoding: .utf8) else {
+                completion(.failure(URLError(.cannotDecodeRawData)))
+                return
+            }
+            
+            completion(.success(blockHash.trimmingCharacters(in: .whitespacesAndNewlines)))
+        }
+        
+        task.resume()
+    }
 }

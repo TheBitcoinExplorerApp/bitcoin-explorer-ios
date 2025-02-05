@@ -7,8 +7,8 @@
 //
 
 enum Endpoint {
-    case fees, blockHeader, blockTransactions(hash: String), coins, coins2, mempool, mempoolSize, lastBlock,
-         fullNodes, hashrate, blockReward, difficultyAdjustment, eachTransactions(txId: String), addressHeader(address: String), addressTransactions(address: String)
+    case fees, blockHeader, blockTransactions(hash: String), eachBlockSearch(height: Int), coins, coins2, mempool, mempoolSize, lastBlock,
+         fullNodes, hashrate, blockReward, difficultyAdjustment, eachTransactions(txId: String), addressHeader(address: String), addressTransactions(address: String), hash(height: Int), height(hash: String)
     
     var endpoint: String {
         switch self {
@@ -18,6 +18,8 @@ enum Endpoint {
             return "https://mempool.space/api/v1/blocks/"
         case .blockTransactions(let hashBlock):
             return "https://mempool.space/api/block/\(hashBlock)/txs"
+        case .eachBlockSearch(let height):
+            return "https://mempool.space/api/v1/blocks/\(height)"
         case .coins:
             return "https://mempool.space/api/v1/prices"
         case .coins2:
@@ -42,6 +44,10 @@ enum Endpoint {
             return "https://mempool.space/api/address/\(address)"
         case .addressTransactions(address: let address):
             return "https://mempool.space/api/address/\(address)/txs/chain"
+        case .hash(let height):
+            return "https://mempool.space/api/block-height/\(height)"
+        case .height(let hash):
+            return "https://mempool.space/api/block/\(hash)"
         }
         
     }

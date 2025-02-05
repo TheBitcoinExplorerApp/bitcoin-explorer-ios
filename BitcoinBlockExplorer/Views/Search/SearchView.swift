@@ -8,21 +8,26 @@
 import SwiftUI
 
 struct SearchView: View {
+    
+    // Search
     @State private var searchText = ""
     @State private var resultType: String?
     @State private var isInvalid = false
-    
-//    @State var abrirModal: Bool = false
-    
+        
+    // Address
     @State var addressSearch: String = ""
     @State var abrirModalAddress: Bool = false
     
+    // Transaction
     @State var abrirModalTransaction: Bool = false
     @State var idTransacaoButton: String = ""
     @State var idTransacaoSearch: String = ""
 
+    // Block
     @EnvironmentObject var viewModel: BlockchainViewModel
     @EnvironmentObject var lastBlockViewModel: LastBlockViewModel
+    @StateObject private var eachBlockViewModel = EachBlockSearchViewModel()
+    @State private var abrirModalBlock: Bool = false
     
     var body: some View {
         VStack {
@@ -56,10 +61,11 @@ struct SearchView: View {
                 .presentationBackground(Color.myBackground)
         }
         
-//        .sheet(isPresented: $abrirModal) {
-//            EachBlock(abrirModal: $abrirModal)
-//                .presentationBackground(Color.myBackground)
-//        }
+        .sheet(isPresented: $abrirModalBlock) {
+            EachBlockSearchView(abrirModalBlock: $abrirModalBlock)
+                .environmentObject(eachBlockViewModel)
+                .presentationBackground(Color.myBackground)
+        }
         
     }
 
@@ -67,11 +73,13 @@ struct SearchView: View {
         let input = searchText.trimmingCharacters(in: .whitespacesAndNewlines)
 
         if isBlockHeight(input) {
-            resultType = input
+            eachBlockViewModel.height = Int(input)
             searchText = ""
+            abrirModalBlock.toggle()
         } else if isBlockHash(input) {
-            resultType = input
+            eachBlockViewModel.hash = input
             searchText = ""
+            abrirModalBlock.toggle()
         } else if isValidBitcoinAddress(input) {
             addressSearch = input
             searchText = ""
