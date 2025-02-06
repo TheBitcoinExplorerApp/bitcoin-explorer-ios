@@ -16,6 +16,8 @@ struct MempoolBlocksView: View {
     
     @State private var isAnimating = false
     
+    @State private var startOffset: CGFloat = -1.0
+    
     var body: some View {
         VStack {
             HStack {
@@ -105,14 +107,29 @@ struct MempoolBlocksView: View {
                 .font(.footnote)
         }
         .padding()
-        .background(
+        .background(content: {
+            Color.backgroundBox
+                .ignoresSafeArea()
+            
+            // Gradiente animado
             LinearGradient(
-                colors: [.backgroundBox, .gray],
+                colors: [.clear, .primaryText.opacity(0.25), .clear],
                 startPoint: .leading,
                 endPoint: .trailing
             )
-        )
+            .frame(width: 150) // Define a largura da linha animada
+            .offset(x: UIScreen.main.bounds.width * startOffset)
+            .animation(
+                Animation.linear(duration: 2.5)
+                    .repeatForever(autoreverses: false),
+                value: startOffset
+            )
+        })
         .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
+        
+        .onAppear {
+            startOffset = 1.5 // Move a linha para a direita
+        }
     }
     
     func mempoolFees(_ totalFee: Double) -> Double {
@@ -136,4 +153,5 @@ struct MempoolBlocksView: View {
         .environmentObject(LastBlockViewModel())
         .environmentObject(NetworkMonitor())
         .environmentObject(BlockchainViewModel())
+        .environmentObject(SubscriptionStore())
 }
