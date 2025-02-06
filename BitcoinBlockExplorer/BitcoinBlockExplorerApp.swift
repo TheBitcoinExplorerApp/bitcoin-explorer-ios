@@ -14,7 +14,6 @@ struct BitcoinBlockExplorerApp: App {
     
     @StateObject var addManager = AddManager()
     @StateObject var networkMonitor = NetworkMonitor()
-    
     @StateObject var currencyViewModel = CurrencyViewModel()
     @StateObject var subscriptionStore = SubscriptionStore()
     @StateObject var lastBlockViewModel = LastBlockViewModel()

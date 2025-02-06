@@ -211,5 +211,11 @@ extension Texts {
     static let proAccess: String = String(localized: "proAccess")
     
     static let youArePro: String = String(localized: "youArePro")
+}
+
+// Calculator
+extension Texts {
+    static let beProCalculatorLabel: String = String(localized: "beProCalculatorLabel")
     
+    static let dismissKeyboard: String = String(localized: "dismissKeyboard")
 }

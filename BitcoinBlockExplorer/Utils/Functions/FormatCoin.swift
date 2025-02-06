@@ -10,10 +10,7 @@ import Foundation
 func formatCoin(_ numero: Double, symbol: String) -> String {
     let formatter = NumberFormatter()
     formatter.numberStyle = .currency
-    
-    // Define o símbolo da moeda
     formatter.currencySymbol = symbol
-//    let currentSymbol = formatter.currencySymbol ?? ""
     
     if let formattedString = formatter.string(from: NSNumber(value: numero)) {
         return formattedString

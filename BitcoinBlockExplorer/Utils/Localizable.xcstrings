@@ -161,6 +161,41 @@
         }
       }
     },
+    "beProCalculatorLabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Werden Sie Profi und erhalten Sie Zugriff auf den besten Bitcoin-Rechner auf dem Markt! Plus weitere Vorteile."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Be Pro and get access to the best Bitcoin calculator on the market! Plus other benefits."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seja Pro e tenha acesso a melhor calculadora de Bitcoin do mercado! Além de outros benefícios."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Станьте профессионалом и получите доступ к лучшему биткоин-калькулятору на рынке! А также другие преимущества."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "成为专业人士，并获得市场上最好的比特币计算器！ 加上其他好处"
+          }
+        }
+      }
+    },
     "Bitcoin mainnet address" : {
       "localizations" : {
         "de" : {
@@ -439,6 +474,9 @@
           }
         }
       }
+    },
+    "BTC" : {
+
     },
     "calculator" : {
       "extractionState" : "manual",
@@ -854,6 +892,41 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "难度调整"
+          }
+        }
+      }
+    },
+    "dismissKeyboard" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tastatur schließen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Close Keyboard"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fechar o teclado"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Закрыть клавиатуру"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关闭键盘"
           }
         }
       }
@@ -1969,6 +2042,40 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "聪/字节"
+          }
+        }
+      }
+    },
+    "Sats" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sats"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sats"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sats"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sats"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "聪"
           }
         }
       }

@@ -49,17 +49,15 @@ struct ContentView: View {
                 
                 NavigationStack {
                     CalculatorView()
-                        .onChange(of: tappedTwice, perform: { tapped in
-                            if tapped {
-                                withAnimation {
-                                    proxy.scrollTo(2, anchor: .top)
-                                }
-                                tappedTwice = false
-                            }
-                        })
                 }
                 .tabItem {
-                    Label(Texts.search, systemImage: "magnifyingglass")
+                    Label {
+                        Text(Texts.calculator)
+                    } icon: {
+                        Image("calculatorIcon")
+                            .renderingMode(.template)
+                            .foregroundStyle(Color.accentColor)
+                    }
                 }
                 .toolbarBackground(Color.myBackground, for: .tabBar)
                 .tag(2)
