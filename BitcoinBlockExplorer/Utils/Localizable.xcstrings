@@ -2222,31 +2222,31 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Suche nach Transaktionen oder Adressen"
+            "value" : "Block, Hash, Transaktion oder Adresse"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Search for transactions or addresses"
+            "value" : "Block, hash, transaction or address"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pesquise por transações ou endereços"
+            "value" : "Bloco, hash, transação ou endereço"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Поиск транзакций или адресов"
+            "value" : "Блок, хэш, транзакция или адрес"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "搜索交易或地址"
+            "value" : "区块、哈希、交易或地址"
           }
         }
       }
