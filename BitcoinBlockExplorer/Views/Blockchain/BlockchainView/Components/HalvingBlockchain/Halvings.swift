@@ -90,7 +90,7 @@ enum Halvings: CaseIterable {
         case .halving32:
             return Halving(blockHeight: 6720000, estimatedTime: 5241560967, newBlockReward: 0.0000000116415321826934814453125)
         case .halving33:
-            return Halving(blockHeight: 6930000, estimatedTime: 5367560967, newBlockReward: 0.00000000582076609134674072265625)
+            return Halving(blockHeight: 6930000, estimatedTime: 5367560967, newBlockReward: 0.0)
         }
     }
 }
