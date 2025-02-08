@@ -20,6 +20,8 @@ struct Texts {
     static let calculator: String = String(localized: "calculator")
     
     static let invalid: String = String(localized: "invalid")
+    
+    static let Sats: String = String(localized: "Sats")
 }
 
 // Fees

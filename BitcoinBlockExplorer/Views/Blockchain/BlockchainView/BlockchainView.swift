@@ -35,7 +35,7 @@ struct BlockchainView: View {
                 viewModel.fetchDifficultyAdjustment()
             }
 
-            AdViewComponent()
+//            AdViewComponent()
         }
         
         .task {

@@ -1,7 +1,13 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%.1f%%" : {
+
+    },
     "%@" : {
+
+    },
+    "%@\n" : {
 
     },
     "%@ %@" : {
@@ -125,6 +131,9 @@
           }
         }
       }
+    },
+    "Assumed Block Interval of 10 minutes" : {
+
     },
     "baixaPrioridade" : {
       "extractionState" : "manual",
@@ -826,6 +835,9 @@
         }
       }
     },
+    "Current Block Reward: " : {
+
+    },
     "data/hora" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1104,6 +1116,9 @@
         }
       }
     },
+    "Estimated date to next halving:\n" : {
+
+    },
     "free" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1244,6 +1259,9 @@
         }
       }
     },
+    "Halving %lld at height " : {
+
+    },
     "halvingCountdownFinished" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1313,6 +1331,9 @@
           }
         }
       }
+    },
+    "Halvings" : {
+
     },
     "hash" : {
       "extractionState" : "manual",
@@ -1488,6 +1509,9 @@
           }
         }
       }
+    },
+    "Key" : {
+      "extractionState" : "manual"
     },
     "Lightning network address" : {
       "localizations" : {
@@ -1698,6 +1722,15 @@
         }
       }
     },
+    "New Block Reward: " : {
+
+    },
+    "Next Block Reward: " : {
+
+    },
+    "Next Halving at height: " : {
+
+    },
     "noAds" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1801,6 +1834,9 @@
           }
         }
       }
+    },
+    "Previous and upcomming halvings" : {
+
     },
     "pro" : {
       "extractionState" : "manual",

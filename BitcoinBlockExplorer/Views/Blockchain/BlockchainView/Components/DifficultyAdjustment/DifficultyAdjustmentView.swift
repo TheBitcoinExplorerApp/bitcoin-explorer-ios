@@ -45,6 +45,13 @@ struct DifficultyAdjustmentView: View {
                                 .animation(.easeInOut, value: progress)
                         }
                     }
+                
+                HStack {
+                    Text("\(progress * 100, specifier: "%.1f")%")
+                        .foregroundStyle(Color.texts)
+                        .font(.caption2)
+                    Spacer()
+                }
             }
             .padding()
             .background(Color.backgroundBox)

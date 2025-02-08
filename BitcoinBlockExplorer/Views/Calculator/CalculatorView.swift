@@ -181,7 +181,7 @@ struct CalculatorView: View {
                 
                 Label {
                     HStack {
-                        TextField("Sats", text: $satsValue)
+                        TextField(Texts.Sats, text: $satsValue)
                             .font(.title3)
                             .bold()
                             .keyboardType(.decimalPad)

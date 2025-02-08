@@ -30,28 +30,52 @@ struct HalvingView: View {
                     .font(.title2)
                     .foregroundStyle(Color.primaryText)
             } else {
-                VStack{
-                    HStack {
-                        Text("\(viewModel.getNumberBlocksAfterLastHalving(lastBlockViewModel.lastBlock)) \(Texts.blocos)")
-                            .foregroundStyle(Color.texts)
-                            .font(.subheadline)
-                        Spacer()
-                        Text("\(viewModel.getNumberBlocksLeftNextHalving()) \(Texts.restante)")
-                            .foregroundStyle(Color.texts)
-                            .font(.subheadline)
+                
+                VStack {
+                    NavigationLink {
+                        HalvingSpecificView()
+                    } label: {
+                        
+                        HStack {
+                            VStack{
+                                HStack {
+                                    Text("\(viewModel.getNumberBlocksAfterLastHalving(lastBlockViewModel.lastBlock)) \(Texts.blocos)")
+                                        .foregroundStyle(Color.texts)
+                                        .font(.subheadline)
+                                    Spacer()
+                                    Text("\(viewModel.getNumberBlocksLeftNextHalving()) \(Texts.restante)")
+                                        .foregroundStyle(Color.texts)
+                                        .font(.subheadline)
+                                }
+                                
+                                RoundedRectangle(cornerRadius: CGFloat.cornerRadius)
+                                    .frame(height: 25)
+                                    .foregroundStyle(Color.myBackground)
+                                    .overlay(alignment: .leading) {
+                                        GeometryReader { geometry in
+                                            RoundedRectangle(cornerRadius: CGFloat.cornerRadius)
+                                                .fill(Color.primaryText)
+                                                .frame(width: progress * geometry.size.width, height: 25)
+                                                .animation(.easeInOut, value: progress)
+                                        }
+                                    }
+                                
+                                HStack {
+                                    Text("\(progress * 100, specifier: "%.1f")%")
+                                        .foregroundStyle(Color.texts)
+                                        .font(.caption2)
+                                    Spacer()
+                                }
+                            }
+                            
+                            Image(systemName: "chevron.right")
+                                .resizable()
+                                .frame(width: 10, height: 15)
+                                .foregroundStyle(Color.gray)
+                                .padding(.leading)
+                        }
                     }
                     
-                    RoundedRectangle(cornerRadius: CGFloat.cornerRadius)
-                        .frame(height: 25)
-                        .foregroundStyle(Color.myBackground)
-                        .overlay(alignment: .leading) {
-                            GeometryReader { geometry in
-                                RoundedRectangle(cornerRadius: CGFloat.cornerRadius)
-                                    .fill(Color.primaryText)
-                                    .frame(width: progress * geometry.size.width, height: 25)
-                                    .animation(.easeInOut, value: progress)
-                            }
-                        }
                 }
                 .padding()
                 .background(Color.backgroundBox)

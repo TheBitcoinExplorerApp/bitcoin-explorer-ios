@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Halving: Equatable {
+struct Halving: Hashable, Equatable, Identifiable {
+    let id = UUID()
     let blockHeight: Int64
     let estimatedTime: TimeInterval
     let newBlockReward: Double
