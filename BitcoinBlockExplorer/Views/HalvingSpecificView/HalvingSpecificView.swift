@@ -12,7 +12,7 @@ struct HalvingSpecificView: View {
     @EnvironmentObject private var lastBlockViewModel: LastBlockViewModel
     
     var body: some View {
-        List {
+        Form {
             if viewModel.hasFinishedHalving {
                 Text(Texts.halvingCountdownFinished)
                     .font(.title2)
