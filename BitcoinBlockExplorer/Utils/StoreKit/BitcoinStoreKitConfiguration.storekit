@@ -121,8 +121,23 @@
             },
             {
               "description" : "Acesse todos os dados da Blockchain",
-              "displayName" : "Bitcoin Block Explorer Pro",
+              "displayName" : "Bitcoin Explorer Pro",
               "locale" : "pt_BR"
+            },
+            {
+              "description" : "Доступ ко всем данным блокчейна Биткоина",
+              "displayName" : "Биткоин-обозреватель PRO",
+              "locale" : "ru"
+            },
+            {
+              "description" : "访问所有比特币区块链数据\n",
+              "displayName" : "比特币探险者 PRO\n",
+              "locale" : "zh_CN"
+            },
+            {
+              "description" : "Zugriff auf alle Bitcoin Blockchain-Daten",
+              "displayName" : "Bitcoin Explorer Pro\n",
+              "locale" : "de"
             }
           ],
           "productID" : "VictorHugoPachecoAraujo.BitcoinBlockExplorer.monthly",
