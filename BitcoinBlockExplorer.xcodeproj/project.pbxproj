@@ -75,6 +75,7 @@
 		9BEEACA22C8F7C0200E2E120 /* TextsFeesViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEEACA12C8F7C0200E2E120 /* TextsFeesViewComponent.swift */; };
 		9BEEACA42C8F85DE00E2E120 /* AdViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEEACA32C8F85DE00E2E120 /* AdViewComponent.swift */; };
 		9BEEACA62C8F870A00E2E120 /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEEACA52C8F870A00E2E120 /* NavigationBarModifier.swift */; };
+		9BEFA5742D57B32F003D2BF8 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9BEFA5732D57B32F003D2BF8 /* InfoPlist.xcstrings */; };
 		9BFA12452BAB104C000C0CB5 /* DonationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA12442BAB104C000C0CB5 /* DonationsView.swift */; };
 		9BFA12472BAB1541000C0CB5 /* LabelLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA12462BAB1541000C0CB5 /* LabelLink.swift */; };
 		9BFA124D2BAB4A4B000C0CB5 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA124C2BAB4A4B000C0CB5 /* ToastView.swift */; };
@@ -152,6 +153,7 @@
 		9BEEACA12C8F7C0200E2E120 /* TextsFeesViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextsFeesViewComponent.swift; sourceTree = "<group>"; };
 		9BEEACA32C8F85DE00E2E120 /* AdViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViewComponent.swift; sourceTree = "<group>"; };
 		9BEEACA52C8F870A00E2E120 /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
+		9BEFA5732D57B32F003D2BF8 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 		9BFA12442BAB104C000C0CB5 /* DonationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationsView.swift; sourceTree = "<group>"; };
 		9BFA12462BAB1541000C0CB5 /* LabelLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelLink.swift; sourceTree = "<group>"; };
 		9BFA124C2BAB4A4B000C0CB5 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				9B3C000F2BAC7EC6000B55B9 /* Texts */,
 				9B3852D52B7C2B2300E2D576 /* Localizable.xcstrings */,
 				9B3C00122BAC7F59000B55B9 /* Modifiers */,
+				9BEFA5732D57B32F003D2BF8 /* InfoPlist.xcstrings */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -688,6 +691,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BC226192A0C68CB0069FDEB /* Preview Assets.xcassets in Resources */,
+				9BEFA5742D57B32F003D2BF8 /* InfoPlist.xcstrings in Resources */,
 				9B35148C2D2F42160034FF98 /* BitcoinStoreKitConfiguration.storekit in Resources */,
 				9BC226162A0C68CB0069FDEB /* Assets.xcassets in Resources */,
 				9B3852D62B7C2B2300E2D576 /* Localizable.xcstrings in Resources */,
@@ -871,6 +875,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -924,6 +929,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -942,6 +948,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BitcoinBlockExplorer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "$(PRODUCT_NAME)";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -978,6 +985,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BitcoinBlockExplorer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "$(PRODUCT_NAME)";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

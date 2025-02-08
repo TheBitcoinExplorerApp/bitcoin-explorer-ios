@@ -184,7 +184,7 @@ struct CalculatorView: View {
                         TextField(Texts.Sats, text: $satsValue)
                             .font(.title3)
                             .bold()
-                            .keyboardType(.decimalPad)
+                            .keyboardType(.numberPad)
                             .focused($isFocusedInSats)
                             .onChange(of: satsValue) { _ in
                                 if satsValue.isEmpty {

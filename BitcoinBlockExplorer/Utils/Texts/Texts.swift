@@ -81,7 +81,7 @@ extension Texts {
     
     static let bitcoinIcone: String = "bitcoinIcone"
     
-    static let titleOfTheApp: String = "Bitcoin Block Explorer"
+    static let titleOfTheApp: String = String(localized: "titleOfTheApp")
 }
 
 // Blocks labels
