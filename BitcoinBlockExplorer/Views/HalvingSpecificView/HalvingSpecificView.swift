@@ -21,21 +21,21 @@ struct HalvingSpecificView: View {
             } else {
                 
                 Section {
-                    Text("Next Halving at height: ")
+                    Text("\(Texts.nextHalvingAtHeight) ")
                         .font(.callout)
                     + Text("\(viewModel.getNextHalvingBlockHeight(lastBlockViewModel.lastBlock))")
                         .foregroundColor(Color.primaryText)
                         .font(.title2)
                         .bold()
                     
-                    Text("Current Block Reward: ")
+                    Text("\(Texts.currentBlockReward) ")
                         .font(.callout)
                     +
                     Text("\(getFormattedBlockReward(viewModel.getCurrentBlockReward(lastBlockViewModel.lastBlock)))")
                         .foregroundColor(Color.primaryText)
                         .font(.system(.headline, weight: .semibold))
                     
-                    Text("Next Block Reward: ")
+                    Text("\(Texts.nextBlockReward) ")
                         .font(.callout)
                     +
                     Text("\(getFormattedBlockReward(viewModel.getNextBlockReward(lastBlockViewModel.lastBlock)))")
@@ -46,23 +46,23 @@ struct HalvingSpecificView: View {
                 .listRowBackground(Color.backgroundBox)
                 
                 Section {
-                    Text("Estimated date to next halving:\n")
+                    Text("\(Texts.estimatedDate)\n")
                         .font(.body)
                     +
                     Text("\(viewModel.getNextHalvingTime(lastBlockViewModel.lastBlock))\n")
                         .foregroundColor(Color.primaryText)
                         .font(.system(.headline, weight: .semibold))
                     +
-                    Text("Assumed Block Interval of 10 minutes")
+                    Text(Texts.assumedBlockInterval)
                         .font(.caption2)
                 }
                 .foregroundStyle(Color.texts)
                 .listRowBackground(Color.backgroundBox)
                 
-                Section("Previous and upcomming halvings") {
+                Section(Texts.previousAndUpcoming) {
                     ForEach(Array(viewModel.halvings.enumerated()), id: \.element.id) { index, halving in
                         VStack(alignment: .leading) {
-                            Text("Halving \(index + 1) at height ")
+                            Text("\(Texts.halving) \(index + 1) \(Texts.atHeight) ")
                                 .font(.title3)
                             +
                             Text("\(halving.blockHeight)")
@@ -73,7 +73,7 @@ struct HalvingSpecificView: View {
                             Text("\(formatTipeFullDate(halving.estimatedTime))")
                                 .font(.subheadline)
                             
-                            Text("New Block Reward: ")
+                            Text("\(Texts.newBlockReward) ")
                                 .font(.footnote)
                             +
                             Text("\(getFormattedBlockReward(halving.newBlockReward))")
@@ -96,10 +96,11 @@ struct HalvingSpecificView: View {
             
         .toolbar {
             ToolbarItem(placement: .principal) {
-                Text("Halvings")
+                Text(Texts.halvings)
                     .foregroundStyle(Color.texts)
             }
         }
+        .toolbarBackground(Color.myBackground, for: .navigationBar)
         
     }
         

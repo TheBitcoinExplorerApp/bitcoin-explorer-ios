@@ -156,6 +156,24 @@ extension Texts {
     static let restante: String = String(localized: "restante")
     
     static let halvingCountdownFinished: String = String(localized: "halvingCountdownFinished")
+    
+    static let halvings: String = String(localized: "halvings")
+    
+    static let newBlockReward: String = String(localized: "newBlockReward")
+    
+    static let atHeight: String = String(localized: "atHeight")
+    
+    static let previousAndUpcoming: String = String(localized: "previousAndUpcoming")
+    
+    static let assumedBlockInterval: String = String(localized: "assumedBlockInterval")
+    
+    static let estimatedDate: String = String(localized: "estimatedDate")
+    
+    static let nextBlockReward: String = String(localized: "nextBlockReward")
+    
+    static let currentBlockReward: String = String(localized: "currentBlockReward")
+    
+    static let nextHalvingAtHeight: String = String(localized: "nextHalvingAtHeight")
 }
 
 // Full node label
