@@ -29,7 +29,6 @@
 		9B331ED72D538D2C00D864D6 /* EachBlockSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B331ED62D538D2C00D864D6 /* EachBlockSearchView.swift */; };
 		9B331ED92D53A6F200D864D6 /* BlockSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B331ED82D53A6EB00D864D6 /* BlockSearch.swift */; };
 		9B3514882D2F41970034FF98 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3514872D2F41970034FF98 /* StoreKit.framework */; };
-		9B35148C2D2F42160034FF98 /* BitcoinStoreKitConfiguration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 9B35148B2D2F42160034FF98 /* BitcoinStoreKitConfiguration.storekit */; };
 		9B3514912D2F45180034FF98 /* StoreKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3514902D2F45180034FF98 /* StoreKitView.swift */; };
 		9B376E862D52F6260094CFD7 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B376E852D52F6220094CFD7 /* SearchView.swift */; };
 		9B376E892D52F9B40094CFD7 /* EachTransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B376E882D52F9AB0094CFD7 /* EachTransactionViewModel.swift */; };
@@ -53,6 +52,7 @@
 		9BADB9092D4DA3D6007D0535 /* DifficultyAdjustmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADB9082D4DA3D6007D0535 /* DifficultyAdjustmentView.swift */; };
 		9BB0E8732D4162F100C6777A /* SheetToolbarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB0E8722D4162D900C6777A /* SheetToolbarModifier.swift */; };
 		9BB0E8772D41684300C6777A /* EachBlockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB0E8762D41683D00C6777A /* EachBlockViewModel.swift */; };
+		9BB2D9562D5BCCB4005B6B98 /* BitcoinBlockExplorerStoreKit.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 9BB2D9552D5BCCB4005B6B98 /* BitcoinBlockExplorerStoreKit.storekit */; };
 		9BBA12FF2D550EBD00E1A865 /* CalculatorViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBA12FE2D550EB400E1A865 /* CalculatorViewExtension.swift */; };
 		9BC226122A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC226112A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift */; };
 		9BC226142A0C68CA0069FDEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC226132A0C68CA0069FDEB /* ContentView.swift */; };
@@ -105,7 +105,6 @@
 		9B331ED62D538D2C00D864D6 /* EachBlockSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachBlockSearchView.swift; sourceTree = "<group>"; };
 		9B331ED82D53A6EB00D864D6 /* BlockSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockSearch.swift; sourceTree = "<group>"; };
 		9B3514872D2F41970034FF98 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		9B35148B2D2F42160034FF98 /* BitcoinStoreKitConfiguration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = BitcoinStoreKitConfiguration.storekit; sourceTree = "<group>"; };
 		9B3514902D2F45180034FF98 /* StoreKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitView.swift; sourceTree = "<group>"; };
 		9B376E852D52F6220094CFD7 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		9B376E882D52F9AB0094CFD7 /* EachTransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachTransactionViewModel.swift; sourceTree = "<group>"; };
@@ -130,6 +129,7 @@
 		9BADB9082D4DA3D6007D0535 /* DifficultyAdjustmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyAdjustmentView.swift; sourceTree = "<group>"; };
 		9BB0E8722D4162D900C6777A /* SheetToolbarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetToolbarModifier.swift; sourceTree = "<group>"; };
 		9BB0E8762D41683D00C6777A /* EachBlockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachBlockViewModel.swift; sourceTree = "<group>"; };
+		9BB2D9552D5BCCB4005B6B98 /* BitcoinBlockExplorerStoreKit.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = BitcoinBlockExplorerStoreKit.storekit; sourceTree = "<group>"; };
 		9BBA12FE2D550EB400E1A865 /* CalculatorViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewExtension.swift; sourceTree = "<group>"; };
 		9BC2260E2A0C68CA0069FDEB /* BitcoinBlockExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinBlockExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC226112A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinBlockExplorerApp.swift; sourceTree = "<group>"; };
@@ -266,7 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				9BFDF4A52D3849E200EE4046 /* SubscriptionStore.swift */,
-				9B35148B2D2F42160034FF98 /* BitcoinStoreKitConfiguration.storekit */,
+				9BB2D9552D5BCCB4005B6B98 /* BitcoinBlockExplorerStoreKit.storekit */,
 			);
 			path = StoreKit;
 			sourceTree = "<group>";
@@ -692,9 +692,9 @@
 			files = (
 				9BC226192A0C68CB0069FDEB /* Preview Assets.xcassets in Resources */,
 				9BEFA5742D57B32F003D2BF8 /* InfoPlist.xcstrings in Resources */,
-				9B35148C2D2F42160034FF98 /* BitcoinStoreKitConfiguration.storekit in Resources */,
 				9BC226162A0C68CB0069FDEB /* Assets.xcassets in Resources */,
 				9B3852D62B7C2B2300E2D576 /* Localizable.xcstrings in Resources */,
+				9BB2D9562D5BCCB4005B6B98 /* BitcoinBlockExplorerStoreKit.storekit in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -942,7 +942,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"BitcoinBlockExplorer/Preview Content\"";
 				DEVELOPMENT_TEAM = K559Z2V9Q2;
 				ENABLE_PREVIEWS = YES;
@@ -980,7 +980,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"BitcoinBlockExplorer/Preview Content\"";
 				DEVELOPMENT_TEAM = K559Z2V9Q2;
 				ENABLE_PREVIEWS = YES;

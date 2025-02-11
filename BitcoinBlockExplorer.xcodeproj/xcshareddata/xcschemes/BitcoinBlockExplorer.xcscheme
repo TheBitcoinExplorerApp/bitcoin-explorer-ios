@@ -52,7 +52,7 @@
          </BuildableReference>
       </BuildableProductRunnable>
       <StoreKitConfigurationFileReference
-         identifier = "../BitcoinBlockExplorer/Utils/StoreKit/BitcoinStoreKitConfiguration.storekit">
+         identifier = "../BitcoinBlockExplorer/Utils/StoreKit/BitcoinBlockExplorerStoreKit.storekit">
       </StoreKitConfigurationFileReference>
    </LaunchAction>
    <ProfileAction

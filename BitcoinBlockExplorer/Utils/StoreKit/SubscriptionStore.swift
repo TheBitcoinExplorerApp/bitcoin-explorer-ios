@@ -72,7 +72,7 @@ final class SubscriptionStore: ObservableObject {
         }
     }
     
-    private let productsId: [String] = ["VictorHugoPachecoAraujo.BitcoinBlockExplorer.monthly"]
+    private let productsId: [String] = ["VictorHugoPachecoAraujo.BitcoinBlockExplorer.pro"]
     
     private var updateListenerTask: TransactionListener? = nil
     
