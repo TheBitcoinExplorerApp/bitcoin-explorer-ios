@@ -41,19 +41,19 @@ struct ConfigurationsView: View {
                 }.listRowBackground(Color.backgroundBox)
                 
                 Section(Texts.support) {
-                    NavigationLink {
-                        DonationsView()
-                    } label: {
-                        Label {
-                            HStack {
-                                Text(Texts.donations)
-                                    .foregroundStyle(Color.texts)
-                            }
-                        } icon: {
-                            Image(systemName: "bitcoinsign")
-                                .foregroundStyle(Color.primaryText)
-                        }
-                    }
+//                    NavigationLink {
+//                        DonationsView()
+//                    } label: {
+//                        Label {
+//                            HStack {
+//                                Text(Texts.donations)
+//                                    .foregroundStyle(Color.texts)
+//                            }
+//                        } icon: {
+//                            Image(systemName: "bitcoinsign")
+//                                .foregroundStyle(Color.primaryText)
+//                        }
+//                    }
                     
                     LabelLink(Texts.sourceCode, url: "https://github.com/TheBitcoinExplorerApp/bitcoin-explorer-ios", systemImage: "chevron.left.forwardslash.chevron.right")
                     

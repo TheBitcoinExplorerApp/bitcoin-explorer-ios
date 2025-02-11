@@ -19,6 +19,7 @@
   "settings" : {
     "_askToBuyEnabled" : false,
     "_billingIssuesEnabled" : false,
+    "_disableDialogs" : true,
     "_failTransactionsEnabled" : false,
     "_locale" : "en_US",
     "_storefront" : "USA",
