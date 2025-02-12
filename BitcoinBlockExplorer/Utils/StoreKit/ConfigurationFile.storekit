@@ -1,0 +1,138 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "0434A22E",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_applicationInternalID" : "6449553605",
+    "_developerTeamID" : "K559Z2V9Q2",
+    "_disableDialogs" : true,
+    "_failTransactionsEnabled" : false,
+    "_lastSynchronizedDate" : 761071009.50658,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "21634746",
+      "localizations" : [
+
+      ],
+      "name" : "All Features",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "0.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "6741866665",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Access to all blockchain data",
+              "displayName" : "Bitcoin Block Explorer Pro",
+              "locale" : "en_US"
+            },
+            {
+              "description" : "Acesso a todos os dados da blockchain",
+              "displayName" : "Bitcoin Block Explorer Pro",
+              "locale" : "pt_BR"
+            },
+            {
+              "description" : "Zugriff auf alle Blockchain-Daten",
+              "displayName" : "Bitcoin Explorer Pro",
+              "locale" : "de"
+            },
+            {
+              "description" : "Доступ ко всем данным блокчейна",
+              "displayName" : "Биткоин-обозреватель Pro",
+              "locale" : "ru"
+            },
+            {
+              "description" : "访问所有区块链数据",
+              "displayName" : "比特币探险者 Pro",
+              "locale" : "zh_CN"
+            }
+          ],
+          "productID" : "VictorHugoPachecoAraujo.BitcoinBlockExplorer.pro1",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Bitcoin Block Explorer Pro",
+          "subscriptionGroupID" : "21634746",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

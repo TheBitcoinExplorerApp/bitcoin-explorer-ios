@@ -52,7 +52,6 @@
 		9BADB9092D4DA3D6007D0535 /* DifficultyAdjustmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADB9082D4DA3D6007D0535 /* DifficultyAdjustmentView.swift */; };
 		9BB0E8732D4162F100C6777A /* SheetToolbarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB0E8722D4162D900C6777A /* SheetToolbarModifier.swift */; };
 		9BB0E8772D41684300C6777A /* EachBlockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB0E8762D41683D00C6777A /* EachBlockViewModel.swift */; };
-		9BB2D9562D5BCCB4005B6B98 /* BitcoinBlockExplorerStoreKit.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 9BB2D9552D5BCCB4005B6B98 /* BitcoinBlockExplorerStoreKit.storekit */; };
 		9BBA12FF2D550EBD00E1A865 /* CalculatorViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBA12FE2D550EB400E1A865 /* CalculatorViewExtension.swift */; };
 		9BC226122A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC226112A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift */; };
 		9BC226142A0C68CA0069FDEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC226132A0C68CA0069FDEB /* ContentView.swift */; };
@@ -60,6 +59,7 @@
 		9BC226192A0C68CB0069FDEB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BC226182A0C68CB0069FDEB /* Preview Assets.xcassets */; };
 		9BC487A62C1B8C89007E975A /* BitcoinWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC487A52C1B8C89007E975A /* BitcoinWalletView.swift */; };
 		9BC487A82C1B8CC0007E975A /* LightningWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC487A72C1B8CC0007E975A /* LightningWalletView.swift */; };
+		9BD0F9602D5D02D2002F12DB /* ConfigurationFile.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 9BD0F95F2D5D02D2002F12DB /* ConfigurationFile.storekit */; };
 		9BD669022D4AA6D1001709D1 /* Halvings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD669012D4AA6C9001709D1 /* Halvings.swift */; };
 		9BD669042D4BB376001709D1 /* HalvingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD669032D4BB376001709D1 /* HalvingView.swift */; };
 		9BD669072D4C3DD1001709D1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD669062D4C3DC1001709D1 /* Extensions.swift */; };
@@ -129,7 +129,6 @@
 		9BADB9082D4DA3D6007D0535 /* DifficultyAdjustmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyAdjustmentView.swift; sourceTree = "<group>"; };
 		9BB0E8722D4162D900C6777A /* SheetToolbarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetToolbarModifier.swift; sourceTree = "<group>"; };
 		9BB0E8762D41683D00C6777A /* EachBlockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachBlockViewModel.swift; sourceTree = "<group>"; };
-		9BB2D9552D5BCCB4005B6B98 /* BitcoinBlockExplorerStoreKit.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = BitcoinBlockExplorerStoreKit.storekit; sourceTree = "<group>"; };
 		9BBA12FE2D550EB400E1A865 /* CalculatorViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewExtension.swift; sourceTree = "<group>"; };
 		9BC2260E2A0C68CA0069FDEB /* BitcoinBlockExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinBlockExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC226112A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinBlockExplorerApp.swift; sourceTree = "<group>"; };
@@ -138,6 +137,7 @@
 		9BC226182A0C68CB0069FDEB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9BC487A52C1B8C89007E975A /* BitcoinWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinWalletView.swift; sourceTree = "<group>"; };
 		9BC487A72C1B8CC0007E975A /* LightningWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningWalletView.swift; sourceTree = "<group>"; };
+		9BD0F95F2D5D02D2002F12DB /* ConfigurationFile.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = ConfigurationFile.storekit; sourceTree = "<group>"; };
 		9BD669012D4AA6C9001709D1 /* Halvings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Halvings.swift; sourceTree = "<group>"; };
 		9BD669032D4BB376001709D1 /* HalvingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalvingView.swift; sourceTree = "<group>"; };
 		9BD669062D4C3DC1001709D1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -266,7 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				9BFDF4A52D3849E200EE4046 /* SubscriptionStore.swift */,
-				9BB2D9552D5BCCB4005B6B98 /* BitcoinBlockExplorerStoreKit.storekit */,
+				9BD0F95F2D5D02D2002F12DB /* ConfigurationFile.storekit */,
 			);
 			path = StoreKit;
 			sourceTree = "<group>";
@@ -692,9 +692,9 @@
 			files = (
 				9BC226192A0C68CB0069FDEB /* Preview Assets.xcassets in Resources */,
 				9BEFA5742D57B32F003D2BF8 /* InfoPlist.xcstrings in Resources */,
+				9BD0F9602D5D02D2002F12DB /* ConfigurationFile.storekit in Resources */,
 				9BC226162A0C68CB0069FDEB /* Assets.xcassets in Resources */,
 				9B3852D62B7C2B2300E2D576 /* Localizable.xcstrings in Resources */,
-				9BB2D9562D5BCCB4005B6B98 /* BitcoinBlockExplorerStoreKit.storekit in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
