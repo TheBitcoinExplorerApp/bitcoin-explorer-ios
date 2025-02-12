@@ -21,7 +21,7 @@
     "_developerTeamID" : "K559Z2V9Q2",
     "_disableDialogs" : true,
     "_failTransactionsEnabled" : false,
-    "_lastSynchronizedDate" : 761071009.50658,
+    "_lastSynchronizedDate" : 761093333.90476501,
     "_locale" : "en_US",
     "_storefront" : "USA",
     "_storeKitErrors" : [
@@ -90,18 +90,23 @@
           "displayPrice" : "0.99",
           "familyShareable" : false,
           "groupNumber" : 1,
-          "internalID" : "6741866665",
+          "internalID" : "6741874129",
           "introductoryOffer" : null,
           "localizations" : [
+            {
+              "description" : "Acesso a todos os dados da blockchain",
+              "displayName" : "Bitcoin Block Explorer Pro",
+              "locale" : "pt_BR"
+            },
             {
               "description" : "Access to all blockchain data",
               "displayName" : "Bitcoin Block Explorer Pro",
               "locale" : "en_US"
             },
             {
-              "description" : "Acesso a todos os dados da blockchain",
-              "displayName" : "Bitcoin Block Explorer Pro",
-              "locale" : "pt_BR"
+              "description" : "访问所有区块链数据",
+              "displayName" : "比特币探险者 Pro",
+              "locale" : "zh_CN"
             },
             {
               "description" : "Zugriff auf alle Blockchain-Daten",
@@ -112,14 +117,9 @@
               "description" : "Доступ ко всем данным блокчейна",
               "displayName" : "Биткоин-обозреватель Pro",
               "locale" : "ru"
-            },
-            {
-              "description" : "访问所有区块链数据",
-              "displayName" : "比特币探险者 Pro",
-              "locale" : "zh_CN"
             }
           ],
-          "productID" : "VictorHugoPachecoAraujo.BitcoinBlockExplorer.pro1",
+          "productID" : "VictorHugoPachecoAraujo.BitcoinBlockExplorer.pro2",
           "recurringSubscriptionPeriod" : "P1M",
           "referenceName" : "Bitcoin Block Explorer Pro",
           "subscriptionGroupID" : "21634746",
