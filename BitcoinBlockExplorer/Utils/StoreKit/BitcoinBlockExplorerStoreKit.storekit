@@ -19,8 +19,9 @@
   "settings" : {
     "_applicationInternalID" : "6449553605",
     "_developerTeamID" : "K559Z2V9Q2",
+    "_disableDialogs" : true,
     "_failTransactionsEnabled" : false,
-    "_lastSynchronizedDate" : 760991540.69374204,
+    "_lastSynchronizedDate" : 761057743.25559199,
     "_locale" : "en_US",
     "_storefront" : "USA",
     "_storeKitErrors" : [
@@ -40,7 +41,10 @@
         "name" : "Verification"
       },
       {
-        "current" : null,
+        "current" : {
+          "index" : 2,
+          "type" : "generic"
+        },
         "enabled" : false,
         "name" : "App Store Sync"
       },
@@ -72,63 +76,7 @@
     ]
   },
   "subscriptionGroups" : [
-    {
-      "id" : "21634178",
-      "localizations" : [
 
-      ],
-      "name" : "All Features",
-      "subscriptions" : [
-        {
-          "adHocOffers" : [
-
-          ],
-          "codeOffers" : [
-
-          ],
-          "displayPrice" : "0.99",
-          "familyShareable" : false,
-          "groupNumber" : 1,
-          "internalID" : "6741814241",
-          "introductoryOffer" : null,
-          "localizations" : [
-            {
-              "description" : "Zugriff auf alle Bitcoin Blockchain-Daten",
-              "displayName" : "Bitcoin Explorer Pro",
-              "locale" : "de"
-            },
-            {
-              "description" : "Access to the all Bitcoin Blockchain data",
-              "displayName" : "Bitcoin Block Explorer Pro",
-              "locale" : "en_US"
-            },
-            {
-              "description" : "Acesse todos os dados da Blockchain",
-              "displayName" : "Bitcoin Explorer Pro",
-              "locale" : "pt_BR"
-            },
-            {
-              "description" : "访问所有比特币区块链数据",
-              "displayName" : "比特币探险者 PRO",
-              "locale" : "zh_CN"
-            },
-            {
-              "description" : "Доступ ко всем данным блокчейна Биткоина",
-              "displayName" : "Биткоин-обозреватель PRO",
-              "locale" : "ru"
-            }
-          ],
-          "productID" : "VictorHugoPachecoAraujo.BitcoinBlockExplorer.pro",
-          "recurringSubscriptionPeriod" : "P1M",
-          "referenceName" : "Bitcoin Block Explorer Pro",
-          "subscriptionGroupID" : "21634178",
-          "type" : "RecurringSubscription",
-          "winbackOffers" : [
-
-          ]
-        }
-      ]
-    }
   ],
   "version" : {
     "major" : 4,

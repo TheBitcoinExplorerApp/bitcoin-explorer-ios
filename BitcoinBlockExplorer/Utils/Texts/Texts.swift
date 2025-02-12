@@ -53,6 +53,8 @@ extension Texts {
     static let reportIssues: String = String(localized: "reportIssues")
     
     static let currencyLabel: String = String(localized: "currencyLabel")
+    
+    static let informativeLabel: String = String(localized: "informativeLabel")
 }
 
 // Donations Labels

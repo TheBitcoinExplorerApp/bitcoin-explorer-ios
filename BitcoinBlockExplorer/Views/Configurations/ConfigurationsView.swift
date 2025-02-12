@@ -91,6 +91,11 @@ struct ConfigurationsView: View {
                     }.listRowBackground(Color.backgroundBox)
                 }
                 
+                Text(Texts.informativeLabel)
+                    .font(.footnote)
+                    .foregroundStyle(Color.texts)
+                    .listRowBackground(Color.clear)
+                
             }
             .navigationTitle(Texts.configuracoes)
             .navigationBarTitleColor(Color.primaryText)

@@ -1613,6 +1613,41 @@
         }
       }
     },
+    "informativeLabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Gebührenschätzung basiert auf einer durchschnittlichen nativen SegWit-Transaktion von 140 vByte"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fee price estimation is based on an average native 140 vByte segwit transaction"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A estimativa do preço da taxa é baseada em uma transação segwit nativa média de 140 vByte"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оценка бесплатной цены основана на средней собственной транзакции segwit объемом 140 байт"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "免费价格估算基于平均140字节segwit交易"
+          }
+        }
+      }
+    },
     "internetConnectionLabel" : {
       "extractionState" : "manual",
       "localizations" : {
