@@ -10,6 +10,7 @@ import Foundation
 struct Coins2: Codable {
     let BRL: Last
     let CNY: Last
+    let RUB: Last
 }
 
 struct Last: Codable {

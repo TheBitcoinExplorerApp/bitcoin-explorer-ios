@@ -15,7 +15,11 @@ class CurrencyViewModel: ObservableObject {
     var flag: String = "🇺🇸"
     var symbol: String?
     
-    @AppStorage("currency") var currency: Int = 0
+    @AppStorage("currency") var currency: Int = 0 {
+        didSet {
+            self.fetchCoins()
+        }
+    }
     
     func fetchCoins() {
         self.apiHandler.fetchData(from: .coins) { (result: Result<Coins, Error>) in
@@ -73,6 +77,10 @@ class CurrencyViewModel: ObservableObject {
                         self.price = coins.CNY.last
                         self.symbol = "¥"
                         self.flag = "🇨🇳"
+                    case 9:
+                        self.price = coins.RUB.last
+                        self.symbol = "₽"
+                        self.flag = "🇷🇺"
                     default:
                         break
                     }

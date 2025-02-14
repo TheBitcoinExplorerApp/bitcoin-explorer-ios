@@ -21,7 +21,7 @@
     "_developerTeamID" : "K559Z2V9Q2",
     "_disableDialogs" : true,
     "_failTransactionsEnabled" : false,
-    "_lastSynchronizedDate" : 761093333.90476501,
+    "_lastSynchronizedDate" : 761232833.93057704,
     "_locale" : "en_US",
     "_storefront" : "USA",
     "_storeKitErrors" : [
@@ -109,14 +109,14 @@
               "locale" : "zh_CN"
             },
             {
-              "description" : "Zugriff auf alle Blockchain-Daten",
-              "displayName" : "Bitcoin Explorer Pro",
-              "locale" : "de"
-            },
-            {
               "description" : "Доступ ко всем данным блокчейна",
               "displayName" : "Биткоин-обозреватель Pro",
               "locale" : "ru"
+            },
+            {
+              "description" : "Zugriff auf alle Blockchain-Daten",
+              "displayName" : "Bitcoin Explorer Pro",
+              "locale" : "de"
             }
           ],
           "productID" : "VictorHugoPachecoAraujo.BitcoinBlockExplorer.pro2",

@@ -8,28 +8,28 @@
 import SwiftUI
 
 struct BitcoinPriceViewComponent: View {
-    
-    @EnvironmentObject var currencyViewModel:  CurrencyViewModel
-    
     var body: some View {
         Text(Texts.bitcoinPrice)
             .foregroundStyle(Color.texts)
             .font(.headline)
         
         HStack{
-            Text(currencyViewModel.flag)
+
+            CurrencyPickerComponent()
             
             CurrencyView(rate: 1)
-                .font(.headline)
+                .font(.system(.headline, design: .default, weight: .bold))
                 .foregroundStyle(Color.primaryText)
-        }.padding()
+                .padding(.trailing)
+            
+        }
+        .padding(.vertical, 10)
             .background(Color.backgroundBox)
             .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
     }
 }
 
 #Preview {
-    let vm = CurrencyViewModel()
     return BitcoinPriceViewComponent()
-        .environmentObject(vm)
+        .environmentObject(CurrencyViewModel())
 }

@@ -9,39 +9,21 @@ import SwiftUI
 
 struct ConfigurationsView: View {
     
-    @AppStorage("selected") var selected = 0
-    
-    @EnvironmentObject var currencyViewModel:  CurrencyViewModel
     @EnvironmentObject var store: SubscriptionStore
     @EnvironmentObject var networkMonitor: NetworkMonitor
     
     @State private var showSubscriptionView: Bool = false
-    
-    let currencies = ["🇺🇸 USD", "🇪🇺 EUR", "🇬🇧 GBP", "🇨🇦 CAD", "🇨🇭 CHF", "🇦🇺 AUD", "🇯🇵 JPY", "🇧🇷 BRL", "🇨🇳 CNY"]
     
     var body: some View {
         
         VStack {
             List {
                 Section {
-                    Picker(selection: $selected, label: Text(Texts.currencyLabel)
-                        .foregroundStyle(Color.texts)) {
-                            
-                            ForEach(0 ..< self.currencies.count, id: \.self) { index in
-                                Text(self.currencies[index])
-                                    .tag(index)
-                                    .foregroundStyle(Color.texts)
-                                
-                            }
-                            
-                        }.onChange(of: selected) { newValue in
-                            currencyViewModel.currency = newValue
-                        }
-                    
+                    CurrencyPickerComponent()
                 }.listRowBackground(Color.backgroundBox)
                 
                 Section(Texts.support) {
-
+                    
                     LabelLink(Texts.sourceCode, url: "https://github.com/TheBitcoinExplorerApp/bitcoin-explorer-ios", systemImage: "chevron.left.forwardslash.chevron.right")
                     
                     LabelLink(Texts.reportIssues, url: "https://bitcoinblockchainexplorer.atlassian.net/servicedesk/customer/portal/1", systemImage: "ladybug.fill")

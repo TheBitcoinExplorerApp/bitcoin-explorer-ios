@@ -110,6 +110,11 @@ extension CalculatorView {
                         self.symbol = "¥"
                         self.flag = "🇨🇳"
                         self.ticker = "CNY"
+                    case 9:
+                        self.price = coins.RUB.last
+                        self.symbol = "₽"
+                        self.flag = "🇷🇺"
+                        self.ticker = "RUB"
                     default:
                         break
                     }
