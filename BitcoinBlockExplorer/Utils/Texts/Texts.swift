@@ -55,6 +55,10 @@ extension Texts {
     static let currencyLabel: String = String(localized: "currencyLabel")
     
     static let informativeLabel: String = String(localized: "informativeLabel")
+    
+    static let privacyLabel: String = String(localized: "privacyLabel")
+    
+    static let termsLabel: String = String(localized: "termsLabel")
 }
 
 // Donations Labels

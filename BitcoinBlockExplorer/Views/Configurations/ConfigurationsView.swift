@@ -59,6 +59,10 @@ struct ConfigurationsView: View {
                     
                     LabelLink(Texts.reportIssues, url: "https://bitcoinblockchainexplorer.atlassian.net/servicedesk/customer/portal/1", systemImage: "ladybug.fill")
                     
+                    LabelLink(Texts.privacyLabel, url: "https://bitcoinblockchainexplorer.atlassian.net/servicedesk/customer/portals", systemImage: "lock.document")
+                    
+                    LabelLink(Texts.termsLabel, url: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/", systemImage: "network.badge.shield.half.filled")
+                    
                 }.listRowBackground(Color.backgroundBox)
                 
                 if networkMonitor.isConnected {
