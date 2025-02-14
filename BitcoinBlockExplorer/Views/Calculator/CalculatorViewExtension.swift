@@ -9,7 +9,7 @@ extension CalculatorView {
     func convertPrice() {
         let price = self.price
         
-        if isFocusedInBTC {
+        if !isFocusedInBTC && !isFocusedInFiat && !isFocusedInSats && !fiatValue.isEmpty && !btcValue.isEmpty && !satsValue.isEmpty {
             let btcValue = btcValue
                 .replacingOccurrences(of: ",", with: ".")
             
@@ -22,7 +22,25 @@ extension CalculatorView {
             }
         }
         
+        if isFocusedInBTC {
+            let btcValue = btcValue
+                .replacingOccurrences(of: ",", with: ".")
+            
+            if let btc = Double(btcValue) {
+                let fiatPrice = btc * price
+                
+                fiatValue = formatCoin(fiatPrice, symbol: self.symbol)
+                
+                satsValue = String(format: "%.0f", btc * Double.BtcInSats)
+            }
+            self.cameFromOther = true
+        }
+        
         if isFocusedInFiat {
+            if !fiatValue.isEmpty && cameFromOther == true {
+                fiatValue = ""
+            }
+            
             let fiatValue = fiatValue
                 .replacingOccurrences(of: ",", with: ".")
             
@@ -32,6 +50,7 @@ extension CalculatorView {
                 
                 satsValue = String(format: "%.0f", btc * Double.BtcInSats)
             }
+            self.cameFromOther = false
         }
         
         if isFocusedInSats {
@@ -41,6 +60,7 @@ extension CalculatorView {
                 
                 fiatValue = formatCoin(btc * price, symbol: self.symbol)
             }
+            self.cameFromOther = true
         }
     }
     

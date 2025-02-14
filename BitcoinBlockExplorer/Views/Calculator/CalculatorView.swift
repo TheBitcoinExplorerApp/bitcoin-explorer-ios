@@ -10,6 +10,8 @@ import SwiftUI
 struct CalculatorView: View {
     let apiHandler = APIHandler()
     
+    @State var cameFromOther: Bool = false
+    
     @EnvironmentObject var networkMonitor: NetworkMonitor
     
     @EnvironmentObject private var store: SubscriptionStore

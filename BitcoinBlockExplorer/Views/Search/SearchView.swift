@@ -36,12 +36,10 @@ struct SearchView: View {
                     .font(.headline)
                     .foregroundStyle(.red)
                     .padding()
-                    .transition(.opacity)
                     .overlay(
                         RoundedRectangle(cornerRadius: 10)
                             .stroke(isInvalid ? Color.red : Color.clear, lineWidth: 2)
                     )
-                    .animation(.easeInOut(duration: 0.3), value: isInvalid)
             }
         }
         .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: Texts.searchPlaceholder) {}
