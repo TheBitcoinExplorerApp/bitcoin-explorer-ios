@@ -15,7 +15,6 @@ struct MempoolBlocksView: View {
     @EnvironmentObject var viewModel: BlockchainViewModel
     
     @State private var isAnimating = false
-    
     @State private var startOffset: CGFloat = -1.0
     
     var body: some View {
@@ -27,59 +26,64 @@ struct MempoolBlocksView: View {
                     .font(.headline)
                 Spacer()
             }.padding(.leading)
-            
-            ScrollView(.horizontal) {
-                ZStack {
-                    Rectangle()
-                        .frame(maxWidth: .infinity, maxHeight: 5)
-                        .foregroundStyle(Color.chainBackground)
-                    
-                    HStack(spacing: 10) {
-                        mempool
-                        ForEach(viewModel.blockHeaderData, id: \.self) { block in
-                            
-                            VStack {
-                                let tamanho = formatSizeToMB(block.size)
-                                
-                                Text("\(block.height)")
-                                    .foregroundColor(Color.primaryText)
-                                    .font(.callout)
-                                    .bold()
-                                Text("~\(Int(block.extras.medianFee)) \(Texts.satVb)")
-                                    .foregroundColor(Color.texts)
-                                    .font(.footnote)
-                                Text("\(tamanho) \(Texts.MB)")
-                                    .foregroundColor(Color.texts)
-                                    .font(.callout)
-                                Text("\(block.tx_count) \(Texts.transacoes)")
-                                    .foregroundColor(Color.texts)
-                                    .truncationMode(.tail)
-                                    .font(.footnote)
-                                Text("\(block.formatTimestamp(block.timestamp))").foregroundColor(Color.texts)
-                                    .font(.footnote)
-                                
-                                Image(systemName: "chevron.down")
-                                    .resizable()
-                                    .frame(width: 10, height: 5)
-                            }
-                            .padding()
-                            .background(Color.backgroundBox)
-                            .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
-                            .onTapGesture {
-                                self.blockHeader = block
-                                abrirModal.toggle()
-                            }
-                            
-                        }
-                    }
-                }.padding(.leading)
-            }.scrollIndicators(.hidden)
-            
+      
+            blockchain
+                .scrollToBeginX()
+ 
         }
         .sheet(isPresented: $abrirModal) {
             EachBlock(abrirModal: $abrirModal, blockHeader: $blockHeader)
                 .presentationBackground(Color.myBackground)
         }
+    }
+    
+    var blockchain: some View {
+        ZStack {
+            Rectangle()
+                .frame(maxWidth: .infinity, maxHeight: 8)
+                .foregroundStyle(Color.chainBackground)
+            
+            HStack(spacing: 10) {
+                mempool
+
+                ForEach(viewModel.blockHeaderData, id: \.self) { block in
+                    
+                    VStack {
+                        let tamanho = formatSizeToMB(block.size)
+                        
+                        Text("\(block.height)")
+                            .foregroundColor(Color.primaryText)
+                            .font(.callout)
+                            .bold()
+                        Text("~\(Int(block.extras.medianFee)) \(Texts.satVb)")
+                            .foregroundColor(Color.texts)
+                            .font(.footnote)
+                        Text("\(tamanho) \(Texts.MB)")
+                            .foregroundColor(Color.texts)
+                            .font(.callout)
+                        Text("\(block.tx_count) \(Texts.transacoes)")
+                            .foregroundColor(Color.texts)
+                            .truncationMode(.tail)
+                            .font(.footnote)
+                        Text("\(block.formatTimestamp(block.timestamp))").foregroundColor(Color.texts)
+                            .font(.footnote)
+                        
+                        Image(systemName: "chevron.down")
+                            .resizable()
+                            .frame(width: 10, height: 5)
+                    }
+                    .padding()
+                    .background(Color.backgroundBox)
+                    .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
+                    .onTapGesture {
+                        self.blockHeader = block
+                        abrirModal.toggle()
+                    }
+                    
+                }
+            }
+            
+        }.padding(.leading)
     }
     
     var mempool: some View {

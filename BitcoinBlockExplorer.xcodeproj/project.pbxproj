@@ -37,6 +37,8 @@
 		9B43726D2A1CDFAA00DFE211 /* EachAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B43726C2A1CDFAA00DFE211 /* EachAddressView.swift */; };
 		9B4372712A1CE88900DFE211 /* AddressHeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4372702A1CE88900DFE211 /* AddressHeaderModel.swift */; };
 		9B5254802D5F7A230035258A /* CurrencyPickerComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B52547F2D5F7A230035258A /* CurrencyPickerComponent.swift */; };
+		9B5254832D5F91E20035258A /* ScrollOffsetPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5254822D5F91E00035258A /* ScrollOffsetPreferenceKey.swift */; };
+		9B5254852D5F93170035258A /* ScrollToPositionXModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5254842D5F930D0035258A /* ScrollToPositionXModifier.swift */; };
 		9B5564452B962FE3007AEA55 /* NavigationTitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5564442B962FE3007AEA55 /* NavigationTitleModifier.swift */; };
 		9B5689ED2B7CEFF10009A751 /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5689EC2B7CEFF10009A751 /* Texts.swift */; };
 		9B57DC582D3F38C200A810F5 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B57DC572D3F38BC00A810F5 /* APIHandler.swift */; };
@@ -114,6 +116,8 @@
 		9B43726C2A1CDFAA00DFE211 /* EachAddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachAddressView.swift; sourceTree = "<group>"; };
 		9B4372702A1CE88900DFE211 /* AddressHeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressHeaderModel.swift; sourceTree = "<group>"; };
 		9B52547F2D5F7A230035258A /* CurrencyPickerComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPickerComponent.swift; sourceTree = "<group>"; };
+		9B5254822D5F91E00035258A /* ScrollOffsetPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollOffsetPreferenceKey.swift; sourceTree = "<group>"; };
+		9B5254842D5F930D0035258A /* ScrollToPositionXModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollToPositionXModifier.swift; sourceTree = "<group>"; };
 		9B5564442B962FE3007AEA55 /* NavigationTitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitleModifier.swift; sourceTree = "<group>"; };
 		9B5689EC2B7CEFF10009A751 /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
 		9B57DC572D3F38BC00A810F5 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
@@ -208,6 +212,7 @@
 		9B2321EF2B85116D000BFBA9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				9B5254812D5F91C40035258A /* ScrollOffsetPreferenceKey */,
 				9BD674ED2D4EE0BE00440B92 /* NetworkMonitor */,
 				9BD669052D4C3DB4001709D1 /* Extensions */,
 				9B65DF632D466DD4007517B7 /* Endpoints */,
@@ -353,6 +358,7 @@
 		9B3C00122BAC7F59000B55B9 /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
+				9B5254842D5F930D0035258A /* ScrollToPositionXModifier.swift */,
 				9B1792622D52561800D4C4AA /* LockViewModifier.swift */,
 				9BAB8F482D518E6700FEE3F8 /* ErrorAlertModifier.swift */,
 				9BB0E8722D4162D900C6777A /* SheetToolbarModifier.swift */,
@@ -433,6 +439,14 @@
 				9B52547F2D5F7A230035258A /* CurrencyPickerComponent.swift */,
 			);
 			path = CurrencyPickerComponent;
+			sourceTree = "<group>";
+		};
+		9B5254812D5F91C40035258A /* ScrollOffsetPreferenceKey */ = {
+			isa = PBXGroup;
+			children = (
+				9B5254822D5F91E00035258A /* ScrollOffsetPreferenceKey.swift */,
+			);
+			path = ScrollOffsetPreferenceKey;
 			sourceTree = "<group>";
 		};
 		9B65DF622D466CD5007517B7 /* TransactionModel */ = {
@@ -782,6 +796,7 @@
 				9B2BC8FD2A155C1F00735A8D /* EachBlock.swift in Sources */,
 				9BFA12472BAB1541000C0CB5 /* LabelLink.swift in Sources */,
 				9BAB8F492D518E7500FEE3F8 /* ErrorAlertModifier.swift in Sources */,
+				9B5254832D5F91E20035258A /* ScrollOffsetPreferenceKey.swift in Sources */,
 				9BEEACA62C8F870A00E2E120 /* NavigationBarModifier.swift in Sources */,
 				9B5564452B962FE3007AEA55 /* NavigationTitleModifier.swift in Sources */,
 				9B57DC5A2D3F3AB400A810F5 /* BlockchainViewModel.swift in Sources */,
@@ -815,6 +830,7 @@
 				9BB0E8732D4162F100C6777A /* SheetToolbarModifier.swift in Sources */,
 				9BEEACA02C8F7B0500E2E120 /* BitcoinPriceViewComponent.swift in Sources */,
 				9B17925F2D52508100D4C4AA /* LockView.swift in Sources */,
+				9B5254852D5F93170035258A /* ScrollToPositionXModifier.swift in Sources */,
 				9BFDF4A62D384A0700EE4046 /* SubscriptionStore.swift in Sources */,
 				9B43726D2A1CDFAA00DFE211 /* EachAddressView.swift in Sources */,
 				9B5689ED2B7CEFF10009A751 /* Texts.swift in Sources */,
