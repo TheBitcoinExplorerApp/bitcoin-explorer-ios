@@ -29,8 +29,32 @@ class BlockchainViewModel: ObservableObject {
     
     @Published var blockReward: Double = 0
     
+    @Published var totalSupply: Double = 0
+    
     @Published var difficultAdjustment: DifficultyAdjustment?
+    
+    init() {
+        fetchBlockchainSupply()
+    }
         
+}
+
+extension BlockchainViewModel {
+    func fetchBlockchainSupply() {
+        self.apiHandler.fetchBlockchainSupply { (result: Result<String, Error>) in
+            Task { @MainActor in
+                switch result {
+                case .success(let supply):
+                    if let supplyUnwraped = Double(supply) {
+                        self.totalSupply = supplyUnwraped
+                    }
+                case .failure(let error):
+                    print("Error in fetch total supply \(error.localizedDescription)")
+                }
+                
+            }
+        }
+    }
 }
 
 // Fees

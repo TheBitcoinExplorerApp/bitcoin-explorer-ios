@@ -53,4 +53,5 @@ struct BlockRewardView: View {
     BlockRewardView()
         .environmentObject(BlockchainViewModel())
         .environmentObject(CurrencyViewModel())
+        .environmentObject(SubscriptionStore())
 }

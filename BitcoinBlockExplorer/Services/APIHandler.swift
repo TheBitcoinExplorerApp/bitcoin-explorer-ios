@@ -77,4 +77,30 @@ class APIHandler {
         
         task.resume()
     }
+    
+    func fetchBlockchainSupply(completion: @escaping (Result<String, Error>) -> Void) {
+        let urlString = "https://blockchain.info/q/totalbc"
+        
+        guard let url = URL(string: urlString) else {
+            completion(.failure(URLError(.badURL)))
+            return
+        }
+
+        let task = URLSession.shared.dataTask(with: url) { data, _, error in
+            if let error = error {
+                completion(.failure(error))
+                return
+            }
+            
+            guard let data = data, let supply = String(data: data, encoding: .utf8) else {
+                completion(.failure(URLError(.cannotDecodeRawData)))
+                return
+            }
+            
+            completion(.success(supply))
+        }
+        
+        task.resume()
+    }
+    
 }

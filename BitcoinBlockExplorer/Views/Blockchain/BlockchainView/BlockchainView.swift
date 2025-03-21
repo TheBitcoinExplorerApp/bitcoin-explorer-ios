@@ -12,7 +12,7 @@ struct BlockchainView: View {
     @EnvironmentObject var lastBlockViewModel: LastBlockViewModel
     @EnvironmentObject var currencyViewModel:  CurrencyViewModel
     @EnvironmentObject var networkMonitor: NetworkMonitor
-  
+    
     var body: some View {
         
         VStack {
@@ -34,7 +34,7 @@ struct BlockchainView: View {
                 viewModel.fetchBlockReward()
                 viewModel.fetchDifficultyAdjustment()
             }
-
+            
             AdViewComponent()
         }
         
@@ -46,7 +46,7 @@ struct BlockchainView: View {
         
         .errorAlert(showAlert: $viewModel.showErrorAlert)
         .errorAlert(showAlert: $lastBlockViewModel.showErrorAlert)
-
+        
         .titleToolbar()
         
         .background(Color.myBackground)
@@ -63,7 +63,7 @@ struct BlockchainView: View {
                 HalvingView()
                 DifficultyAdjustmentView()
                     .padding(.bottom)
-            
+                
                 HStack {
                     FullNodesView()
                     Spacer()
@@ -73,6 +73,7 @@ struct BlockchainView: View {
                 .padding(.bottom)
                 
                 BlockRewardView()
+                SupplyView()
                 
             } else {
                 NetworkConnectionView()
@@ -108,7 +109,7 @@ struct BlockchainView: View {
         .task {
             viewModel.fetchFees()
         }
-    
+        
     }
     
 }
