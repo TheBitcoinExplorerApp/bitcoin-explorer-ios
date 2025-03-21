@@ -19,7 +19,7 @@
   "settings" : {
     "_applicationInternalID" : "6449553605",
     "_developerTeamID" : "K559Z2V9Q2",
-    "_disableDialogs" : true,
+    "_disableDialogs" : false,
     "_failTransactionsEnabled" : false,
     "_lastSynchronizedDate" : 761232833.93057704,
     "_locale" : "en_US",

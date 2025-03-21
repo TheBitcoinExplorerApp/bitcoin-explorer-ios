@@ -33,6 +33,7 @@ struct BlockchainView: View {
                 viewModel.fetchHashrate()
                 viewModel.fetchBlockReward()
                 viewModel.fetchDifficultyAdjustment()
+                viewModel.fetchBlockchainSupply()
             }
             
             AdViewComponent()
@@ -72,8 +73,8 @@ struct BlockchainView: View {
                 .padding(.horizontal)
                 .padding(.bottom)
                 
-                BlockRewardView()
                 SupplyView()
+                BlockRewardView()
                 
             } else {
                 NetworkConnectionView()

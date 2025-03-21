@@ -245,3 +245,7 @@ extension Texts {
     
     static let dismissKeyboard: String = String(localized: "dismissKeyboard")
 }
+
+extension Texts {
+    static let circulatingSupply: String = String(localized: "circulatingSupply")
+}

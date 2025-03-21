@@ -34,4 +34,5 @@ struct FullNodesView: View {
 #Preview {
     FullNodesView()
         .environmentObject(BlockchainViewModel())
+        .environmentObject(SubscriptionStore())
 }

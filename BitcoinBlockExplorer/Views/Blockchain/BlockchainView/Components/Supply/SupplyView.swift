@@ -12,11 +12,11 @@ struct SupplyView: View {
     
     var body: some View {
         VStack {
-            Text("Circulating Supply")
+            Text(Texts.circulatingSupply)
                 .font(.body)
                 .bold()
                 .foregroundStyle(.texts)
-            Text("\(formatSupply(viewModel.totalSupply)) ")
+            Text("\(formatSupply(viewModel.totalSupply)) BTC")
                 .font(.title3)
                 .foregroundStyle(.primaryText)
                 .padding()
@@ -25,6 +25,8 @@ struct SupplyView: View {
             
                 .lockView()
         }
+        .padding(.bottom)
+
     }
     
     private func formatSupply(_ supply: Double) -> String {
