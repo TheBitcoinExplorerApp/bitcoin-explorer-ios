@@ -1374,31 +1374,31 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Knoten, Hashrate und Blockbelohnung"
+            "value" : "Knoten, Hashrate, Umlaufende Versorgung und Blockbelohnung"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Full Nodes, Hashrate and Block Reward"
+            "value" : "Full Nodes, Hashrate, Circulating Supply and Block Reward"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nós, Taxa de Hash e Recompensa último bloco"
+            "value" : "Nós, Taxa de Hash, Fornecimento circulante e Recompensa último bloco"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Узлы, хэшрейт и вознаграждение за блок"
+            "value" : "Узлы, хэшрейт, Циркулирующий источник питания и вознаграждение за блок"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "完整节点、哈希率和区块奖励"
+            "value" : "全节点、哈希率、循环供应和块奖励"
           }
         }
       }
