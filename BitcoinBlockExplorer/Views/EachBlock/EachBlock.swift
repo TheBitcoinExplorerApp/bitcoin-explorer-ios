@@ -59,7 +59,7 @@ struct EachBlock: View {
         
         .sheetToolbar(title: Texts.blocoMaiusculo)
         
-        .errorAlert(showAlert: $viewModel.showErrorAlert)
+        .errorAlert(showAlert: $viewModel.showErrorAlert, errorMessage: $viewModel.errorType)
         
     }
     

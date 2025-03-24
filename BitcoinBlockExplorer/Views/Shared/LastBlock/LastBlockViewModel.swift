@@ -11,7 +11,9 @@ class LastBlockViewModel: ObservableObject {
     private let apiHandler = APIHandler()
     
     @Published var lastBlock: Int64 = 0
+    
     @Published var showErrorAlert = false
+    @Published var errorType: Errors?
 
 }
 
@@ -26,6 +28,7 @@ extension LastBlockViewModel {
                 case .failure(let error):
                     print("Error in fetch last block \(error)")
                     self.showErrorAlert = true
+                    self.errorType = .lastBlock
                 }
             }
         }

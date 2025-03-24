@@ -12,19 +12,20 @@ struct ErrorAlertModifier: ViewModifier {
     @Environment(\.dismiss) private var dismiss
     
     var showAlert: Binding<Bool>
-    
+    var errorMessage: Binding<Errors?>
+
     func body(content: Content) -> some View {
         content
             .alert("Error", isPresented: showAlert) {
                 Button("OK", role: .cancel) {}
             } message: {
-                Text(Texts.errorMessage)
+                Text(errorMessage.wrappedValue?.errorDescription ?? "Unknown error")
             }
     }
 }
 
 extension View {
-    func errorAlert(showAlert:  Binding<Bool>) -> some View {
-        self.modifier(ErrorAlertModifier(showAlert: showAlert))
-    }
+    func errorAlert(showAlert: Binding<Bool>, errorMessage: Binding<Errors?>) -> some View {
+           self.modifier(ErrorAlertModifier(showAlert: showAlert, errorMessage: errorMessage))
+       }
 }

@@ -21,6 +21,7 @@
 		9B2321F32B851866000BFBA9 /* ConfigurationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2321F22B851866000BFBA9 /* ConfigurationsView.swift */; };
 		9B23E5DF2A51E6F9007045A6 /* LastBlockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B23E5DE2A51E6F9007045A6 /* LastBlockViewModel.swift */; };
 		9B27E7162A12A8D000E8036E /* Fee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B27E7152A12A8D000E8036E /* Fee.swift */; };
+		9B29A47A2D91D1FE000432F5 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B29A4792D91D1F8000432F5 /* Errors.swift */; };
 		9B2BC8E22A12C54700735A8D /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BC8E12A12C54700735A8D /* Block.swift */; };
 		9B2BC8EE2A13F70600735A8D /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BC8ED2A13F70600735A8D /* CalculatorView.swift */; };
 		9B2BC8F22A13FE5900735A8D /* BlockchainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BC8F12A13FE5900735A8D /* BlockchainView.swift */; };
@@ -101,6 +102,7 @@
 		9B2321F22B851866000BFBA9 /* ConfigurationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationsView.swift; sourceTree = "<group>"; };
 		9B23E5DE2A51E6F9007045A6 /* LastBlockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastBlockViewModel.swift; sourceTree = "<group>"; };
 		9B27E7152A12A8D000E8036E /* Fee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fee.swift; sourceTree = "<group>"; };
+		9B29A4792D91D1F8000432F5 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		9B2BC8E12A12C54700735A8D /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 		9B2BC8ED2A13F70600735A8D /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		9B2BC8F12A13FE5900735A8D /* BlockchainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainView.swift; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 		9B2321EF2B85116D000BFBA9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				9B29A47B2D91D200000432F5 /* Errors */,
 				9B5254812D5F91C40035258A /* ScrollOffsetPreferenceKey */,
 				9BD674ED2D4EE0BE00440B92 /* NetworkMonitor */,
 				9BD669052D4C3DB4001709D1 /* Extensions */,
@@ -226,6 +229,14 @@
 				9BEFA5732D57B32F003D2BF8 /* InfoPlist.xcstrings */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		9B29A47B2D91D200000432F5 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				9B29A4792D91D1F8000432F5 /* Errors.swift */,
+			);
+			path = Errors;
 			sourceTree = "<group>";
 		};
 		9B2BC8E32A12D19800735A8D /* Services */ = {
@@ -832,6 +843,7 @@
 				9B2321F32B851866000BFBA9 /* ConfigurationsView.swift in Sources */,
 				9BD669042D4BB376001709D1 /* HalvingView.swift in Sources */,
 				9BC226122A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift in Sources */,
+				9B29A47A2D91D1FE000432F5 /* Errors.swift in Sources */,
 				9BFA124D2BAB4A4B000C0CB5 /* ToastView.swift in Sources */,
 				9B2321EC2B84E3EB000BFBA9 /* CurrencyView.swift in Sources */,
 				9B376E8B2D5301F10094CFD7 /* EachAddressViewModel.swift in Sources */,

@@ -11,7 +11,9 @@ class EachTransactionViewModel: ObservableObject {
     private let apiHandler = APIHandler()
     
     @Published var loading: Bool = false
+    
     @Published var showErrorAlert = false
+    @Published var errorType: Errors?
     
     @Published var eachTransactionData: [Transactions] = []
         
@@ -28,6 +30,7 @@ class EachTransactionViewModel: ObservableObject {
                 case .failure(let error):
                     print("Error in fetch eachTransactionData: \(error)")
                     self.showErrorAlert = true
+                    self.errorType = .eachTransaction
                 }
             }
         }

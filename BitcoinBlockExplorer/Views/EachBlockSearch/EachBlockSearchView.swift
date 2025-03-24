@@ -62,7 +62,7 @@ struct EachBlockSearchView: View {
 
         .sheetToolbar(title: Texts.blocoMaiusculo)
         
-        .errorAlert(showAlert: $viewModel.showErrorAlert)
+        .errorAlert(showAlert: $viewModel.showErrorAlert, errorMessage: $viewModel.errorMessage)
         
     }
     
@@ -284,5 +284,7 @@ struct EachBlockSearchView: View {
 }
 
 #Preview {
+    
     EachBlockSearchView(abrirModalBlock: .constant(true))
+        .environmentObject(EachBlockSearchViewModel())
 }

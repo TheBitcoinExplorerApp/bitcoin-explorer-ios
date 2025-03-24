@@ -11,7 +11,9 @@ import SwiftUI
 class BlockchainViewModel: ObservableObject {
     private let apiHandler = APIHandler()
     @Published var loading: Bool = false
+    
     @Published var showErrorAlert = false
+    @Published var errorType: Errors?
     
     @Published var fees: [Fee] = []
     @Published var blockHeaderData: [Block] = []
@@ -39,23 +41,7 @@ class BlockchainViewModel: ObservableObject {
         
 }
 
-extension BlockchainViewModel {
-    func fetchBlockchainSupply() {
-        self.apiHandler.fetchBlockchainSupply { (result: Result<String, Error>) in
-            Task { @MainActor in
-                switch result {
-                case .success(let supply):
-                    if let supplyUnwraped = Double(supply) {
-                        self.totalSupply = supplyUnwraped
-                    }
-                case .failure(let error):
-                    print("Error in fetch total supply \(error.localizedDescription)")
-                }
-                
-            }
-        }
-    }
-}
+
 
 // Fees
 extension BlockchainViewModel {
@@ -68,6 +54,7 @@ extension BlockchainViewModel {
                 case .failure(let error):
                     print("Error in fetch fess \(error.localizedDescription)")
                     self.showErrorAlert = true
+                    self.errorType = .fees
                 }
             }
         }
@@ -92,6 +79,7 @@ extension BlockchainViewModel {
                 case .failure(let error):
                     print("Error in fetch blockHeader \(error.localizedDescription)")
                     self.showErrorAlert = true
+                    self.errorType = .blockHeader
                 }
             }
         }
@@ -109,7 +97,7 @@ extension BlockchainViewModel {
                 case .failure(let error):
                     print("Error in fetch mempool \(error.localizedDescription)")
                     self.showErrorAlert = true
-
+                    self.errorType = .mempoolData
                 }
             }
         }
@@ -124,6 +112,7 @@ extension BlockchainViewModel {
                 case .failure(let error):
                     print("Error in fetch mempool size \(error.localizedDescription)")
                     self.showErrorAlert = true
+                    self.errorType = .mempoolSize
                 }
             }
         }
@@ -200,6 +189,7 @@ extension BlockchainViewModel {
                 case .failure(let error):
                     print("Error in fetch full nodes \(error.localizedDescription)")
                     self.showErrorAlert = true
+                    self.errorType = .fullNodes
                 }
             }
         }
@@ -228,6 +218,7 @@ extension BlockchainViewModel {
                 case .failure(let error):
                     print("Error in fetch hashrate \(error)")
                     self.showErrorAlert = true
+                    self.errorType = .hashrate
                 }
             }
         }
@@ -247,6 +238,7 @@ extension BlockchainViewModel {
                 case .failure(let error):
                     print("Error in fetch block reward \(error)")
                     self.showErrorAlert = true
+                    self.errorType = .blockReward
                 }
             }
         }
@@ -264,7 +256,29 @@ extension BlockchainViewModel {
                 case .failure(let error):
                     print("Error in fetch difficult adjustment \(error)")
                     self.showErrorAlert = true
+                    self.errorType = .difficultyAdjustment
                 }
+            }
+        }
+    }
+}
+
+// Blockchain Supply
+extension BlockchainViewModel {
+    func fetchBlockchainSupply() {
+        self.apiHandler.fetchBlockchainSupply { (result: Result<String, Error>) in
+            Task { @MainActor in
+                switch result {
+                case .success(let supply):
+                    if let supplyUnwraped = Double(supply) {
+                        self.totalSupply = supplyUnwraped
+                    }
+                case .failure(let error):
+                    print("Error in fetch total supply \(error.localizedDescription)")
+                    self.showErrorAlert = true
+                    self.errorType = .blockchainSupply
+                }
+                
             }
         }
     }

@@ -11,7 +11,9 @@ class EachBlockSearchViewModel: ObservableObject {
     private let apiHandler = APIHandler()
     
     @Published var loading: Bool = false
+    
     @Published var showErrorAlert = false
+    @Published var errorMessage: Errors?
     
     @Published var eachBlockHeaderSearch: Block?
     @Published var blockTransactionsSearch: [Transactions] = []
@@ -74,6 +76,7 @@ class EachBlockSearchViewModel: ObservableObject {
                 case .failure(let error):
                     print("Error in fetch eachBlockHeaderSearch \(error.localizedDescription)")
                     self.showErrorAlert = true
+                    self.errorMessage = .eachBlockHeaderSearch
                 }
             }
         }
@@ -95,6 +98,7 @@ class EachBlockSearchViewModel: ObservableObject {
                 case .failure(let error):
                     print("Error in fetch blockTransactions: \(error)")
                     self.showErrorAlert = true
+                    self.errorMessage = .blockTransactionsSearch
                 }
             }
         }

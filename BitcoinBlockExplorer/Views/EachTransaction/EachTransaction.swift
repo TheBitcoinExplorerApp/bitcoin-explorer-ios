@@ -60,7 +60,7 @@ struct EachTransaction: View {
         
         .sheetToolbar(title: Texts.transacaoMaiusculo)
         
-        .errorAlert(showAlert: $viewModel.showErrorAlert)
+        .errorAlert(showAlert: $viewModel.showErrorAlert, errorMessage: $viewModel.errorType)
         
     }
     

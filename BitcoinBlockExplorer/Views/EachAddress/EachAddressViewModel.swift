@@ -11,7 +11,9 @@ class EachAddressViewModel: ObservableObject {
     private let apiHandler = APIHandler()
     
     @Published var loading: Bool = false
+    
     @Published var showErrorAlert = false
+    @Published var errorType: Errors?
     
     @Published var addressHeaderData: [AddressHeaderModel] = []
     @Published var addressTransactionsData: [Transactions] = []
@@ -29,6 +31,7 @@ class EachAddressViewModel: ObservableObject {
                 case .failure(let error):
                     print("Error in fetch address header: \(error.localizedDescription)")
                     self.showErrorAlert = true
+                    self.errorType = .addressHeader
                 }
             }
         }
@@ -42,6 +45,7 @@ class EachAddressViewModel: ObservableObject {
                 case .failure(let error):
                     print("Error in fetch address transactions: \(error.localizedDescription)")
                     self.showErrorAlert = true
+                    self.errorType = .addressTransactions
                 }
             }
         }

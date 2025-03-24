@@ -45,8 +45,8 @@ struct BlockchainView: View {
             viewModel.fetchMempoolSize()
         }
         
-        .errorAlert(showAlert: $viewModel.showErrorAlert)
-        .errorAlert(showAlert: $lastBlockViewModel.showErrorAlert)
+        .errorAlert(showAlert: $viewModel.showErrorAlert, errorMessage: $viewModel.errorType)
+        .errorAlert(showAlert: $lastBlockViewModel.showErrorAlert, errorMessage: $viewModel.errorType)
         
         .titleToolbar()
         

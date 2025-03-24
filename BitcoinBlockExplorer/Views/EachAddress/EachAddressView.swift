@@ -50,7 +50,7 @@ struct EachAddressView: View {
             
             .sheetToolbar(title: Texts.enderecoMaiusculo)
         
-            .errorAlert(showAlert: $viewModel.showErrorAlert)
+            .errorAlert(showAlert: $viewModel.showErrorAlert, errorMessage: $viewModel.errorType)
      
     }
     
