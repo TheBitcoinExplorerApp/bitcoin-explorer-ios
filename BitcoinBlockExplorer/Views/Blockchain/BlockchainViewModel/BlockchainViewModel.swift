@@ -35,13 +35,7 @@ class BlockchainViewModel: ObservableObject {
     
     @Published var difficultAdjustment: DifficultyAdjustment?
     
-    init() {
-        fetchBlockchainSupply()
-    }
-        
 }
-
-
 
 // Fees
 extension BlockchainViewModel {
@@ -180,7 +174,7 @@ extension BlockchainViewModel {
 
 // Full Nodes
 extension BlockchainViewModel {
-     func fetchFullNodes() {
+    func fetchFullNodes() {
         self.apiHandler.fetchData(from: .fullNodes) { (result: Result<FullNode, Error>) in
             Task { @MainActor in
                 switch result {
@@ -202,7 +196,9 @@ extension BlockchainViewModel {
         if now.timeIntervalSince(lastFetch) >= 3600 { // 3600 segundos = 1 hora
             // Chamar a API apenas se já passou 1 hora
             fetchFullNodes()
-            UserDefaults.standard.set(now, forKey: fullNodesKey)
+            if self.totalFullNodes > 0 {
+                UserDefaults.standard.set(now, forKey: fullNodesKey)
+            }
         }
     }
 }

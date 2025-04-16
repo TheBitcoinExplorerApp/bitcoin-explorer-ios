@@ -85,8 +85,11 @@ class APIHandler {
             completion(.failure(URLError(.badURL)))
             return
         }
+        
+        var request = URLRequest(url: url)
+        request.setValue("en-US", forHTTPHeaderField: "Accept-Language")
 
-        let task = URLSession.shared.dataTask(with: url) { data, _, error in
+        let task = URLSession.shared.dataTask(with: request) { data, _, error in
             if let error = error {
                 completion(.failure(error))
                 return

@@ -26,6 +26,10 @@ struct SupplyView: View {
                 .lockView()
         }
         .padding(.bottom)
+        
+        .task {
+            viewModel.fetchBlockchainSupply()
+        }
 
     }
     
