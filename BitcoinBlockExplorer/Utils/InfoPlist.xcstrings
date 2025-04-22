@@ -16,6 +16,12 @@
             "value" : "Bitcoin Blockchain Explorer"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitcoin Explorer"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -49,6 +55,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bitcoin Blockchain Explorer"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitcoin Explorer"
           }
         },
         "pt-BR" : {
