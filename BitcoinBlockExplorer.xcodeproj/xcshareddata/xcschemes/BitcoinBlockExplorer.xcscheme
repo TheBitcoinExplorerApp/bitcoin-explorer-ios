@@ -50,6 +50,9 @@
             ReferencedContainer = "container:BitcoinBlockExplorer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <StoreKitConfigurationFileReference
+         identifier = "../BitcoinBlockExplorer/Utils/StoreKit/ConfigurationFile.storekit">
+      </StoreKitConfigurationFileReference>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

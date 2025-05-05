@@ -722,6 +722,7 @@
 				de,
 				ru,
 				es,
+				"es-419",
 			);
 			mainGroup = 9BC226052A0C68CA0069FDEB;
 			productRefGroup = 9BC2260F2A0C68CA0069FDEB /* Products */;
