@@ -75,6 +75,40 @@
         }
       }
     },
+    "addressHeaderError" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Address header could not be retrieved."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo recuperar el encabezado de dirección."
+          }
+        }
+      }
+    },
+    "addressTransactionsError" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Address transactions could not be retrieved."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudieron recuperar las transacciones de dirección."
+          }
+        }
+      }
+    },
     "aguardandoConfirmacao" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -591,6 +625,40 @@
         }
       }
     },
+    "blockchainSupplyError" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blockchain supply could not be retrieved."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo recuperar el suministro de blockchain."
+          }
+        }
+      }
+    },
+    "blockHeaderError" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Block header could not be retrieved."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo recuperar el encabezado del bloque."
+          }
+        }
+      }
+    },
     "blockReward" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -634,6 +702,57 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "最后一个区块奖励"
+          }
+        }
+      }
+    },
+    "blockRewardError" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Block reward could not be retrieved."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo recuperar la recompensa del bloque."
+          }
+        }
+      }
+    },
+    "blockTransactionsError" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Block transactions could not be retrieved."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudieron recuperar las transacciones en bloque."
+          }
+        }
+      }
+    },
+    "blockTransactionsSearchError" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Block transactions search could not be retrieved."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo recuperar la búsqueda de transacciones en bloque."
           }
         }
       }
@@ -1391,6 +1510,23 @@
         }
       }
     },
+    "difficultyAdjustmentError" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Difficulty adjustment could not be retrieved."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo recuperar el ajuste de dificultad."
+          }
+        }
+      }
+    },
     "dismissKeyboard" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1480,6 +1616,40 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "捐款"
+          }
+        }
+      }
+    },
+    "eachBlockHeaderSearchError" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Each block header search could not be retrieved."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo recuperar cada búsqueda de encabezado de bloque."
+          }
+        }
+      }
+    },
+    "eachTransactionError" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Each transaction could not be retrieved."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo recuperar cada transacción."
           }
         }
       }
@@ -1718,6 +1888,23 @@
         }
       }
     },
+    "feesError" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fees could not be retrieved."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudieron recuperar las tarifas."
+          }
+        }
+      }
+    },
     "free" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1855,6 +2042,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "全节点、哈希率、循环供应和块奖励"
+          }
+        }
+      }
+    },
+    "fullNodesError" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full nodes could not be retrieved."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudieron recuperar los nodos completos."
           }
         }
       }
@@ -2141,6 +2345,23 @@
         }
       }
     },
+    "hashrateError" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hashrate could not be retrieved."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo recuperar el hashrate."
+          }
+        }
+      }
+    },
     "idTransacao" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -2329,6 +2550,23 @@
         }
       }
     },
+    "lastBlockError" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Last block could not be retrieved."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo recuperar el último bloque."
+          }
+        }
+      }
+    },
     "Lightning network address" : {
       "localizations" : {
         "de" : {
@@ -2418,6 +2656,40 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "中优先级"
+          }
+        }
+      }
+    },
+    "mempoolDataError" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mempool data could not be retrieved."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudieron recuperar los datos de Mempool."
+          }
+        }
+      }
+    },
+    "mempoolSizeError" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mempool size could not be retrieved."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo recuperar el tamaño de Mempool."
           }
         }
       }
@@ -3241,6 +3513,12 @@
           }
         },
         "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sat"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "sat"

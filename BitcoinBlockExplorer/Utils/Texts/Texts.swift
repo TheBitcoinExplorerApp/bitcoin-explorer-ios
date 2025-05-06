@@ -223,7 +223,7 @@ extension Texts {
     static let searchTransactionsBlocksAndAddress: String = String(localized: "searchTransactionsBlocksAndAddress")
     
     static let halvingCountdownLabelStoreKit: String = String(localized: "halvingCountdownLabelStoreKit")
-        
+    
     static let fullNodeHashrateAndBlockRewardLabelStoreKit: String = String(localized: "fullNodeHashrateAndBlockRewardLabelStoreKit")
     
     static let perMonth: String = String(localized: "perMonth")
@@ -246,6 +246,27 @@ extension Texts {
     static let dismissKeyboard: String = String(localized: "dismissKeyboard")
 }
 
+// Circulating Supply
 extension Texts {
     static let circulatingSupply: String = String(localized: "circulatingSupply")
+}
+
+// Errors
+extension Texts {
+    static let feesError: String = String(localized: "feesError")
+    static let blockHeaderError: String = String(localized: "blockHeaderError")
+    static let mempoolDataError: String = String(localized: "mempoolDataError")
+    static let mempoolSizeError: String = String(localized: "mempoolSizeError")
+    static let fullNodesError: String = String(localized: "fullNodesError")
+    static let hashrateError: String = String(localized: "hashrateError")
+    static let blockRewardError: String = String(localized: "blockRewardError")
+    static let difficultyAdjustmentError: String = String(localized: "difficultyAdjustmentError")
+    static let blockchainSupplyError: String = String(localized: "blockchainSupplyError")
+    static let addressHeaderError: String = String(localized: "addressHeaderError")
+    static let addressTransactionsError: String = String(localized: "addressTransactionsError")
+    static let eachBlockHeaderSearchError: String = String(localized: "eachBlockHeaderSearchError")
+    static let blockTransactionsSearchError: String = String(localized: "blockTransactionsSearchError")
+    static let eachTransactionError: String = String(localized: "eachTransactionError")
+    static let blockTransactionsError: String = String(localized: "blockTransactionsError")
+    static let lastBlockError: String = String(localized: "lastBlockError")
 }

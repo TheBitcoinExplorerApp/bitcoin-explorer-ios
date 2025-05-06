@@ -11,37 +11,37 @@ enum Errors {
     var errorDescription: String {
         switch self {
         case .fees:
-            return "Fees could not be retrieved."
+            return Texts.feesError
         case .blockHeader:
-            return "Block header could not be retrieved."
+            return Texts.blockHeaderError
         case .mempoolData:
-            return "Mempool data could not be retrieved."
+            return Texts.mempoolDataError
         case .mempoolSize:
-            return "Mempool size could not be retrieved."
+            return Texts.mempoolSizeError
         case .fullNodes:
-            return "Full nodes could not be retrieved."
+            return Texts.fullNodesError
         case .hashrate:
-            return "Hashrate could not be retrieved."
+            return Texts.hashrateError
         case .blockReward:
-            return "Block reward could not be retrieved."
+            return Texts.blockRewardError
         case .difficultyAdjustment:
-            return "Difficulty adjustment could not be retrieved."
+            return Texts.difficultyAdjustmentError
         case .blockchainSupply:
-            return "Blockchain supply could not be retrieved."
+            return Texts.blockchainSupplyError
         case .addressHeader:
-            return "Address header could not be retrieved."
+            return Texts.addressHeaderError
         case .addressTransactions:
-            return "Address transactions could not be retrieved."
+            return Texts.addressTransactionsError
         case .eachBlockHeaderSearch:
-            return "Each block header search could not be retrieved."
+            return Texts.eachBlockHeaderSearchError
         case .blockTransactionsSearch:
-            return "Block transactions search could not be retrieved."
+            return Texts.blockTransactionsError
         case .eachTransaction:
-            return "Each transaction could not be retrieved."
+            return Texts.eachTransactionError
         case .blockTransactions:
-            return "Block transactions could not be retrieved."
+            return Texts.blockTransactionsError
         case .lastBlock:
-            return "Last block could not be retrieved."
+            return Texts.lastBlockError
         }
     }
 }
