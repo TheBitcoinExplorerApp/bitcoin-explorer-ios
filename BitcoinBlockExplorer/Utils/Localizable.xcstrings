@@ -78,6 +78,12 @@
     "addressHeaderError" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Adress -Header konnte nicht abgerufen werden."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -89,12 +95,42 @@
             "state" : "translated",
             "value" : "No se pudo recuperar el encabezado de dirección."
           }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo recuperar el encabezado de dirección."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O cabeçalho do endereço não pôde ser recuperado."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось получить заголовок адреса."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法检索地址头"
+          }
         }
       }
     },
     "addressTransactionsError" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adresstransaktionen konnten nicht abgerufen werden."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -105,6 +141,30 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No se pudieron recuperar las transacciones de dirección."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudieron recuperar las transacciones de dirección."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "As transações de endereço não puderam ser recuperadas."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось восстановить транзакции по адресам."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法检索地址事务"
           }
         }
       }
@@ -628,6 +688,12 @@
     "blockchainSupplyError" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Blockchain -Versorgung konnte nicht abgerufen werden."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -639,12 +705,42 @@
             "state" : "translated",
             "value" : "No se pudo recuperar el suministro de blockchain."
           }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo recuperar el suministro de blockchain."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O suprimento de blockchain não pôde ser recuperado."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось восстановить доступ к блокчейну."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法检索区块链供应"
+          }
         }
       }
     },
     "blockHeaderError" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blockheader konnte nicht abgerufen werden."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -655,6 +751,30 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No se pudo recuperar el encabezado del bloque."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo recuperar el encabezado del bloque."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O cabeçalho do bloco não pôde ser recuperado."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось получить заголовок блока."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法检索块标题"
           }
         }
       }
@@ -709,6 +829,12 @@
     "blockRewardError" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blockbelohnung konnte nicht abgerufen werden."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -720,12 +846,42 @@
             "state" : "translated",
             "value" : "No se pudo recuperar la recompensa del bloque."
           }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo recuperar la recompensa del bloque."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A recompensa do bloco não pôde ser recuperada."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вознаграждение за блокировку получить не удалось."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法检索块奖励"
+          }
         }
       }
     },
     "blockTransactionsError" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blocktransaktionen konnten nicht abgerufen werden."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -737,12 +893,42 @@
             "state" : "translated",
             "value" : "No se pudieron recuperar las transacciones en bloque."
           }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudieron recuperar las transacciones en bloque."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "As transações em bloco não foram recuperadas."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось восстановить транзакции блока."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法检索块事务"
+          }
         }
       }
     },
     "blockTransactionsSearchError" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Suche nach Blocktransaktionen konnte nicht abgerufen werden."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -753,6 +939,30 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No se pudo recuperar la búsqueda de transacciones en bloque."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo recuperar la búsqueda de transacciones en bloque."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A pesquisa de transações em bloco não pôde ser recuperada."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось выполнить поиск по блокировке транзакций."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法检索块事务搜索"
           }
         }
       }
@@ -1513,6 +1723,12 @@
     "difficultyAdjustmentError" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schwierigkeitsanpassung konnte nicht abgerufen werden."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1523,6 +1739,30 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No se pudo recuperar el ajuste de dificultad."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo recuperar el ajuste de dificultad."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O ajuste de dificuldade não pôde ser recuperado."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось восстановить настройку сложности."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法检索难度调整"
           }
         }
       }
@@ -1623,6 +1863,12 @@
     "eachBlockHeaderSearchError" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jede Block -Header -Suche konnte nicht abgerufen werden."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1634,12 +1880,42 @@
             "state" : "translated",
             "value" : "No se pudo recuperar cada búsqueda de encabezado de bloque."
           }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo recuperar cada búsqueda de encabezado de bloque."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cada pesquisa no cabeçalho do bloco não pôde ser recuperada."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось выполнить поиск по каждому заголовку блока."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法检索每个块标题搜索"
+          }
         }
       }
     },
     "eachTransactionError" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jede Transaktion konnte nicht abgerufen werden."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1650,6 +1926,30 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No se pudo recuperar cada transacción."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo recuperar cada transacción."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cada transação não pôde ser recuperada."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось восстановить ни одну транзакцию."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法检索每个事务"
           }
         }
       }
@@ -1891,6 +2191,12 @@
     "feesError" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gebühren konnten nicht abgerufen werden."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1901,6 +2207,30 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No se pudieron recuperar las tarifas."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudieron recuperar las tarifas."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "As taxas não puderam ser recuperadas."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сборы получить не удалось."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "费用无法收回"
           }
         }
       }
@@ -2049,6 +2379,12 @@
     "fullNodesError" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vollständige Knoten konnten nicht abgerufen werden."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2059,6 +2395,30 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No se pudieron recuperar los nodos completos."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudieron recuperar los nodos completos."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full nodes não puderam ser recuperados."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось получить полные узлы."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法检索完整节点"
           }
         }
       }
@@ -2348,6 +2708,12 @@
     "hashrateError" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hashrate konnte nicht abgerufen werden."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2358,6 +2724,30 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No se pudo recuperar el hashrate."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo recuperar el hashrate."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hashrate não pôde ser recuperado."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось восстановить хэшрейт."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法检索哈希值"
           }
         }
       }
@@ -2553,6 +2943,12 @@
     "lastBlockError" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der letzte Block konnte nicht abgerufen werden."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2563,6 +2959,30 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No se pudo recuperar el último bloque."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo recuperar el último bloque."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O último bloco não pôde ser recuperado."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось восстановить последний блок."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法检索最后一个块"
           }
         }
       }
@@ -2663,6 +3083,12 @@
     "mempoolDataError" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mempool -Daten konnten nicht abgerufen werden."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2674,12 +3100,42 @@
             "state" : "translated",
             "value" : "No se pudieron recuperar los datos de Mempool."
           }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudieron recuperar los datos de Mempool."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Os dados do Mempool não puderam ser recuperados."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось получить данные Mempool."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法检索Mempool数据"
+          }
         }
       }
     },
     "mempoolSizeError" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mempooler Größe konnte nicht abgerufen werden."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2690,6 +3146,30 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No se pudo recuperar el tamaño de Mempool."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo recuperar el tamaño de Mempool."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O tamanho do Mempool não pôde ser recuperado."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось восстановить размер Mempool."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法检索Mempool大小"
           }
         }
       }
