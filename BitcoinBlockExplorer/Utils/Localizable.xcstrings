@@ -102,6 +102,12 @@
             "value" : "No se pudo recuperar el encabezado de dirección."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L'en-tête d'adresse n'a pas pu être récupéré."
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -147,6 +153,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No se pudieron recuperar las transacciones de dirección."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les transactions d'adresse n'ont pas pu être récupérées."
           }
         },
         "pt-BR" : {
@@ -196,6 +208,12 @@
             "value" : "Esperando confirmación"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En attente de confirmation"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -241,6 +259,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alta prioridad"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haute priorité"
           }
         },
         "pt-BR" : {
@@ -290,6 +314,12 @@
             "value" : "Intervalo de bloque asumido de 10 minutos"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Intervalle de bloc supposé de 10 minutes"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -335,6 +365,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "en altura"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "en hauteur"
           }
         },
         "pt-BR" : {
@@ -384,6 +420,12 @@
             "value" : "Baja prioridad"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Faible priorité"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -429,6 +471,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "¡Conviértete en un Pro y accede a la mejor calculadora de Bitcoin del mercado! Además, otros beneficios."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Devenez pro et accédez au meilleur calculateur Bitcoin du marché ! Et bien d'autres avantages."
           }
         },
         "pt-BR" : {
@@ -477,6 +525,12 @@
             "value" : "Dirección de la red principal de Bitcoin"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adresse du réseau principal Bitcoin"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -519,6 +573,12 @@
           }
         },
         "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitcoin Block Explorer Pro"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bitcoin Block Explorer Pro"
@@ -571,6 +631,12 @@
             "value" : "Precio de Bitcoin"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prix ​​du Bitcoin"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -613,6 +679,12 @@
           }
         },
         "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blockchain"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Blockchain"
@@ -665,6 +737,12 @@
             "value" : "Explorador de blockchain y tarifas"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blockchain Explorer et frais"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -710,6 +788,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No se pudo recuperar el suministro de blockchain."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L'approvisionnement en blockchain n'a pas pu être récupéré."
           }
         },
         "pt-BR" : {
@@ -759,6 +843,12 @@
             "value" : "No se pudo recuperar el encabezado del bloque."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L'en-tête du bloc n'a pas pu être récupéré."
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -804,6 +894,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Recompensa del último bloque"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Récompense du dernier bloc"
           }
         },
         "pt-BR" : {
@@ -853,6 +949,12 @@
             "value" : "No se pudo recuperar la recompensa del bloque."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La récompense de bloc n'a pas pu être récupérée."
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -898,6 +1000,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No se pudieron recuperar las transacciones en bloque."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les transactions de bloc n'ont pas pu être récupérées."
           }
         },
         "pt-BR" : {
@@ -947,6 +1055,12 @@
             "value" : "No se pudo recuperar la búsqueda de transacciones en bloque."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La recherche de transactions en bloc n'a pas pu être récupérée."
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -994,6 +1108,12 @@
             "value" : "Bloque"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bloc"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1039,6 +1159,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "bloques"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "blocs"
           }
         },
         "pt-BR" : {
@@ -1091,6 +1217,12 @@
             "value" : "Calculadora"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calculatrice"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1136,6 +1268,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Elige la moneda"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choisissez la devise"
           }
         },
         "pt-BR" : {
@@ -1185,6 +1323,12 @@
             "value" : "Suministro circulante"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Approvisionnement en circulation"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1227,6 +1371,12 @@
           }
         },
         "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coinbase"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Coinbase"
@@ -1279,6 +1429,12 @@
             "value" : "Ajustes"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paramètres"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1324,6 +1480,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "confirmación"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "confirmation"
           }
         },
         "pt-BR" : {
@@ -1373,6 +1535,12 @@
             "value" : "confirmaciones"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "confirmations"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1418,6 +1586,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Copiado al portapapeles"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copié dans le presse-papiers"
           }
         },
         "pt-BR" : {
@@ -1466,6 +1640,12 @@
             "value" : "Copiar dirección"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copier l'adresse"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1510,6 +1690,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Copiar lightning invoice"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copie de la facture éclair"
           }
         },
         "pt-BR" : {
@@ -1559,6 +1745,12 @@
             "value" : "Divisa"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Devise"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1604,6 +1796,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Recompensa de bloque actual:"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Récompense du bloc actuel :"
           }
         },
         "pt-BR" : {
@@ -1653,6 +1851,12 @@
             "value" : "Marca de tiempo"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Horodatage"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1698,6 +1902,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ajuste de dificultad"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajustement de la difficulté"
           }
         },
         "pt-BR" : {
@@ -1747,6 +1957,12 @@
             "value" : "No se pudo recuperar el ajuste de dificultad."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le réglage de la difficulté n'a pas pu être récupéré."
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1794,6 +2010,12 @@
             "value" : "Cerrar teclado"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fermer le clavier"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1838,6 +2060,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Donaciones"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dons"
           }
         },
         "pt-BR" : {
@@ -1887,6 +2115,12 @@
             "value" : "No se pudo recuperar cada búsqueda de encabezado de bloque."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chaque recherche d'en-tête de bloc n'a pas pu être récupérée."
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1932,6 +2166,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No se pudo recuperar cada transacción."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chaque transaction n'a pas pu être récupérée."
           }
         },
         "pt-BR" : {
@@ -1981,6 +2221,12 @@
             "value" : "Dirección"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adresse"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2028,6 +2274,12 @@
             "value" : "Entradas y salidas"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entrées et sorties"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2072,6 +2324,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Error"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erreur"
           }
         },
         "pt-BR" : {
@@ -2121,6 +2379,12 @@
             "value" : "Por favor, verifique su conexión y vuelva a intentarlo."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veuillez vérifier votre connexion et réessayer."
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2166,6 +2430,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fecha estimada para lo próximo halving:"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Date estimée jusqu'à la prochaine réduction de moitié :"
           }
         },
         "pt-BR" : {
@@ -2215,6 +2485,12 @@
             "value" : "No se pudieron recuperar las tarifas."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les frais n'ont pas pu être récupérés."
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2260,6 +2536,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gratis"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gratuit"
           }
         },
         "pt-BR" : {
@@ -2309,6 +2591,12 @@
             "value" : "Nodos"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nodes complets"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2354,6 +2642,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nodos, tasa de hash, suministro circulante y recompensa por bloque"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nodes complets, taux de hachage, approvisionnement en circulation et récompense de bloc"
           }
         },
         "pt-BR" : {
@@ -2403,6 +2697,12 @@
             "value" : "No se pudieron recuperar los nodos completos."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les nœuds complets n'ont pas pu être récupérés."
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2448,6 +2748,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Halving"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réduire de moitié"
           }
         },
         "pt-BR" : {
@@ -2497,6 +2803,12 @@
             "value" : "¡Halving ha terminado!"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le compte à rebours de la réduction de moitié est terminé !"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2542,6 +2854,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Halving Cuenta Atrás"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compte à rebours de la réduction de moitié"
           }
         },
         "pt-BR" : {
@@ -2591,6 +2909,12 @@
             "value" : "Halvings"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réductions de moitié"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2636,6 +2960,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hash"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hacher"
           }
         },
         "pt-BR" : {
@@ -2685,6 +3015,12 @@
             "value" : "Tasa de hash"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taux de hachage"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2730,6 +3066,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No se pudo recuperar el hashrate."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le taux de hachage n'a pas pu être récupéré."
           }
         },
         "pt-BR" : {
@@ -2779,6 +3121,12 @@
             "value" : "ID de transacción"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ID de transaction"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2824,6 +3172,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "La estimación del precio de la tarifa se basa en una transacción segwit nativa promedio de 140 vByte"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L'estimation du prix des frais est basée sur une transaction segwit native moyenne de 140 vByte"
           }
         },
         "pt-BR" : {
@@ -2873,6 +3227,12 @@
             "value" : "Por favor, verifique su conexión a Internet y actualice la aplicación."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veuillez vérifier votre connexion Internet et actualiser l'application."
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2918,6 +3278,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Entrada no válida"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entrée invalide"
           }
         },
         "pt-BR" : {
@@ -2967,6 +3333,12 @@
             "value" : "No se pudo recuperar el último bloque."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le dernier bloc n'a pas pu être récupéré."
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3011,6 +3383,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dirección de red Lightning"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adresse réseau Lightning"
           }
         },
         "pt-BR" : {
@@ -3060,6 +3438,12 @@
             "value" : "Prioridad media"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Priorité moyenne"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3105,6 +3489,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No se pudieron recuperar los datos de Mempool."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les données Mempool n'ont pas pu être récupérées."
           }
         },
         "pt-BR" : {
@@ -3154,6 +3544,12 @@
             "value" : "No se pudo recuperar el tamaño de Mempool."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La taille du Mempool n'a pas pu être récupérée."
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3196,6 +3592,12 @@
           }
         },
         "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mempool"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mempool"
@@ -3248,6 +3650,12 @@
             "value" : "Minero"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mineur"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3293,6 +3701,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sin confirmar"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non confirmé"
           }
         },
         "pt-BR" : {
@@ -3342,6 +3756,12 @@
             "value" : "Extraviado"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non trouvé"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3387,6 +3807,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nueva recompensa de bloque:"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nouvelle récompense de bloc:"
           }
         },
         "pt-BR" : {
@@ -3436,6 +3862,12 @@
             "value" : "Recompensa del siguiente bloque:"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Récompense du bloc suivant:"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3481,6 +3913,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Próximo Halving en altura:"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prochaine réduction de moitié en hauteur:"
           }
         },
         "pt-BR" : {
@@ -3530,6 +3968,12 @@
             "value" : "Sin anuncios"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pas de publicité"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3571,6 +4015,12 @@
           }
         },
         "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
@@ -3623,6 +4073,12 @@
             "value" : "por mes"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "par mois"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3668,6 +4124,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Halvings anteriores y futuras"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halvings précédents et à venir"
           }
         },
         "pt-BR" : {
@@ -3717,6 +4179,12 @@
             "value" : "Política de privacidad"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "politique de confidentialité"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3759,6 +4227,12 @@
           }
         },
         "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pro"
@@ -3811,6 +4285,12 @@
             "value" : "¡Obtén acceso Pro y disfruta de beneficios!"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obtenez un accès Pro et profitez d'avantages!"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3855,6 +4335,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Informar de problemas"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signaler des problèmes"
           }
         },
         "pt-BR" : {
@@ -3904,6 +4390,12 @@
             "value" : "restante"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "restant"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3949,6 +4441,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Saldo"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Équilibre"
           }
         },
         "pt-BR" : {
@@ -4051,6 +4549,12 @@
             "value" : "sat/vB"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sat/vB"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4092,6 +4596,12 @@
           }
         },
         "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sats"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sats"
@@ -4235,6 +4745,12 @@
             "value" : "Buscar"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recherche"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4280,6 +4796,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bloqueo, hash, transacción o dirección"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bloc, hachage, transaction ou adresse"
           }
         },
         "pt-BR" : {
@@ -4329,6 +4851,12 @@
             "value" : "Buscar Transacciones, Bloques y Direcciones"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rechercher des transactions, des blocs et des adresses"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4373,6 +4901,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Código Fuente"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Code source"
           }
         },
         "pt-BR" : {
@@ -4422,6 +4956,12 @@
             "value" : "Suscribirse"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "S'abonner"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4466,6 +5006,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Soporte"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soutien"
           }
         },
         "pt-BR" : {
@@ -4515,6 +5061,12 @@
             "value" : "Tamaño"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taille"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4560,6 +5112,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cuota"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frais"
           }
         },
         "pt-BR" : {
@@ -4609,6 +5167,12 @@
             "value" : "Tarifa mediana"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frais médians"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4654,6 +5218,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tarifas de Transacción"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frais de transaction"
           }
         },
         "pt-BR" : {
@@ -4703,6 +5273,12 @@
             "value" : "Términos de uso"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conditions d'utilisation"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4748,6 +5324,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bitcoin Explorer"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitcoin Blockchain Explorer"
           }
         },
         "pt-BR" : {
@@ -4797,6 +5379,12 @@
             "value" : "Total Enviado"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Total envoyé"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4842,6 +5430,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Total Recibido"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Total reçu"
           }
         },
         "pt-BR" : {
@@ -4891,6 +5485,12 @@
             "value" : "Transacción"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transaction"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4936,6 +5536,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "transacciones"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "transactions"
           }
         },
         "pt-BR" : {
@@ -4985,6 +5591,12 @@
             "value" : "Transacciones"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transactions"
+          }
+        },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5030,6 +5642,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Valor"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valeur"
           }
         },
         "pt-BR" : {
@@ -5080,6 +5698,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "¡Ya eres un Pro!"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous êtes déjà Pro !"
           }
         },
         "pt-BR" : {
