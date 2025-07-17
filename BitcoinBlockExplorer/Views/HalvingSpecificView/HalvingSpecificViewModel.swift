@@ -9,7 +9,7 @@ import Foundation
 
 class HalvingSpecificViewModel: ObservableObject {
     
-    @Published var halvings: [Halving] = []
+    private var halvings: [Halving] = []
     @Published var hasFinishedHalving: Bool = false
     
     init() {
@@ -17,8 +17,23 @@ class HalvingSpecificViewModel: ObservableObject {
     }
     
     private func getHalvingList() -> [Halving] {
+        let halvingsInstance = Halvings()
+        
         // returns an array of type Halving sorted by smallest to largest
-        return Halvings.allCases.map { $0.halvings }.sorted { $0.blockHeight < $1.blockHeight }
+        return halvingsInstance.halvings.map { $0 }.sorted { $0.blockHeight < $1.blockHeight }
+    }
+    
+    func getHalvingsPassedAndNot(_ lastBlockHeight: Int64) -> [Halving] {
+        guard !hasFinishedHalving else { return []}
+        
+        let halvingsList = halvings.map { halving in
+            var updated = halving
+            if halving.blockHeight <= lastBlockHeight {
+                updated.hasPassed = true
+            }
+            return updated
+        }
+        return halvingsList
     }
   
     func getNextHalvingBlockHeight(_ lastBlockHeight: Int64) -> Int64 {

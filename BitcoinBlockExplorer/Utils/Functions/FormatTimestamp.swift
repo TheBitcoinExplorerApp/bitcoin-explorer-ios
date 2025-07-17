@@ -19,7 +19,7 @@ func formatTimestampWithHour(_ timestamp: TimeInterval) -> String {
     return dateFormatter.string(from: date)
 }
 
-func formatTipeFullDate(_ timestamp: TimeInterval) -> String {
+func formatTimeFullDate(_ timestamp: TimeInterval) -> String {
     let dateFormatter = DateFormatter()
     dateFormatter.locale = .current
     dateFormatter.dateStyle = .medium

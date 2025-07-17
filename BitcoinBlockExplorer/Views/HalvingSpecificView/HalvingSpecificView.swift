@@ -60,28 +60,40 @@ struct HalvingSpecificView: View {
                 .listRowBackground(Color.backgroundBox)
                 
                 Section(Texts.previousAndUpcoming) {
-                    ForEach(Array(viewModel.halvings.enumerated()), id: \.element.id) { index, halving in
-                        VStack(alignment: .leading) {
-                            Text("\(Texts.halving) \(index + 1) \(Texts.atHeight) ")
-                                .font(.title3)
-                            +
-                            Text("\(halving.blockHeight)")
-                                .foregroundColor(Color.primaryText)
-                                .font(.title3)
-                                .bold()
+                    ForEach(Array(viewModel.getHalvingsPassedAndNot(lastBlockViewModel.lastBlock).enumerated()), id: \.element.id) { index, halving in
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text("\(Texts.halving) \(index + 1) \(Texts.atHeight) ")
+                                    .font(.title3)
+                                +
+                                Text("\(halving.blockHeight)")
+                                    .foregroundColor(Color.primaryText)
+                                    .font(.title3)
+                                    .bold()
+                                
+                                Text("\(formatTimeFullDate(halving.estimatedTime))")
+                                    .font(.subheadline)
+                                
+                                Text("\(Texts.newBlockReward) ")
+                                    .font(.footnote)
+                                +
+                                Text("\(getFormattedBlockReward(halving.newBlockReward))")
+                                    .foregroundColor(Color.primaryText)
+                                    .font(.footnote)
+                                    .bold()
+                            }
+                            .foregroundStyle(Color.texts)
                             
-                            Text("\(formatTipeFullDate(halving.estimatedTime))")
-                                .font(.subheadline)
+                            Spacer()
                             
-                            Text("\(Texts.newBlockReward) ")
-                                .font(.footnote)
-                            +
-                            Text("\(getFormattedBlockReward(halving.newBlockReward))")
-                                .foregroundColor(Color.primaryText)
-                                .font(.footnote)
-                                .bold()
+                            if halving.hasPassed {
+                                Image(systemName: "checkmark.circle.fill")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(maxWidth: 22)
+                                    .foregroundStyle(.green)
+                            }
                         }
-                        .foregroundStyle(Color.texts)
                     }
                 }
                 .listRowBackground(Color.backgroundBox)
@@ -93,7 +105,7 @@ struct HalvingSpecificView: View {
         .task {
             lastBlockViewModel.fetchLastBlock()
         }
-            
+        
         .toolbar {
             ToolbarItem(placement: .principal) {
                 Text(Texts.halvings)
@@ -103,7 +115,7 @@ struct HalvingSpecificView: View {
         .toolbarBackground(Color.myBackground, for: .navigationBar)
         
     }
-        
+    
     func getFormattedBlockReward(_ reward: Double) -> String {
         if Int(reward) > 0 {
             return "\(removeTrailingZeros(from: reward)) BTC"
@@ -131,7 +143,7 @@ struct HalvingSpecificView: View {
         formatter.numberStyle = .decimal
         return formatter.string(from: NSNumber(value: value)) ?? "\(value)"
     }
-        
+    
 }
 
 #Preview {

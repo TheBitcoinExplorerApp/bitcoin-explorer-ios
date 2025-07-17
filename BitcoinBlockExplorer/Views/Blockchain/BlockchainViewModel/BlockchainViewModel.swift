@@ -140,7 +140,9 @@ extension BlockchainViewModel {
     func getNumberBlocksAfterLastHalving(_ lastBlockHeight: Int64) -> Int64 {
         guard !hasFinishedHalving else { return 0 } // Impede chamadas desnecessárias
         
-        let halvingsList = Halvings.allCases.map { $0.halvings }.sorted { $0.blockHeight < $1.blockHeight }
+        let halvingsInstance = Halvings()
+        
+        let halvingsList = halvingsInstance.halvings.map { $0 }.sorted { $0.blockHeight < $1.blockHeight }
         
         let lastHalving = halvingsList.filter { $0.blockHeight <= lastBlockHeight }.last
         
