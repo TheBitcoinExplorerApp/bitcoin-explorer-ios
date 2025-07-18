@@ -91,7 +91,7 @@ struct HalvingSpecificView: View {
                                     .resizable()
                                     .scaledToFit()
                                     .frame(maxWidth: 22)
-                                    .foregroundStyle(.green)
+                                    .foregroundStyle(Color.primaryText)
                             }
                         }
                     }
