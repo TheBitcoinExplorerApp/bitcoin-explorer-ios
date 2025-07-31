@@ -54,6 +54,7 @@
 		9BADB9042D4D13D0007D0535 /* BlockRewardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADB9032D4D13D0007D0535 /* BlockRewardView.swift */; };
 		9BADB9072D4DA0E0007D0535 /* DifficultyAdjustment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADB9062D4DA0D1007D0535 /* DifficultyAdjustment.swift */; };
 		9BADB9092D4DA3D6007D0535 /* DifficultyAdjustmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADB9082D4DA3D6007D0535 /* DifficultyAdjustmentView.swift */; };
+		9BB057852E3BE09C0034CE37 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BB057842E3BE09C0034CE37 /* Launch Screen.storyboard */; };
 		9BB0E8732D4162F100C6777A /* SheetToolbarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB0E8722D4162D900C6777A /* SheetToolbarModifier.swift */; };
 		9BB0E8772D41684300C6777A /* EachBlockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB0E8762D41683D00C6777A /* EachBlockViewModel.swift */; };
 		9BB6F6F42D837860005AA0C0 /* SupplyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6F6F32D837860005AA0C0 /* SupplyView.swift */; };
@@ -133,6 +134,7 @@
 		9BADB9032D4D13D0007D0535 /* BlockRewardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockRewardView.swift; sourceTree = "<group>"; };
 		9BADB9062D4DA0D1007D0535 /* DifficultyAdjustment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyAdjustment.swift; sourceTree = "<group>"; };
 		9BADB9082D4DA3D6007D0535 /* DifficultyAdjustmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyAdjustmentView.swift; sourceTree = "<group>"; };
+		9BB057842E3BE09C0034CE37 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		9BB0E8722D4162D900C6777A /* SheetToolbarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetToolbarModifier.swift; sourceTree = "<group>"; };
 		9BB0E8762D41683D00C6777A /* EachBlockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachBlockViewModel.swift; sourceTree = "<group>"; };
 		9BB6F6F32D837860005AA0C0 /* SupplyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplyView.swift; sourceTree = "<group>"; };
@@ -560,6 +562,7 @@
 				9B2321EF2B85116D000BFBA9 /* Utils */,
 				9BC226152A0C68CB0069FDEB /* Assets.xcassets */,
 				9BC226172A0C68CB0069FDEB /* Preview Content */,
+				9BB057842E3BE09C0034CE37 /* Launch Screen.storyboard */,
 			);
 			path = BitcoinBlockExplorer;
 			sourceTree = "<group>";
@@ -723,6 +726,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BB057852E3BE09C0034CE37 /* Launch Screen.storyboard in Resources */,
 				9BC226192A0C68CB0069FDEB /* Preview Assets.xcassets in Resources */,
 				9BEFA5742D57B32F003D2BF8 /* InfoPlist.xcstrings in Resources */,
 				9BD0F9602D5D02D2002F12DB /* ConfigurationFile.storekit in Resources */,
@@ -987,11 +991,11 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BitcoinBlockExplorer/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "$(PRODUCT_NAME)";
+				INFOPLIST_KEY_CFBundleDisplayName = BitcoinBlockExplorer;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
@@ -1025,11 +1029,11 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BitcoinBlockExplorer/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "$(PRODUCT_NAME)";
+				INFOPLIST_KEY_CFBundleDisplayName = BitcoinBlockExplorer;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
