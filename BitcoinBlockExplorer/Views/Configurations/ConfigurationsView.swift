@@ -74,9 +74,7 @@ struct ConfigurationsView: View {
             .navigationBarTitleColor(Color.primaryText)
             .background(Color.myBackground)
             .scrollContentBackground(.hidden)
-            
-            AdViewComponent()
-            
+                        
         }
         .background(Color.myBackground)
         

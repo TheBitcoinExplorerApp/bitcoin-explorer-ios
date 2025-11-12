@@ -36,7 +36,12 @@ struct BlockchainView: View {
                 viewModel.fetchBlockchainSupply()
             }
             
-            AdViewComponent()
+            if #available(iOS 26.0, *) {
+                
+            } else {
+                AdViewComponent()
+            }
+            
         }
         
         .task {
@@ -60,6 +65,12 @@ struct BlockchainView: View {
                 
                 BitcoinPriceViewComponent()
                 fees
+                
+                if #available(iOS 26.0, *) {
+                    AdViewComponent()
+                        .padding()
+                } else {}
+
                 blockchain
                 HalvingView()
                 DifficultyAdjustmentView()

@@ -46,6 +46,7 @@
 		9B57DC5A2D3F3AB400A810F5 /* BlockchainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B57DC592D3F3AAE00A810F5 /* BlockchainViewModel.swift */; };
 		9B65DF652D466DED007517B7 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B65DF642D466DE2007517B7 /* Endpoint.swift */; };
 		9B65DF672D4678A0007517B7 /* Mempool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B65DF662D46789B007517B7 /* Mempool.swift */; };
+		9B7CDF2C2EC5072800E205B8 /* ContentViewLiquidGlass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7CDF2B2EC5072800E205B8 /* ContentViewLiquidGlass.swift */; };
 		9B925AB22C74382A00A754C1 /* AdBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B925AB12C74382A00A754C1 /* AdBannerView.swift */; };
 		9BAB8F492D518E7500FEE3F8 /* ErrorAlertModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAB8F482D518E6700FEE3F8 /* ErrorAlertModifier.swift */; };
 		9BADB8F92D4CFF91007D0535 /* Hashrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADB8F82D4CFF8E007D0535 /* Hashrate.swift */; };
@@ -125,6 +126,7 @@
 		9B57DC592D3F3AAE00A810F5 /* BlockchainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainViewModel.swift; sourceTree = "<group>"; };
 		9B65DF642D466DE2007517B7 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		9B65DF662D46789B007517B7 /* Mempool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mempool.swift; sourceTree = "<group>"; };
+		9B7CDF2B2EC5072800E205B8 /* ContentViewLiquidGlass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewLiquidGlass.swift; sourceTree = "<group>"; };
 		9B925AB02C74367300A754C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9B925AB12C74382A00A754C1 /* AdBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBannerView.swift; sourceTree = "<group>"; };
 		9BAB8F482D518E6700FEE3F8 /* ErrorAlertModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorAlertModifier.swift; sourceTree = "<group>"; };
@@ -557,6 +559,7 @@
 				9B925AB02C74367300A754C1 /* Info.plist */,
 				9BC226112A0C68CA0069FDEB /* BitcoinBlockExplorerApp.swift */,
 				9BC226132A0C68CA0069FDEB /* ContentView.swift */,
+				9B7CDF2B2EC5072800E205B8 /* ContentViewLiquidGlass.swift */,
 				9B3C000A2BAC75E4000B55B9 /* Views */,
 				9B2BC8E32A12D19800735A8D /* Services */,
 				9B2321EF2B85116D000BFBA9 /* Utils */,
@@ -841,6 +844,7 @@
 				9B331ED72D538D2C00D864D6 /* EachBlockSearchView.swift in Sources */,
 				9B65DF672D4678A0007517B7 /* Mempool.swift in Sources */,
 				9B12438B2A16BD6C00B9A4AF /* TransactionsModel.swift in Sources */,
+				9B7CDF2C2EC5072800E205B8 /* ContentViewLiquidGlass.swift in Sources */,
 				9B331ED92D53A6F200D864D6 /* BlockSearch.swift in Sources */,
 				9BB0E8732D4162F100C6777A /* SheetToolbarModifier.swift in Sources */,
 				9BEEACA02C8F7B0500E2E120 /* BitcoinPriceViewComponent.swift in Sources */,

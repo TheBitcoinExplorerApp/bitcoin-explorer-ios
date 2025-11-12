@@ -30,39 +30,82 @@ struct SearchView: View {
     @State private var abrirModalBlock: Bool = false
     
     var body: some View {
-        VStack {
-            if let result = resultType, result == "invalid" {
-                Text(Texts.invalid)
-                    .font(.headline)
-                    .foregroundStyle(.red)
-                    .padding()
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke(isInvalid ? Color.red : Color.clear, lineWidth: 2)
-                    )
+        if #available(iOS 26, *) {
+            VStack {
+                if let result = resultType, result == "invalid" {
+                    Text(Texts.invalid)
+                        .font(.headline)
+                        .foregroundStyle(.red)
+                        .padding()
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(isInvalid ? Color.red : Color.clear, lineWidth: 2)
+                        )
+                }
+            }
+            .searchable(text: $searchText, prompt: Texts.searchPlaceholder) {}
+                
+            .onSubmit(of: .search) {
+                classifyInput()
+            }
+            
+            .sheet(isPresented: $abrirModalAddress ) {
+                EachAddressView(addressSearch: $addressSearch, abrirModalAddress: $abrirModalAddress)
+                    .presentationBackground(Color.myBackground)
+            }
+
+            .sheet(isPresented: $abrirModalTransaction) {
+                EachTransaction(idTransacaoButton: $idTransacaoButton, idTransacaoSearch: $idTransacaoSearch, abrirModalTransaction: $abrirModalTransaction)
+                    .presentationBackground(Color.myBackground)
+            }
+            
+            .sheet(isPresented: $abrirModalBlock) {
+                EachBlockSearchView(abrirModalBlock: $abrirModalBlock)
+                    .environmentObject(eachBlockViewModel)
+                    .presentationBackground(Color.myBackground)
+            }
+            
+        } else {
+            VStack {
+                if let result = resultType, result == "invalid" {
+                    Text(Texts.invalid)
+                        .font(.headline)
+                        .foregroundStyle(.red)
+                        .padding()
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(isInvalid ? Color.red : Color.clear, lineWidth: 2)
+                        )
+                }
+            }
+            .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: Texts.searchPlaceholder) {}
+                 
+            .onSubmit(of: .search) {
+                classifyInput()
+            }
+            
+            .sheet(isPresented: $abrirModalAddress ) {
+                EachAddressView(addressSearch: $addressSearch, abrirModalAddress: $abrirModalAddress)
+                    .presentationBackground(Color.myBackground)
+            }
+
+            .sheet(isPresented: $abrirModalTransaction) {
+                EachTransaction(idTransacaoButton: $idTransacaoButton, idTransacaoSearch: $idTransacaoSearch, abrirModalTransaction: $abrirModalTransaction)
+                    .presentationBackground(Color.myBackground)
+            }
+            
+            .sheet(isPresented: $abrirModalBlock) {
+                EachBlockSearchView(abrirModalBlock: $abrirModalBlock)
+                    .environmentObject(eachBlockViewModel)
+                    .presentationBackground(Color.myBackground)
             }
         }
-        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: Texts.searchPlaceholder) {}
-                
-        .onSubmit(of: .search) {
-            classifyInput()
-        }
         
-        .sheet(isPresented: $abrirModalAddress ) {
-            EachAddressView(addressSearch: $addressSearch, abrirModalAddress: $abrirModalAddress)
-                .presentationBackground(Color.myBackground)
-        }
-
-        .sheet(isPresented: $abrirModalTransaction) {
-            EachTransaction(idTransacaoButton: $idTransacaoButton, idTransacaoSearch: $idTransacaoSearch, abrirModalTransaction: $abrirModalTransaction)
-                .presentationBackground(Color.myBackground)
-        }
         
-        .sheet(isPresented: $abrirModalBlock) {
-            EachBlockSearchView(abrirModalBlock: $abrirModalBlock)
-                .environmentObject(eachBlockViewModel)
-                .presentationBackground(Color.myBackground)
-        }
+        
+    
+        
+        
         
     }
 

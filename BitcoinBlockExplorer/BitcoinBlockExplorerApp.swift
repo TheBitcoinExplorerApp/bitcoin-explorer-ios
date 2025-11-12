@@ -20,12 +20,21 @@ struct BitcoinBlockExplorerApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(addManager)
-                .environmentObject(currencyViewModel)
-                .environmentObject(subscriptionStore)
-                .environmentObject(lastBlockViewModel)
-                .environmentObject(networkMonitor)
+//            if #available(iOS 26.0, *) {
+//                ContentViewLiquidGlass()
+//                    .environmentObject(addManager)
+//                    .environmentObject(currencyViewModel)
+//                    .environmentObject(subscriptionStore)
+//                    .environmentObject(lastBlockViewModel)
+//                    .environmentObject(networkMonitor)
+//            } else {
+                ContentView()
+                    .environmentObject(addManager)
+                    .environmentObject(currencyViewModel)
+                    .environmentObject(subscriptionStore)
+                    .environmentObject(lastBlockViewModel)
+                    .environmentObject(networkMonitor)
+//            }
         }
     }
 }
