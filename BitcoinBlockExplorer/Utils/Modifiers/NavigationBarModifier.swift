@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct NavigationBarModifier: ViewModifier {
+    @ViewBuilder
     func body(content: Content) -> some View {
-        content
+        let base = content
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -27,7 +28,12 @@ struct NavigationBarModifier: ViewModifier {
                         .font(.title3)
                 }
             }
-            .toolbarBackground(Color.myBackground, for: .navigationBar)
+
+        if #available(iOS 26.0, *) {
+            base
+        } else {
+            base.toolbarBackground(Color.myBackground, for: .navigationBar)
+        }
     }
 }
 

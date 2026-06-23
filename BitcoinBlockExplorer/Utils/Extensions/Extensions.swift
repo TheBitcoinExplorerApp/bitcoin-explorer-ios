@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 extension Int {
     static let averageNumberTransactions: Int = 140
@@ -30,5 +31,11 @@ extension Int64 {
 }
 
 extension CGFloat {
-    static let cornerRadius: CGFloat = 7
+    static var cornerRadius: CGFloat {
+        if #available(iOS 26.0, *) {
+            return 18
+        } else {
+            return 7
+        }
+    }
 }

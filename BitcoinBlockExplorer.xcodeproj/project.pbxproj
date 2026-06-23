@@ -44,6 +44,9 @@
 		9B5689ED2B7CEFF10009A751 /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5689EC2B7CEFF10009A751 /* Texts.swift */; };
 		9B57DC582D3F38C200A810F5 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B57DC572D3F38BC00A810F5 /* APIHandler.swift */; };
 		9B57DC5A2D3F3AB400A810F5 /* BlockchainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B57DC592D3F3AAE00A810F5 /* BlockchainViewModel.swift */; };
+		9B5CC0B72FEB128E00A011E3 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5CC0B62FEB128E00A011E3 /* SearchModel.swift */; };
+		9B5CC0B92FEB12A200A011E3 /* BitcoinSearchModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5CC0B82FEB12A200A011E3 /* BitcoinSearchModifier.swift */; };
+		9B5CC0BB2FEB12CC00A011E3 /* SearchTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5CC0BA2FEB12CC00A011E3 /* SearchTabView.swift */; };
 		9B65DF652D466DED007517B7 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B65DF642D466DE2007517B7 /* Endpoint.swift */; };
 		9B65DF672D4678A0007517B7 /* Mempool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B65DF662D46789B007517B7 /* Mempool.swift */; };
 		9B7CDF2C2EC5072800E205B8 /* ContentViewLiquidGlass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7CDF2B2EC5072800E205B8 /* ContentViewLiquidGlass.swift */; };
@@ -124,6 +127,9 @@
 		9B5689EC2B7CEFF10009A751 /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
 		9B57DC572D3F38BC00A810F5 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 		9B57DC592D3F3AAE00A810F5 /* BlockchainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainViewModel.swift; sourceTree = "<group>"; };
+		9B5CC0B62FEB128E00A011E3 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		9B5CC0B82FEB12A200A011E3 /* BitcoinSearchModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinSearchModifier.swift; sourceTree = "<group>"; };
+		9B5CC0BA2FEB12CC00A011E3 /* SearchTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabView.swift; sourceTree = "<group>"; };
 		9B65DF642D466DE2007517B7 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		9B65DF662D46789B007517B7 /* Mempool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mempool.swift; sourceTree = "<group>"; };
 		9B7CDF2B2EC5072800E205B8 /* ContentViewLiquidGlass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewLiquidGlass.swift; sourceTree = "<group>"; };
@@ -392,6 +398,9 @@
 			isa = PBXGroup;
 			children = (
 				9B376E852D52F6220094CFD7 /* SearchView.swift */,
+				9B5CC0B62FEB128E00A011E3 /* SearchModel.swift */,
+				9B5CC0B82FEB12A200A011E3 /* BitcoinSearchModifier.swift */,
+				9B5CC0BA2FEB12CC00A011E3 /* SearchTabView.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -817,6 +826,7 @@
 				9BEEACA62C8F870A00E2E120 /* NavigationBarModifier.swift in Sources */,
 				9B5564452B962FE3007AEA55 /* NavigationTitleModifier.swift in Sources */,
 				9B57DC5A2D3F3AB400A810F5 /* BlockchainViewModel.swift in Sources */,
+				9B5CC0B92FEB12A200A011E3 /* BitcoinSearchModifier.swift in Sources */,
 				9B331ED52D53875A00D864D6 /* EachBlockSearchViewModel.swift in Sources */,
 				9BB6F6F42D837860005AA0C0 /* SupplyView.swift in Sources */,
 				9BC226142A0C68CA0069FDEB /* ContentView.swift in Sources */,
@@ -844,6 +854,7 @@
 				9B331ED72D538D2C00D864D6 /* EachBlockSearchView.swift in Sources */,
 				9B65DF672D4678A0007517B7 /* Mempool.swift in Sources */,
 				9B12438B2A16BD6C00B9A4AF /* TransactionsModel.swift in Sources */,
+				9B5CC0B72FEB128E00A011E3 /* SearchModel.swift in Sources */,
 				9B7CDF2C2EC5072800E205B8 /* ContentViewLiquidGlass.swift in Sources */,
 				9B331ED92D53A6F200D864D6 /* BlockSearch.swift in Sources */,
 				9BB0E8732D4162F100C6777A /* SheetToolbarModifier.swift in Sources */,
@@ -851,6 +862,7 @@
 				9B17925F2D52508100D4C4AA /* LockView.swift in Sources */,
 				9B5254852D5F93170035258A /* ScrollToPositionXModifier.swift in Sources */,
 				9BFDF4A62D384A0700EE4046 /* SubscriptionStore.swift in Sources */,
+				9B5CC0BB2FEB12CC00A011E3 /* SearchTabView.swift in Sources */,
 				9B43726D2A1CDFAA00DFE211 /* EachAddressView.swift in Sources */,
 				9B5689ED2B7CEFF10009A751 /* Texts.swift in Sources */,
 				9B2BC8E22A12C54700735A8D /* Block.swift in Sources */,

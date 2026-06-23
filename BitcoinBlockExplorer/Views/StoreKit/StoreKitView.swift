@@ -58,9 +58,9 @@ struct StoreKitView: View {
                         Divider()
                             .padding(.horizontal)
                         
-                        PlansView(feature: Texts.fullNodeHashrateAndBlockRewardLabelStoreKit, isAvailableInFree: false, isAvailableInPro: true)
-                        Divider()
-                            .padding(.horizontal)
+                        // PlansView(feature: Texts.fullNodeHashrateAndBlockRewardLabelStoreKit, isAvailableInFree: false, isAvailableInPro: true)
+                        // Divider()
+                        //     .padding(.horizontal)
                         
                         PlansView(feature: Texts.calculator, isAvailableInFree: false, isAvailableInPro: true)
                         

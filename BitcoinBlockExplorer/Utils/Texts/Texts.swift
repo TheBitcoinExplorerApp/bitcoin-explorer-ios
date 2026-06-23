@@ -75,6 +75,19 @@ extension Texts {
     static let titleOfTheApp: String = String(localized: "titleOfTheApp")
 }
 
+// Search guide
+extension Texts {
+    static let searchGuideHeader: String = String(localized: "searchGuideHeader", defaultValue: "You can search for")
+
+    static let searchGuideBlockHeightTitle: String = String(localized: "searchGuideBlockHeightTitle", defaultValue: "Block height")
+
+    static let searchGuideBlockHashTitle: String = String(localized: "searchGuideBlockHashTitle", defaultValue: "Block hash")
+
+    static let searchGuideAddressTitle: String = String(localized: "searchGuideAddressTitle", defaultValue: "Bitcoin address")
+
+    static let searchGuideTransactionTitle: String = String(localized: "searchGuideTransactionTitle", defaultValue: "Transaction ID")
+}
+
 // Blocks labels
 extension Texts {
     static let blocoMaiusculo: String = String(localized: "blocoMaiusculo")

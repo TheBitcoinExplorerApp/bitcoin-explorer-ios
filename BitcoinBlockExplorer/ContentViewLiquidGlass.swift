@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ContentViewLiquidGlass: View {
     @StateObject var viewModel = BlockchainViewModel()
-    
+    @StateObject var searchModel = SearchModel()
+
     @State private var tabSelection = 1
     @State private var tappedTwice: Bool = false
     
@@ -61,24 +62,16 @@ struct ContentViewLiquidGlass: View {
 
                     }
                     
-                    Tab("Search", systemImage: "magnifyingglass", value: 4, role: .search) {
+                    Tab(value: 4, role: .search) {
                         NavigationStack {
-                            BlockchainView()
-                                .onChange(of: tappedTwice, perform: { tapped in
-                                    if tapped {
-                                        withAnimation {
-                                            proxy.scrollTo(1, anchor: .top)
-                                        }
-                                        tappedTwice = false
-                                    }
-                                })
-                                .environmentObject(viewModel)
+                            SearchTabView(model: searchModel)
                         }
-                        .tag(1)
+                        .tag(4)
                     }
                     
                     
                 }
+//                .tabViewSearchActivation(.searchTabSelection)
                 .accentColor(Color.primaryText)
             }
         }

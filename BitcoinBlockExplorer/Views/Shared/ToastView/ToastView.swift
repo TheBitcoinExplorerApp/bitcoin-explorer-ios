@@ -22,7 +22,7 @@ struct ToastView: View {
             }
             .padding(.horizontal)
             .background(Color.backgroundBox)
-            .clipShape(RoundedRectangle(cornerRadius: 10))
+            .clipShape(RoundedRectangle(cornerRadius: CGFloat.cornerRadius))
             
         }
     }

@@ -16,7 +16,9 @@ struct BlockchainView: View {
     var body: some View {
         
         VStack {
-            SearchView()
+            if #available(iOS 26.0, *) {} else {
+                SearchView()
+            }
             
             ScrollView{
                 blockchainView
@@ -29,25 +31,36 @@ struct BlockchainView: View {
                 viewModel.fetchMempoolSize()
                 currencyViewModel.fetchCoins()
                 lastBlockViewModel.fetchLastBlock()
-                viewModel.getFullNodes()
+                // viewModel.getFullNodes()
                 viewModel.fetchHashrate()
                 viewModel.fetchBlockReward()
                 viewModel.fetchDifficultyAdjustment()
                 viewModel.fetchBlockchainSupply()
             }
             
-            if #available(iOS 26.0, *) {
-                
-            } else {
+            if #available(iOS 26.0, *) {} else {
                 AdViewComponent()
             }
             
         }
         
         .task {
-            viewModel.fetchBlockHeader(50)
-            viewModel.fetchMempoolData()
-            viewModel.fetchMempoolSize()
+            if viewModel.blockHeaderData.isEmpty {
+                viewModel.fetchFees()
+                viewModel.fetchBlockHeader(50)
+                viewModel.fetchMempoolData()
+                viewModel.fetchMempoolSize()
+            }
+
+            while !Task.isCancelled {
+                try? await Task.sleep(for: .seconds(60))
+                guard !Task.isCancelled else { break }
+                viewModel.fetchFees()
+                viewModel.fetchBlockHeader(50)
+                viewModel.fetchMempoolData()
+                viewModel.fetchMempoolSize()
+                lastBlockViewModel.fetchLastBlock()
+            }
         }
         
         .errorAlert(showAlert: $viewModel.showErrorAlert, errorMessage: $viewModel.errorType)
@@ -77,8 +90,8 @@ struct BlockchainView: View {
                     .padding(.bottom)
                 
                 HStack {
-                    FullNodesView()
-                    Spacer()
+                    // FullNodesView()
+                    // Spacer()
                     HashrateView()
                 }
                 .padding(.horizontal)
@@ -95,7 +108,7 @@ struct BlockchainView: View {
     
     var blockchain: some View {
         VStack {
-            if viewModel.loading {
+            if viewModel.loading && viewModel.blockHeaderData.isEmpty {
                 ProgressView()
                     .scaleEffect(1.2)
             } else {
@@ -118,10 +131,6 @@ struct BlockchainView: View {
             }
         }
         .padding(.vertical)
-        .task {
-            viewModel.fetchFees()
-        }
-        
     }
     
 }
