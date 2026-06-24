@@ -41,12 +41,10 @@ struct ContentViewLiquidGlass: View {
                 }
                 
                 Tab(Texts.configuracoes, systemImage: "gearshape.fill", value: 3) {
-                    
                     NavigationStack {
                         ConfigurationsView()
                     }
                     .tag(3)
-                    
                 }
                 
                 Tab(value: 4, role: .search) {
