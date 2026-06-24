@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -90,6 +90,23 @@
 		9BFDF4A62D384A0700EE4046 /* SubscriptionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFDF4A52D3849E200EE4046 /* SubscriptionStore.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9BE87F082FEC24D800C5B29E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BC226062A0C68CA0069FDEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BC2260D2A0C68CA0069FDEB;
+			remoteInfo = BitcoinBlockExplorer;
+		};
+		9BE880252FEC419A00C5B29E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BC226062A0C68CA0069FDEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BC2260D2A0C68CA0069FDEB;
+			remoteInfo = BitcoinBlockExplorer;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		81652649BD006240B348E3B9 /* Pods-BitcoinBlockExplorer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcoinBlockExplorer.debug.xcconfig"; path = "Target Support Files/Pods-BitcoinBlockExplorer/Pods-BitcoinBlockExplorer.debug.xcconfig"; sourceTree = "<group>"; };
 		9B1243822A16579700B9A4AF /* MempoolBlocksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MempoolBlocksView.swift; sourceTree = "<group>"; };
@@ -165,6 +182,8 @@
 		9BDFDDEC2D563B6500B34E5F /* HalvingSpecificView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalvingSpecificView.swift; sourceTree = "<group>"; };
 		9BDFDDEE2D563B7500B34E5F /* HalvingSpecificViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalvingSpecificViewModel.swift; sourceTree = "<group>"; };
 		9BDFDDF02D5655D300B34E5F /* FormatTimestamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatTimestamp.swift; sourceTree = "<group>"; };
+		9BE87F042FEC24D800C5B29E /* BitcoinBlockExplorerUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitcoinBlockExplorerUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BE8801F2FEC419A00C5B29E /* BitcoinBlockExplorerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitcoinBlockExplorerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BEEAC9D2C8F799C00E2E120 /* BlockchainFeeViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainFeeViewComponent.swift; sourceTree = "<group>"; };
 		9BEEAC9F2C8F7B0500E2E120 /* BitcoinPriceViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinPriceViewComponent.swift; sourceTree = "<group>"; };
 		9BEEACA12C8F7C0200E2E120 /* TextsFeesViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextsFeesViewComponent.swift; sourceTree = "<group>"; };
@@ -178,6 +197,11 @@
 		E2FB5F46FEA11B8DE41A03DB /* Pods-BitcoinBlockExplorer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcoinBlockExplorer.release.xcconfig"; path = "Target Support Files/Pods-BitcoinBlockExplorer/Pods-BitcoinBlockExplorer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		9BE87F052FEC24D800C5B29E /* BitcoinBlockExplorerUnitTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = BitcoinBlockExplorerUnitTests; sourceTree = "<group>"; };
+		9BE880202FEC419A00C5B29E /* BitcoinBlockExplorerUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = BitcoinBlockExplorerUITests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		9BC2260B2A0C68CA0069FDEB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -185,6 +209,20 @@
 			files = (
 				802D279E91F933086746D45E /* Pods_BitcoinBlockExplorer.framework in Frameworks */,
 				9B3514882D2F41970034FF98 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BE87F012FEC24D800C5B29E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BE8801C2FEC419A00C5B29E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +589,8 @@
 			isa = PBXGroup;
 			children = (
 				9BC226102A0C68CA0069FDEB /* BitcoinBlockExplorer */,
+				9BE87F052FEC24D800C5B29E /* BitcoinBlockExplorerUnitTests */,
+				9BE880202FEC419A00C5B29E /* BitcoinBlockExplorerUITests */,
 				9BC2260F2A0C68CA0069FDEB /* Products */,
 				570F9656170D64EF9870F646 /* Pods */,
 				A2429A69F9D1FA5662AC0F92 /* Frameworks */,
@@ -561,6 +601,8 @@
 			isa = PBXGroup;
 			children = (
 				9BC2260E2A0C68CA0069FDEB /* BitcoinBlockExplorer.app */,
+				9BE87F042FEC24D800C5B29E /* BitcoinBlockExplorerUnitTests.xctest */,
+				9BE8801F2FEC419A00C5B29E /* BitcoinBlockExplorerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -696,6 +738,52 @@
 			productReference = 9BC2260E2A0C68CA0069FDEB /* BitcoinBlockExplorer.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9BE87F032FEC24D800C5B29E /* BitcoinBlockExplorerUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BE87F0C2FEC24D800C5B29E /* Build configuration list for PBXNativeTarget "BitcoinBlockExplorerUnitTests" */;
+			buildPhases = (
+				9BE87F002FEC24D800C5B29E /* Sources */,
+				9BE87F012FEC24D800C5B29E /* Frameworks */,
+				9BE87F022FEC24D800C5B29E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BE87F092FEC24D800C5B29E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9BE87F052FEC24D800C5B29E /* BitcoinBlockExplorerUnitTests */,
+			);
+			name = BitcoinBlockExplorerUnitTests;
+			packageProductDependencies = (
+			);
+			productName = BitcoinBlockExplorerUnitTests;
+			productReference = 9BE87F042FEC24D800C5B29E /* BitcoinBlockExplorerUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9BE8801E2FEC419A00C5B29E /* BitcoinBlockExplorerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BE880292FEC419A00C5B29E /* Build configuration list for PBXNativeTarget "BitcoinBlockExplorerUITests" */;
+			buildPhases = (
+				9BE8801B2FEC419A00C5B29E /* Sources */,
+				9BE8801C2FEC419A00C5B29E /* Frameworks */,
+				9BE8801D2FEC419A00C5B29E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BE880262FEC419A00C5B29E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9BE880202FEC419A00C5B29E /* BitcoinBlockExplorerUITests */,
+			);
+			name = BitcoinBlockExplorerUITests;
+			packageProductDependencies = (
+			);
+			productName = BitcoinBlockExplorerUITests;
+			productReference = 9BE8801F2FEC419A00C5B29E /* BitcoinBlockExplorerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -703,11 +791,19 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
+				LastSwiftUpdateCheck = 2650;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					9BC2260D2A0C68CA0069FDEB = {
 						CreatedOnToolsVersion = 14.3;
+					};
+					9BE87F032FEC24D800C5B29E = {
+						CreatedOnToolsVersion = 26.5;
+						TestTargetID = 9BC2260D2A0C68CA0069FDEB;
+					};
+					9BE8801E2FEC419A00C5B29E = {
+						CreatedOnToolsVersion = 26.5;
+						TestTargetID = 9BC2260D2A0C68CA0069FDEB;
 					};
 				};
 			};
@@ -732,6 +828,8 @@
 			projectRoot = "";
 			targets = (
 				9BC2260D2A0C68CA0069FDEB /* BitcoinBlockExplorer */,
+				9BE87F032FEC24D800C5B29E /* BitcoinBlockExplorerUnitTests */,
+				9BE8801E2FEC419A00C5B29E /* BitcoinBlockExplorerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -747,6 +845,20 @@
 				9BD0F9602D5D02D2002F12DB /* ConfigurationFile.storekit in Resources */,
 				9BC226162A0C68CB0069FDEB /* Assets.xcassets in Resources */,
 				9B3852D62B7C2B2300E2D576 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BE87F022FEC24D800C5B29E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BE8801D2FEC419A00C5B29E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -879,7 +991,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9BE87F002FEC24D800C5B29E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BE8801B2FEC419A00C5B29E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BE87F092FEC24D800C5B29E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BC2260D2A0C68CA0069FDEB /* BitcoinBlockExplorer */;
+			targetProxy = 9BE87F082FEC24D800C5B29E /* PBXContainerItemProxy */;
+		};
+		9BE880262FEC419A00C5B29E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BC2260D2A0C68CA0069FDEB /* BitcoinBlockExplorer */;
+			targetProxy = 9BE880252FEC419A00C5B29E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		9BC2261A2A0C68CB0069FDEB /* Debug */ = {
@@ -1074,6 +1213,152 @@
 			};
 			name = Release;
 		};
+		9BE87F0A2FEC24D800C5B29E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K559Z2V9Q2;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Google-Mobile-Ads-SDK\"",
+					"\"${PODS_ROOT}/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework\"",
+					"\"${PODS_ROOT}/GoogleUserMessagingPlatform/Frameworks/Release\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/Google-Mobile-Ads-SDK\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleUserMessagingPlatform\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Google-Mobile-Ads-SDK/Google_Mobile_Ads_SDK.framework/Headers\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
+				PODS_BUILD_DIR = "${BUILD_DIR}";
+				PODS_CONFIGURATION_BUILD_DIR = "${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PODS_XCFRAMEWORKS_BUILD_DIR = "$(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BitcoinBlockExplorerUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitcoinBlockExplorer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BitcoinBlockExplorer";
+			};
+			name = Debug;
+		};
+		9BE87F0B2FEC24D800C5B29E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K559Z2V9Q2;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Google-Mobile-Ads-SDK\"",
+					"\"${PODS_ROOT}/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework\"",
+					"\"${PODS_ROOT}/GoogleUserMessagingPlatform/Frameworks/Release\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/Google-Mobile-Ads-SDK\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleUserMessagingPlatform\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Google-Mobile-Ads-SDK/Google_Mobile_Ads_SDK.framework/Headers\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
+				PODS_BUILD_DIR = "${BUILD_DIR}";
+				PODS_CONFIGURATION_BUILD_DIR = "${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PODS_XCFRAMEWORKS_BUILD_DIR = "$(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BitcoinBlockExplorerUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitcoinBlockExplorer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BitcoinBlockExplorer";
+			};
+			name = Release;
+		};
+		9BE880272FEC419A00C5B29E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K559Z2V9Q2;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BitcoinBlockExplorerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BitcoinBlockExplorer;
+			};
+			name = Debug;
+		};
+		9BE880282FEC419A00C5B29E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K559Z2V9Q2;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BitcoinBlockExplorerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BitcoinBlockExplorer;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1091,6 +1376,24 @@
 			buildConfigurations = (
 				9BC2261D2A0C68CB0069FDEB /* Debug */,
 				9BC2261E2A0C68CB0069FDEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BE87F0C2FEC24D800C5B29E /* Build configuration list for PBXNativeTarget "BitcoinBlockExplorerUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BE87F0A2FEC24D800C5B29E /* Debug */,
+				9BE87F0B2FEC24D800C5B29E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BE880292FEC419A00C5B29E /* Build configuration list for PBXNativeTarget "BitcoinBlockExplorerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BE880272FEC419A00C5B29E /* Debug */,
+				9BE880282FEC419A00C5B29E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -9,6 +9,16 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>BitcoinBlockExplorerUITests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>BitcoinBlockExplorerUnitTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>TesteAPI.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +28,16 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>9BC2260D2A0C68CA0069FDEB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9BE87F032FEC24D800C5B29E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9BE8801E2FEC419A00C5B29E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -29,6 +29,30 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       shouldAutocreateTestPlan = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9BE87F032FEC24D800C5B29E"
+               BuildableName = "BitcoinBlockExplorerUnitTests.xctest"
+               BlueprintName = "BitcoinBlockExplorerUnitTests"
+               ReferencedContainer = "container:BitcoinBlockExplorer.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9BE8801E2FEC419A00C5B29E"
+               BuildableName = "BitcoinBlockExplorerUITests.xctest"
+               BlueprintName = "BitcoinBlockExplorerUITests"
+               ReferencedContainer = "container:BitcoinBlockExplorer.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
