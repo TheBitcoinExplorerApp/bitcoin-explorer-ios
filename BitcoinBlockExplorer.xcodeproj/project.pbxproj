@@ -383,6 +383,7 @@
 				9BB0E8722D4162D900C6777A /* SheetToolbarModifier.swift */,
 				9B5564442B962FE3007AEA55 /* NavigationTitleModifier.swift */,
 				9BEEACA52C8F870A00E2E120 /* NavigationBarModifier.swift */,
+				9B5CC0B82FEB12A200A011E3 /* BitcoinSearchModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -402,7 +403,6 @@
 			children = (
 				9B376E852D52F6220094CFD7 /* SearchView.swift */,
 				9B5CC0B62FEB128E00A011E3 /* SearchModel.swift */,
-				9B5CC0B82FEB12A200A011E3 /* BitcoinSearchModifier.swift */,
 				9B5CC0BA2FEB12CC00A011E3 /* SearchTabView.swift */,
 			);
 			path = Search;

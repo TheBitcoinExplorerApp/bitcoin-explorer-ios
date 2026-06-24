@@ -10,10 +10,11 @@ import SwiftUI
 struct BitcoinSearchModifier: ViewModifier {
     @ObservedObject var model: SearchModel
     let lastBlock: Int64
+    var placement: SearchFieldPlacement = .automatic
 
     func body(content: Content) -> some View {
         content
-            .searchable(text: $model.searchText, prompt: Texts.searchPlaceholder)
+            .searchable(text: $model.searchText, placement: placement, prompt: Texts.searchPlaceholder)
             .onSubmit(of: .search) {
                 model.classifyInput(lastBlock: lastBlock)
             }
@@ -37,7 +38,7 @@ struct BitcoinSearchModifier: ViewModifier {
 }
 
 extension View {
-    func bitcoinSearch(model: SearchModel, lastBlock: Int64) -> some View {
-        modifier(BitcoinSearchModifier(model: model, lastBlock: lastBlock))
+    func bitcoinSearch(model: SearchModel, lastBlock: Int64, placement: SearchFieldPlacement = .automatic) -> some View {
+        modifier(BitcoinSearchModifier(model: model, lastBlock: lastBlock, placement: placement))
     }
 }

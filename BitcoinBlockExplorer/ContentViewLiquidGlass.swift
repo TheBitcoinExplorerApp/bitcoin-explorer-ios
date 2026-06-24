@@ -52,7 +52,6 @@ struct ContentViewLiquidGlass: View {
                         }
                     }
 
-                    
                     Tab(Texts.configuracoes, systemImage: "gearshape.fill", value: 3) {
                         
                         NavigationStack {
@@ -69,15 +68,12 @@ struct ContentViewLiquidGlass: View {
                         .tag(4)
                     }
                     
-                    
                 }
-//                .tabViewSearchActivation(.searchTabSelection)
                 .accentColor(Color.primaryText)
             }
         }
         
     }
-
 }
 
 #Preview {

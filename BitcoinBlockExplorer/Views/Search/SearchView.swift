@@ -26,31 +26,10 @@ struct SearchView: View {
                     )
             }
         }
-        .searchable(text: $model.searchText,
-                    placement: .navigationBarDrawer(displayMode: .always),
-                    prompt: Texts.searchPlaceholder) {}
-
-        .onSubmit(of: .search) {
-            model.classifyInput(lastBlock: lastBlockViewModel.lastBlock)
-        }
-
-        .sheet(isPresented: $model.abrirModalAddress) {
-            EachAddressView(addressSearch: $model.addressSearch,
-                            abrirModalAddress: $model.abrirModalAddress)
-                .presentationBackground(Color.myBackground)
-        }
-
-        .sheet(isPresented: $model.abrirModalTransaction) {
-            EachTransaction(idTransacaoButton: $model.idTransacaoButton,
-                            idTransacaoSearch: $model.idTransacaoSearch,
-                            abrirModalTransaction: $model.abrirModalTransaction)
-                .presentationBackground(Color.myBackground)
-        }
-
-        .sheet(isPresented: $model.abrirModalBlock) {
-            EachBlockSearchView(abrirModalBlock: $model.abrirModalBlock)
-                .environmentObject(model.eachBlockViewModel)
-                .presentationBackground(Color.myBackground)
-        }
+        .bitcoinSearch(
+            model: model,
+            lastBlock: lastBlockViewModel.lastBlock,
+            placement: .navigationBarDrawer(displayMode: .always)
+        )
     }
 }
