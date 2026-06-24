@@ -9,11 +9,28 @@ import Foundation
 
 class APIHandler {
 
+    #if DEBUG
+    /// UI-testing hook: when launched with `-UITestForceAPIErrors`, every
+    /// request fails immediately so the error alerts can be tested
+    /// deterministically. Never active outside UI tests (arg never present),
+    /// and unit tests don't pass it, so production behaviour is unchanged.
+    private var shouldSimulateFailure: Bool {
+        ProcessInfo.processInfo.arguments.contains("-UITestForceAPIErrors")
+    }
+    #endif
+
     func fetchData<T: Decodable>(
         from urlString: Endpoint,
         completion: @escaping (Result<T, Error>) -> Void
     ) {
-        
+
+        #if DEBUG
+        if shouldSimulateFailure {
+            completion(.failure(URLError(.timedOut)))
+            return
+        }
+        #endif
+
         // Verifica se a URL é válida
         guard let url = URL(string: urlString.endpoint) else {
             completion(.failure(URLError(.badURL)))
@@ -55,6 +72,13 @@ class APIHandler {
     }
     
     func fetchBlockHash(for height: Int, completion: @escaping (Result<String, Error>) -> Void) {
+        #if DEBUG
+        if shouldSimulateFailure {
+            completion(.failure(URLError(.timedOut)))
+            return
+        }
+        #endif
+
         let urlString = "https://mempool.space/api/block-height/\(height)"
         guard let url = URL(string: urlString) else {
             completion(.failure(URLError(.badURL)))
@@ -79,6 +103,13 @@ class APIHandler {
     }
     
     func fetchBlockchainSupply(completion: @escaping (Result<String, Error>) -> Void) {
+        #if DEBUG
+        if shouldSimulateFailure {
+            completion(.failure(URLError(.timedOut)))
+            return
+        }
+        #endif
+
         let urlString = "https://blockchain.info/q/totalbc"
         
         guard let url = URL(string: urlString) else {

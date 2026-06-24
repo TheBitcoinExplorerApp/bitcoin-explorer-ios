@@ -2,40 +2,66 @@
 //  BitcoinBlockExplorerUITests.swift
 //  BitcoinBlockExplorerUITests
 //
-//  Created by Victor Hugo Pacheco Araujo on 24/06/26.
+//  Smoke + tab-navigation coverage. Runs in English for deterministic labels;
+//  language-specific behaviour is covered in LocalizationUITests.
 //
 
 import XCTest
 
 final class BitcoinBlockExplorerUITests: XCTestCase {
 
+    private func en(_ key: String) -> String { LocalizationExpectations.expected(key, language: "en") }
+
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    // MARK: - Launch
+
+    func testAppLaunchesAndShowsTabBar() {
+        let app = XCUIApplication.launched(language: "en")
+        XCTAssertTrue(app.mainTabBar().waitToAppear(), "Tab bar should appear on launch")
     }
 
-    @MainActor
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // XCUIAutomation Documentation
-        // https://developer.apple.com/documentation/xcuiautomation
+    func testTabBarHasPrimaryTabs() {
+        let app = XCUIApplication.launched(language: "en")
+        _ = app.mainTabBar()
+        XCTAssertTrue(app.tabBars.buttons[en("blockchain")].waitToAppear(), "Blockchain tab missing")
+        XCTAssertTrue(app.tabBars.buttons[en("calculator")].exists, "Calculator tab missing")
+        XCTAssertTrue(app.tabBars.buttons[en("configuracoes")].exists, "Settings tab missing")
     }
 
-    @MainActor
-    func testLaunchPerformance() throws {
-        // This measures how long it takes to launch your application.
+    // MARK: - Navigation between tabs
+
+    func testNavigateToSettingsTab() {
+        let app = XCUIApplication.launched(language: "en")
+        XCTAssertTrue(app.selectTab(en("configuracoes")))
+        // Settings content is fully offline-capable, so this is deterministic.
+        assertStaticText(en("sourceCode"), in: app)
+        assertStaticText(en("currencyLabel"), in: app)
+    }
+
+    func testNavigateToCalculatorTab() {
+        let app = XCUIApplication.launched(language: "en")
+        XCTAssertTrue(app.selectTab(en("calculator")))
+        // Calculator exposes a currency picker labelled "Currency".
+        XCTAssertTrue(app.staticTexts[en("currencyLabel")].waitToAppear()
+                      || app.otherElements[en("currencyLabel")].waitToAppear(),
+                      "Calculator screen did not appear")
+    }
+
+    func testReturnToBlockchainTab() {
+        let app = XCUIApplication.launched(language: "en")
+        XCTAssertTrue(app.selectTab(en("configuracoes")))
+        assertStaticText(en("sourceCode"), in: app)
+        XCTAssertTrue(app.selectTab(en("blockchain")))
+        // Back on the first tab the tab bar is still present and selected.
+        XCTAssertTrue(app.tabBars.buttons[en("blockchain")].isSelected)
+    }
+
+    // MARK: - Launch performance
+
+    func testLaunchPerformance() {
         measure(metrics: [XCTApplicationLaunchMetric()]) {
             XCUIApplication().launch()
         }

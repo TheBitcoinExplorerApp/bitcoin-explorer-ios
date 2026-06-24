@@ -15,6 +15,16 @@ class NetworkMonitor: ObservableObject {
     @Published var isConnected: Bool = false
     
     init() {
+        #if DEBUG
+        // UI-testing hook: when launched with `-UITestForceOffline`, stay
+        // permanently offline so the no-connection UI can be tested
+        // deterministically. Has no effect on normal runs (arg never present).
+        if ProcessInfo.processInfo.arguments.contains("-UITestForceOffline") {
+            self.isConnected = false
+            return
+        }
+        #endif
+
         monitor.pathUpdateHandler = { path in
             Task { @MainActor in
                 self.isConnected = path.status == .satisfied
