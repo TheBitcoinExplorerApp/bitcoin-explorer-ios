@@ -47,6 +47,7 @@
 		9B5CC0B72FEB128E00A011E3 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5CC0B62FEB128E00A011E3 /* SearchModel.swift */; };
 		9B5CC0B92FEB12A200A011E3 /* BitcoinSearchModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5CC0B82FEB12A200A011E3 /* BitcoinSearchModifier.swift */; };
 		9B5CC0BB2FEB12CC00A011E3 /* SearchTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5CC0BA2FEB12CC00A011E3 /* SearchTabView.swift */; };
+		9B5CC0BD2FEC04DA00A011E3 /* ToolbarBackgroundIfNeeded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5CC0BC2FEC04D800A011E3 /* ToolbarBackgroundIfNeeded.swift */; };
 		9B65DF652D466DED007517B7 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B65DF642D466DE2007517B7 /* Endpoint.swift */; };
 		9B65DF672D4678A0007517B7 /* Mempool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B65DF662D46789B007517B7 /* Mempool.swift */; };
 		9B7CDF2C2EC5072800E205B8 /* ContentViewLiquidGlass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7CDF2B2EC5072800E205B8 /* ContentViewLiquidGlass.swift */; };
@@ -130,6 +131,7 @@
 		9B5CC0B62FEB128E00A011E3 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
 		9B5CC0B82FEB12A200A011E3 /* BitcoinSearchModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinSearchModifier.swift; sourceTree = "<group>"; };
 		9B5CC0BA2FEB12CC00A011E3 /* SearchTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabView.swift; sourceTree = "<group>"; };
+		9B5CC0BC2FEC04D800A011E3 /* ToolbarBackgroundIfNeeded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarBackgroundIfNeeded.swift; sourceTree = "<group>"; };
 		9B65DF642D466DE2007517B7 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		9B65DF662D46789B007517B7 /* Mempool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mempool.swift; sourceTree = "<group>"; };
 		9B7CDF2B2EC5072800E205B8 /* ContentViewLiquidGlass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewLiquidGlass.swift; sourceTree = "<group>"; };
@@ -374,6 +376,7 @@
 		9B3C00122BAC7F59000B55B9 /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
+				9B5CC0BC2FEC04D800A011E3 /* ToolbarBackgroundIfNeeded.swift */,
 				9B5254842D5F930D0035258A /* ScrollToPositionXModifier.swift */,
 				9B1792622D52561800D4C4AA /* LockViewModifier.swift */,
 				9BAB8F482D518E6700FEE3F8 /* ErrorAlertModifier.swift */,
@@ -859,6 +862,7 @@
 				9B331ED92D53A6F200D864D6 /* BlockSearch.swift in Sources */,
 				9BB0E8732D4162F100C6777A /* SheetToolbarModifier.swift in Sources */,
 				9BEEACA02C8F7B0500E2E120 /* BitcoinPriceViewComponent.swift in Sources */,
+				9B5CC0BD2FEC04DA00A011E3 /* ToolbarBackgroundIfNeeded.swift in Sources */,
 				9B17925F2D52508100D4C4AA /* LockView.swift in Sources */,
 				9B5254852D5F93170035258A /* ScrollToPositionXModifier.swift in Sources */,
 				9BFDF4A62D384A0700EE4046 /* SubscriptionStore.swift in Sources */,

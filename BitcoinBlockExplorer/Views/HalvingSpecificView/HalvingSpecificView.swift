@@ -112,7 +112,7 @@ struct HalvingSpecificView: View {
                     .foregroundStyle(Color.texts)
             }
         }
-        .toolbarBackground(Color.myBackground, for: .navigationBar)
+        .toolbarBackgroundIfNeeded(Color.myBackground)
         
     }
     
