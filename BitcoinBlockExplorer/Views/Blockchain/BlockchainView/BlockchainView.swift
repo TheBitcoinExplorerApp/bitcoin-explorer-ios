@@ -12,7 +12,9 @@ struct BlockchainView: View {
     @EnvironmentObject var lastBlockViewModel: LastBlockViewModel
     @EnvironmentObject var currencyViewModel:  CurrencyViewModel
     @EnvironmentObject var networkMonitor: NetworkMonitor
-    
+
+    @State private var pollingResetTrigger = 0
+
     var body: some View {
         
         VStack {
@@ -36,6 +38,9 @@ struct BlockchainView: View {
                 viewModel.fetchBlockReward()
                 viewModel.fetchDifficultyAdjustment()
                 viewModel.fetchBlockchainSupply()
+
+                // Reinicia o contador do polling para não buscar de novo logo após o refresh manual
+                pollingResetTrigger += 1
             }
             
             if #available(iOS 26.0, *) {} else {
@@ -44,7 +49,7 @@ struct BlockchainView: View {
             
         }
         
-        .task {
+        .task(id: pollingResetTrigger) {
             if viewModel.fees.isEmpty {
                 viewModel.fetchFees()
             }
@@ -59,6 +64,18 @@ struct BlockchainView: View {
             
             if viewModel.blockHeaderData.isEmpty {
                 viewModel.fetchBlockHeader(15)
+            }
+
+            while !Task.isCancelled {
+                try? await Task.sleep(for: .seconds(60))
+                guard !Task.isCancelled else { break }
+                viewModel.fetchFees()
+                viewModel.fetchBlockHeader(15)
+                viewModel.fetchMempoolData()
+                viewModel.fetchMempoolSize()
+                currencyViewModel.fetchCoins()
+                lastBlockViewModel.fetchLastBlock()
+                viewModel.fetchDifficultyAdjustment()
             }
         }
         

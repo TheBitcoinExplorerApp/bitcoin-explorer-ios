@@ -91,7 +91,9 @@ struct HalvingView: View {
         }
         
         .task {
-            lastBlockViewModel.fetchLastBlock()
+            if lastBlockViewModel.lastBlock == 0 {
+                lastBlockViewModel.fetchLastBlock()
+            }
         }
         
     }
