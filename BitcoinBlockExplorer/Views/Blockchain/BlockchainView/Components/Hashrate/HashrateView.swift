@@ -26,7 +26,9 @@ struct HashrateView: View {
                 .lockView()
         }
         .task {
-            viewModel.fetchHashrate()
+            if viewModel.hashRate == 0 {
+                viewModel.fetchHashrate()
+            }
         }
     }
     

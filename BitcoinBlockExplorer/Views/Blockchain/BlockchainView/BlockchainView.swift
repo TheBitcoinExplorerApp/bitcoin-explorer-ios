@@ -26,7 +26,7 @@ struct BlockchainView: View {
             }
             .refreshable {
                 viewModel.fetchFees()
-                viewModel.fetchBlockHeader(50)
+                viewModel.fetchBlockHeader(15)
                 viewModel.fetchMempoolData()
                 viewModel.fetchMempoolSize()
                 currencyViewModel.fetchCoins()
@@ -45,21 +45,20 @@ struct BlockchainView: View {
         }
         
         .task {
-            if viewModel.blockHeaderData.isEmpty {
+            if viewModel.fees.isEmpty {
                 viewModel.fetchFees()
-                viewModel.fetchBlockHeader(50)
+            }
+            
+            if viewModel.mempoolData == nil {
                 viewModel.fetchMempoolData()
+            }
+            
+            if viewModel.mempoolSize.isEmpty {
                 viewModel.fetchMempoolSize()
             }
-
-            while !Task.isCancelled {
-                try? await Task.sleep(for: .seconds(60))
-                guard !Task.isCancelled else { break }
-                viewModel.fetchFees()
-                viewModel.fetchBlockHeader(50)
-                viewModel.fetchMempoolData()
-                viewModel.fetchMempoolSize()
-                lastBlockViewModel.fetchLastBlock()
+            
+            if viewModel.blockHeaderData.isEmpty {
+                viewModel.fetchBlockHeader(15)
             }
         }
         
@@ -81,9 +80,9 @@ struct BlockchainView: View {
                 
                 if #available(iOS 26.0, *) {
                     AdViewComponent()
-                        .padding()
+                        .padding(.horizontal)
                 } else {}
-
+                
                 blockchain
                 HalvingView()
                 DifficultyAdjustmentView()

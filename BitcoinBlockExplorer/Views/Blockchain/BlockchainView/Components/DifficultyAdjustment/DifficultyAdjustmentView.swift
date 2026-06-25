@@ -63,7 +63,9 @@ struct DifficultyAdjustmentView: View {
         .padding(.horizontal)
         
         .task {
-            viewModel.fetchDifficultyAdjustment()
+            if viewModel.difficultAdjustment == nil {
+                viewModel.fetchDifficultyAdjustment()
+            }
         }
         
         .onChange(of: viewModel.difficultAdjustment?.progressPercent) { newBlock in

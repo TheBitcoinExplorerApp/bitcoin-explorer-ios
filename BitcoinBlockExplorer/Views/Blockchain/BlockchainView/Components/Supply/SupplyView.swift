@@ -28,7 +28,9 @@ struct SupplyView: View {
         .padding(.bottom)
         
         .task {
-            viewModel.fetchBlockchainSupply()
+            if viewModel.totalSupply == 0 {
+                viewModel.fetchBlockchainSupply()
+            }
         }
 
     }

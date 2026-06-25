@@ -13,7 +13,7 @@ struct HalvingView: View {
     @EnvironmentObject var lastBlockViewModel: LastBlockViewModel
     
     @State private var progress: CGFloat = 0.0
-        
+    
     var body: some View {
         VStack {
             HStack {
@@ -33,7 +33,7 @@ struct HalvingView: View {
                 
                 VStack {
                     NavigationLink {
-                        HalvingSpecificView()
+                        HalvingSpecificView(lastBlock: lastBlockViewModel.lastBlock)
                     } label: {
                         
                         HStack {

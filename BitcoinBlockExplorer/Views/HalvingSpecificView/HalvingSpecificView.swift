@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HalvingSpecificView: View {
     @StateObject var viewModel = HalvingSpecificViewModel()
-    @EnvironmentObject private var lastBlockViewModel: LastBlockViewModel
+    let lastBlock: Int64
     
     var body: some View {
         Form {
@@ -23,7 +23,7 @@ struct HalvingSpecificView: View {
                 Section {
                     Text("\(Texts.nextHalvingAtHeight) ")
                         .font(.callout)
-                    + Text("\(viewModel.getNextHalvingBlockHeight(lastBlockViewModel.lastBlock))")
+                    + Text("\(viewModel.getNextHalvingBlockHeight(lastBlock))")
                         .foregroundColor(Color.primaryText)
                         .font(.title2)
                         .bold()
@@ -31,14 +31,14 @@ struct HalvingSpecificView: View {
                     Text("\(Texts.currentBlockReward) ")
                         .font(.callout)
                     +
-                    Text("\(getFormattedBlockReward(viewModel.getCurrentBlockReward(lastBlockViewModel.lastBlock)))")
+                    Text("\(getFormattedBlockReward(viewModel.getCurrentBlockReward(lastBlock)))")
                         .foregroundColor(Color.primaryText)
                         .font(.system(.headline, weight: .semibold))
                     
                     Text("\(Texts.nextBlockReward) ")
                         .font(.callout)
                     +
-                    Text("\(getFormattedBlockReward(viewModel.getNextBlockReward(lastBlockViewModel.lastBlock)))")
+                    Text("\(getFormattedBlockReward(viewModel.getNextBlockReward(lastBlock)))")
                         .foregroundColor(Color.primaryText)
                         .font(.system(.headline, weight: .semibold))
                 }
@@ -49,7 +49,7 @@ struct HalvingSpecificView: View {
                     Text("\(Texts.estimatedDate)\n")
                         .font(.body)
                     +
-                    Text("\(viewModel.getNextHalvingTime(lastBlockViewModel.lastBlock))\n")
+                    Text("\(viewModel.getNextHalvingTime(lastBlock))\n")
                         .foregroundColor(Color.primaryText)
                         .font(.system(.headline, weight: .semibold))
                     +
@@ -60,7 +60,7 @@ struct HalvingSpecificView: View {
                 .listRowBackground(Color.backgroundBox)
                 
                 Section(Texts.previousAndUpcoming) {
-                    ForEach(Array(viewModel.getHalvingsPassedAndNot(lastBlockViewModel.lastBlock).enumerated()), id: \.element.id) { index, halving in
+                    ForEach(Array(viewModel.getHalvingsPassedAndNot(lastBlock).enumerated()), id: \.element.id) { index, halving in
                         HStack {
                             VStack(alignment: .leading) {
                                 Text("\(Texts.halving) \(index + 1) \(Texts.atHeight) ")
@@ -101,10 +101,6 @@ struct HalvingSpecificView: View {
         }
         .background(Color.myBackground)
         .scrollContentBackground(.hidden)
-        
-        .task {
-            lastBlockViewModel.fetchLastBlock()
-        }
         
         .toolbar {
             ToolbarItem(placement: .principal) {
@@ -147,6 +143,6 @@ struct HalvingSpecificView: View {
 }
 
 #Preview {
-    HalvingSpecificView()
+    HalvingSpecificView(lastBlock: 1)
         .environmentObject(LastBlockViewModel())
 }

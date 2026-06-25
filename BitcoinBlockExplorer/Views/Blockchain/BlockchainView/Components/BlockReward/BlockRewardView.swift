@@ -33,7 +33,9 @@ struct BlockRewardView: View {
         .padding(.bottom)
         
         .task {
-            viewModel.fetchBlockReward()
+            if viewModel.blockReward == 0 {
+                viewModel.fetchBlockReward()
+            }
         }
     }
     

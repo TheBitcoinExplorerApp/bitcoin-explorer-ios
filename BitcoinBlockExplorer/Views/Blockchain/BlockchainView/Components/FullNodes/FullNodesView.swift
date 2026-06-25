@@ -26,7 +26,9 @@ struct FullNodesView: View {
                 .lockView()
         }
         .task {
-            viewModel.getFullNodes()
+            if viewModel.totalFullNodes == 0 {
+                viewModel.getFullNodes()
+            }
         }
     }
 }

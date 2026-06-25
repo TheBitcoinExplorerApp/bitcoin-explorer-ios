@@ -43,7 +43,7 @@ struct MempoolBlocksView: View {
                 .frame(maxWidth: .infinity, maxHeight: 8)
                 .foregroundStyle(Color.chainBackground)
             
-            HStack(spacing: 10) {
+            LazyHStack(spacing: 10) {
                 mempool
 
                 ForEach(viewModel.blockHeaderData, id: \.self) { block in
